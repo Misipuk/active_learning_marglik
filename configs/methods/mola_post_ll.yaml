@@ -1,0 +1,4 @@
+method: mola
+n_components: 5
+n_epochs_burnin: 10000
+last_layer: True

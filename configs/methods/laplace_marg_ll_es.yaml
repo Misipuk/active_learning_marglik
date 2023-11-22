@@ -1,0 +1,6 @@
+method: laplace
+n_epochs_burnin: 50
+n_hypersteps: 50
+marglik_frequency: 50
+early_stopping: True
+last_layer: True

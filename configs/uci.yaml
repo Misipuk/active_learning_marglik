@@ -1,0 +1,9 @@
+optimizer: adam
+lr: 1e-3
+lr_min: 1e-5
+n_epochs: 1000
+n_max: 200
+batch_size: 10000  # full batch
+device: cpu
+data_root: data/
+double: True

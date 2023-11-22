@@ -1,0 +1,9 @@
+dataset: mnist
+lr: 1e-3
+lr_min: 1e-5
+n_max: 250
+optimizer: adam
+n_epochs: 2000
+batch_size: 500
+device: cuda
+data_root: data/

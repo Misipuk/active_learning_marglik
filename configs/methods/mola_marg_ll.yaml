@@ -1,0 +1,7 @@
+method: mola
+n_components: 5
+n_epochs_burnin: 50
+n_hypersteps: 50
+marglik_frequency: 50
+early_stopping: False
+last_layer: True
