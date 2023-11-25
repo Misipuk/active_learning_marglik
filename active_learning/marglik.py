@@ -252,7 +252,7 @@ def marglik_optimization(model,
             scheduler.step()
 
         losses.append(epoch_loss)
-        logging.info(f'MARGLIK[epoch={epoch}]: train. perf={epoch_perf:.2f}; loss={epoch_loss:.5f}; nll={epoch_nll:.5f}')
+        #logging.info(f'MARGLIK[epoch={epoch}]: train. perf={epoch_perf:.2f}; loss={epoch_loss:.5f}; nll={epoch_nll:.5f}')
         optimizer.zero_grad(set_to_none=True)
         llr = scheduler.get_last_lr()[0]
         epoch_log.update({'train/loss': epoch_loss, 'train/nll': epoch_nll, 'train/perf': epoch_perf, 'train/lr': llr})
@@ -269,7 +269,7 @@ def marglik_optimization(model,
                 val_perf, val_nll = valid_performance(model, valid_loader, likelihood, val_criterion, device)
                 valid_perfs.append(val_perf)
                 valid_nlls.append(val_nll)
-                logging.info(f'MARGLIK[epoch={epoch}]: valid. perf={val_perf:.2f}; nll={val_nll:.5f}.')
+                #logging.info(f'MARGLIK[epoch={epoch}]: valid. perf={val_perf:.2f}; nll={val_nll:.5f}.')
                 epoch_log.update({'valid/perf': val_perf, 'valid/nll': val_nll})
 
         # only update hyperparameters every "Frequency" steps after "burnin"
