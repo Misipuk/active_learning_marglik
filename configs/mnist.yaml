@@ -5,6 +5,6 @@ n_max: 100
 optimizer: adam
 n_epochs: 2000
 batch_size: 500
-device: cpu
+device: cuda
 download_data: True
 data_root: data/

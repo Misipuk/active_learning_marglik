@@ -1,0 +1,20 @@
+
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/active_learning_marglik/run_image_classification.py", line 157, in <module>
+    main(**args)
+  File "/dss/dsshome1/0D/ge32jaq2/active_learning_marglik/run_image_classification.py", line 65, in main
+    learner.fit(dataset.get_train_loader(batch_size=batch_size))
+  File "/dss/dsshome1/0D/ge32jaq2/active_learning_marglik/active_learning/active_learners.py", line 64, in fit
+    la, _, margliks = marglik_optimization(
+  File "/dss/dsshome1/0D/ge32jaq2/active_learning_marglik/active_learning/marglik.py", line 293, in marglik_optimization
+    marglik = -lap.log_marginal_likelihood(prior_prec, sigma_noise) / N
+  File "/usr/local/lib/python3.10/dist-packages/laplace/baselaplace.py", line 493, in log_marginal_likelihood
+    return self.log_likelihood - 0.5 * (self.log_det_ratio + self.scatter)
+  File "/usr/local/lib/python3.10/dist-packages/laplace/baselaplace.py", line 431, in log_det_ratio
+    return self.log_det_posterior_precision - self.log_det_prior_precision
+  File "/usr/local/lib/python3.10/dist-packages/laplace/baselaplace.py", line 406, in log_det_prior_precision
+    return self.prior_precision_diag.log().sum()
+  File "/usr/local/lib/python3.10/dist-packages/laplace/baselaplace.py", line 133, in prior_precision_diag
+    return torch.cat([prior * torch.ones(n_params, device=self._device) for prior, n_params
+KeyboardInterrupt

@@ -1,0 +1,135 @@
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[run_image_classification.py:70]INFO: Initial test log-likelihood: -2.3026
+[run_image_classification.py:71]INFO: Initial test Bayes log-likelihood: -2.3026
+[run_image_classification.py:72]INFO: Initial accuracy: 11.35%
+[run_image_classification.py:92]INFO: Test log-likelihood at 21: -2.2955
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 21: -2.2938
+[run_image_classification.py:94]INFO: Test accuracy: 9.58%
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/active_learning_marglik/run_image_classification.py", line 157, in <module>
+    main(**args)
+  File "/dss/dsshome1/0D/ge32jaq2/active_learning_marglik/run_image_classification.py", line 81, in main
+    bald_scores = learner.bald(dataset.get_pool_loader(batch_size=batch_size))
+  File "/dss/dsshome1/0D/ge32jaq2/active_learning_marglik/active_learning/active_learners.py", line 123, in bald
+    p_samples = self.la.predictive_samples(x, n_samples=100)
+  File "/usr/local/lib/python3.10/dist-packages/laplace/baselaplace.py", line 585, in predictive_samples
+    dist = MultivariateNormal(f_mu, f_var)
+  File "/usr/local/lib/python3.10/dist-packages/torch/distributions/multivariate_normal.py", line 177, in __init__
+    super().__init__(batch_shape, event_shape, validate_args=validate_args)
+  File "/usr/local/lib/python3.10/dist-packages/torch/distributions/distribution.py", line 68, in __init__
+    raise ValueError(
+ValueError: Expected parameter covariance_matrix (Tensor of shape (500, 10, 10)) of distribution MultivariateNormal(loc: torch.Size([500, 10]), covariance_matrix: torch.Size([500, 10, 10])) to satisfy the constraint PositiveDefinite(), but found invalid values:
+tensor([[[ 0.0851, -0.0717,  0.0398,  ..., -0.0298,  0.0273, -0.0099],
+         [-0.0717,  0.0920, -0.0415,  ...,  0.0312, -0.0285,  0.0106],
+         [ 0.0398, -0.0415,  0.0405,  ..., -0.0170,  0.0159, -0.0054],
+         ...,
+         [-0.0298,  0.0312, -0.0170,  ...,  0.0301, -0.0117,  0.0043],
+         [ 0.0273, -0.0285,  0.0159,  ..., -0.0117,  0.0274, -0.0038],
+         [-0.0099,  0.0106, -0.0054,  ...,  0.0043, -0.0038,  0.0192]],
+        [[ 0.1600, -0.1300,  0.0722,  ..., -0.0540,  0.0495, -0.0179],
+         [-0.1299,  0.1726, -0.0751,  ...,  0.0566, -0.0516,  0.0193],
+         [ 0.0722, -0.0752,  0.0793,  ..., -0.0308,  0.0288, -0.0097],
+         ...,
+         [-0.0540,  0.0567, -0.0308,  ...,  0.0604, -0.0211,  0.0079],
+         [ 0.0495, -0.0516,  0.0288,  ..., -0.0211,  0.0553, -0.0069],
+         [-0.0179,  0.0193, -0.0097,  ...,  0.0079, -0.0069,  0.0406]],
+        [[ 0.0692, -0.0588,  0.0326,  ..., -0.0244,  0.0224, -0.0081],
+         [-0.0588,  0.0749, -0.0340,  ...,  0.0256, -0.0234,  0.0087],
+         [ 0.0326, -0.0340,  0.0325,  ..., -0.0140,  0.0130, -0.0044],
+         ...,
+         [-0.0244,  0.0256, -0.0140,  ...,  0.0240, -0.0096,  0.0036],
+         [ 0.0224, -0.0234,  0.0130,  ..., -0.0096,  0.0219, -0.0031],
+         [-0.0081,  0.0087, -0.0044,  ...,  0.0036, -0.0031,  0.0150]],
+        ...,
+        [[ 0.0448, -0.0391,  0.0217,  ..., -0.0162,  0.0149, -0.0054],
+         [-0.0391,  0.0487, -0.0226,  ...,  0.0170, -0.0155,  0.0058],
+         [ 0.0217, -0.0226,  0.0203,  ..., -0.0093,  0.0086, -0.0030],
+         ...,
+         [-0.0162,  0.0170, -0.0093,  ...,  0.0147, -0.0064,  0.0024],
+         [ 0.0148, -0.0155,  0.0086,  ..., -0.0064,  0.0133, -0.0021],
+         [-0.0054,  0.0058, -0.0030,  ...,  0.0024, -0.0021,  0.0087]],
+        [[ 0.0484, -0.0403,  0.0224,  ..., -0.0168,  0.0154, -0.0056],
+         [-0.0404,  0.0522, -0.0233,  ...,  0.0176, -0.0160,  0.0060],
+         [ 0.0224, -0.0233,  0.0232,  ..., -0.0096,  0.0089, -0.0030],
+         ...,
+         [-0.0168,  0.0176, -0.0096,  ...,  0.0174, -0.0066,  0.0024],
+         [ 0.0154, -0.0160,  0.0089,  ..., -0.0066,  0.0159, -0.0021],
+         [-0.0056,  0.0060, -0.0030,  ...,  0.0024, -0.0021,  0.0113]],
+        [[ 0.0480, -0.0422,  0.0235,  ..., -0.0176,  0.0161, -0.0059],
+         [-0.0422,  0.0522, -0.0244,  ...,  0.0184, -0.0168,  0.0063],
+         [ 0.0235, -0.0244,  0.0215,  ..., -0.0101,  0.0093, -0.0032],
+         ...,
+         [-0.0176,  0.0184, -0.0101,  ...,  0.0155, -0.0069,  0.0026],
+         [ 0.0161, -0.0168,  0.0093,  ..., -0.0069,  0.0140, -0.0024],
+         [-0.0059,  0.0063, -0.0032,  ...,  0.0026, -0.0024,  0.0091]]],
+       device='cuda:0')

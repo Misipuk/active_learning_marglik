@@ -120,7 +120,10 @@ class LaplaceActiveLearner(ActiveLearner):
                 y_var = self.la.sigma_noise ** 2 * torch.ones_like(f_var)
                 balds.append(torch.log(f_var + y_var) - torch.log(y_var))
             elif self.likelihood == 'classification':
-                p_samples = self.la.predictive_samples(x, n_samples=100)
+                try:
+                    p_samples = self.la.predictive_samples(x, n_samples=150)
+                except:
+                    p_samples = self.la.predictive_samples(x, n_samples=150, diagonal_output = True)
                 H = Categorical(probs=p_samples.mean(dim=0)).entropy()
                 exp_H = Categorical(probs=p_samples).entropy().mean(dim=0)
                 balds.append(H - exp_H)
