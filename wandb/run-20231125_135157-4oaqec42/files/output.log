@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/active_learning_marglik/run_image_classification.py", line 157, in <module>
+    main(**args)
+  File "/dss/dsshome1/0D/ge32jaq2/active_learning_marglik/run_image_classification.py", line 65, in main
+    learner.fit(dataset.get_train_loader(batch_size=batch_size))
+  File "/dss/dsshome1/0D/ge32jaq2/active_learning_marglik/active_learning/active_learners.py", line 64, in fit
+    la, _, margliks = marglik_optimization(
+  File "/dss/dsshome1/0D/ge32jaq2/active_learning_marglik/active_learning/marglik.py", line 242, in marglik_optimization
+    optimizer.step()
+  File "/usr/local/lib/python3.10/dist-packages/torch/optim/lr_scheduler.py", line 68, in wrapper
+    return wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/optim/optimizer.py", line 373, in wrapper
+    out = func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/optim/optimizer.py", line 76, in _use_grad
+    ret = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/optim/adam.py", line 163, in step
+    adam(
+  File "/usr/local/lib/python3.10/dist-packages/torch/optim/adam.py", line 311, in adam
+    func(params,
+  File "/usr/local/lib/python3.10/dist-packages/torch/optim/adam.py", line 385, in _single_tensor_adam
+    exp_avg_sq.mul_(beta2).addcmul_(grad, grad.conj(), value=1 - beta2)
+KeyboardInterrupt
