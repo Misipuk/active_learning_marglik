@@ -144,6 +144,6 @@ if __name__ == '__main__':
         run_name = '-'.join(comps)
         run_name += '-' + str(uuid.uuid5(uuid.NAMESPACE_DNS, str(args)))[:4]
         config['methodconf'] = '-'.join(comps)
-        load_dotenv()
+        #load_dotenv()
         wandb.init(project='alla', entity='aleximmer', config=config, name=run_name, tags=tags)
     main(**args)

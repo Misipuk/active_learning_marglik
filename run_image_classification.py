@@ -3,7 +3,7 @@ import logging
 import torch
 import wandb
 import numpy as np
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 from torchvision.datasets import MNIST, CIFAR10
 from torchvision import transforms
 logging.basicConfig(format='[%(filename)s:%(lineno)s]%(levelname)s: %(message)s', level=logging.INFO)
@@ -152,6 +152,6 @@ if __name__ == '__main__':
         run_name = '-'.join(comps)
         run_name += '-' + str(uuid.uuid5(uuid.NAMESPACE_DNS, str(args)))[:4]
         config['methodconf'] = '-'.join(comps)
-        load_dotenv()
-        wandb.init(project='alla', entity='aleximmer', config=config, name=run_name, tags=tags)
+        #load_dotenv()
+        wandb.init(project='alla', entity='marglik-is-the-best', config=config, name=run_name, tags=tags)
     main(**args)

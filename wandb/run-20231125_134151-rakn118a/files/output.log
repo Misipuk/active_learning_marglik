@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/active_learning_marglik/run_image_classification.py", line 157, in <module>
+    main(**args)
+  File "/dss/dsshome1/0D/ge32jaq2/active_learning_marglik/run_image_classification.py", line 65, in main
+    learner.fit(dataset.get_train_loader(batch_size=batch_size))
+  File "/dss/dsshome1/0D/ge32jaq2/active_learning_marglik/active_learning/active_learners.py", line 64, in fit
+    la, _, margliks = marglik_optimization(
+  File "/dss/dsshome1/0D/ge32jaq2/active_learning_marglik/active_learning/marglik.py", line 241, in marglik_optimization
+    loss.backward()
+  File "/usr/local/lib/python3.10/dist-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/usr/local/lib/python3.10/dist-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

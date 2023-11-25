@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/active_learning_marglik/run_image_classification.py", line 157, in <module>
+    main(**args)
+  File "/dss/dsshome1/0D/ge32jaq2/active_learning_marglik/run_image_classification.py", line 32, in main
+    train_dataset = ds_cls(data_root, train=True, download=download_data, transform=transform)
+  File "/usr/local/lib/python3.10/dist-packages/torchvision/datasets/mnist.py", line 102, in __init__
+    raise RuntimeError("Dataset not found. You can use download=True to download it")
+RuntimeError: Dataset not found. You can use download=True to download it

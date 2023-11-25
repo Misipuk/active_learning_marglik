@@ -1,0 +1,34 @@
+Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz to data/MNIST/raw/train-images-idx3-ubyte.gz
+Extracting data/MNIST/raw/train-images-idx3-ubyte.gz to data/MNIST/raw
+Downloading http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz to data/MNIST/raw/train-labels-idx1-ubyte.gz
+Extracting data/MNIST/raw/train-labels-idx1-ubyte.gz to data/MNIST/raw
+Downloading http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz to data/MNIST/raw/t10k-images-idx3-ubyte.gz
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 9912422/9912422 [00:00<00:00, 142468932.35it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 28881/28881 [00:00<00:00, 93396834.10it/s]
+  0%|                                                                                                                                             | 0/1648877 [00:00<?, ?it/s]
+Extracting data/MNIST/raw/t10k-images-idx3-ubyte.gz to data/MNIST/raw
+Downloading http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz to data/MNIST/raw/t10k-labels-idx1-ubyte.gz
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1648877/1648877 [00:01<00:00, 1532540.61it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4542/4542 [00:00<00:00, 15744238.65it/s]
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/active_learning_marglik/run_image_classification.py", line 157, in <module>
+    main(**args)
+  File "/dss/dsshome1/0D/ge32jaq2/active_learning_marglik/run_image_classification.py", line 65, in main
+    learner.fit(dataset.get_train_loader(batch_size=batch_size))
+  File "/dss/dsshome1/0D/ge32jaq2/active_learning_marglik/active_learning/active_learners.py", line 64, in fit
+    la, _, margliks = marglik_optimization(
+  File "/dss/dsshome1/0D/ge32jaq2/active_learning_marglik/active_learning/marglik.py", line 293, in marglik_optimization
+    marglik = -lap.log_marginal_likelihood(prior_prec, sigma_noise) / N
+  File "/usr/local/lib/python3.10/dist-packages/laplace/baselaplace.py", line 493, in log_marginal_likelihood
+    return self.log_likelihood - 0.5 * (self.log_det_ratio + self.scatter)
+  File "/usr/local/lib/python3.10/dist-packages/laplace/baselaplace.py", line 431, in log_det_ratio
+    return self.log_det_posterior_precision - self.log_det_prior_precision
+  File "/usr/local/lib/python3.10/dist-packages/laplace/baselaplace.py", line 823, in log_det_posterior_precision
+    return self.posterior_precision.logdet()
+  File "/usr/local/lib/python3.10/dist-packages/laplace/utils/matrix.py", line 350, in logdet
+    logdet += torch.log(torch.ger(l1, l2) + delta).sum()
+KeyboardInterrupt

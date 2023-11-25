@@ -1,0 +1,179 @@
+2023-11-25 13:24:11,715 INFO    StreamThr :587877 [internal.py:wandb_internal():86] W&B internal server running at pid: 587877, started at: 2023-11-25 13:24:11.713546
+2023-11-25 13:24:11,717 DEBUG   HandlerThread:587877 [handler.py:handle_request():146] handle_request: status
+2023-11-25 13:24:11,721 INFO    WriterThread:587877 [datastore.py:open_for_write():85] open: /dss/dsshome1/0D/ge32jaq2/active_learning_marglik/wandb/run-20231125_132411-l4bqs8py/run-l4bqs8py.wandb
+2023-11-25 13:24:11,723 DEBUG   SenderThread:587877 [sender.py:send():380] send: header
+2023-11-25 13:24:11,791 DEBUG   SenderThread:587877 [sender.py:send():380] send: run
+2023-11-25 13:24:12,294 INFO    SenderThread:587877 [dir_watcher.py:__init__():211] watching files in: /dss/dsshome1/0D/ge32jaq2/active_learning_marglik/wandb/run-20231125_132411-l4bqs8py/files
+2023-11-25 13:24:12,294 INFO    SenderThread:587877 [sender.py:_start_run_threads():1124] run started: l4bqs8py with start time 1700915051.713042
+2023-11-25 13:24:12,304 DEBUG   HandlerThread:587877 [handler.py:handle_request():146] handle_request: check_version
+2023-11-25 13:24:12,305 DEBUG   SenderThread:587877 [sender.py:send_request():407] send_request: check_version
+2023-11-25 13:24:12,450 DEBUG   HandlerThread:587877 [handler.py:handle_request():146] handle_request: run_start
+2023-11-25 13:24:12,451 DEBUG   HandlerThread:587877 [system_info.py:__init__():32] System info init
+2023-11-25 13:24:12,451 DEBUG   HandlerThread:587877 [system_info.py:__init__():47] System info init done
+2023-11-25 13:24:12,451 INFO    HandlerThread:587877 [system_monitor.py:start():194] Starting system monitor
+2023-11-25 13:24:12,451 INFO    SystemMonitor:587877 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-25 13:24:12,452 INFO    HandlerThread:587877 [system_monitor.py:probe():214] Collecting system info
+2023-11-25 13:24:12,453 INFO    SystemMonitor:587877 [interfaces.py:start():190] Started cpu monitoring
+2023-11-25 13:24:12,454 INFO    SystemMonitor:587877 [interfaces.py:start():190] Started disk monitoring
+2023-11-25 13:24:12,455 INFO    SystemMonitor:587877 [interfaces.py:start():190] Started memory monitoring
+2023-11-25 13:24:12,456 INFO    SystemMonitor:587877 [interfaces.py:start():190] Started network monitoring
+2023-11-25 13:24:12,512 DEBUG   HandlerThread:587877 [system_info.py:probe():196] Probing system
+2023-11-25 13:24:12,515 DEBUG   HandlerThread:587877 [system_info.py:_probe_git():181] Probing git
+2023-11-25 13:24:12,525 DEBUG   HandlerThread:587877 [system_info.py:_probe_git():189] Probing git done
+2023-11-25 13:24:12,525 DEBUG   HandlerThread:587877 [system_info.py:probe():244] Probing system done
+2023-11-25 13:24:12,525 DEBUG   HandlerThread:587877 [system_monitor.py:probe():223] {'os': 'Linux-5.4.0-153-generic-x86_64-with-glibc2.35', 'python': '3.10.6', 'heartbeatAt': '2023-11-25T12:24:12.512367', 'startedAt': '2023-11-25T12:24:11.104016', 'docker': None, 'cuda': None, 'args': ('--config', 'configs/mnist.yaml'), 'state': 'running', 'program': '/dss/dsshome1/0D/ge32jaq2/active_learning_marglik/run_image_classification.py', 'codePathLocal': 'run_image_classification.py', 'codePath': 'run_image_classification.py', 'git': {'remote': 'git@github.com:Misipuk/active_learning_marglik.git', 'commit': '11fa4b4f303e17c48f656327cc9735f5ea660b7a'}, 'email': None, 'root': '/dss/dsshome1/0D/ge32jaq2/active_learning_marglik', 'host': 'cpu-012', 'username': 'ge32jaq2', 'executable': '/usr/bin/python3', 'cpu_count': 48, 'cpu_count_logical': 96, 'cpu_freq': {'current': 1585.515687499999, 'min': 1500.0, 'max': 2300.0}, 'cpu_freq_per_core': [{'current': 1498.812, 'min': 1500.0, 'max': 2300.0}, {'current': 1495.62, 'min': 1500.0, 'max': 2300.0}, {'current': 1498.148, 'min': 1500.0, 'max': 2300.0}, {'current': 1499.708, 'min': 1500.0, 'max': 2300.0}, {'current': 1498.346, 'min': 1500.0, 'max': 2300.0}, {'current': 1484.774, 'min': 1500.0, 'max': 2300.0}, {'current': 1498.564, 'min': 1500.0, 'max': 2300.0}, {'current': 1499.086, 'min': 1500.0, 'max': 2300.0}, {'current': 1497.162, 'min': 1500.0, 'max': 2300.0}, {'current': 3304.417, 'min': 1500.0, 'max': 2300.0}, {'current': 1412.221, 'min': 1500.0, 'max': 2300.0}, {'current': 1415.46, 'min': 1500.0, 'max': 2300.0}, {'current': 1496.908, 'min': 1500.0, 'max': 2300.0}, {'current': 1491.468, 'min': 1500.0, 'max': 2300.0}, {'current': 1498.813, 'min': 1500.0, 'max': 2300.0}, {'current': 1498.487, 'min': 1500.0, 'max': 2300.0}, {'current': 1498.067, 'min': 1500.0, 'max': 2300.0}, {'current': 1461.78, 'min': 1500.0, 'max': 2300.0}, {'current': 1369.065, 'min': 1500.0, 'max': 2300.0}, {'current': 1498.036, 'min': 1500.0, 'max': 2300.0}, {'current': 1498.139, 'min': 1500.0, 'max': 2300.0}, {'current': 1498.057, 'min': 1500.0, 'max': 2300.0}, {'current': 1496.743, 'min': 1500.0, 'max': 2300.0}, {'current': 1497.108, 'min': 1500.0, 'max': 2300.0}, {'current': 1465.128, 'min': 1500.0, 'max': 2300.0}, {'current': 3298.987, 'min': 1500.0, 'max': 2300.0}, {'current': 1466.559, 'min': 1500.0, 'max': 2300.0}, {'current': 1499.573, 'min': 1500.0, 'max': 2300.0}, {'current': 1496.223, 'min': 1500.0, 'max': 2300.0}, {'current': 1498.425, 'min': 1500.0, 'max': 2300.0}, {'current': 3277.261, 'min': 1500.0, 'max': 2300.0}, {'current': 1465.649, 'min': 1500.0, 'max': 2300.0}, {'current': 1464.48, 'min': 1500.0, 'max': 2300.0}, {'current': 1499.176, 'min': 1500.0, 'max': 2300.0}, {'current': 1499.262, 'min': 1500.0, 'max': 2300.0}, {'current': 1493.749, 'min': 1500.0, 'max': 2300.0}, {'current': 1499.768, 'min': 1500.0, 'max': 2300.0}, {'current': 1498.81, 'min': 1500.0, 'max': 2300.0}, {'current': 1796.993, 'min': 1500.0, 'max': 2300.0}, {'current': 1497.897, 'min': 1500.0, 'max': 2300.0}, {'current': 1495.591, 'min': 1500.0, 'max': 2300.0}, {'current': 1499.254, 'min': 1500.0, 'max': 2300.0}, {'current': 1498.78, 'min': 1500.0, 'max': 2300.0}, {'current': 1497.295, 'min': 1500.0, 'max': 2300.0}, {'current': 1498.863, 'min': 1500.0, 'max': 2300.0}, {'current': 1403.211, 'min': 1500.0, 'max': 2300.0}, {'current': 1400.62, 'min': 1500.0, 'max': 2300.0}, {'current': 1398.342, 'min': 1500.0, 'max': 2300.0}, {'current': 1495.388, 'min': 1500.0, 'max': 2300.0}, {'current': 1482.253, 'min': 1500.0, 'max': 2300.0}, {'current': 1499.553, 'min': 1500.0, 'max': 2300.0}, {'current': 1499.827, 'min': 1500.0, 'max': 2300.0}, {'current': 1499.868, 'min': 1500.0, 'max': 2300.0}, {'current': 1497.049, 'min': 1500.0, 'max': 2300.0}, {'current': 1498.719, 'min': 1500.0, 'max': 2300.0}, {'current': 1497.225, 'min': 1500.0, 'max': 2300.0}, {'current': 1498.634, 'min': 1500.0, 'max': 2300.0}, {'current': 3266.61, 'min': 1500.0, 'max': 2300.0}, {'current': 1396.871, 'min': 1500.0, 'max': 2300.0}, {'current': 1396.134, 'min': 1500.0, 'max': 2300.0}, {'current': 1499.681, 'min': 1500.0, 'max': 2300.0}, {'current': 1499.476, 'min': 1500.0, 'max': 2300.0}, {'current': 1499.884, 'min': 1500.0, 'max': 2300.0}, {'current': 1500.78, 'min': 1500.0, 'max': 2300.0}, {'current': 1498.897, 'min': 1500.0, 'max': 2300.0}, {'current': 1499.77, 'min': 1500.0, 'max': 2300.0}, {'current': 1485.843, 'min': 1500.0, 'max': 2300.0}, {'current': 1499.364, 'min': 1500.0, 'max': 2300.0}, {'current': 1498.868, 'min': 1500.0, 'max': 2300.0}, {'current': 1497.293, 'min': 1500.0, 'max': 2300.0}, {'current': 1497.472, 'min': 1500.0, 'max': 2300.0}, {'current': 1498.95, 'min': 1500.0, 'max': 2300.0}, {'current': 1463.963, 'min': 1500.0, 'max': 2300.0}, {'current': 3285.091, 'min': 1500.0, 'max': 2300.0}, {'current': 1464.86, 'min': 1500.0, 'max': 2300.0}, {'current': 1495.854, 'min': 1500.0, 'max': 2300.0}, {'current': 1499.668, 'min': 1500.0, 'max': 2300.0}, {'current': 1498.075, 'min': 1500.0, 'max': 2300.0}, {'current': 3300.467, 'min': 1500.0, 'max': 2300.0}, {'current': 1463.994, 'min': 1500.0, 'max': 2300.0}, {'current': 1465.673, 'min': 1500.0, 'max': 2300.0}, {'current': 1496.854, 'min': 1500.0, 'max': 2300.0}, {'current': 1498.706, 'min': 1500.0, 'max': 2300.0}, {'current': 1493.053, 'min': 1500.0, 'max': 2300.0}, {'current': 1465.388, 'min': 1500.0, 'max': 2300.0}, {'current': 1466.384, 'min': 1500.0, 'max': 2300.0}, {'current': 3293.924, 'min': 1500.0, 'max': 2300.0}, {'current': 1497.69, 'min': 1500.0, 'max': 2300.0}, {'current': 1497.549, 'min': 1500.0, 'max': 2300.0}, {'current': 1497.637, 'min': 1500.0, 'max': 2300.0}, {'current': 1496.258, 'min': 1500.0, 'max': 2300.0}, {'current': 1498.559, 'min': 1500.0, 'max': 2300.0}, {'current': 1429.311, 'min': 1500.0, 'max': 2300.0}, {'current': 1491.498, 'min': 1500.0, 'max': 2300.0}, {'current': 1498.78, 'min': 1500.0, 'max': 2300.0}, {'current': 1498.468, 'min': 1500.0, 'max': 2300.0}], 'disk': {'/': {'total': 1787.1210975646973, 'used': 88.19544219970703}}, 'memory': {'total': 503.55265045166016}}
+2023-11-25 13:24:12,526 INFO    HandlerThread:587877 [system_monitor.py:probe():224] Finished collecting system info
+2023-11-25 13:24:12,526 INFO    HandlerThread:587877 [system_monitor.py:probe():227] Publishing system info
+2023-11-25 13:24:12,526 DEBUG   HandlerThread:587877 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-11-25 13:24:12,528 DEBUG   HandlerThread:587877 [system_info.py:_save_pip():68] Saving pip packages done
+2023-11-25 13:24:12,531 INFO    HandlerThread:587877 [system_monitor.py:probe():229] Finished publishing system info
+2023-11-25 13:24:12,537 DEBUG   SenderThread:587877 [sender.py:send():380] send: files
+2023-11-25 13:24:12,538 INFO    SenderThread:587877 [sender.py:_save_file():1380] saving file wandb-metadata.json with policy now
+2023-11-25 13:24:12,546 DEBUG   SenderThread:587877 [sender.py:send():380] send: telemetry
+2023-11-25 13:24:12,546 DEBUG   HandlerThread:587877 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-25 13:24:12,547 DEBUG   HandlerThread:587877 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-25 13:24:12,547 DEBUG   SenderThread:587877 [sender.py:send_request():407] send_request: stop_status
+2023-11-25 13:24:13,148 DEBUG   SenderThread:587877 [sender.py:send():380] send: exit
+2023-11-25 13:24:13,148 INFO    SenderThread:587877 [sender.py:send_exit():585] handling exit code: 1
+2023-11-25 13:24:13,148 INFO    SenderThread:587877 [sender.py:send_exit():587] handling runtime: 0
+2023-11-25 13:24:13,150 INFO    SenderThread:587877 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-25 13:24:13,150 INFO    SenderThread:587877 [sender.py:send_exit():593] send defer
+2023-11-25 13:24:13,151 DEBUG   HandlerThread:587877 [handler.py:handle_request():146] handle_request: defer
+2023-11-25 13:24:13,151 INFO    HandlerThread:587877 [handler.py:handle_request_defer():172] handle defer: 0
+2023-11-25 13:24:13,151 DEBUG   SenderThread:587877 [sender.py:send_request():407] send_request: defer
+2023-11-25 13:24:13,151 INFO    SenderThread:587877 [sender.py:send_request_defer():609] handle sender defer: 0
+2023-11-25 13:24:13,151 INFO    SenderThread:587877 [sender.py:transition_state():613] send defer: 1
+2023-11-25 13:24:13,152 DEBUG   HandlerThread:587877 [handler.py:handle_request():146] handle_request: defer
+2023-11-25 13:24:13,152 INFO    HandlerThread:587877 [handler.py:handle_request_defer():172] handle defer: 1
+2023-11-25 13:24:13,152 DEBUG   SenderThread:587877 [sender.py:send_request():407] send_request: defer
+2023-11-25 13:24:13,152 INFO    SenderThread:587877 [sender.py:send_request_defer():609] handle sender defer: 1
+2023-11-25 13:24:13,152 INFO    SenderThread:587877 [sender.py:transition_state():613] send defer: 2
+2023-11-25 13:24:13,152 DEBUG   HandlerThread:587877 [handler.py:handle_request():146] handle_request: defer
+2023-11-25 13:24:13,153 INFO    HandlerThread:587877 [handler.py:handle_request_defer():172] handle defer: 2
+2023-11-25 13:24:13,153 INFO    HandlerThread:587877 [system_monitor.py:finish():203] Stopping system monitor
+2023-11-25 13:24:13,153 INFO    HandlerThread:587877 [interfaces.py:finish():202] Joined cpu monitor
+2023-11-25 13:24:13,154 DEBUG   SystemMonitor:587877 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-11-25 13:24:13,154 INFO    HandlerThread:587877 [interfaces.py:finish():202] Joined disk monitor
+2023-11-25 13:24:13,154 DEBUG   SystemMonitor:587877 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-11-25 13:24:13,155 INFO    HandlerThread:587877 [interfaces.py:finish():202] Joined memory monitor
+2023-11-25 13:24:13,155 DEBUG   SystemMonitor:587877 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-11-25 13:24:13,155 INFO    HandlerThread:587877 [interfaces.py:finish():202] Joined network monitor
+2023-11-25 13:24:13,159 DEBUG   SenderThread:587877 [sender.py:send_request():407] send_request: defer
+2023-11-25 13:24:13,159 INFO    SenderThread:587877 [sender.py:send_request_defer():609] handle sender defer: 2
+2023-11-25 13:24:13,159 INFO    SenderThread:587877 [sender.py:transition_state():613] send defer: 3
+2023-11-25 13:24:13,159 DEBUG   SenderThread:587877 [sender.py:send():380] send: stats
+2023-11-25 13:24:13,159 DEBUG   HandlerThread:587877 [handler.py:handle_request():146] handle_request: defer
+2023-11-25 13:24:13,160 INFO    HandlerThread:587877 [handler.py:handle_request_defer():172] handle defer: 3
+2023-11-25 13:24:13,161 DEBUG   SenderThread:587877 [sender.py:send_request():407] send_request: defer
+2023-11-25 13:24:13,161 INFO    SenderThread:587877 [sender.py:send_request_defer():609] handle sender defer: 3
+2023-11-25 13:24:13,161 INFO    SenderThread:587877 [sender.py:transition_state():613] send defer: 4
+2023-11-25 13:24:13,161 DEBUG   HandlerThread:587877 [handler.py:handle_request():146] handle_request: defer
+2023-11-25 13:24:13,161 INFO    HandlerThread:587877 [handler.py:handle_request_defer():172] handle defer: 4
+2023-11-25 13:24:13,162 DEBUG   SenderThread:587877 [sender.py:send_request():407] send_request: defer
+2023-11-25 13:24:13,162 INFO    SenderThread:587877 [sender.py:send_request_defer():609] handle sender defer: 4
+2023-11-25 13:24:13,162 INFO    SenderThread:587877 [sender.py:transition_state():613] send defer: 5
+2023-11-25 13:24:13,162 DEBUG   HandlerThread:587877 [handler.py:handle_request():146] handle_request: defer
+2023-11-25 13:24:13,162 INFO    HandlerThread:587877 [handler.py:handle_request_defer():172] handle defer: 5
+2023-11-25 13:24:13,163 DEBUG   SenderThread:587877 [sender.py:send():380] send: summary
+2023-11-25 13:24:13,163 INFO    SenderThread:587877 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2023-11-25 13:24:13,163 DEBUG   SenderThread:587877 [sender.py:send_request():407] send_request: defer
+2023-11-25 13:24:13,163 INFO    SenderThread:587877 [sender.py:send_request_defer():609] handle sender defer: 5
+2023-11-25 13:24:13,164 INFO    SenderThread:587877 [sender.py:transition_state():613] send defer: 6
+2023-11-25 13:24:13,164 DEBUG   HandlerThread:587877 [handler.py:handle_request():146] handle_request: defer
+2023-11-25 13:24:13,164 INFO    HandlerThread:587877 [handler.py:handle_request_defer():172] handle defer: 6
+2023-11-25 13:24:13,164 DEBUG   SenderThread:587877 [sender.py:send_request():407] send_request: defer
+2023-11-25 13:24:13,164 INFO    SenderThread:587877 [sender.py:send_request_defer():609] handle sender defer: 6
+2023-11-25 13:24:13,170 DEBUG   HandlerThread:587877 [handler.py:handle_request():146] handle_request: status_report
+2023-11-25 13:24:13,180 INFO    wandb-upload_0:587877 [upload_job.py:push():131] Uploaded file /tmp/tmpb560x41qwandb/1e8bcbvh-wandb-metadata.json
+2023-11-25 13:24:13,297 INFO    Thread-12 :587877 [dir_watcher.py:_on_file_created():271] file/dir created: /dss/dsshome1/0D/ge32jaq2/active_learning_marglik/wandb/run-20231125_132411-l4bqs8py/files/requirements.txt
+2023-11-25 13:24:13,297 INFO    Thread-12 :587877 [dir_watcher.py:_on_file_created():271] file/dir created: /dss/dsshome1/0D/ge32jaq2/active_learning_marglik/wandb/run-20231125_132411-l4bqs8py/files/wandb-metadata.json
+2023-11-25 13:24:13,298 INFO    Thread-12 :587877 [dir_watcher.py:_on_file_created():271] file/dir created: /dss/dsshome1/0D/ge32jaq2/active_learning_marglik/wandb/run-20231125_132411-l4bqs8py/files/output.log
+2023-11-25 13:24:13,298 INFO    Thread-12 :587877 [dir_watcher.py:_on_file_created():271] file/dir created: /dss/dsshome1/0D/ge32jaq2/active_learning_marglik/wandb/run-20231125_132411-l4bqs8py/files/wandb-summary.json
+2023-11-25 13:24:13,371 INFO    SenderThread:587877 [sender.py:transition_state():613] send defer: 7
+2023-11-25 13:24:13,371 DEBUG   HandlerThread:587877 [handler.py:handle_request():146] handle_request: defer
+2023-11-25 13:24:13,371 INFO    HandlerThread:587877 [handler.py:handle_request_defer():172] handle defer: 7
+2023-11-25 13:24:13,372 DEBUG   SenderThread:587877 [sender.py:send_request():407] send_request: defer
+2023-11-25 13:24:13,372 INFO    SenderThread:587877 [sender.py:send_request_defer():609] handle sender defer: 7
+2023-11-25 13:24:13,554 DEBUG   HandlerThread:587877 [handler.py:handle_request():146] handle_request: poll_exit
+2023-11-25 13:24:14,295 INFO    Thread-12 :587877 [dir_watcher.py:_on_file_modified():288] file/dir modified: /dss/dsshome1/0D/ge32jaq2/active_learning_marglik/wandb/run-20231125_132411-l4bqs8py/files/config.yaml
+2023-11-25 13:24:15,157 INFO    SenderThread:587877 [sender.py:transition_state():613] send defer: 8
+2023-11-25 13:24:15,157 DEBUG   SenderThread:587877 [sender.py:send_request():407] send_request: poll_exit
+2023-11-25 13:24:15,157 DEBUG   HandlerThread:587877 [handler.py:handle_request():146] handle_request: defer
+2023-11-25 13:24:15,158 INFO    HandlerThread:587877 [handler.py:handle_request_defer():172] handle defer: 8
+2023-11-25 13:24:15,158 DEBUG   SenderThread:587877 [sender.py:send_request():407] send_request: defer
+2023-11-25 13:24:15,158 INFO    SenderThread:587877 [sender.py:send_request_defer():609] handle sender defer: 8
+2023-11-25 13:24:15,159 INFO    SenderThread:587877 [job_builder.py:build():298] Attempting to build job artifact
+2023-11-25 13:24:15,159 INFO    SenderThread:587877 [job_builder.py:_get_source_type():428] is repo sourced job
+2023-11-25 13:24:15,296 INFO    Thread-12 :587877 [dir_watcher.py:_on_file_modified():288] file/dir modified: /dss/dsshome1/0D/ge32jaq2/active_learning_marglik/wandb/run-20231125_132411-l4bqs8py/files/output.log
+2023-11-25 13:24:15,614 INFO    SenderThread:587877 [job_builder.py:build():404] adding wandb-job metadata file
+2023-11-25 13:24:15,625 INFO    SenderThread:587877 [sender.py:transition_state():613] send defer: 9
+2023-11-25 13:24:15,626 DEBUG   HandlerThread:587877 [handler.py:handle_request():146] handle_request: defer
+2023-11-25 13:24:15,626 INFO    HandlerThread:587877 [handler.py:handle_request_defer():172] handle defer: 9
+2023-11-25 13:24:15,626 DEBUG   SenderThread:587877 [sender.py:send():380] send: artifact
+2023-11-25 13:24:17,393 INFO    wandb-upload_1:587877 [upload_job.py:push():89] Uploaded file /dss/dsshome1/0D/ge32jaq2/.local/share/wandb/artifacts/staging/tmp8c9_5usj
+2023-11-25 13:24:17,395 INFO    wandb-upload_0:587877 [upload_job.py:push():89] Uploaded file /dss/dsshome1/0D/ge32jaq2/.local/share/wandb/artifacts/staging/tmputn9po6x
+2023-11-25 13:24:18,427 INFO    SenderThread:587877 [sender.py:send_artifact():1458] sent artifact job-git_github.com_Misipuk_active_learning_marglik.git_run_image_classification.py - {'id': 'QXJ0aWZhY3Q6NjQ4NzI5MTA1', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExODY1MjY3OA==', 'latestArtifact': None}}
+2023-11-25 13:24:18,428 DEBUG   SenderThread:587877 [sender.py:send_request():407] send_request: defer
+2023-11-25 13:24:18,428 INFO    SenderThread:587877 [sender.py:send_request_defer():609] handle sender defer: 9
+2023-11-25 13:24:18,428 INFO    SenderThread:587877 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-11-25 13:24:18,428 DEBUG   HandlerThread:587877 [handler.py:handle_request():146] handle_request: status_report
+2023-11-25 13:24:18,556 DEBUG   HandlerThread:587877 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-25 13:24:19,297 INFO    SenderThread:587877 [dir_watcher.py:finish():388] scan: /dss/dsshome1/0D/ge32jaq2/active_learning_marglik/wandb/run-20231125_132411-l4bqs8py/files
+2023-11-25 13:24:19,298 INFO    SenderThread:587877 [dir_watcher.py:finish():402] scan save: /dss/dsshome1/0D/ge32jaq2/active_learning_marglik/wandb/run-20231125_132411-l4bqs8py/files/wandb-metadata.json wandb-metadata.json
+2023-11-25 13:24:19,298 INFO    SenderThread:587877 [dir_watcher.py:finish():402] scan save: /dss/dsshome1/0D/ge32jaq2/active_learning_marglik/wandb/run-20231125_132411-l4bqs8py/files/config.yaml config.yaml
+2023-11-25 13:24:19,298 INFO    SenderThread:587877 [dir_watcher.py:finish():402] scan save: /dss/dsshome1/0D/ge32jaq2/active_learning_marglik/wandb/run-20231125_132411-l4bqs8py/files/requirements.txt requirements.txt
+2023-11-25 13:24:19,304 INFO    SenderThread:587877 [dir_watcher.py:finish():402] scan save: /dss/dsshome1/0D/ge32jaq2/active_learning_marglik/wandb/run-20231125_132411-l4bqs8py/files/wandb-summary.json wandb-summary.json
+2023-11-25 13:24:19,304 INFO    SenderThread:587877 [dir_watcher.py:finish():402] scan save: /dss/dsshome1/0D/ge32jaq2/active_learning_marglik/wandb/run-20231125_132411-l4bqs8py/files/output.log output.log
+2023-11-25 13:24:19,314 INFO    SenderThread:587877 [sender.py:transition_state():613] send defer: 10
+2023-11-25 13:24:19,315 DEBUG   HandlerThread:587877 [handler.py:handle_request():146] handle_request: defer
+2023-11-25 13:24:19,320 INFO    HandlerThread:587877 [handler.py:handle_request_defer():172] handle defer: 10
+2023-11-25 13:24:19,321 DEBUG   SenderThread:587877 [sender.py:send_request():407] send_request: defer
+2023-11-25 13:24:19,321 INFO    SenderThread:587877 [sender.py:send_request_defer():609] handle sender defer: 10
+2023-11-25 13:24:19,321 INFO    SenderThread:587877 [file_pusher.py:finish():175] shutting down file pusher
+2023-11-25 13:24:19,651 INFO    wandb-upload_1:587877 [upload_job.py:push():131] Uploaded file /dss/dsshome1/0D/ge32jaq2/active_learning_marglik/wandb/run-20231125_132411-l4bqs8py/files/config.yaml
+2023-11-25 13:24:19,818 INFO    wandb-upload_0:587877 [upload_job.py:push():131] Uploaded file /dss/dsshome1/0D/ge32jaq2/active_learning_marglik/wandb/run-20231125_132411-l4bqs8py/files/wandb-summary.json
+2023-11-25 13:24:19,913 INFO    wandb-upload_3:587877 [upload_job.py:push():131] Uploaded file /dss/dsshome1/0D/ge32jaq2/active_learning_marglik/wandb/run-20231125_132411-l4bqs8py/files/output.log
+2023-11-25 13:24:20,012 INFO    wandb-upload_2:587877 [upload_job.py:push():131] Uploaded file /dss/dsshome1/0D/ge32jaq2/active_learning_marglik/wandb/run-20231125_132411-l4bqs8py/files/requirements.txt
+2023-11-25 13:24:20,212 INFO    Thread-11 (_thread_body):587877 [sender.py:transition_state():613] send defer: 11
+2023-11-25 13:24:20,212 DEBUG   HandlerThread:587877 [handler.py:handle_request():146] handle_request: defer
+2023-11-25 13:24:20,213 INFO    HandlerThread:587877 [handler.py:handle_request_defer():172] handle defer: 11
+2023-11-25 13:24:20,213 DEBUG   SenderThread:587877 [sender.py:send_request():407] send_request: defer
+2023-11-25 13:24:20,213 INFO    SenderThread:587877 [sender.py:send_request_defer():609] handle sender defer: 11
+2023-11-25 13:24:20,213 INFO    SenderThread:587877 [file_pusher.py:join():181] waiting for file pusher
+2023-11-25 13:24:20,214 INFO    SenderThread:587877 [sender.py:transition_state():613] send defer: 12
+2023-11-25 13:24:20,214 DEBUG   HandlerThread:587877 [handler.py:handle_request():146] handle_request: defer
+2023-11-25 13:24:20,214 INFO    HandlerThread:587877 [handler.py:handle_request_defer():172] handle defer: 12
+2023-11-25 13:24:20,214 DEBUG   SenderThread:587877 [sender.py:send_request():407] send_request: defer
+2023-11-25 13:24:20,215 INFO    SenderThread:587877 [sender.py:send_request_defer():609] handle sender defer: 12
+2023-11-25 13:24:20,215 INFO    SenderThread:587877 [file_stream.py:finish():595] file stream finish called
+2023-11-25 13:24:20,376 INFO    SenderThread:587877 [file_stream.py:finish():599] file stream finish is done
+2023-11-25 13:24:20,376 INFO    SenderThread:587877 [sender.py:transition_state():613] send defer: 13
+2023-11-25 13:24:20,376 DEBUG   HandlerThread:587877 [handler.py:handle_request():146] handle_request: defer
+2023-11-25 13:24:20,376 INFO    HandlerThread:587877 [handler.py:handle_request_defer():172] handle defer: 13
+2023-11-25 13:24:20,376 DEBUG   SenderThread:587877 [sender.py:send_request():407] send_request: defer
+2023-11-25 13:24:20,377 INFO    SenderThread:587877 [sender.py:send_request_defer():609] handle sender defer: 13
+2023-11-25 13:24:20,377 INFO    SenderThread:587877 [sender.py:transition_state():613] send defer: 14
+2023-11-25 13:24:20,377 DEBUG   SenderThread:587877 [sender.py:send():380] send: final
+2023-11-25 13:24:20,378 DEBUG   HandlerThread:587877 [handler.py:handle_request():146] handle_request: defer
+2023-11-25 13:24:20,378 DEBUG   SenderThread:587877 [sender.py:send():380] send: footer
+2023-11-25 13:24:20,378 INFO    HandlerThread:587877 [handler.py:handle_request_defer():172] handle defer: 14
+2023-11-25 13:24:20,379 DEBUG   SenderThread:587877 [sender.py:send_request():407] send_request: defer
+2023-11-25 13:24:20,379 INFO    SenderThread:587877 [sender.py:send_request_defer():609] handle sender defer: 14
+2023-11-25 13:24:20,380 DEBUG   HandlerThread:587877 [handler.py:handle_request():146] handle_request: poll_exit
+2023-11-25 13:24:20,380 DEBUG   SenderThread:587877 [sender.py:send_request():407] send_request: poll_exit
+2023-11-25 13:24:20,381 DEBUG   HandlerThread:587877 [handler.py:handle_request():146] handle_request: server_info
+2023-11-25 13:24:20,381 DEBUG   SenderThread:587877 [sender.py:send_request():407] send_request: server_info
+2023-11-25 13:24:20,386 DEBUG   HandlerThread:587877 [handler.py:handle_request():146] handle_request: get_summary
+2023-11-25 13:24:20,387 DEBUG   HandlerThread:587877 [handler.py:handle_request():146] handle_request: sampled_history
+2023-11-25 13:24:20,387 DEBUG   HandlerThread:587877 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-25 13:24:20,388 DEBUG   HandlerThread:587877 [handler.py:handle_request():146] handle_request: job_info
+2023-11-25 13:24:20,525 DEBUG   SenderThread:587877 [sender.py:send_request():407] send_request: job_info
+2023-11-25 13:24:20,525 INFO    MainThread:587877 [wandb_run.py:_footer_history_summary_info():3760] rendering history
+2023-11-25 13:24:20,525 INFO    MainThread:587877 [wandb_run.py:_footer_history_summary_info():3792] rendering summary
+2023-11-25 13:24:20,525 INFO    MainThread:587877 [wandb_run.py:_footer_sync_info():3719] logging synced files
+2023-11-25 13:24:20,526 DEBUG   HandlerThread:587877 [handler.py:handle_request():146] handle_request: shutdown
+2023-11-25 13:24:20,526 INFO    HandlerThread:587877 [handler.py:finish():866] shutting down handler
+2023-11-25 13:24:21,388 INFO    WriterThread:587877 [datastore.py:close():294] close: /dss/dsshome1/0D/ge32jaq2/active_learning_marglik/wandb/run-20231125_132411-l4bqs8py/run-l4bqs8py.wandb
+2023-11-25 13:24:21,525 INFO    SenderThread:587877 [sender.py:finish():1536] shutting down sender
+2023-11-25 13:24:21,525 INFO    SenderThread:587877 [file_pusher.py:finish():175] shutting down file pusher
+2023-11-25 13:24:21,525 INFO    SenderThread:587877 [file_pusher.py:join():181] waiting for file pusher
