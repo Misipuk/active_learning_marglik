@@ -1,0 +1,237 @@
+2023-11-25 16:05:42,504 INFO    StreamThr :3358722 [internal.py:wandb_internal():86] W&B internal server running at pid: 3358722, started at: 2023-11-25 16:05:42.503403
+2023-11-25 16:05:42,505 DEBUG   HandlerThread:3358722 [handler.py:handle_request():146] handle_request: status
+2023-11-25 16:05:42,509 INFO    WriterThread:3358722 [datastore.py:open_for_write():85] open: /dss/dsshome1/0D/ge32jaq2/active_learning_marglik/wandb/run-20231125_160542-gxh7wlde/run-gxh7wlde.wandb
+2023-11-25 16:05:42,510 DEBUG   SenderThread:3358722 [sender.py:send():380] send: header
+2023-11-25 16:05:42,513 DEBUG   SenderThread:3358722 [sender.py:send():380] send: run
+2023-11-25 16:05:42,963 INFO    SenderThread:3358722 [dir_watcher.py:__init__():211] watching files in: /dss/dsshome1/0D/ge32jaq2/active_learning_marglik/wandb/run-20231125_160542-gxh7wlde/files
+2023-11-25 16:05:42,964 INFO    SenderThread:3358722 [sender.py:_start_run_threads():1124] run started: gxh7wlde with start time 1700924742.502925
+2023-11-25 16:05:42,967 DEBUG   HandlerThread:3358722 [handler.py:handle_request():146] handle_request: check_version
+2023-11-25 16:05:42,967 DEBUG   SenderThread:3358722 [sender.py:send_request():407] send_request: check_version
+2023-11-25 16:05:43,093 DEBUG   HandlerThread:3358722 [handler.py:handle_request():146] handle_request: run_start
+2023-11-25 16:05:43,206 DEBUG   HandlerThread:3358722 [system_info.py:__init__():32] System info init
+2023-11-25 16:05:43,207 DEBUG   HandlerThread:3358722 [system_info.py:__init__():47] System info init done
+2023-11-25 16:05:43,207 INFO    HandlerThread:3358722 [system_monitor.py:start():194] Starting system monitor
+2023-11-25 16:05:43,207 INFO    SystemMonitor:3358722 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-25 16:05:43,207 INFO    HandlerThread:3358722 [system_monitor.py:probe():214] Collecting system info
+2023-11-25 16:05:43,208 INFO    SystemMonitor:3358722 [interfaces.py:start():190] Started cpu monitoring
+2023-11-25 16:05:43,208 INFO    SystemMonitor:3358722 [interfaces.py:start():190] Started disk monitoring
+2023-11-25 16:05:43,208 INFO    SystemMonitor:3358722 [interfaces.py:start():190] Started gpu monitoring
+2023-11-25 16:05:43,209 INFO    SystemMonitor:3358722 [interfaces.py:start():190] Started memory monitoring
+2023-11-25 16:05:43,211 INFO    SystemMonitor:3358722 [interfaces.py:start():190] Started network monitoring
+2023-11-25 16:05:43,216 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:05:43,216 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:05:43,217 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:05:43,220 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:05:43,292 DEBUG   HandlerThread:3358722 [system_info.py:probe():196] Probing system
+2023-11-25 16:05:43,294 DEBUG   HandlerThread:3358722 [system_info.py:_probe_git():181] Probing git
+2023-11-25 16:05:43,299 DEBUG   HandlerThread:3358722 [system_info.py:_probe_git():189] Probing git done
+2023-11-25 16:05:43,299 DEBUG   HandlerThread:3358722 [system_info.py:probe():244] Probing system done
+2023-11-25 16:05:43,299 DEBUG   HandlerThread:3358722 [system_monitor.py:probe():223] {'os': 'Linux-5.4.0-153-generic-x86_64-with-glibc2.35', 'python': '3.10.6', 'heartbeatAt': '2023-11-25T15:05:43.292785', 'startedAt': '2023-11-25T15:05:42.495216', 'docker': None, 'cuda': None, 'args': ('--seed', '3', '--config', 'configs/mnist.yaml'), 'state': 'running', 'program': '/dss/dsshome1/0D/ge32jaq2/active_learning_marglik/run_image_classification.py', 'codePathLocal': 'run_image_classification.py', 'codePath': 'run_image_classification.py', 'git': {'remote': 'git@github.com:Misipuk/active_learning_marglik.git', 'commit': '059772ee622650f2a2237fb2146c696c4ff13cff'}, 'email': None, 'root': '/dss/dsshome1/0D/ge32jaq2/active_learning_marglik', 'host': 'lrz-dgx-a100-003', 'username': 'ge32jaq2', 'executable': '/usr/bin/python3', 'cpu_count': 128, 'cpu_count_logical': 256, 'cpu_freq': {'current': 3087.4427460937504, 'min': 1500.0, 'max': 2250.0}, 'cpu_freq_per_core': [{'current': 3349.219, 'min': 1500.0, 'max': 2250.0}, {'current': 2223.62, 'min': 1500.0, 'max': 2250.0}, {'current': 2277.242, 'min': 1500.0, 'max': 2250.0}, {'current': 2276.355, 'min': 1500.0, 'max': 2250.0}, {'current': 2315.033, 'min': 1500.0, 'max': 2250.0}, {'current': 2260.688, 'min': 1500.0, 'max': 2250.0}, {'current': 2256.968, 'min': 1500.0, 'max': 2250.0}, {'current': 2266.957, 'min': 1500.0, 'max': 2250.0}, {'current': 2319.974, 'min': 1500.0, 'max': 2250.0}, {'current': 2260.057, 'min': 1500.0, 'max': 2250.0}, {'current': 2267.024, 'min': 1500.0, 'max': 2250.0}, {'current': 2262.854, 'min': 1500.0, 'max': 2250.0}, {'current': 2265.744, 'min': 1500.0, 'max': 2250.0}, {'current': 3382.791, 'min': 1500.0, 'max': 2250.0}, {'current': 2182.121, 'min': 1500.0, 'max': 2250.0}, {'current': 2198.361, 'min': 1500.0, 'max': 2250.0}, {'current': 2306.903, 'min': 1500.0, 'max': 2250.0}, {'current': 2264.736, 'min': 1500.0, 'max': 2250.0}, {'current': 2268.756, 'min': 1500.0, 'max': 2250.0}, {'current': 2268.756, 'min': 1500.0, 'max': 2250.0}, {'current': 3347.497, 'min': 1500.0, 'max': 2250.0}, {'current': 2280.005, 'min': 1500.0, 'max': 2250.0}, {'current': 2205.406, 'min': 1500.0, 'max': 2250.0}, {'current': 2202.653, 'min': 1500.0, 'max': 2250.0}, {'current': 2336.186, 'min': 1500.0, 'max': 2250.0}, {'current': 2264.421, 'min': 1500.0, 'max': 2250.0}, {'current': 2274.088, 'min': 1500.0, 'max': 2250.0}, {'current': 2260.013, 'min': 1500.0, 'max': 2250.0}, {'current': 2337.951, 'min': 1500.0, 'max': 2250.0}, {'current': 2268.2, 'min': 1500.0, 'max': 2250.0}, {'current': 2278.486, 'min': 1500.0, 'max': 2250.0}, {'current': 2273.725, 'min': 1500.0, 'max': 2250.0}, {'current': 2343.349, 'min': 1500.0, 'max': 2250.0}, {'current': 2263.529, 'min': 1500.0, 'max': 2250.0}, {'current': 2264.736, 'min': 1500.0, 'max': 2250.0}, {'current': 2266.432, 'min': 1500.0, 'max': 2250.0}, {'current': 3144.771, 'min': 1500.0, 'max': 2250.0}, {'current': 2273.292, 'min': 1500.0, 'max': 2250.0}, {'current': 3241.871, 'min': 1500.0, 'max': 2250.0}, {'current': 2262.426, 'min': 1500.0, 'max': 2250.0}, {'current': 2328.53, 'min': 1500.0, 'max': 2250.0}, {'current': 2263.677, 'min': 1500.0, 'max': 2250.0}, {'current': 2271.108, 'min': 1500.0, 'max': 2250.0}, {'current': 2265.494, 'min': 1500.0, 'max': 2250.0}, {'current': 2267.408, 'min': 1500.0, 'max': 2250.0}, {'current': 2279.112, 'min': 1500.0, 'max': 2250.0}, {'current': 2176.081, 'min': 1500.0, 'max': 2250.0}, {'current': 2292.007, 'min': 1500.0, 'max': 2250.0}, {'current': 3346.313, 'min': 1500.0, 'max': 2250.0}, {'current': 2204.597, 'min': 1500.0, 'max': 2250.0}, {'current': 3379.999, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.472, 'min': 1500.0, 'max': 2250.0}, {'current': 2334.731, 'min': 1500.0, 'max': 2250.0}, {'current': 2267.851, 'min': 1500.0, 'max': 2250.0}, {'current': 2262.838, 'min': 1500.0, 'max': 2250.0}, {'current': 2268.403, 'min': 1500.0, 'max': 2250.0}, {'current': 2272.111, 'min': 1500.0, 'max': 2250.0}, {'current': 2282.195, 'min': 1500.0, 'max': 2250.0}, {'current': 3156.301, 'min': 1500.0, 'max': 2250.0}, {'current': 2255.792, 'min': 1500.0, 'max': 2250.0}, {'current': 2335.212, 'min': 1500.0, 'max': 2250.0}, {'current': 2255.855, 'min': 1500.0, 'max': 2250.0}, {'current': 2269.552, 'min': 1500.0, 'max': 2250.0}, {'current': 2260.907, 'min': 1500.0, 'max': 2250.0}, {'current': 2462.829, 'min': 1500.0, 'max': 2250.0}, {'current': 3394.443, 'min': 1500.0, 'max': 2250.0}, {'current': 1694.825, 'min': 1500.0, 'max': 2250.0}, {'current': 3381.367, 'min': 1500.0, 'max': 2250.0}, {'current': 3241.259, 'min': 1500.0, 'max': 2250.0}, {'current': 3288.591, 'min': 1500.0, 'max': 2250.0}, {'current': 3387.13, 'min': 1500.0, 'max': 2250.0}, {'current': 1695.858, 'min': 1500.0, 'max': 2250.0}, {'current': 2563.798, 'min': 1500.0, 'max': 2250.0}, {'current': 2580.503, 'min': 1500.0, 'max': 2250.0}, {'current': 2587.895, 'min': 1500.0, 'max': 2250.0}, {'current': 3261.628, 'min': 1500.0, 'max': 2250.0}, {'current': 3216.443, 'min': 1500.0, 'max': 2250.0}, {'current': 3398.065, 'min': 1500.0, 'max': 2250.0}, {'current': 2498.278, 'min': 1500.0, 'max': 2250.0}, {'current': 2509.87, 'min': 1500.0, 'max': 2250.0}, {'current': 2509.002, 'min': 1500.0, 'max': 2250.0}, {'current': 2529.856, 'min': 1500.0, 'max': 2250.0}, {'current': 2529.011, 'min': 1500.0, 'max': 2250.0}, {'current': 3283.243, 'min': 1500.0, 'max': 2250.0}, {'current': 3180.194, 'min': 1500.0, 'max': 2250.0}, {'current': 3176.57, 'min': 1500.0, 'max': 2250.0}, {'current': 2576.152, 'min': 1500.0, 'max': 2250.0}, {'current': 2571.647, 'min': 1500.0, 'max': 2250.0}, {'current': 2509.09, 'min': 1500.0, 'max': 2250.0}, {'current': 3289.475, 'min': 1500.0, 'max': 2250.0}, {'current': 3391.895, 'min': 1500.0, 'max': 2250.0}, {'current': 2500.154, 'min': 1500.0, 'max': 2250.0}, {'current': 3380.151, 'min': 1500.0, 'max': 2250.0}, {'current': 2508.706, 'min': 1500.0, 'max': 2250.0}, {'current': 2525.003, 'min': 1500.0, 'max': 2250.0}, {'current': 2518.429, 'min': 1500.0, 'max': 2250.0}, {'current': 3131.278, 'min': 1500.0, 'max': 2250.0}, {'current': 2534.905, 'min': 1500.0, 'max': 2250.0}, {'current': 3382.915, 'min': 1500.0, 'max': 2250.0}, {'current': 3255.787, 'min': 1500.0, 'max': 2250.0}, {'current': 3195.611, 'min': 1500.0, 'max': 2250.0}, {'current': 2587.266, 'min': 1500.0, 'max': 2250.0}, {'current': 3185.847, 'min': 1500.0, 'max': 2250.0}, {'current': 2590.317, 'min': 1500.0, 'max': 2250.0}, {'current': 3390.156, 'min': 1500.0, 'max': 2250.0}, {'current': 3384.596, 'min': 1500.0, 'max': 2250.0}, {'current': 3402.363, 'min': 1500.0, 'max': 2250.0}, {'current': 2534.326, 'min': 1500.0, 'max': 2250.0}, {'current': 2621.39, 'min': 1500.0, 'max': 2250.0}, {'current': 2600.762, 'min': 1500.0, 'max': 2250.0}, {'current': 2601.382, 'min': 1500.0, 'max': 2250.0}, {'current': 2571.944, 'min': 1500.0, 'max': 2250.0}, {'current': 3391.165, 'min': 1500.0, 'max': 2250.0}, {'current': 3390.386, 'min': 1500.0, 'max': 2250.0}, {'current': 3389.527, 'min': 1500.0, 'max': 2250.0}, {'current': 3389.782, 'min': 1500.0, 'max': 2250.0}, {'current': 2561.559, 'min': 1500.0, 'max': 2250.0}, {'current': 2593.406, 'min': 1500.0, 'max': 2250.0}, {'current': 2597.115, 'min': 1500.0, 'max': 2250.0}, {'current': 2584.326, 'min': 1500.0, 'max': 2250.0}, {'current': 1737.638, 'min': 1500.0, 'max': 2250.0}, {'current': 2599.085, 'min': 1500.0, 'max': 2250.0}, {'current': 2611.914, 'min': 1500.0, 'max': 2250.0}, {'current': 2613.137, 'min': 1500.0, 'max': 2250.0}, {'current': 2546.152, 'min': 1500.0, 'max': 2250.0}, {'current': 2562.8, 'min': 1500.0, 'max': 2250.0}, {'current': 2615.031, 'min': 1500.0, 'max': 2250.0}, {'current': 2604.918, 'min': 1500.0, 'max': 2250.0}, {'current': 2311.571, 'min': 1500.0, 'max': 2250.0}, {'current': 2256.407, 'min': 1500.0, 'max': 2250.0}, {'current': 2247.3, 'min': 1500.0, 'max': 2250.0}, {'current': 2216.842, 'min': 1500.0, 'max': 2250.0}, {'current': 2313.171, 'min': 1500.0, 'max': 2250.0}, {'current': 2257.509, 'min': 1500.0, 'max': 2250.0}, {'current': 2081.422, 'min': 1500.0, 'max': 2250.0}, {'current': 2097.934, 'min': 1500.0, 'max': 2250.0}, {'current': 2311.507, 'min': 1500.0, 'max': 2250.0}, {'current': 2207.331, 'min': 1500.0, 'max': 2250.0}, {'current': 2261.4, 'min': 1500.0, 'max': 2250.0}, {'current': 2487.02, 'min': 1500.0, 'max': 2250.0}, {'current': 2470.172, 'min': 1500.0, 'max': 2250.0}, {'current': 3349.656, 'min': 1500.0, 'max': 2250.0}, {'current': 2506.113, 'min': 1500.0, 'max': 2250.0}, {'current': 2467.46, 'min': 1500.0, 'max': 2250.0}, {'current': 2188.656, 'min': 1500.0, 'max': 2250.0}, {'current': 2466.17, 'min': 1500.0, 'max': 2250.0}, {'current': 2458.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2456.272, 'min': 1500.0, 'max': 2250.0}, {'current': 3350.759, 'min': 1500.0, 'max': 2250.0}, {'current': 2435.792, 'min': 1500.0, 'max': 2250.0}, {'current': 2401.472, 'min': 1500.0, 'max': 2250.0}, {'current': 2426.911, 'min': 1500.0, 'max': 2250.0}, {'current': 2453.386, 'min': 1500.0, 'max': 2250.0}, {'current': 2458.339, 'min': 1500.0, 'max': 2250.0}, {'current': 2451.571, 'min': 1500.0, 'max': 2250.0}, {'current': 2460.123, 'min': 1500.0, 'max': 2250.0}, {'current': 2470.585, 'min': 1500.0, 'max': 2250.0}, {'current': 2588.138, 'min': 1500.0, 'max': 2250.0}, {'current': 2547.391, 'min': 1500.0, 'max': 2250.0}, {'current': 2461.648, 'min': 1500.0, 'max': 2250.0}, {'current': 3353.732, 'min': 1500.0, 'max': 2250.0}, {'current': 3355.721, 'min': 1500.0, 'max': 2250.0}, {'current': 3352.073, 'min': 1500.0, 'max': 2250.0}, {'current': 3349.317, 'min': 1500.0, 'max': 2250.0}, {'current': 3345.408, 'min': 1500.0, 'max': 2250.0}, {'current': 3350.803, 'min': 1500.0, 'max': 2250.0}, {'current': 3347.499, 'min': 1500.0, 'max': 2250.0}, {'current': 3351.851, 'min': 1500.0, 'max': 2250.0}, {'current': 3354.672, 'min': 1500.0, 'max': 2250.0}, {'current': 3342.133, 'min': 1500.0, 'max': 2250.0}, {'current': 3353.103, 'min': 1500.0, 'max': 2250.0}, {'current': 3356.168, 'min': 1500.0, 'max': 2250.0}, {'current': 3353.42, 'min': 1500.0, 'max': 2250.0}, {'current': 3352.655, 'min': 1500.0, 'max': 2250.0}, {'current': 2485.027, 'min': 1500.0, 'max': 2250.0}, {'current': 3342.755, 'min': 1500.0, 'max': 2250.0}, {'current': 3359.314, 'min': 1500.0, 'max': 2250.0}, {'current': 2999.966, 'min': 1500.0, 'max': 2250.0}, {'current': 3362.042, 'min': 1500.0, 'max': 2250.0}, {'current': 3366.909, 'min': 1500.0, 'max': 2250.0}, {'current': 3361.136, 'min': 1500.0, 'max': 2250.0}, {'current': 3376.996, 'min': 1500.0, 'max': 2250.0}, {'current': 3369.498, 'min': 1500.0, 'max': 2250.0}, {'current': 3373.689, 'min': 1500.0, 'max': 2250.0}, {'current': 3370.708, 'min': 1500.0, 'max': 2250.0}, {'current': 3371.979, 'min': 1500.0, 'max': 2250.0}, {'current': 3366.81, 'min': 1500.0, 'max': 2250.0}, {'current': 3371.508, 'min': 1500.0, 'max': 2250.0}, {'current': 3365.394, 'min': 1500.0, 'max': 2250.0}, {'current': 3369.779, 'min': 1500.0, 'max': 2250.0}, {'current': 3364.335, 'min': 1500.0, 'max': 2250.0}, {'current': 3367.622, 'min': 1500.0, 'max': 2250.0}, {'current': 2728.25, 'min': 1500.0, 'max': 2250.0}, {'current': 3378.388, 'min': 1500.0, 'max': 2250.0}, {'current': 2755.182, 'min': 1500.0, 'max': 2250.0}, {'current': 3391.858, 'min': 1500.0, 'max': 2250.0}, {'current': 3382.137, 'min': 1500.0, 'max': 2250.0}, {'current': 3340.917, 'min': 1500.0, 'max': 2250.0}, {'current': 3390.837, 'min': 1500.0, 'max': 2250.0}, {'current': 3383.419, 'min': 1500.0, 'max': 2250.0}, {'current': 3378.063, 'min': 1500.0, 'max': 2250.0}, {'current': 3387.427, 'min': 1500.0, 'max': 2250.0}, {'current': 3384.461, 'min': 1500.0, 'max': 2250.0}, {'current': 3385.594, 'min': 1500.0, 'max': 2250.0}, {'current': 3395.008, 'min': 1500.0, 'max': 2250.0}, {'current': 3380.534, 'min': 1500.0, 'max': 2250.0}, {'current': 2026.827, 'min': 1500.0, 'max': 2250.0}, {'current': 2922.381, 'min': 1500.0, 'max': 2250.0}, {'current': 3385.272, 'min': 1500.0, 'max': 2250.0}, {'current': 3394.394, 'min': 1500.0, 'max': 2250.0}, {'current': 3394.486, 'min': 1500.0, 'max': 2250.0}, {'current': 3386.793, 'min': 1500.0, 'max': 2250.0}, {'current': 3398.085, 'min': 1500.0, 'max': 2250.0}, {'current': 3387.889, 'min': 1500.0, 'max': 2250.0}, {'current': 3384.286, 'min': 1500.0, 'max': 2250.0}, {'current': 3403.017, 'min': 1500.0, 'max': 2250.0}, {'current': 3394.681, 'min': 1500.0, 'max': 2250.0}, {'current': 3388.878, 'min': 1500.0, 'max': 2250.0}, {'current': 3383.076, 'min': 1500.0, 'max': 2250.0}, {'current': 3403.207, 'min': 1500.0, 'max': 2250.0}, {'current': 3393.718, 'min': 1500.0, 'max': 2250.0}, {'current': 3393.031, 'min': 1500.0, 'max': 2250.0}, {'current': 3387.089, 'min': 1500.0, 'max': 2250.0}, {'current': 3390.904, 'min': 1500.0, 'max': 2250.0}, {'current': 3381.954, 'min': 1500.0, 'max': 2250.0}, {'current': 3377.207, 'min': 1500.0, 'max': 2250.0}, {'current': 3207.399, 'min': 1500.0, 'max': 2250.0}, {'current': 3259.406, 'min': 1500.0, 'max': 2250.0}, {'current': 3389.22, 'min': 1500.0, 'max': 2250.0}, {'current': 3341.203, 'min': 1500.0, 'max': 2250.0}, {'current': 3391.472, 'min': 1500.0, 'max': 2250.0}, {'current': 3389.8, 'min': 1500.0, 'max': 2250.0}, {'current': 3385.067, 'min': 1500.0, 'max': 2250.0}, {'current': 3252.394, 'min': 1500.0, 'max': 2250.0}, {'current': 3380.039, 'min': 1500.0, 'max': 2250.0}, {'current': 3393.066, 'min': 1500.0, 'max': 2250.0}, {'current': 3391.966, 'min': 1500.0, 'max': 2250.0}, {'current': 2373.124, 'min': 1500.0, 'max': 2250.0}, {'current': 2364.196, 'min': 1500.0, 'max': 2250.0}, {'current': 3386.808, 'min': 1500.0, 'max': 2250.0}, {'current': 3407.638, 'min': 1500.0, 'max': 2250.0}, {'current': 3382.458, 'min': 1500.0, 'max': 2250.0}, {'current': 3386.796, 'min': 1500.0, 'max': 2250.0}, {'current': 3385.762, 'min': 1500.0, 'max': 2250.0}, {'current': 2393.542, 'min': 1500.0, 'max': 2250.0}, {'current': 2395.417, 'min': 1500.0, 'max': 2250.0}, {'current': 1693.444, 'min': 1500.0, 'max': 2250.0}, {'current': 3382.918, 'min': 1500.0, 'max': 2250.0}, {'current': 2382.318, 'min': 1500.0, 'max': 2250.0}, {'current': 2809.036, 'min': 1500.0, 'max': 2250.0}, {'current': 2513.768, 'min': 1500.0, 'max': 2250.0}, {'current': 2318.964, 'min': 1500.0, 'max': 2250.0}, {'current': 3390.738, 'min': 1500.0, 'max': 2250.0}, {'current': 3391.877, 'min': 1500.0, 'max': 2250.0}, {'current': 3390.985, 'min': 1500.0, 'max': 2250.0}, {'current': 3402.036, 'min': 1500.0, 'max': 2250.0}], 'disk': {'/': {'total': 14193.587585449219, 'used': 236.7741584777832}}, 'gpu': 'NVIDIA A100-SXM4-40GB', 'gpu_count': 1, 'memory': {'total': 1007.687816619873}}
+2023-11-25 16:05:43,300 INFO    HandlerThread:3358722 [system_monitor.py:probe():224] Finished collecting system info
+2023-11-25 16:05:43,300 INFO    HandlerThread:3358722 [system_monitor.py:probe():227] Publishing system info
+2023-11-25 16:05:43,300 DEBUG   HandlerThread:3358722 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-11-25 16:05:43,301 DEBUG   HandlerThread:3358722 [system_info.py:_save_pip():68] Saving pip packages done
+2023-11-25 16:05:43,303 INFO    HandlerThread:3358722 [system_monitor.py:probe():229] Finished publishing system info
+2023-11-25 16:05:43,306 DEBUG   SenderThread:3358722 [sender.py:send():380] send: files
+2023-11-25 16:05:43,306 INFO    SenderThread:3358722 [sender.py:_save_file():1380] saving file wandb-metadata.json with policy now
+2023-11-25 16:05:43,312 DEBUG   HandlerThread:3358722 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-25 16:05:43,312 DEBUG   SenderThread:3358722 [sender.py:send_request():407] send_request: stop_status
+2023-11-25 16:05:43,314 DEBUG   HandlerThread:3358722 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-25 16:05:43,635 DEBUG   SenderThread:3358722 [sender.py:send():380] send: telemetry
+2023-11-25 16:05:43,879 INFO    wandb-upload_0:3358722 [upload_job.py:push():131] Uploaded file /tmp/tmpxxn2vxqlwandb/krsb5d10-wandb-metadata.json
+2023-11-25 16:05:43,960 INFO    Thread-12 :3358722 [dir_watcher.py:_on_file_created():271] file/dir created: /dss/dsshome1/0D/ge32jaq2/active_learning_marglik/wandb/run-20231125_160542-gxh7wlde/files/wandb-metadata.json
+2023-11-25 16:05:43,960 INFO    Thread-12 :3358722 [dir_watcher.py:_on_file_created():271] file/dir created: /dss/dsshome1/0D/ge32jaq2/active_learning_marglik/wandb/run-20231125_160542-gxh7wlde/files/requirements.txt
+2023-11-25 16:05:45,227 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:05:45,227 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:05:45,227 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:05:45,227 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:05:47,233 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:05:47,233 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:05:47,234 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:05:47,234 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:05:47,636 DEBUG   HandlerThread:3358722 [handler.py:handle_request():146] handle_request: status_report
+2023-11-25 16:05:49,240 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:05:49,241 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:05:49,241 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:05:49,241 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:05:51,380 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:05:51,381 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:05:51,381 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:05:51,381 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:05:52,637 DEBUG   HandlerThread:3358722 [handler.py:handle_request():146] handle_request: status_report
+2023-11-25 16:05:53,387 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:05:53,388 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:05:53,388 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:05:53,388 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:05:55,577 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:05:55,578 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:05:55,578 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:05:55,579 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:05:57,637 DEBUG   HandlerThread:3358722 [handler.py:handle_request():146] handle_request: status_report
+2023-11-25 16:05:57,699 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:05:57,699 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:05:57,700 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:05:57,701 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:05:58,319 DEBUG   HandlerThread:3358722 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-25 16:05:58,320 DEBUG   HandlerThread:3358722 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-25 16:05:58,320 DEBUG   SenderThread:3358722 [sender.py:send_request():407] send_request: stop_status
+2023-11-25 16:05:59,708 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:05:59,708 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:05:59,708 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:05:59,708 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:01,714 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:01,714 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:01,714 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:01,715 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:03,071 DEBUG   HandlerThread:3358722 [handler.py:handle_request():146] handle_request: status_report
+2023-11-25 16:06:03,720 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:03,721 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:03,721 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:03,721 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:05,728 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:05,728 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:05,728 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:05,728 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:07,734 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:07,735 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:07,735 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:07,736 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:08,071 DEBUG   HandlerThread:3358722 [handler.py:handle_request():146] handle_request: status_report
+2023-11-25 16:06:09,826 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:09,826 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:09,828 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:09,828 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:11,836 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:11,836 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:11,837 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:11,837 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:13,076 DEBUG   HandlerThread:3358722 [handler.py:handle_request():146] handle_request: status_report
+2023-11-25 16:06:13,318 DEBUG   HandlerThread:3358722 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-25 16:06:13,319 DEBUG   HandlerThread:3358722 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-25 16:06:13,319 DEBUG   SenderThread:3358722 [sender.py:send_request():407] send_request: stop_status
+2023-11-25 16:06:13,889 ERROR   gpu       :3358722 [interfaces.py:aggregate():161] Failed to serialize metric: Insufficient Permissions
+2023-11-25 16:06:13,935 ERROR   gpu       :3358722 [interfaces.py:aggregate():161] Failed to serialize metric: Insufficient Permissions
+2023-11-25 16:06:13,967 INFO    Thread-12 :3358722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /dss/dsshome1/0D/ge32jaq2/active_learning_marglik/wandb/run-20231125_160542-gxh7wlde/files/config.yaml
+2023-11-25 16:06:13,980 ERROR   gpu       :3358722 [interfaces.py:aggregate():161] Failed to serialize metric: Insufficient Permissions
+2023-11-25 16:06:13,980 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:13,980 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:13,981 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:13,981 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:15,987 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:15,987 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:15,987 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:15,987 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:17,994 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:17,994 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:17,994 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:17,995 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:18,563 DEBUG   HandlerThread:3358722 [handler.py:handle_request():146] handle_request: status_report
+2023-11-25 16:06:20,069 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:20,070 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:20,070 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:20,071 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:22,156 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:22,156 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:22,157 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:22,157 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:23,564 DEBUG   HandlerThread:3358722 [handler.py:handle_request():146] handle_request: status_report
+2023-11-25 16:06:24,219 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:24,219 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:24,220 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:24,220 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:26,226 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:26,227 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:26,227 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:26,227 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:28,234 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:28,234 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:28,235 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:28,235 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:28,319 DEBUG   HandlerThread:3358722 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-25 16:06:28,320 DEBUG   SenderThread:3358722 [sender.py:send_request():407] send_request: stop_status
+2023-11-25 16:06:28,359 DEBUG   HandlerThread:3358722 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-25 16:06:29,487 DEBUG   HandlerThread:3358722 [handler.py:handle_request():146] handle_request: status_report
+2023-11-25 16:06:30,240 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:30,240 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:30,241 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:30,241 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:32,313 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:32,313 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:32,313 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:32,313 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:34,398 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:34,399 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:34,400 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:34,400 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:34,494 DEBUG   HandlerThread:3358722 [handler.py:handle_request():146] handle_request: status_report
+2023-11-25 16:06:36,407 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:36,407 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:36,407 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:36,407 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:38,413 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:38,414 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:38,415 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:38,416 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:39,494 DEBUG   HandlerThread:3358722 [handler.py:handle_request():146] handle_request: status_report
+2023-11-25 16:06:40,422 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:40,423 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:40,423 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:40,424 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:42,430 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:42,430 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:42,430 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:42,431 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:43,211 DEBUG   SystemMonitor:3358722 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-11-25 16:06:43,214 DEBUG   SenderThread:3358722 [sender.py:send():380] send: stats
+2023-11-25 16:06:43,318 DEBUG   HandlerThread:3358722 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-25 16:06:43,318 DEBUG   SenderThread:3358722 [sender.py:send_request():407] send_request: stop_status
+2023-11-25 16:06:43,318 DEBUG   HandlerThread:3358722 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-25 16:06:44,482 ERROR   gpu       :3358722 [interfaces.py:aggregate():161] Failed to serialize metric: Insufficient Permissions
+2023-11-25 16:06:44,526 ERROR   gpu       :3358722 [interfaces.py:aggregate():161] Failed to serialize metric: Insufficient Permissions
+2023-11-25 16:06:44,571 ERROR   gpu       :3358722 [interfaces.py:aggregate():161] Failed to serialize metric: Insufficient Permissions
+2023-11-25 16:06:44,572 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:44,572 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:44,572 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:44,572 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:45,466 DEBUG   HandlerThread:3358722 [handler.py:handle_request():146] handle_request: status_report
+2023-11-25 16:06:46,579 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:46,579 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:46,579 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:46,579 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:48,600 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:48,601 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:48,601 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:48,601 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:50,467 DEBUG   HandlerThread:3358722 [handler.py:handle_request():146] handle_request: status_report
+2023-11-25 16:06:50,608 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:50,609 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:50,609 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:50,610 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:52,616 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:52,617 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:52,617 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:52,617 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:53,857 DEBUG   HandlerThread:3358722 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-25 16:06:53,978 INFO    Thread-12 :3358722 [dir_watcher.py:_on_file_created():271] file/dir created: /dss/dsshome1/0D/ge32jaq2/active_learning_marglik/wandb/run-20231125_160542-gxh7wlde/files/output.log
+2023-11-25 16:06:54,623 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:54,623 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:54,624 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:54,624 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:55,608 DEBUG   HandlerThread:3358722 [handler.py:handle_request():146] handle_request: status_report
+2023-11-25 16:06:55,978 INFO    Thread-12 :3358722 [dir_watcher.py:_on_file_modified():288] file/dir modified: /dss/dsshome1/0D/ge32jaq2/active_learning_marglik/wandb/run-20231125_160542-gxh7wlde/files/output.log
+2023-11-25 16:06:56,631 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:56,631 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:56,631 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:56,631 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:58,318 DEBUG   HandlerThread:3358722 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-25 16:06:58,319 DEBUG   HandlerThread:3358722 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-25 16:06:58,319 DEBUG   SenderThread:3358722 [sender.py:send_request():407] send_request: stop_status
+2023-11-25 16:06:58,638 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:58,638 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:06:58,638 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:06:58,638 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:07:00,645 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:07:00,646 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2023-11-25 16:07:00,646 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:07:00,647 ERROR   gpu       :3358722 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-11-25 16:07:01,560 DEBUG   HandlerThread:3358722 [handler.py:handle_request():146] handle_request: status_report

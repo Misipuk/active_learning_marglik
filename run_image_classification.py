@@ -98,7 +98,7 @@ def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_si
                 wandb.log({'test/ll': test_ll, 'test/ll_bayes': test_ll_bayes, 'test/acc': acc}, step=i)
             else:
                 hist = wandb.Histogram(bald_scores.detach().cpu().numpy())
-                wandb.log({'test/ll': test_ll, 'test/ll_bayes': test_ll_bayes, 'bald': hist}, 
+                wandb.log({'test/ll': test_ll, 'test/ll_bayes': test_ll_bayes, 'test/acc': acc, 'bald': hist}, 
                           step=i, commit=False)
 
 
