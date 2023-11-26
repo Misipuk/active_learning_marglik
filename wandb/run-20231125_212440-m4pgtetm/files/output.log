@@ -1,0 +1,311 @@
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+[run_image_classification.py:70]INFO: Initial test log-likelihood: -2.3026
+[run_image_classification.py:71]INFO: Initial test Bayes log-likelihood: -2.3026
+[run_image_classification.py:72]INFO: Initial accuracy: 11.35%
+[run_image_classification.py:92]INFO: Test log-likelihood at 21: -2.2869
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 21: -2.2870
+[run_image_classification.py:94]INFO: Test accuracy: 20.67%
+[run_image_classification.py:92]INFO: Test log-likelihood at 22: -2.2853
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 22: -2.2825
+[run_image_classification.py:94]INFO: Test accuracy: 9.80%
+[run_image_classification.py:92]INFO: Test log-likelihood at 23: -2.2607
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 23: -2.2952
+[run_image_classification.py:94]INFO: Test accuracy: 9.80%
+[run_image_classification.py:92]INFO: Test log-likelihood at 24: -2.2586
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 24: -2.3084
+[run_image_classification.py:94]INFO: Test accuracy: 11.32%
+[run_image_classification.py:92]INFO: Test log-likelihood at 25: -2.2509
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 25: -2.3065
+[run_image_classification.py:94]INFO: Test accuracy: 17.88%
+[run_image_classification.py:92]INFO: Test log-likelihood at 26: -2.2519
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 26: -2.3047
+[run_image_classification.py:94]INFO: Test accuracy: 17.02%
+[run_image_classification.py:92]INFO: Test log-likelihood at 27: -2.2483
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 27: -2.3110
+[run_image_classification.py:94]INFO: Test accuracy: 18.75%
+[run_image_classification.py:92]INFO: Test log-likelihood at 28: -2.2445
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 28: -2.3018
+[run_image_classification.py:94]INFO: Test accuracy: 19.15%
+[run_image_classification.py:92]INFO: Test log-likelihood at 29: -2.2391
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 29: -2.2981
+[run_image_classification.py:94]INFO: Test accuracy: 19.14%
+[run_image_classification.py:92]INFO: Test log-likelihood at 30: -2.2424
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 30: -2.2942
+[run_image_classification.py:94]INFO: Test accuracy: 19.37%
+[run_image_classification.py:92]INFO: Test log-likelihood at 31: -2.2425
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 31: -2.3108
+[run_image_classification.py:94]INFO: Test accuracy: 19.44%
+[run_image_classification.py:92]INFO: Test log-likelihood at 32: -2.2418
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 32: -2.3029
+[run_image_classification.py:94]INFO: Test accuracy: 19.45%
+[run_image_classification.py:92]INFO: Test log-likelihood at 33: -2.2316
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 33: -2.2855
+[run_image_classification.py:94]INFO: Test accuracy: 20.01%
+[run_image_classification.py:92]INFO: Test log-likelihood at 34: -2.2277
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 34: -2.2856
+[run_image_classification.py:94]INFO: Test accuracy: 20.16%
+[run_image_classification.py:92]INFO: Test log-likelihood at 35: -2.2402
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 35: -2.2991
+[run_image_classification.py:94]INFO: Test accuracy: 19.81%
+[run_image_classification.py:92]INFO: Test log-likelihood at 36: -2.2322
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 36: -2.2962
+[run_image_classification.py:94]INFO: Test accuracy: 20.28%
+[run_image_classification.py:92]INFO: Test log-likelihood at 37: -2.2299
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 37: -2.2903
+[run_image_classification.py:94]INFO: Test accuracy: 20.54%
+[run_image_classification.py:92]INFO: Test log-likelihood at 38: -2.2308
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 38: -2.2959
+[run_image_classification.py:94]INFO: Test accuracy: 20.38%
+[run_image_classification.py:92]INFO: Test log-likelihood at 39: -2.2395
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 39: -2.2981
+[run_image_classification.py:94]INFO: Test accuracy: 20.24%
+[run_image_classification.py:92]INFO: Test log-likelihood at 40: -2.2292
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 40: -2.2925
+[run_image_classification.py:94]INFO: Test accuracy: 20.86%
+[run_image_classification.py:92]INFO: Test log-likelihood at 41: -2.2011
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 41: -2.2705
+[run_image_classification.py:94]INFO: Test accuracy: 21.54%
+[run_image_classification.py:92]INFO: Test log-likelihood at 42: -2.2354
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 42: -2.3024
+[run_image_classification.py:94]INFO: Test accuracy: 20.63%
+[run_image_classification.py:92]INFO: Test log-likelihood at 43: -2.2135
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 43: -2.2762
+[run_image_classification.py:94]INFO: Test accuracy: 21.49%
+[run_image_classification.py:92]INFO: Test log-likelihood at 44: -2.2221
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 44: -2.2919
+[run_image_classification.py:94]INFO: Test accuracy: 21.20%
+[run_image_classification.py:92]INFO: Test log-likelihood at 45: -2.2207
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 45: -2.2935
+[run_image_classification.py:94]INFO: Test accuracy: 21.02%
+[run_image_classification.py:92]INFO: Test log-likelihood at 46: -2.1830
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 46: -2.2585
+[run_image_classification.py:94]INFO: Test accuracy: 23.14%
+[run_image_classification.py:92]INFO: Test log-likelihood at 47: -2.1595
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 47: -2.2417
+[run_image_classification.py:94]INFO: Test accuracy: 21.38%
+[run_image_classification.py:92]INFO: Test log-likelihood at 48: -2.1308
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 48: -2.2228
+[run_image_classification.py:94]INFO: Test accuracy: 23.26%
+[run_image_classification.py:92]INFO: Test log-likelihood at 49: -2.1157
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 49: -2.2255
+[run_image_classification.py:94]INFO: Test accuracy: 25.07%
+[run_image_classification.py:92]INFO: Test log-likelihood at 50: -2.1095
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 50: -2.2112
+[run_image_classification.py:94]INFO: Test accuracy: 25.06%
+[run_image_classification.py:92]INFO: Test log-likelihood at 51: -2.0975
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 51: -2.2056
+[run_image_classification.py:94]INFO: Test accuracy: 26.77%
+[run_image_classification.py:92]INFO: Test log-likelihood at 52: -2.0495
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 52: -2.1668
+[run_image_classification.py:94]INFO: Test accuracy: 26.34%
+[run_image_classification.py:92]INFO: Test log-likelihood at 53: -1.9010
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 53: -2.0395
+[run_image_classification.py:94]INFO: Test accuracy: 38.42%
+[run_image_classification.py:92]INFO: Test log-likelihood at 54: -1.8538
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 54: -1.9995
+[run_image_classification.py:94]INFO: Test accuracy: 40.76%
+[run_image_classification.py:92]INFO: Test log-likelihood at 55: -1.8388
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 55: -1.9816
+[run_image_classification.py:94]INFO: Test accuracy: 39.60%
+[run_image_classification.py:92]INFO: Test log-likelihood at 56: -1.8016
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 56: -1.9509
+[run_image_classification.py:94]INFO: Test accuracy: 42.56%
+[run_image_classification.py:92]INFO: Test log-likelihood at 57: -1.7876
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 57: -1.9416
+[run_image_classification.py:94]INFO: Test accuracy: 41.92%
+[run_image_classification.py:92]INFO: Test log-likelihood at 58: -1.7868
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 58: -1.9448
+[run_image_classification.py:94]INFO: Test accuracy: 42.08%
+[run_image_classification.py:92]INFO: Test log-likelihood at 59: -1.7463
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 59: -1.8937
+[run_image_classification.py:94]INFO: Test accuracy: 43.46%
+[run_image_classification.py:92]INFO: Test log-likelihood at 60: -1.7701
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 60: -1.9139
+[run_image_classification.py:94]INFO: Test accuracy: 42.07%
+[run_image_classification.py:92]INFO: Test log-likelihood at 61: -1.7695
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 61: -1.9154
+[run_image_classification.py:94]INFO: Test accuracy: 42.64%
+[run_image_classification.py:92]INFO: Test log-likelihood at 62: -1.7605
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 62: -1.8984
+[run_image_classification.py:94]INFO: Test accuracy: 42.51%
+[run_image_classification.py:92]INFO: Test log-likelihood at 63: -1.7447
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 63: -1.8831
+[run_image_classification.py:94]INFO: Test accuracy: 44.16%
+[run_image_classification.py:92]INFO: Test log-likelihood at 64: -1.7132
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 64: -1.8596
+[run_image_classification.py:94]INFO: Test accuracy: 44.60%
+[run_image_classification.py:92]INFO: Test log-likelihood at 65: -1.6593
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 65: -1.8042
+[run_image_classification.py:94]INFO: Test accuracy: 45.39%
+[run_image_classification.py:92]INFO: Test log-likelihood at 66: -1.6540
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 66: -1.7996
+[run_image_classification.py:94]INFO: Test accuracy: 46.04%
+[run_image_classification.py:92]INFO: Test log-likelihood at 67: -1.6547
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 67: -1.7889
+[run_image_classification.py:94]INFO: Test accuracy: 45.88%
+[run_image_classification.py:92]INFO: Test log-likelihood at 68: -1.6542
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 68: -1.7916
+[run_image_classification.py:94]INFO: Test accuracy: 45.91%
+[run_image_classification.py:92]INFO: Test log-likelihood at 69: -1.6458
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 69: -1.7850
+[run_image_classification.py:94]INFO: Test accuracy: 45.94%
+[run_image_classification.py:92]INFO: Test log-likelihood at 70: -1.5990
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 70: -1.7399
+[run_image_classification.py:94]INFO: Test accuracy: 50.40%
+[run_image_classification.py:92]INFO: Test log-likelihood at 71: -1.5904
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 71: -1.7335
+[run_image_classification.py:94]INFO: Test accuracy: 51.32%
+[run_image_classification.py:92]INFO: Test log-likelihood at 72: -1.5860
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 72: -1.7244
+[run_image_classification.py:94]INFO: Test accuracy: 51.17%
+[run_image_classification.py:92]INFO: Test log-likelihood at 73: -1.5905
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 73: -1.7359
+[run_image_classification.py:94]INFO: Test accuracy: 50.95%
+[run_image_classification.py:92]INFO: Test log-likelihood at 74: -1.5603
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 74: -1.6917
+[run_image_classification.py:94]INFO: Test accuracy: 51.65%
+[run_image_classification.py:92]INFO: Test log-likelihood at 75: -1.5444
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 75: -1.6803
+[run_image_classification.py:94]INFO: Test accuracy: 51.74%
+[run_image_classification.py:92]INFO: Test log-likelihood at 76: -1.5501
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 76: -1.6746
+[run_image_classification.py:94]INFO: Test accuracy: 51.22%
+[run_image_classification.py:92]INFO: Test log-likelihood at 77: -1.5413
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 77: -1.6837
+[run_image_classification.py:94]INFO: Test accuracy: 51.72%
+[run_image_classification.py:92]INFO: Test log-likelihood at 78: -1.5514
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 78: -1.6808
+[run_image_classification.py:94]INFO: Test accuracy: 51.32%
+[run_image_classification.py:92]INFO: Test log-likelihood at 79: -1.5431
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 79: -1.6738
+[run_image_classification.py:94]INFO: Test accuracy: 51.69%
+[run_image_classification.py:92]INFO: Test log-likelihood at 80: -1.5516
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 80: -1.6699
+[run_image_classification.py:94]INFO: Test accuracy: 50.74%
+[run_image_classification.py:92]INFO: Test log-likelihood at 81: -1.5377
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 81: -1.6666
+[run_image_classification.py:94]INFO: Test accuracy: 51.43%
+[run_image_classification.py:92]INFO: Test log-likelihood at 82: -1.5108
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 82: -1.6491
+[run_image_classification.py:94]INFO: Test accuracy: 52.53%
+[run_image_classification.py:92]INFO: Test log-likelihood at 83: -1.5545
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 83: -1.6652
+[run_image_classification.py:94]INFO: Test accuracy: 50.34%
+[run_image_classification.py:92]INFO: Test log-likelihood at 84: -1.5806
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 84: -1.6887
+[run_image_classification.py:94]INFO: Test accuracy: 48.64%
+[run_image_classification.py:92]INFO: Test log-likelihood at 85: -1.5842
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 85: -1.6935
+[run_image_classification.py:94]INFO: Test accuracy: 48.88%
+[run_image_classification.py:92]INFO: Test log-likelihood at 86: -1.5522
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 86: -1.6510
+[run_image_classification.py:94]INFO: Test accuracy: 49.29%
+[run_image_classification.py:92]INFO: Test log-likelihood at 87: -1.5218
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 87: -1.6286
+[run_image_classification.py:94]INFO: Test accuracy: 50.09%
+[run_image_classification.py:92]INFO: Test log-likelihood at 88: -1.4490
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 88: -1.5686
+[run_image_classification.py:94]INFO: Test accuracy: 53.40%
+[run_image_classification.py:92]INFO: Test log-likelihood at 89: -1.4116
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 89: -1.5482
+[run_image_classification.py:94]INFO: Test accuracy: 55.69%
+[run_image_classification.py:92]INFO: Test log-likelihood at 90: -1.3490
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 90: -1.4980
+[run_image_classification.py:94]INFO: Test accuracy: 57.84%
+[run_image_classification.py:92]INFO: Test log-likelihood at 91: -1.3411
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 91: -1.4914
+[run_image_classification.py:94]INFO: Test accuracy: 59.00%
+[run_image_classification.py:92]INFO: Test log-likelihood at 92: -1.3339
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 92: -1.4809
+[run_image_classification.py:94]INFO: Test accuracy: 59.58%
+[run_image_classification.py:92]INFO: Test log-likelihood at 93: -1.3108
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 93: -1.4614
+[run_image_classification.py:94]INFO: Test accuracy: 59.98%
+[run_image_classification.py:92]INFO: Test log-likelihood at 94: -1.3229
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 94: -1.4714
+[run_image_classification.py:94]INFO: Test accuracy: 59.91%
+[run_image_classification.py:92]INFO: Test log-likelihood at 95: -1.2974
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 95: -1.4469
+[run_image_classification.py:94]INFO: Test accuracy: 60.04%
+[run_image_classification.py:92]INFO: Test log-likelihood at 96: -1.2991
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 96: -1.4506
+[run_image_classification.py:94]INFO: Test accuracy: 59.67%
+[run_image_classification.py:92]INFO: Test log-likelihood at 97: -1.2254
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 97: -1.3804
+[run_image_classification.py:94]INFO: Test accuracy: 61.59%
+[run_image_classification.py:92]INFO: Test log-likelihood at 98: -1.2197
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 98: -1.3743
+[run_image_classification.py:94]INFO: Test accuracy: 61.63%
+[run_image_classification.py:92]INFO: Test log-likelihood at 99: -1.1981
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 99: -1.3683
+[run_image_classification.py:94]INFO: Test accuracy: 62.00%
