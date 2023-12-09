@@ -30,15 +30,17 @@ class Dictionary(dict):
                 self[key] = update[key]
 
     def concatenate(self) -> dict:
-        scores = deepcopy(self)
+        #scores = deepcopy(self)
+        scores = self
         for key in scores.keys():
             scores[key] = torch.cat(scores[key])
         return scores
 
     def numpy(self) -> dict:
-        scores = deepcopy(self)
+        #scores = deepcopy(self)
+        scores = self
         for key in scores.keys():
-            scores[key] = scores[key].numpy()
+            scores[key] = scores[key].detach().numpy()
         return scores
 
     def subset(self, inds: Sequence) -> dict:
