@@ -82,7 +82,7 @@ def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_si
 
     dataset = ActiveDataset(x, y, n_init=n_init, stratified=True)
     with initialize(version_base=None, config_path="config"):
-        cfg = compose(config_name="main", overrides=["data=mnist/unbalanced_pool", "experiment_name=mnist_unbalanced", "acquisition.objective=epig"])
+        cfg = compose(config_name="main", overrides=["data=mnist/unbalanced_pool", "experiment_name=mnist_unbalanced", "acquisition.objective=bald"])
     device = 'cpu'
     rng = call(cfg.rng)
     data = instantiate(cfg.data, rng=rng)
