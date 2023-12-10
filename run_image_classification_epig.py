@@ -131,10 +131,11 @@ def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_si
             acquired_pool_inds = np.argmax(scores)
             dataset.add_ix(dataset.not_ixs[np.argmax(scores)])
         
+        val_loader = TensorDataLoader(x_val, y_val, batch_size=batch_size)
         # retrain model with new data point
         train_log = trainer.train(
             train_loader=dataset.get_train_loader(batch_size=batch_size),
-            val_loader=data.get_loader("val"),
+            val_loader=val_loader,
         )
 
         # evaluate model on test set

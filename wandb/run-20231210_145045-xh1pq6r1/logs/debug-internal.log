@@ -110,3 +110,204 @@
 2023-12-10 14:53:16,780 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: stop_status
 2023-12-10 14:53:16,781 DEBUG   SenderThread:1627462 [sender.py:send_request():409] send_request: stop_status
 2023-12-10 14:53:16,787 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 14:53:21,003 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 14:53:26,005 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 14:53:31,007 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 14:53:31,780 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 14:53:31,781 DEBUG   SenderThread:1627462 [sender.py:send_request():409] send_request: stop_status
+2023-12-10 14:53:31,787 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 14:53:37,007 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 14:53:42,009 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 14:53:46,692 DEBUG   SenderThread:1627462 [sender.py:send():382] send: stats
+2023-12-10 14:53:46,780 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 14:53:46,781 DEBUG   SenderThread:1627462 [sender.py:send_request():409] send_request: stop_status
+2023-12-10 14:53:46,821 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 14:53:47,979 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 14:53:52,980 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 14:53:57,981 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 14:54:01,780 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 14:54:01,782 DEBUG   SenderThread:1627462 [sender.py:send_request():409] send_request: stop_status
+2023-12-10 14:54:01,785 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 14:54:03,012 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 14:54:08,014 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 14:54:13,015 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 14:54:16,695 DEBUG   SenderThread:1627462 [sender.py:send():382] send: stats
+2023-12-10 14:54:16,781 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 14:54:16,782 DEBUG   SenderThread:1627462 [sender.py:send_request():409] send_request: stop_status
+2023-12-10 14:54:16,786 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 14:54:18,926 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 14:54:23,927 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 14:54:28,929 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 14:54:31,781 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 14:54:31,782 DEBUG   SenderThread:1627462 [sender.py:send_request():409] send_request: stop_status
+2023-12-10 14:54:31,821 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 14:54:34,019 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 14:54:39,020 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 14:54:44,022 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 14:54:46,696 DEBUG   SenderThread:1627462 [sender.py:send():382] send: stats
+2023-12-10 14:54:46,781 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 14:54:46,781 DEBUG   SenderThread:1627462 [sender.py:send_request():409] send_request: stop_status
+2023-12-10 14:54:46,783 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 14:54:49,949 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 14:54:54,951 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 14:54:59,952 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 14:55:01,781 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 14:55:01,783 DEBUG   SenderThread:1627462 [sender.py:send_request():409] send_request: stop_status
+2023-12-10 14:55:01,790 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 14:55:05,032 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 14:55:10,033 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 14:55:15,035 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 14:55:16,698 DEBUG   SenderThread:1627462 [sender.py:send():382] send: stats
+2023-12-10 14:55:16,785 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 14:55:16,786 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 14:55:16,787 DEBUG   SenderThread:1627462 [sender.py:send_request():409] send_request: stop_status
+2023-12-10 14:55:18,189 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: partial_history
+2023-12-10 14:55:19,634 INFO    Thread-12 :1627462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/wandb/run-20231210_145045-xh1pq6r1/files/output.log
+2023-12-10 14:55:20,191 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 14:55:25,193 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 14:55:30,194 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 14:55:31,784 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-10 14:55:31,786 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 14:55:31,786 DEBUG   SenderThread:1627462 [sender.py:send_request():409] send_request: stop_status
+2023-12-10 14:55:36,029 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 14:55:38,629 DEBUG   SenderThread:1627462 [sender.py:send():382] send: exit
+2023-12-10 14:55:38,630 INFO    SenderThread:1627462 [sender.py:send_exit():589] handling exit code: 255
+2023-12-10 14:55:38,630 INFO    SenderThread:1627462 [sender.py:send_exit():591] handling runtime: 291
+2023-12-10 14:55:38,632 INFO    SenderThread:1627462 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-10 14:55:38,632 INFO    SenderThread:1627462 [sender.py:send_exit():597] send defer
+2023-12-10 14:55:38,633 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: defer
+2023-12-10 14:55:38,633 INFO    HandlerThread:1627462 [handler.py:handle_request_defer():172] handle defer: 0
+2023-12-10 14:55:38,634 DEBUG   SenderThread:1627462 [sender.py:send_request():409] send_request: defer
+2023-12-10 14:55:38,634 INFO    SenderThread:1627462 [sender.py:send_request_defer():613] handle sender defer: 0
+2023-12-10 14:55:38,634 INFO    SenderThread:1627462 [sender.py:transition_state():617] send defer: 1
+2023-12-10 14:55:38,635 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: defer
+2023-12-10 14:55:38,635 INFO    HandlerThread:1627462 [handler.py:handle_request_defer():172] handle defer: 1
+2023-12-10 14:55:38,635 DEBUG   SenderThread:1627462 [sender.py:send_request():409] send_request: defer
+2023-12-10 14:55:38,635 INFO    SenderThread:1627462 [sender.py:send_request_defer():613] handle sender defer: 1
+2023-12-10 14:55:38,636 INFO    SenderThread:1627462 [sender.py:transition_state():617] send defer: 2
+2023-12-10 14:55:38,636 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: defer
+2023-12-10 14:55:38,636 INFO    HandlerThread:1627462 [handler.py:handle_request_defer():172] handle defer: 2
+2023-12-10 14:55:38,636 INFO    HandlerThread:1627462 [system_monitor.py:finish():203] Stopping system monitor
+2023-12-10 14:55:38,637 DEBUG   SystemMonitor:1627462 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-12-10 14:55:38,638 DEBUG   SystemMonitor:1627462 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-12-10 14:55:38,638 INFO    HandlerThread:1627462 [interfaces.py:finish():202] Joined cpu monitor
+2023-12-10 14:55:38,640 INFO    HandlerThread:1627462 [interfaces.py:finish():202] Joined disk monitor
+2023-12-10 14:55:38,641 INFO    HandlerThread:1627462 [interfaces.py:finish():202] Joined memory monitor
+2023-12-10 14:55:38,641 INFO    HandlerThread:1627462 [interfaces.py:finish():202] Joined network monitor
+2023-12-10 14:55:38,642 DEBUG   SenderThread:1627462 [sender.py:send_request():409] send_request: defer
+2023-12-10 14:55:38,642 INFO    SenderThread:1627462 [sender.py:send_request_defer():613] handle sender defer: 2
+2023-12-10 14:55:38,642 INFO    SenderThread:1627462 [sender.py:transition_state():617] send defer: 3
+2023-12-10 14:55:38,642 DEBUG   SenderThread:1627462 [sender.py:send():382] send: stats
+2023-12-10 14:55:38,643 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: defer
+2023-12-10 14:55:38,644 INFO    HandlerThread:1627462 [handler.py:handle_request_defer():172] handle defer: 3
+2023-12-10 14:55:38,646 DEBUG   SenderThread:1627462 [sender.py:send():382] send: history
+2023-12-10 14:55:38,646 DEBUG   SenderThread:1627462 [sender.py:send_request():409] send_request: summary_record
+2023-12-10 14:55:38,647 INFO    SenderThread:1627462 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-10 14:55:38,648 DEBUG   SenderThread:1627462 [sender.py:send_request():409] send_request: defer
+2023-12-10 14:55:38,648 INFO    SenderThread:1627462 [sender.py:send_request_defer():613] handle sender defer: 3
+2023-12-10 14:55:38,648 INFO    SenderThread:1627462 [sender.py:transition_state():617] send defer: 4
+2023-12-10 14:55:38,649 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: defer
+2023-12-10 14:55:38,649 INFO    HandlerThread:1627462 [handler.py:handle_request_defer():172] handle defer: 4
+2023-12-10 14:55:38,649 DEBUG   SenderThread:1627462 [sender.py:send_request():409] send_request: defer
+2023-12-10 14:55:38,650 INFO    SenderThread:1627462 [sender.py:send_request_defer():613] handle sender defer: 4
+2023-12-10 14:55:38,650 INFO    SenderThread:1627462 [sender.py:transition_state():617] send defer: 5
+2023-12-10 14:55:38,650 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: defer
+2023-12-10 14:55:38,650 INFO    HandlerThread:1627462 [handler.py:handle_request_defer():172] handle defer: 5
+2023-12-10 14:55:38,651 DEBUG   SenderThread:1627462 [sender.py:send():382] send: summary
+2023-12-10 14:55:38,652 INFO    SenderThread:1627462 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-10 14:55:38,652 DEBUG   SenderThread:1627462 [sender.py:send_request():409] send_request: defer
+2023-12-10 14:55:38,653 INFO    SenderThread:1627462 [sender.py:send_request_defer():613] handle sender defer: 5
+2023-12-10 14:55:38,653 INFO    Thread-12 :1627462 [dir_watcher.py:_on_file_created():271] file/dir created: /dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/wandb/run-20231210_145045-xh1pq6r1/files/wandb-summary.json
+2023-12-10 14:55:38,654 INFO    SenderThread:1627462 [sender.py:transition_state():617] send defer: 6
+2023-12-10 14:55:38,655 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: defer
+2023-12-10 14:55:38,655 INFO    HandlerThread:1627462 [handler.py:handle_request_defer():172] handle defer: 6
+2023-12-10 14:55:38,656 DEBUG   SenderThread:1627462 [sender.py:send_request():409] send_request: defer
+2023-12-10 14:55:38,656 INFO    SenderThread:1627462 [sender.py:send_request_defer():613] handle sender defer: 6
+2023-12-10 14:55:38,656 INFO    SenderThread:1627462 [sender.py:transition_state():617] send defer: 7
+2023-12-10 14:55:38,656 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: status_report
+2023-12-10 14:55:38,657 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: defer
+2023-12-10 14:55:38,657 INFO    HandlerThread:1627462 [handler.py:handle_request_defer():172] handle defer: 7
+2023-12-10 14:55:38,658 DEBUG   SenderThread:1627462 [sender.py:send_request():409] send_request: defer
+2023-12-10 14:55:38,658 INFO    SenderThread:1627462 [sender.py:send_request_defer():613] handle sender defer: 7
+2023-12-10 14:55:39,621 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: poll_exit
+2023-12-10 14:55:39,740 INFO    SenderThread:1627462 [sender.py:transition_state():617] send defer: 8
+2023-12-10 14:55:39,740 DEBUG   SenderThread:1627462 [sender.py:send_request():409] send_request: poll_exit
+2023-12-10 14:55:39,741 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: defer
+2023-12-10 14:55:39,742 INFO    HandlerThread:1627462 [handler.py:handle_request_defer():172] handle defer: 8
+2023-12-10 14:55:39,742 DEBUG   SenderThread:1627462 [sender.py:send_request():409] send_request: defer
+2023-12-10 14:55:39,742 INFO    SenderThread:1627462 [sender.py:send_request_defer():613] handle sender defer: 8
+2023-12-10 14:55:39,743 INFO    SenderThread:1627462 [job_builder.py:build():298] Attempting to build job artifact
+2023-12-10 14:55:39,744 INFO    SenderThread:1627462 [job_builder.py:_get_source_type():428] is repo sourced job
+2023-12-10 14:55:39,793 INFO    SenderThread:1627462 [job_builder.py:build():404] adding wandb-job metadata file
+2023-12-10 14:55:39,974 INFO    SenderThread:1627462 [sender.py:transition_state():617] send defer: 9
+2023-12-10 14:55:39,975 DEBUG   SenderThread:1627462 [sender.py:send():382] send: artifact
+2023-12-10 14:55:39,975 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: defer
+2023-12-10 14:55:39,980 INFO    HandlerThread:1627462 [handler.py:handle_request_defer():172] handle defer: 9
+2023-12-10 14:55:40,626 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: poll_exit
+2023-12-10 14:55:40,655 INFO    Thread-12 :1627462 [dir_watcher.py:_on_file_modified():288] file/dir modified: /dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/wandb/run-20231210_145045-xh1pq6r1/files/output.log
+2023-12-10 14:55:41,817 INFO    wandb-upload_0:1627462 [upload_job.py:push():89] Uploaded file /dss/dsshome1/0D/ge32jaq2/.local/share/wandb/artifacts/staging/tmp4tj7bor2
+2023-12-10 14:55:41,823 INFO    wandb-upload_1:1627462 [upload_job.py:push():89] Uploaded file /dss/dsshome1/0D/ge32jaq2/.local/share/wandb/artifacts/staging/tmpmd2ko11b
+2023-12-10 14:55:43,133 INFO    SenderThread:1627462 [sender.py:send_artifact():1470] sent artifact job-git_github.com_Misipuk_active_learning_marglik.git_run_image_classification_epig.py - {'id': 'QXJ0aWZhY3Q6NjYzMDk2NTQw', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyMjM4ODg2Nw==', 'latestArtifact': None}}
+2023-12-10 14:55:43,134 DEBUG   SenderThread:1627462 [sender.py:send_request():409] send_request: defer
+2023-12-10 14:55:43,134 INFO    SenderThread:1627462 [sender.py:send_request_defer():613] handle sender defer: 9
+2023-12-10 14:55:43,134 INFO    SenderThread:1627462 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-12-10 14:55:43,658 INFO    SenderThread:1627462 [dir_watcher.py:finish():388] scan: /dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/wandb/run-20231210_145045-xh1pq6r1/files
+2023-12-10 14:55:43,658 INFO    SenderThread:1627462 [dir_watcher.py:finish():402] scan save: /dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/wandb/run-20231210_145045-xh1pq6r1/files/wandb-metadata.json wandb-metadata.json
+2023-12-10 14:55:43,659 INFO    SenderThread:1627462 [dir_watcher.py:finish():402] scan save: /dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/wandb/run-20231210_145045-xh1pq6r1/files/config.yaml config.yaml
+2023-12-10 14:55:43,659 INFO    SenderThread:1627462 [dir_watcher.py:finish():402] scan save: /dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/wandb/run-20231210_145045-xh1pq6r1/files/requirements.txt requirements.txt
+2023-12-10 14:55:43,666 INFO    SenderThread:1627462 [dir_watcher.py:finish():402] scan save: /dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/wandb/run-20231210_145045-xh1pq6r1/files/wandb-summary.json wandb-summary.json
+2023-12-10 14:55:43,672 INFO    SenderThread:1627462 [dir_watcher.py:finish():402] scan save: /dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/wandb/run-20231210_145045-xh1pq6r1/files/output.log output.log
+2023-12-10 14:55:43,674 INFO    SenderThread:1627462 [sender.py:transition_state():617] send defer: 10
+2023-12-10 14:55:43,674 DEBUG   SenderThread:1627462 [sender.py:send_request():409] send_request: poll_exit
+2023-12-10 14:55:43,675 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: defer
+2023-12-10 14:55:43,675 INFO    HandlerThread:1627462 [handler.py:handle_request_defer():172] handle defer: 10
+2023-12-10 14:55:43,676 DEBUG   SenderThread:1627462 [sender.py:send_request():409] send_request: defer
+2023-12-10 14:55:43,676 INFO    SenderThread:1627462 [sender.py:send_request_defer():613] handle sender defer: 10
+2023-12-10 14:55:43,676 INFO    SenderThread:1627462 [file_pusher.py:finish():175] shutting down file pusher
+2023-12-10 14:55:44,018 INFO    wandb-upload_0:1627462 [upload_job.py:push():131] Uploaded file /dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/wandb/run-20231210_145045-xh1pq6r1/files/config.yaml
+2023-12-10 14:55:44,576 INFO    wandb-upload_1:1627462 [upload_job.py:push():131] Uploaded file /dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/wandb/run-20231210_145045-xh1pq6r1/files/requirements.txt
+2023-12-10 14:55:44,679 INFO    wandb-upload_3:1627462 [upload_job.py:push():131] Uploaded file /dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/wandb/run-20231210_145045-xh1pq6r1/files/output.log
+2023-12-10 14:55:44,905 INFO    wandb-upload_2:1627462 [upload_job.py:push():131] Uploaded file /dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/wandb/run-20231210_145045-xh1pq6r1/files/wandb-summary.json
+2023-12-10 14:55:45,106 INFO    Thread-11 (_thread_body):1627462 [sender.py:transition_state():617] send defer: 11
+2023-12-10 14:55:45,107 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: defer
+2023-12-10 14:55:45,107 INFO    HandlerThread:1627462 [handler.py:handle_request_defer():172] handle defer: 11
+2023-12-10 14:55:45,108 DEBUG   SenderThread:1627462 [sender.py:send_request():409] send_request: defer
+2023-12-10 14:55:45,108 INFO    SenderThread:1627462 [sender.py:send_request_defer():613] handle sender defer: 11
+2023-12-10 14:55:45,109 INFO    SenderThread:1627462 [file_pusher.py:join():181] waiting for file pusher
+2023-12-10 14:55:45,109 INFO    SenderThread:1627462 [sender.py:transition_state():617] send defer: 12
+2023-12-10 14:55:45,109 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: defer
+2023-12-10 14:55:45,109 INFO    HandlerThread:1627462 [handler.py:handle_request_defer():172] handle defer: 12
+2023-12-10 14:55:45,110 DEBUG   SenderThread:1627462 [sender.py:send_request():409] send_request: defer
+2023-12-10 14:55:45,110 INFO    SenderThread:1627462 [sender.py:send_request_defer():613] handle sender defer: 12
+2023-12-10 14:55:45,110 INFO    SenderThread:1627462 [file_stream.py:finish():595] file stream finish called
+2023-12-10 14:55:45,275 INFO    SenderThread:1627462 [file_stream.py:finish():599] file stream finish is done
+2023-12-10 14:55:45,275 INFO    SenderThread:1627462 [sender.py:transition_state():617] send defer: 13
+2023-12-10 14:55:45,276 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: defer
+2023-12-10 14:55:45,276 INFO    HandlerThread:1627462 [handler.py:handle_request_defer():172] handle defer: 13
+2023-12-10 14:55:45,276 DEBUG   SenderThread:1627462 [sender.py:send_request():409] send_request: defer
+2023-12-10 14:55:45,277 INFO    SenderThread:1627462 [sender.py:send_request_defer():613] handle sender defer: 13
+2023-12-10 14:55:45,277 INFO    SenderThread:1627462 [sender.py:transition_state():617] send defer: 14
+2023-12-10 14:55:45,278 DEBUG   SenderThread:1627462 [sender.py:send():382] send: final
+2023-12-10 14:55:45,278 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: defer
+2023-12-10 14:55:45,278 DEBUG   SenderThread:1627462 [sender.py:send():382] send: footer
+2023-12-10 14:55:45,279 INFO    HandlerThread:1627462 [handler.py:handle_request_defer():172] handle defer: 14
+2023-12-10 14:55:45,280 DEBUG   SenderThread:1627462 [sender.py:send_request():409] send_request: defer
+2023-12-10 14:55:45,280 INFO    SenderThread:1627462 [sender.py:send_request_defer():613] handle sender defer: 14
+2023-12-10 14:55:45,281 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: poll_exit
+2023-12-10 14:55:45,282 DEBUG   SenderThread:1627462 [sender.py:send_request():409] send_request: poll_exit
+2023-12-10 14:55:45,283 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: server_info
+2023-12-10 14:55:45,284 DEBUG   SenderThread:1627462 [sender.py:send_request():409] send_request: server_info
+2023-12-10 14:55:45,290 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: get_summary
+2023-12-10 14:55:45,291 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: sampled_history
+2023-12-10 14:55:45,293 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-10 14:55:45,294 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: job_info
+2023-12-10 14:55:45,429 DEBUG   SenderThread:1627462 [sender.py:send_request():409] send_request: job_info
+2023-12-10 14:55:45,430 INFO    MainThread:1627462 [wandb_run.py:_footer_history_summary_info():3837] rendering history
+2023-12-10 14:55:45,431 INFO    MainThread:1627462 [wandb_run.py:_footer_history_summary_info():3869] rendering summary
+2023-12-10 14:55:45,431 INFO    MainThread:1627462 [wandb_run.py:_footer_sync_info():3796] logging synced files
+2023-12-10 14:55:45,432 DEBUG   HandlerThread:1627462 [handler.py:handle_request():146] handle_request: shutdown
+2023-12-10 14:55:45,433 INFO    HandlerThread:1627462 [handler.py:finish():866] shutting down handler
+2023-12-10 14:55:46,295 INFO    WriterThread:1627462 [datastore.py:close():294] close: /dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/wandb/run-20231210_145045-xh1pq6r1/run-xh1pq6r1.wandb
+2023-12-10 14:55:46,430 INFO    SenderThread:1627462 [sender.py:finish():1548] shutting down sender
+2023-12-10 14:55:46,430 INFO    SenderThread:1627462 [file_pusher.py:finish():175] shutting down file pusher
+2023-12-10 14:55:46,430 INFO    SenderThread:1627462 [file_pusher.py:join():181] waiting for file pusher

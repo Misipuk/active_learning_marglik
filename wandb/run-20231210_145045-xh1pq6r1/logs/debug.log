@@ -24,3 +24,4 @@ config: {'seed': 3, 'dataset': 'mnist', 'n_init': 20, 'n_max': 100, 'optimizer':
 2023-12-10 14:50:46,779 INFO    MainThread:1627379 [wandb_run.py:_redirect():2153] Wrapping output streams.
 2023-12-10 14:50:46,779 INFO    MainThread:1627379 [wandb_run.py:_redirect():2178] Redirects installed.
 2023-12-10 14:50:46,781 INFO    MainThread:1627379 [wandb_init.py:init():841] run started, returning control to user process
+2023-12-10 14:55:46,719 WARNING MsgRouterThr:1627379 [router.py:message_loop():77] message_loop has been closed
