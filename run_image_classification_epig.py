@@ -35,11 +35,20 @@ def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_si
         model = 'resnet'
         input_size = (3, 32)
 
-#     train_dataset = ds_cls(data_root, train=True, download=download_data, transform=transform)
-#     test_dataset = ds_cls(data_root, train=False, download=download_data, transform=transform)
-#     x, y = dataset_to_tensors(train_dataset, device=device)
-#     x_test, y_test = dataset_to_tensors(test_dataset, device=device)
-#     test_loader = TensorDataLoader(x_test, y_test, batch_size=batch_size)
+    train_dataset = ds_cls(data_root, train=True, download=download_data, transform=transform)
+    test_dataset = ds_cls(data_root, train=False, download=download_data, transform=transform)
+    x, y = dataset_to_tensors(train_dataset, device=device)
+    x_test, y_test = dataset_to_tensors(test_dataset, device=device)
+    test_loader = TensorDataLoader(x_test, y_test, batch_size=batch_size)
+    
+    classes = torch.unique(y)
+    ixs_val = list()
+    for c in classes.cpu().numpy():
+        ixs_val.append(np.random.choice(np.where(y.cpu() == c)[0], int(60/len(classes)), replace=False))
+    ixs_val_np = np.array(ixs_val).reshape(1,-1).squeeze()
+    x_val= x[ixs_val_np].detach().clone().to(device)
+    y_val = y[ixs_val_np].detach().clone().to(device)
+    val_loader = TensorDataLoader(x_val, y_val, batch_size=batch_size)
 
 #     set_seed(seed)
 
@@ -70,84 +79,77 @@ def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_si
 #         raise ValueError('Invalid active learner.')
 #     learner.fit(dataset.get_train_loader(batch_size=batch_size))
 
+
+    dataset = ActiveDataset(x, y, n_init=n_init, stratified=True)
     with initialize(version_base=None, config_path="config"):
         cfg = compose(config_name="main", overrides=["data=mnist/unbalanced_pool", "experiment_name=mnist_unbalanced", "acquisition.objective=epig"])
-    #cfg.data['label_counts']['train']['10_classes_in_range(10)'] = 10
     device = 'cpu'
-    #'cuda'
     rng = call(cfg.rng)
     data = instantiate(cfg.data, rng=rng)
     data.torch()
     data.to(device)
     model = instantiate(cfg.model, input_shape=data.input_shape, output_size=data.n_classes)
     model = model.to(device)
-    trainer = instantiate(cfg.trainer, model=model)
     
-    #print(cfg.model)
-    cfg.trainer["n_optim_steps_max"] = 5
-    print(cfg.trainer["n_optim_steps_max"])
+#     cfg.trainer["n_optim_steps_max"] = 5
+#     print(cfg.trainer["n_optim_steps_max"])
+    trainer = instantiate(cfg.trainer, model=model)
     
     print("Training started")
     train_log = trainer.train(
-            train_loader=data.get_loader("train"),
-            val_loader=data.get_loader("val"),
+            train_loader=dataset.get_train_loader(batch_size=batch_size),
+            val_loader=val_loader,
     )
+    
+    print("Test started")
+    with torch.inference_mode():
+        test_acc, test_loss = trainer.test(test_loader)
+        
+    logging.info(f'Initial test loss: {test_loss:.4f}')
+    logging.info(f'Initial accuracy: {test_acc*100:.2f}%')
+    #if use_wandb:
+    #    wandb.log({'test/ll': test_loss, 'test/acc': test_acc}, step=n_init)
     
     print("BALD started")
     
-    scores = trainer.estimate_uncertainty(
-        pool_loader=data.get_loader("val"),
-        target_inputs=None,
-        mode='bald',
-        rng=rng,
-        epig_probs_target=cfg.acquisition.epig_probs_target,
-        epig_probs_adjustment=cfg.acquisition.epig_probs_adjustment,
-        epig_using_matmul=cfg.acquisition.epig_using_matmul,
-    )
-    
+    scores = trainer.estimate_bald(val_loader)
     scores = scores.numpy()
     scores = scores['bald']
-
     acquired_pool_inds = np.argmax(scores)
     
     print(f"index: {acquired_pool_inds}")
 
-    # evaluate model on test set
-#     test_ll = learner.log_lik(test_loader)
-#     test_ll_bayes = learner.log_lik_bayes(test_loader)
-#     acc = learner.accuracy(test_loader)
-#     logging.info(f'Initial test log-likelihood: {test_ll:.4f}')
-#     logging.info(f'Initial test Bayes log-likelihood: {test_ll_bayes:.4f}')
-#     logging.info(f'Initial accuracy: {acc*100:.2f}%')
-#     if use_wandb:
-#         wandb.log({'test/ll': test_ll, 'test/ll_bayes': test_ll_bayes, 'test/acc': acc}, step=n_init)
 
-#     for i in range(n_init+1, min(len(x), n_max)):
-#         # acquire new data point
-#         if random_acquisition:
-#             dataset.add_ix(np.random.choice(dataset.not_ixs, 1)[0])
-#         else:
-#             bald_scores = learner.bald(dataset.get_pool_loader(batch_size=batch_size))
-#             dataset.add_ix(dataset.not_ixs[torch.argmax(bald_scores).item()])
+    for i in range(n_init+1, min(len(x), n_max)):
+        # acquire new data point
+        if random_acquisition:
+            dataset.add_ix(np.random.choice(dataset.not_ixs, 1)[0])
+        else:
+            scores = trainer.estimate_bald(val_loader)
+            scores = scores.numpy()
+            scores = scores['bald']
+            acquired_pool_inds = np.argmax(scores)
+            dataset.add_ix(dataset.not_ixs[np.argmax(scores)])
         
-#         # retrain model with new data point
-#         learner.fit(dataset.get_train_loader())
+        # retrain model with new data point
+        train_log = trainer.train(
+        train_loader=dataset.get_train_loader(batch_size=batch_size),
+        val_loader=data.get_loader("val"),
+        )
 
-#         # evaluate model on test set
-#         test_ll_bayes = learner.log_lik_bayes(test_loader)
-#         test_ll = learner.log_lik(test_loader)
-#         acc = learner.accuracy(test_loader)
+        # evaluate model on test set
+        with torch.inference_mode():
+            test_acc, test_loss = trainer.test(test_loader)
 
-#         logging.info(f'Test log-likelihood at {i}: {test_ll:.4f}')
-#         logging.info(f'Test Bayes log-likelihood at {i}: {test_ll_bayes:.4f}')
-#         logging.info(f'Test accuracy: {acc*100:.2f}%')
+        logging.info(f'Test loss at {i}: {test_loss:.4f}')
+        logging.info(f'Accuracy: {test_acc*100:.2f}%')
 #         # optionally save to wandb
 #         if use_wandb:
 #             if random_acquisition:
-#                 wandb.log({'test/ll': test_ll, 'test/ll_bayes': test_ll_bayes, 'test/acc': acc}, step=i)
+#                 wandb.log({'test/ll': test_loss, 'test/acc': test_acc}, step=i)
 #             else:
-#                 hist = wandb.Histogram(bald_scores.detach().cpu().numpy())
-#                 wandb.log({'test/ll': test_ll, 'test/ll_bayes': test_ll_bayes, 'test/acc': acc, 'bald': hist}, 
+#                 hist = wandb.Histogram(scores)
+#                 wandb.log({'test/ll': test_loss, 'test/acc': test_acc, 'bald': hist}, 
 #                           step=i, commit=False)
 
 
@@ -166,7 +168,7 @@ if __name__ == '__main__':
     parser.add_argument('--lr_min', default=1e-6, type=float, help='Cosine decay target')
     parser.add_argument('--n_epochs', default=250, type=int)
     parser.add_argument('--batch_size', default=500, type=int)
-    parser.add_argument('--method', default='laplace', help='Method', choices=['laplace', 'ensemble', 'mola'])
+    parser.add_argument('--method', default='laplace', help='Method', choices=['laplace', 'ensemble', 'mola', 'epig_model'])
     # marglik-specific
     parser.add_argument('--approx', default='kron', choices=['full', 'kron', 'diag'])
     parser.add_argument('--lr_hyp', default=0.1, type=float)
