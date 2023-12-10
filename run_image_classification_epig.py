@@ -1,7 +1,7 @@
 from math import sqrt
 import logging
 import torch
-#import wandb
+import wandb
 import numpy as np
 #from dotenv import load_dotenv
 from torchvision.datasets import MNIST, CIFAR10
@@ -34,7 +34,7 @@ def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_si
         ds_cls = CIFAR10
         model = 'resnet'
         input_size = (3, 32)
-
+    set_seed(seed)
     train_dataset = ds_cls(data_root, train=True, download=download_data, transform=transform)
     test_dataset = ds_cls(data_root, train=False, download=download_data, transform=transform)
     x, y = dataset_to_tensors(train_dataset, device=device)
@@ -50,7 +50,7 @@ def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_si
     y_val = y[ixs_val_np].detach().clone().to(device)
     val_loader = TensorDataLoader(x_val, y_val, batch_size=batch_size)
 
-#     set_seed(seed)
+    
 
 #     # Set up model and initial training.
 #     dataset = ActiveDataset(x, y, n_init=n_init, stratified=True)
@@ -107,17 +107,17 @@ def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_si
         
     logging.info(f'Initial test loss: {test_loss:.4f}')
     logging.info(f'Initial accuracy: {test_acc*100:.2f}%')
-    #if use_wandb:
-    #    wandb.log({'test/ll': test_loss, 'test/acc': test_acc}, step=n_init)
+    if use_wandb:
+        wandb.log({'test/ll': test_loss, 'test/acc': test_acc}, step=n_init)
     
-    print("BALD started")
+#     print("BALD started")
     
-    scores = trainer.estimate_bald(val_loader)
-    scores = scores.numpy()
-    scores = scores['bald']
-    acquired_pool_inds = np.argmax(scores)
+#     scores = trainer.estimate_bald(val_loader)
+#     scores = scores.numpy()
+#     scores = scores['bald']
+#     acquired_pool_inds = np.argmax(scores)
     
-    print(f"index: {acquired_pool_inds}")
+#     print(f"index: {acquired_pool_inds}")
 
 
     for i in range(n_init+1, min(len(x), n_max)):
@@ -125,7 +125,7 @@ def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_si
         if random_acquisition:
             dataset.add_ix(np.random.choice(dataset.not_ixs, 1)[0])
         else:
-            scores = trainer.estimate_bald(val_loader)
+            scores = trainer.estimate_bald(dataset.get_pool_loader(batch_size=batch_size))
             scores = scores.numpy()
             scores = scores['bald']
             acquired_pool_inds = np.argmax(scores)
@@ -133,8 +133,8 @@ def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_si
         
         # retrain model with new data point
         train_log = trainer.train(
-        train_loader=dataset.get_train_loader(batch_size=batch_size),
-        val_loader=data.get_loader("val"),
+            train_loader=dataset.get_train_loader(batch_size=batch_size),
+            val_loader=data.get_loader("val"),
         )
 
         # evaluate model on test set
@@ -143,14 +143,14 @@ def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_si
 
         logging.info(f'Test loss at {i}: {test_loss:.4f}')
         logging.info(f'Accuracy: {test_acc*100:.2f}%')
-#         # optionally save to wandb
-#         if use_wandb:
-#             if random_acquisition:
-#                 wandb.log({'test/ll': test_loss, 'test/acc': test_acc}, step=i)
-#             else:
-#                 hist = wandb.Histogram(scores)
-#                 wandb.log({'test/ll': test_loss, 'test/acc': test_acc, 'bald': hist}, 
-#                           step=i, commit=False)
+        # optionally save to wandb
+        if use_wandb:
+            if random_acquisition:
+                wandb.log({'test/ll': test_loss, 'test/acc': test_acc}, step=i)
+            else:
+                hist = wandb.Histogram(scores)
+                wandb.log({'test/ll': test_loss, 'test/acc': test_acc, 'bald': hist}, 
+                          step=i, commit=False)
 
 
 if __name__ == '__main__':
@@ -191,18 +191,18 @@ if __name__ == '__main__':
     args = vars(parser.parse_args())
     config_files = args['config']
     args.pop('config')
-#     if args['use_wandb']:
-#         import uuid
-#         import copy
-#         tags = [args['dataset'], args['method']]
-#         config = copy.deepcopy(args)
-#         if config_files is not None:
-#             comps = [c.split('/')[-1].split('.')[0] for c in config_files]
-#         else:
-#             comps = tags
-#         run_name = '-'.join(comps)
-#         run_name += '-' + str(uuid.uuid5(uuid.NAMESPACE_DNS, str(args)))[:4]
-#         config['methodconf'] = '-'.join(comps)
-#         #load_dotenv()
-#         wandb.init(project='alla', entity='marglik-is-the-best', config=config, name=run_name, tags=tags)
+    if args['use_wandb']:
+        import uuid
+        import copy
+        tags = [args['dataset'], args['method']]
+        config = copy.deepcopy(args)
+        if config_files is not None:
+            comps = [c.split('/')[-1].split('.')[0] for c in config_files]
+        else:
+            comps = tags
+        run_name = '-'.join(comps)
+        run_name += '-' + str(uuid.uuid5(uuid.NAMESPACE_DNS, str(args)))[:4]
+        config['methodconf'] = '-'.join(comps)
+        #load_dotenv()
+        wandb.init(project='alla', entity='marglik-is-the-best', config=config, name=run_name, tags=tags)
     main(**args)
