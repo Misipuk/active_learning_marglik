@@ -30,6 +30,7 @@ class Dictionary(dict):
                 self[key] = update[key]
 
     def concatenate(self) -> dict:
+        print("We are in concat")
         #scores = deepcopy(self)
         scores = self
         for key in scores.keys():

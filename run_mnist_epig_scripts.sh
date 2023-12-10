@@ -1,0 +1,7 @@
+#!/bin/bash 
+
+python3 run_image_classification_epig.py --seed 3 --config configs/mnist_epig.yaml --device 'cpu'
+python3 run_image_classification_epig.py --seed 4 --config configs/mnist_epig.yaml --device 'cpu'
+python3 run_image_classification_epig.py --seed 5 --config configs/mnist_epig.yaml --device 'cpu'
+python3 run_image_classification_epig.py --seed 7 --config configs/mnist_epig.yaml --device 'cpu'
+python3 run_image_classification_epig.py --seed 9 --config configs/mnist_epig.yaml --device 'cpu'

@@ -1,0 +1,247 @@
+{
+    "os": "Linux-5.4.0-153-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "heartbeatAt": "2023-12-10T15:23:35.513609",
+    "startedAt": "2023-12-10T15:23:34.418215",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--seed",
+        "3",
+        "--config",
+        "configs/mnist_epig.yaml",
+        "--device",
+        "cpu"
+    ],
+    "state": "running",
+    "program": "/dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/run_image_classification_epig.py",
+    "codePathLocal": "run_image_classification_epig.py",
+    "codePath": "run_image_classification_epig.py",
+    "git": {
+        "remote": "git@github.com:Misipuk/active_learning_marglik.git",
+        "commit": "52466c64854208fd613c135aa26b265ec58dcbbd"
+    },
+    "email": null,
+    "root": "/dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik",
+    "host": "cpu-008",
+    "username": "ge32jaq2",
+    "executable": "/usr/bin/python3",
+    "cpu_count": 40,
+    "cpu_count_logical": 40,
+    "cpu_freq": {
+        "current": 2294.4600000000014,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2294.46,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.46,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.46,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.46,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.46,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.46,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.46,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.46,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.46,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.46,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.46,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.46,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.46,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.46,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.46,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.46,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.46,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.46,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.46,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.46,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.46,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.46,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.46,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.46,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.46,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.46,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.46,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.46,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.46,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.46,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.46,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.46,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.46,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.46,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.46,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.46,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.46,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.46,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.46,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2294.46,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 499.755859375,
+            "used": 84.75480651855469
+        }
+    },
+    "memory": {
+        "total": 974.0427742004395
+    }
+}

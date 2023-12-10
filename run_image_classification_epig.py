@@ -125,7 +125,7 @@ def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_si
         if random_acquisition:
             dataset.add_ix(np.random.choice(dataset.not_ixs, 1)[0])
         else:
-            scores = trainer.estimate_bald(dataset.get_pool_loader(batch_size=batch_size))
+            scores = trainer.estimate_bald(dataset.get_pool_loader(batch_size=256))
             scores = scores.numpy()
             scores = scores['bald']
             acquired_pool_inds = np.argmax(scores)
@@ -149,7 +149,7 @@ def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_si
             if random_acquisition:
                 wandb.log({'test/ll': test_loss, 'test/acc': test_acc}, step=i)
             else:
-                hist = wandb.Histogram(scores)
+                hist = wandb.Histogram(np.copy(scores))
                 wandb.log({'test/ll': test_loss, 'test/acc': test_acc, 'bald': hist}, 
                           step=i, commit=False)
 

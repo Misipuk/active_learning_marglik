@@ -115,7 +115,7 @@ class Trainer:
         for inputs, _ in loader:
             bald_scores = self.estimate_bald_minibatch(inputs)  # [B,]
             scores.append({"bald": bald_scores.cpu()})
-
+        print("Before concat")
         return scores.concatenate()
 
     def estimate_bald_minibatch(self, inputs: Tensor) -> None:
