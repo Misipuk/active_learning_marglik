@@ -1,0 +1,17 @@
+
+Pool shape : torch.Size([40000, 1, 28, 28])
+Training started
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/run_image_classification_epig_40k.py", line 222, in <module>
+    main(**args)
+  File "/dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/run_image_classification_epig_40k.py", line 111, in main
+    train_log = trainer.train(
+  File "/dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/src/trainers/neural_network.py", line 98, in train
+    train_acc, train_loss = self.train_step(train_loader)
+  File "/dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/src/trainers/neural_network.py", line 146, in train_step
+    loss.backward()
+  File "/usr/local/lib/python3.10/dist-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/usr/local/lib/python3.10/dist-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/run_image_classification_epig_40k.py", line 222, in <module>
+    main(**args)
+  File "/dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/run_image_classification_epig_40k.py", line 46, in main
+    classes = torch.unique(y)
+UnboundLocalError: local variable 'y' referenced before assignment

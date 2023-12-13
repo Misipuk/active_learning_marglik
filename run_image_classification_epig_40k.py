@@ -37,11 +37,23 @@ def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_si
     set_seed(seed)
     train_dataset = ds_cls(data_root, train=True, download=download_data, transform=transform)
     test_dataset = ds_cls(data_root, train=False, download=download_data, transform=transform)
-    x, y = dataset_to_tensors(train_dataset, device=device)
+    x_original, y_original = dataset_to_tensors(train_dataset, device=device)
     x_test, y_test = dataset_to_tensors(test_dataset, device=device)
     test_loader = TensorDataLoader(x_test, y_test, batch_size=batch_size)
     
-    classes = torch.unique(y)
+    
+    
+    classes = torch.unique(y_original)
+    ixs_train = list()
+    for c in classes.cpu().numpy():
+        ixs_train.append(np.random.choice(np.where(y_original.cpu() == c)[0], int(40000/len(classes)), replace=False))
+    ixs_train_np = np.array(ixs_train).reshape(1,-1).squeeze()
+    x = x_original[ixs_train_np].detach().clone().to(device)
+    y = y_original[ixs_train_np].detach().clone().to(device)
+    
+    print(f"Pool shape : {x.shape}")
+    
+    
     ixs_val = list()
     for c in classes.cpu().numpy():
         ixs_val.append(np.random.choice(np.where(y.cpu() == c)[0], int(60/len(classes)), replace=False))
@@ -90,7 +102,7 @@ def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_si
     data.to(device)
     model = instantiate(cfg.model, input_shape=data.input_shape, output_size=data.n_classes)
     model = model.to(device)
-    
+
 #     cfg.trainer["n_optim_steps_max"] = 5
 #     print(cfg.trainer["n_optim_steps_max"])
     trainer = instantiate(cfg.trainer, model=model)
@@ -109,14 +121,14 @@ def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_si
     logging.info(f'Initial accuracy: {test_acc*100:.2f}%')
     if use_wandb:
         wandb.log({'test/ll': test_loss, 'test/acc': test_acc}, step=n_init)
-    
+
 #     print("BALD started")
-    
+
 #     scores = trainer.estimate_bald(val_loader)
 #     scores = scores.numpy()
 #     scores = scores['bald']
 #     acquired_pool_inds = np.argmax(scores)
-    
+
 #     print(f"index: {acquired_pool_inds}")
 
 

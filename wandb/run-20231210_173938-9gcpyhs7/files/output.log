@@ -1,0 +1,6 @@
+
+Training started
+Test started
+[neural_network.py:125]INFO: Stopping training at step 5500
+BALD started
+[run_image_classification_epig.py:108]INFO: Initial test loss: 1.5693

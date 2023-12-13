@@ -1,0 +1,481 @@
+
+Pool shape : torch.Size([40000, 1, 28, 28])
+Training started
+Test started
+[neural_network.py:125]INFO: Stopping training at step 6100
+[run_image_classification_epig_40k.py:120]INFO: Initial test loss: 1.2838
+[run_image_classification_epig_40k.py:121]INFO: Initial accuracy: 64.50%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 6100
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 21: 1.4450
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 64.22%
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 11500
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 22: 1.4862
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 65.02%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 9400
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 23: 1.5030
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 66.24%
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 12900
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 24: 1.6131
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 64.60%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 7100
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 25: 1.6256
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 65.01%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 9200
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 26: 1.6463
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 64.59%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 10900
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 27: 1.7444
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 66.96%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 11100
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 28: 1.7863
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 66.01%
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 8000
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 29: 1.7666
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 66.19%
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 6700
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 30: 1.6095
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 68.50%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 6600
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 31: 1.5207
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 69.71%
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 5500
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 32: 1.4811
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 70.20%
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 11600
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 33: 1.4348
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 70.25%
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 7700
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 34: 1.4006
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 69.61%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 5100
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 35: 1.3996
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 68.65%
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 5800
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 36: 1.4559
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 68.17%
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 13300
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 37: 1.3572
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 69.83%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 5500
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 38: 1.2808
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 70.46%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 15700
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 39: 1.3739
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 71.24%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 10800
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 40: 1.1501
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 73.21%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 5200
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 41: 1.0439
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 73.97%
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 5600
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 42: 1.0054
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 74.25%
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 6000
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 43: 1.0015
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 74.23%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 6800
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 44: 0.9699
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 75.27%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 8100
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 45: 0.9309
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 76.65%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 9000
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 46: 0.9292
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 77.06%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 11600
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 47: 0.8511
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 78.29%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 9300
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 48: 0.8661
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 78.19%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 8900
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 49: 0.9733
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 78.01%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 17400
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 50: 0.8971
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 78.62%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 6700
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 51: 0.8112
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 79.09%
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 5700
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 52: 0.8589
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 79.58%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 6300
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 53: 0.7867
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 80.30%
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 10700
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 54: 0.7425
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 80.70%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 11300
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 55: 0.7160
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 80.82%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 13300
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 56: 0.7375
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 81.01%
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 7400
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 57: 0.7377
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 80.95%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 14500
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 58: 0.6814
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 82.13%
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 6100
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 59: 0.6159
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 82.89%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 9400
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 60: 0.6564
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 82.60%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 8700
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 61: 0.6357
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 82.55%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 6100
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 62: 0.6491
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 82.13%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 7800
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 63: 0.6756
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 82.43%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 5900
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 64: 0.6756
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 83.00%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 9400
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 65: 0.6461
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 82.56%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 5400
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 66: 0.6552
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 83.30%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 6300
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 67: 0.6104
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 83.17%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 7400
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 68: 0.6805
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 83.30%
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 5300
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 69: 0.6116
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 83.40%
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 5600
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 70: 0.6747
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 82.87%
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 13300
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 71: 0.6986
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 82.87%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 8600
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 72: 0.6431
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 82.59%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 10800
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 73: 0.6714
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 81.56%
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 5500
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 74: 0.6988
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 82.21%
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 8800
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 75: 0.6883
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 82.39%
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 6000
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 76: 0.6487
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 83.34%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 11400
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 77: 0.6443
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 83.76%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 11800
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 78: 0.6219
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 84.42%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 8100
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 79: 0.6306
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 84.75%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 7900
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 80: 0.6770
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 84.08%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 7000
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 81: 0.6317
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 84.68%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 6800
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 82: 0.6144
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 84.54%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 10300
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 83: 0.6377
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 85.03%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 8800
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 84: 0.6080
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 85.80%
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 9800
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 85: 0.5431
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 86.06%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 5900
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 86: 0.5518
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 86.08%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 9600
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 87: 0.5276
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 85.63%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 6300
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 88: 0.5348
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 86.13%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 5100
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 89: 0.5217
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 86.53%
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 12700
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 90: 0.5122
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 86.60%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 10200
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 91: 0.5352
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 86.30%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 12100
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 92: 0.5025
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 86.52%
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 9900
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 93: 0.4758
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 87.10%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 6300
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 94: 0.5825
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 86.65%
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 8500
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 95: 0.5299
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 86.55%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 5000
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 96: 0.4915
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 86.90%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 8500
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 97: 0.5274
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 86.67%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 10600
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 98: 0.4968
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 87.24%
+BALD started
+Before concat
+We are in concat
+[neural_network.py:125]INFO: Stopping training at step 6700
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 99: 0.4729
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 87.03%

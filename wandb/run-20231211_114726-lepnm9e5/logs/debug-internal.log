@@ -1,0 +1,303 @@
+2023-12-11 11:47:26,792 INFO    StreamThr :1120858 [internal.py:wandb_internal():86] W&B internal server running at pid: 1120858, started at: 2023-12-11 11:47:26.788297
+2023-12-11 11:47:26,796 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status
+2023-12-11 11:47:26,811 INFO    WriterThread:1120858 [datastore.py:open_for_write():85] open: /dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/wandb/run-20231211_114726-lepnm9e5/run-lepnm9e5.wandb
+2023-12-11 11:47:26,814 DEBUG   SenderThread:1120858 [sender.py:send():382] send: header
+2023-12-11 11:47:26,837 DEBUG   SenderThread:1120858 [sender.py:send():382] send: run
+2023-12-11 11:47:27,339 INFO    SenderThread:1120858 [dir_watcher.py:__init__():211] watching files in: /dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/wandb/run-20231211_114726-lepnm9e5/files
+2023-12-11 11:47:27,339 INFO    SenderThread:1120858 [sender.py:_start_run_threads():1136] run started: lepnm9e5 with start time 1702291646.788363
+2023-12-11 11:47:27,360 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: check_version
+2023-12-11 11:47:27,361 DEBUG   SenderThread:1120858 [sender.py:send_request():409] send_request: check_version
+2023-12-11 11:47:27,571 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: run_start
+2023-12-11 11:47:27,573 DEBUG   HandlerThread:1120858 [system_info.py:__init__():32] System info init
+2023-12-11 11:47:27,574 DEBUG   HandlerThread:1120858 [system_info.py:__init__():47] System info init done
+2023-12-11 11:47:27,574 INFO    HandlerThread:1120858 [system_monitor.py:start():194] Starting system monitor
+2023-12-11 11:47:27,574 INFO    SystemMonitor:1120858 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-12-11 11:47:27,577 INFO    HandlerThread:1120858 [system_monitor.py:probe():214] Collecting system info
+2023-12-11 11:47:27,578 INFO    SystemMonitor:1120858 [interfaces.py:start():190] Started cpu monitoring
+2023-12-11 11:47:27,583 INFO    SystemMonitor:1120858 [interfaces.py:start():190] Started disk monitoring
+2023-12-11 11:47:27,588 INFO    SystemMonitor:1120858 [interfaces.py:start():190] Started memory monitoring
+2023-12-11 11:47:27,593 INFO    SystemMonitor:1120858 [interfaces.py:start():190] Started network monitoring
+2023-12-11 11:47:27,613 DEBUG   HandlerThread:1120858 [system_info.py:probe():196] Probing system
+2023-12-11 11:47:27,621 DEBUG   HandlerThread:1120858 [system_info.py:_probe_git():181] Probing git
+2023-12-11 11:47:27,656 DEBUG   HandlerThread:1120858 [system_info.py:_probe_git():189] Probing git done
+2023-12-11 11:47:27,656 DEBUG   HandlerThread:1120858 [system_info.py:probe():244] Probing system done
+2023-12-11 11:47:27,656 DEBUG   HandlerThread:1120858 [system_monitor.py:probe():223] {'os': 'Linux-5.4.0-153-generic-x86_64-with-glibc2.35', 'python': '3.10.12', 'heartbeatAt': '2023-12-11T10:47:27.613296', 'startedAt': '2023-12-11T10:47:26.743563', 'docker': None, 'cuda': None, 'args': ('--seed', '3', '--config', 'configs/mnist_epig.yaml', '--device', 'cpu'), 'state': 'running', 'program': '/dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/run_image_classification_epig_40k.py', 'codePathLocal': 'run_image_classification_epig_40k.py', 'codePath': 'run_image_classification_epig_40k.py', 'git': {'remote': 'git@github.com:Misipuk/active_learning_marglik.git', 'commit': '2c100d6eff015aee2ba3f2e0a400a177f95ab10d'}, 'email': None, 'root': '/dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik', 'host': 'cpu-008', 'username': 'ge32jaq2', 'executable': '/usr/bin/python3', 'cpu_count': 40, 'cpu_count_logical': 40, 'cpu_freq': {'current': 2294.4600000000014, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2294.46, 'min': 0.0, 'max': 0.0}, {'current': 2294.46, 'min': 0.0, 'max': 0.0}, {'current': 2294.46, 'min': 0.0, 'max': 0.0}, {'current': 2294.46, 'min': 0.0, 'max': 0.0}, {'current': 2294.46, 'min': 0.0, 'max': 0.0}, {'current': 2294.46, 'min': 0.0, 'max': 0.0}, {'current': 2294.46, 'min': 0.0, 'max': 0.0}, {'current': 2294.46, 'min': 0.0, 'max': 0.0}, {'current': 2294.46, 'min': 0.0, 'max': 0.0}, {'current': 2294.46, 'min': 0.0, 'max': 0.0}, {'current': 2294.46, 'min': 0.0, 'max': 0.0}, {'current': 2294.46, 'min': 0.0, 'max': 0.0}, {'current': 2294.46, 'min': 0.0, 'max': 0.0}, {'current': 2294.46, 'min': 0.0, 'max': 0.0}, {'current': 2294.46, 'min': 0.0, 'max': 0.0}, {'current': 2294.46, 'min': 0.0, 'max': 0.0}, {'current': 2294.46, 'min': 0.0, 'max': 0.0}, {'current': 2294.46, 'min': 0.0, 'max': 0.0}, {'current': 2294.46, 'min': 0.0, 'max': 0.0}, {'current': 2294.46, 'min': 0.0, 'max': 0.0}, {'current': 2294.46, 'min': 0.0, 'max': 0.0}, {'current': 2294.46, 'min': 0.0, 'max': 0.0}, {'current': 2294.46, 'min': 0.0, 'max': 0.0}, {'current': 2294.46, 'min': 0.0, 'max': 0.0}, {'current': 2294.46, 'min': 0.0, 'max': 0.0}, {'current': 2294.46, 'min': 0.0, 'max': 0.0}, {'current': 2294.46, 'min': 0.0, 'max': 0.0}, {'current': 2294.46, 'min': 0.0, 'max': 0.0}, {'current': 2294.46, 'min': 0.0, 'max': 0.0}, {'current': 2294.46, 'min': 0.0, 'max': 0.0}, {'current': 2294.46, 'min': 0.0, 'max': 0.0}, {'current': 2294.46, 'min': 0.0, 'max': 0.0}, {'current': 2294.46, 'min': 0.0, 'max': 0.0}, {'current': 2294.46, 'min': 0.0, 'max': 0.0}, {'current': 2294.46, 'min': 0.0, 'max': 0.0}, {'current': 2294.46, 'min': 0.0, 'max': 0.0}, {'current': 2294.46, 'min': 0.0, 'max': 0.0}, {'current': 2294.46, 'min': 0.0, 'max': 0.0}, {'current': 2294.46, 'min': 0.0, 'max': 0.0}, {'current': 2294.46, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 499.755859375, 'used': 84.75480651855469}}, 'memory': {'total': 974.0427742004395}}
+2023-12-11 11:47:27,658 INFO    HandlerThread:1120858 [system_monitor.py:probe():224] Finished collecting system info
+2023-12-11 11:47:27,658 INFO    HandlerThread:1120858 [system_monitor.py:probe():227] Publishing system info
+2023-12-11 11:47:27,658 DEBUG   HandlerThread:1120858 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-12-11 11:47:27,662 DEBUG   HandlerThread:1120858 [system_info.py:_save_pip():68] Saving pip packages done
+2023-12-11 11:47:27,666 INFO    HandlerThread:1120858 [system_monitor.py:probe():229] Finished publishing system info
+2023-12-11 11:47:27,677 DEBUG   SenderThread:1120858 [sender.py:send():382] send: files
+2023-12-11 11:47:27,677 INFO    SenderThread:1120858 [sender.py:_save_file():1392] saving file wandb-metadata.json with policy now
+2023-12-11 11:47:27,699 DEBUG   SenderThread:1120858 [sender.py:send():382] send: telemetry
+2023-12-11 11:47:27,700 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-11 11:47:27,701 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-11 11:47:27,702 DEBUG   SenderThread:1120858 [sender.py:send_request():409] send_request: stop_status
+2023-12-11 11:47:28,312 INFO    wandb-upload_0:1120858 [upload_job.py:push():131] Uploaded file /tmp/tmpg_1u550lwandb/w3wuh8mn-wandb-metadata.json
+2023-12-11 11:47:28,343 INFO    Thread-12 :1120858 [dir_watcher.py:_on_file_created():271] file/dir created: /dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/wandb/run-20231211_114726-lepnm9e5/files/requirements.txt
+2023-12-11 11:47:28,344 INFO    Thread-12 :1120858 [dir_watcher.py:_on_file_created():271] file/dir created: /dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/wandb/run-20231211_114726-lepnm9e5/files/wandb-metadata.json
+2023-12-11 11:47:32,064 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:47:35,345 INFO    Thread-12 :1120858 [dir_watcher.py:_on_file_created():271] file/dir created: /dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/wandb/run-20231211_114726-lepnm9e5/files/output.log
+2023-12-11 11:47:37,347 INFO    Thread-12 :1120858 [dir_watcher.py:_on_file_modified():288] file/dir modified: /dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/wandb/run-20231211_114726-lepnm9e5/files/output.log
+2023-12-11 11:47:37,630 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:47:42,631 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:47:42,730 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-11 11:47:42,731 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-11 11:47:42,732 DEBUG   SenderThread:1120858 [sender.py:send_request():409] send_request: stop_status
+2023-12-11 11:47:47,944 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:47:52,945 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:47:55,939 DEBUG   SenderThread:1120858 [sender.py:send():382] send: telemetry
+2023-12-11 11:47:57,728 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-11 11:47:57,729 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-11 11:47:57,731 DEBUG   SenderThread:1120858 [sender.py:send_request():409] send_request: stop_status
+2023-12-11 11:47:57,959 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:47:58,369 INFO    Thread-12 :1120858 [dir_watcher.py:_on_file_modified():288] file/dir modified: /dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/wandb/run-20231211_114726-lepnm9e5/files/config.yaml
+2023-12-11 11:48:01,069 DEBUG   SenderThread:1120858 [sender.py:send():382] send: telemetry
+2023-12-11 11:48:01,389 DEBUG   SenderThread:1120858 [sender.py:send():382] send: telemetry
+2023-12-11 11:48:03,391 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:48:07,378 INFO    Thread-12 :1120858 [dir_watcher.py:_on_file_modified():288] file/dir modified: /dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/wandb/run-20231211_114726-lepnm9e5/files/output.log
+2023-12-11 11:48:08,502 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:48:12,728 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-11 11:48:12,729 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-11 11:48:12,729 DEBUG   SenderThread:1120858 [sender.py:send_request():409] send_request: stop_status
+2023-12-11 11:48:13,945 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:48:18,946 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:48:23,946 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:48:27,593 DEBUG   SystemMonitor:1120858 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-12-11 11:48:27,594 DEBUG   SenderThread:1120858 [sender.py:send():382] send: stats
+2023-12-11 11:48:27,727 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-11 11:48:27,729 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-11 11:48:27,729 DEBUG   SenderThread:1120858 [sender.py:send_request():409] send_request: stop_status
+2023-12-11 11:48:28,958 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:48:29,390 INFO    Thread-12 :1120858 [dir_watcher.py:_on_file_modified():288] file/dir modified: /dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/wandb/run-20231211_114726-lepnm9e5/files/config.yaml
+2023-12-11 11:48:34,136 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:48:39,137 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:48:42,727 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-11 11:48:42,729 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-11 11:48:42,729 DEBUG   SenderThread:1120858 [sender.py:send_request():409] send_request: stop_status
+2023-12-11 11:48:44,968 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:48:49,969 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:48:54,970 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:48:57,595 DEBUG   SenderThread:1120858 [sender.py:send():382] send: stats
+2023-12-11 11:48:57,727 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-11 11:48:57,729 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-11 11:48:57,729 DEBUG   SenderThread:1120858 [sender.py:send_request():409] send_request: stop_status
+2023-12-11 11:49:00,910 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:49:05,911 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:49:10,911 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:49:12,728 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-11 11:49:12,729 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-11 11:49:12,729 DEBUG   SenderThread:1120858 [sender.py:send_request():409] send_request: stop_status
+2023-12-11 11:49:16,893 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:49:21,893 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:49:26,894 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:49:27,596 DEBUG   SenderThread:1120858 [sender.py:send():382] send: stats
+2023-12-11 11:49:27,728 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-11 11:49:27,729 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-11 11:49:27,729 DEBUG   SenderThread:1120858 [sender.py:send_request():409] send_request: stop_status
+2023-12-11 11:49:31,958 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:49:36,958 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:49:41,959 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:49:42,728 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-11 11:49:42,729 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-11 11:49:42,729 DEBUG   SenderThread:1120858 [sender.py:send_request():409] send_request: stop_status
+2023-12-11 11:49:47,878 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:49:52,879 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:49:57,596 DEBUG   SenderThread:1120858 [sender.py:send():382] send: stats
+2023-12-11 11:49:57,728 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-11 11:49:57,729 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-11 11:49:57,729 DEBUG   SenderThread:1120858 [sender.py:send_request():409] send_request: stop_status
+2023-12-11 11:49:57,955 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:50:02,956 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:50:07,957 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:50:12,728 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-11 11:50:12,729 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-11 11:50:12,730 DEBUG   SenderThread:1120858 [sender.py:send_request():409] send_request: stop_status
+2023-12-11 11:50:13,921 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:50:18,922 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:50:23,923 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:50:27,597 DEBUG   SenderThread:1120858 [sender.py:send():382] send: stats
+2023-12-11 11:50:27,728 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-11 11:50:27,729 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-11 11:50:27,730 DEBUG   SenderThread:1120858 [sender.py:send_request():409] send_request: stop_status
+2023-12-11 11:50:28,974 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:50:33,975 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:50:38,976 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:50:42,728 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-11 11:50:42,730 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-11 11:50:42,730 DEBUG   SenderThread:1120858 [sender.py:send_request():409] send_request: stop_status
+2023-12-11 11:50:44,942 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:50:49,942 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:50:54,943 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:50:57,598 DEBUG   SenderThread:1120858 [sender.py:send():382] send: stats
+2023-12-11 11:50:57,728 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-11 11:50:57,730 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-11 11:50:57,730 DEBUG   SenderThread:1120858 [sender.py:send_request():409] send_request: stop_status
+2023-12-11 11:51:00,878 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:51:05,879 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:51:10,879 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:51:12,729 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-11 11:51:12,730 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-11 11:51:12,730 DEBUG   SenderThread:1120858 [sender.py:send_request():409] send_request: stop_status
+2023-12-11 11:51:15,899 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:51:20,899 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:51:25,900 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:51:27,599 DEBUG   SenderThread:1120858 [sender.py:send():382] send: stats
+2023-12-11 11:51:27,729 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-11 11:51:27,756 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-11 11:51:27,757 DEBUG   SenderThread:1120858 [sender.py:send_request():409] send_request: stop_status
+2023-12-11 11:51:30,997 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:51:35,998 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:51:40,999 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:51:42,729 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-11 11:51:42,731 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-11 11:51:42,731 DEBUG   SenderThread:1120858 [sender.py:send_request():409] send_request: stop_status
+2023-12-11 11:51:46,963 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:51:51,964 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:51:56,965 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:51:57,600 DEBUG   SenderThread:1120858 [sender.py:send():382] send: stats
+2023-12-11 11:51:57,729 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-11 11:51:57,730 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-11 11:51:57,731 DEBUG   SenderThread:1120858 [sender.py:send_request():409] send_request: stop_status
+2023-12-11 11:52:02,961 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:52:07,962 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:52:12,729 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-11 11:52:12,730 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-11 11:52:12,731 DEBUG   SenderThread:1120858 [sender.py:send_request():409] send_request: stop_status
+2023-12-11 11:52:13,926 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:52:18,927 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:52:23,927 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:52:25,350 DEBUG   SenderThread:1120858 [sender.py:send():382] send: exit
+2023-12-11 11:52:25,350 INFO    SenderThread:1120858 [sender.py:send_exit():589] handling exit code: 255
+2023-12-11 11:52:25,350 INFO    SenderThread:1120858 [sender.py:send_exit():591] handling runtime: 297
+2023-12-11 11:52:25,354 INFO    SenderThread:1120858 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-11 11:52:25,355 INFO    SenderThread:1120858 [sender.py:send_exit():597] send defer
+2023-12-11 11:52:25,356 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: defer
+2023-12-11 11:52:25,356 INFO    HandlerThread:1120858 [handler.py:handle_request_defer():172] handle defer: 0
+2023-12-11 11:52:25,357 DEBUG   SenderThread:1120858 [sender.py:send_request():409] send_request: defer
+2023-12-11 11:52:25,357 INFO    SenderThread:1120858 [sender.py:send_request_defer():613] handle sender defer: 0
+2023-12-11 11:52:25,357 INFO    SenderThread:1120858 [sender.py:transition_state():617] send defer: 1
+2023-12-11 11:52:25,357 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: defer
+2023-12-11 11:52:25,357 INFO    HandlerThread:1120858 [handler.py:handle_request_defer():172] handle defer: 1
+2023-12-11 11:52:25,358 DEBUG   SenderThread:1120858 [sender.py:send_request():409] send_request: defer
+2023-12-11 11:52:25,372 INFO    SenderThread:1120858 [sender.py:send_request_defer():613] handle sender defer: 1
+2023-12-11 11:52:25,372 INFO    SenderThread:1120858 [sender.py:transition_state():617] send defer: 2
+2023-12-11 11:52:25,372 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: defer
+2023-12-11 11:52:25,373 INFO    HandlerThread:1120858 [handler.py:handle_request_defer():172] handle defer: 2
+2023-12-11 11:52:25,373 INFO    HandlerThread:1120858 [system_monitor.py:finish():203] Stopping system monitor
+2023-12-11 11:52:25,373 INFO    HandlerThread:1120858 [interfaces.py:finish():202] Joined cpu monitor
+2023-12-11 11:52:25,374 INFO    HandlerThread:1120858 [interfaces.py:finish():202] Joined disk monitor
+2023-12-11 11:52:25,375 DEBUG   SystemMonitor:1120858 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-12-11 11:52:25,375 INFO    HandlerThread:1120858 [interfaces.py:finish():202] Joined memory monitor
+2023-12-11 11:52:25,375 DEBUG   SystemMonitor:1120858 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-12-11 11:52:25,376 INFO    HandlerThread:1120858 [interfaces.py:finish():202] Joined network monitor
+2023-12-11 11:52:25,378 DEBUG   SenderThread:1120858 [sender.py:send_request():409] send_request: defer
+2023-12-11 11:52:25,379 INFO    SenderThread:1120858 [sender.py:send_request_defer():613] handle sender defer: 2
+2023-12-11 11:52:25,379 INFO    SenderThread:1120858 [sender.py:transition_state():617] send defer: 3
+2023-12-11 11:52:25,379 DEBUG   SenderThread:1120858 [sender.py:send():382] send: stats
+2023-12-11 11:52:25,380 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: defer
+2023-12-11 11:52:25,380 INFO    HandlerThread:1120858 [handler.py:handle_request_defer():172] handle defer: 3
+2023-12-11 11:52:25,381 DEBUG   SenderThread:1120858 [sender.py:send_request():409] send_request: defer
+2023-12-11 11:52:25,381 INFO    SenderThread:1120858 [sender.py:send_request_defer():613] handle sender defer: 3
+2023-12-11 11:52:25,381 INFO    SenderThread:1120858 [sender.py:transition_state():617] send defer: 4
+2023-12-11 11:52:25,381 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: defer
+2023-12-11 11:52:25,382 INFO    HandlerThread:1120858 [handler.py:handle_request_defer():172] handle defer: 4
+2023-12-11 11:52:25,382 DEBUG   SenderThread:1120858 [sender.py:send_request():409] send_request: defer
+2023-12-11 11:52:25,382 INFO    SenderThread:1120858 [sender.py:send_request_defer():613] handle sender defer: 4
+2023-12-11 11:52:25,382 INFO    SenderThread:1120858 [sender.py:transition_state():617] send defer: 5
+2023-12-11 11:52:25,382 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: defer
+2023-12-11 11:52:25,383 INFO    HandlerThread:1120858 [handler.py:handle_request_defer():172] handle defer: 5
+2023-12-11 11:52:25,383 DEBUG   SenderThread:1120858 [sender.py:send():382] send: summary
+2023-12-11 11:52:25,384 INFO    SenderThread:1120858 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-11 11:52:25,385 DEBUG   SenderThread:1120858 [sender.py:send_request():409] send_request: defer
+2023-12-11 11:52:25,385 INFO    SenderThread:1120858 [sender.py:send_request_defer():613] handle sender defer: 5
+2023-12-11 11:52:25,385 INFO    SenderThread:1120858 [sender.py:transition_state():617] send defer: 6
+2023-12-11 11:52:25,385 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: defer
+2023-12-11 11:52:25,385 INFO    HandlerThread:1120858 [handler.py:handle_request_defer():172] handle defer: 6
+2023-12-11 11:52:25,386 DEBUG   SenderThread:1120858 [sender.py:send_request():409] send_request: defer
+2023-12-11 11:52:25,386 INFO    SenderThread:1120858 [sender.py:send_request_defer():613] handle sender defer: 6
+2023-12-11 11:52:25,386 INFO    SenderThread:1120858 [sender.py:transition_state():617] send defer: 7
+2023-12-11 11:52:25,386 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 11:52:25,397 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: defer
+2023-12-11 11:52:25,397 INFO    HandlerThread:1120858 [handler.py:handle_request_defer():172] handle defer: 7
+2023-12-11 11:52:25,398 DEBUG   SenderThread:1120858 [sender.py:send_request():409] send_request: defer
+2023-12-11 11:52:25,398 INFO    SenderThread:1120858 [sender.py:send_request_defer():613] handle sender defer: 7
+2023-12-11 11:52:25,510 INFO    Thread-12 :1120858 [dir_watcher.py:_on_file_created():271] file/dir created: /dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/wandb/run-20231211_114726-lepnm9e5/files/wandb-summary.json
+2023-12-11 11:52:26,349 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: poll_exit
+2023-12-11 11:52:27,366 INFO    SenderThread:1120858 [sender.py:transition_state():617] send defer: 8
+2023-12-11 11:52:27,367 DEBUG   SenderThread:1120858 [sender.py:send_request():409] send_request: poll_exit
+2023-12-11 11:52:27,367 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: defer
+2023-12-11 11:52:27,368 INFO    HandlerThread:1120858 [handler.py:handle_request_defer():172] handle defer: 8
+2023-12-11 11:52:27,368 DEBUG   SenderThread:1120858 [sender.py:send_request():409] send_request: defer
+2023-12-11 11:52:27,369 INFO    SenderThread:1120858 [sender.py:send_request_defer():613] handle sender defer: 8
+2023-12-11 11:52:27,369 INFO    SenderThread:1120858 [job_builder.py:build():298] Attempting to build job artifact
+2023-12-11 11:52:27,370 INFO    SenderThread:1120858 [job_builder.py:_get_source_type():428] is repo sourced job
+2023-12-11 11:52:27,404 INFO    SenderThread:1120858 [job_builder.py:build():404] adding wandb-job metadata file
+2023-12-11 11:52:27,512 INFO    Thread-12 :1120858 [dir_watcher.py:_on_file_modified():288] file/dir modified: /dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/wandb/run-20231211_114726-lepnm9e5/files/output.log
+2023-12-11 11:52:27,581 INFO    SenderThread:1120858 [sender.py:transition_state():617] send defer: 9
+2023-12-11 11:52:27,582 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: defer
+2023-12-11 11:52:27,582 DEBUG   SenderThread:1120858 [sender.py:send():382] send: artifact
+2023-12-11 11:52:27,582 INFO    HandlerThread:1120858 [handler.py:handle_request_defer():172] handle defer: 9
+2023-12-11 11:52:28,402 INFO    SenderThread:1120858 [sender.py:send_artifact():1470] sent artifact job-git_github.com_Misipuk_active_learning_marglik.git_run_image_classification_epig_40k.py - {'id': 'QXJ0aWZhY3Q6NjYzODI3NDY1', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyMjY0MzEyMQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjYzODI3NDY1', 'versionIndex': 0}}}
+2023-12-11 11:52:28,402 DEBUG   SenderThread:1120858 [sender.py:send_request():409] send_request: defer
+2023-12-11 11:52:28,403 INFO    SenderThread:1120858 [sender.py:send_request_defer():613] handle sender defer: 9
+2023-12-11 11:52:28,403 INFO    SenderThread:1120858 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-12-11 11:52:28,515 INFO    SenderThread:1120858 [dir_watcher.py:finish():388] scan: /dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/wandb/run-20231211_114726-lepnm9e5/files
+2023-12-11 11:52:28,515 INFO    SenderThread:1120858 [dir_watcher.py:finish():402] scan save: /dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/wandb/run-20231211_114726-lepnm9e5/files/wandb-metadata.json wandb-metadata.json
+2023-12-11 11:52:28,515 INFO    SenderThread:1120858 [dir_watcher.py:finish():402] scan save: /dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/wandb/run-20231211_114726-lepnm9e5/files/config.yaml config.yaml
+2023-12-11 11:52:28,516 INFO    SenderThread:1120858 [dir_watcher.py:finish():402] scan save: /dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/wandb/run-20231211_114726-lepnm9e5/files/requirements.txt requirements.txt
+2023-12-11 11:52:28,523 INFO    SenderThread:1120858 [dir_watcher.py:finish():402] scan save: /dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/wandb/run-20231211_114726-lepnm9e5/files/wandb-summary.json wandb-summary.json
+2023-12-11 11:52:28,529 INFO    SenderThread:1120858 [dir_watcher.py:finish():402] scan save: /dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/wandb/run-20231211_114726-lepnm9e5/files/output.log output.log
+2023-12-11 11:52:28,536 INFO    SenderThread:1120858 [sender.py:transition_state():617] send defer: 10
+2023-12-11 11:52:28,537 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: defer
+2023-12-11 11:52:28,538 INFO    HandlerThread:1120858 [handler.py:handle_request_defer():172] handle defer: 10
+2023-12-11 11:52:28,544 DEBUG   SenderThread:1120858 [sender.py:send_request():409] send_request: defer
+2023-12-11 11:52:28,544 INFO    SenderThread:1120858 [sender.py:send_request_defer():613] handle sender defer: 10
+2023-12-11 11:52:28,545 INFO    SenderThread:1120858 [file_pusher.py:finish():175] shutting down file pusher
+2023-12-11 11:52:29,373 INFO    wandb-upload_0:1120858 [upload_job.py:push():131] Uploaded file /dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/wandb/run-20231211_114726-lepnm9e5/files/config.yaml
+2023-12-11 11:52:29,394 INFO    wandb-upload_1:1120858 [upload_job.py:push():131] Uploaded file /dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/wandb/run-20231211_114726-lepnm9e5/files/requirements.txt
+2023-12-11 11:52:29,542 INFO    wandb-upload_2:1120858 [upload_job.py:push():131] Uploaded file /dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/wandb/run-20231211_114726-lepnm9e5/files/wandb-summary.json
+2023-12-11 11:52:29,641 INFO    wandb-upload_3:1120858 [upload_job.py:push():131] Uploaded file /dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/wandb/run-20231211_114726-lepnm9e5/files/output.log
+2023-12-11 11:52:29,842 INFO    Thread-11 (_thread_body):1120858 [sender.py:transition_state():617] send defer: 11
+2023-12-11 11:52:29,843 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: defer
+2023-12-11 11:52:29,843 INFO    HandlerThread:1120858 [handler.py:handle_request_defer():172] handle defer: 11
+2023-12-11 11:52:29,844 DEBUG   SenderThread:1120858 [sender.py:send_request():409] send_request: defer
+2023-12-11 11:52:29,845 INFO    SenderThread:1120858 [sender.py:send_request_defer():613] handle sender defer: 11
+2023-12-11 11:52:29,845 INFO    SenderThread:1120858 [file_pusher.py:join():181] waiting for file pusher
+2023-12-11 11:52:29,845 INFO    SenderThread:1120858 [sender.py:transition_state():617] send defer: 12
+2023-12-11 11:52:29,846 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: defer
+2023-12-11 11:52:29,846 INFO    HandlerThread:1120858 [handler.py:handle_request_defer():172] handle defer: 12
+2023-12-11 11:52:29,847 DEBUG   SenderThread:1120858 [sender.py:send_request():409] send_request: defer
+2023-12-11 11:52:29,847 INFO    SenderThread:1120858 [sender.py:send_request_defer():613] handle sender defer: 12
+2023-12-11 11:52:29,847 INFO    SenderThread:1120858 [file_stream.py:finish():595] file stream finish called
+2023-12-11 11:52:30,354 INFO    SenderThread:1120858 [file_stream.py:finish():599] file stream finish is done
+2023-12-11 11:52:30,354 INFO    SenderThread:1120858 [sender.py:transition_state():617] send defer: 13
+2023-12-11 11:52:30,355 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: defer
+2023-12-11 11:52:30,355 INFO    HandlerThread:1120858 [handler.py:handle_request_defer():172] handle defer: 13
+2023-12-11 11:52:30,356 DEBUG   SenderThread:1120858 [sender.py:send_request():409] send_request: defer
+2023-12-11 11:52:30,356 INFO    SenderThread:1120858 [sender.py:send_request_defer():613] handle sender defer: 13
+2023-12-11 11:52:30,357 INFO    SenderThread:1120858 [sender.py:transition_state():617] send defer: 14
+2023-12-11 11:52:30,357 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: defer
+2023-12-11 11:52:30,358 DEBUG   SenderThread:1120858 [sender.py:send():382] send: final
+2023-12-11 11:52:30,359 INFO    HandlerThread:1120858 [handler.py:handle_request_defer():172] handle defer: 14
+2023-12-11 11:52:30,359 DEBUG   SenderThread:1120858 [sender.py:send():382] send: footer
+2023-12-11 11:52:30,360 DEBUG   SenderThread:1120858 [sender.py:send_request():409] send_request: defer
+2023-12-11 11:52:30,360 INFO    SenderThread:1120858 [sender.py:send_request_defer():613] handle sender defer: 14
+2023-12-11 11:52:30,361 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: poll_exit
+2023-12-11 11:52:30,362 DEBUG   SenderThread:1120858 [sender.py:send_request():409] send_request: poll_exit
+2023-12-11 11:52:30,363 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: server_info
+2023-12-11 11:52:30,364 DEBUG   SenderThread:1120858 [sender.py:send_request():409] send_request: server_info
+2023-12-11 11:52:30,370 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: get_summary
+2023-12-11 11:52:30,370 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: sampled_history
+2023-12-11 11:52:30,371 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-11 11:52:30,372 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: job_info
+2023-12-11 11:52:30,515 DEBUG   SenderThread:1120858 [sender.py:send_request():409] send_request: job_info
+2023-12-11 11:52:30,516 INFO    MainThread:1120858 [wandb_run.py:_footer_history_summary_info():3837] rendering history
+2023-12-11 11:52:30,517 INFO    MainThread:1120858 [wandb_run.py:_footer_history_summary_info():3869] rendering summary
+2023-12-11 11:52:30,517 INFO    MainThread:1120858 [wandb_run.py:_footer_sync_info():3796] logging synced files
+2023-12-11 11:52:30,518 DEBUG   HandlerThread:1120858 [handler.py:handle_request():146] handle_request: shutdown
+2023-12-11 11:52:30,519 INFO    HandlerThread:1120858 [handler.py:finish():866] shutting down handler
+2023-12-11 11:52:31,373 INFO    WriterThread:1120858 [datastore.py:close():294] close: /dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/wandb/run-20231211_114726-lepnm9e5/run-lepnm9e5.wandb
+2023-12-11 11:52:31,516 INFO    SenderThread:1120858 [sender.py:finish():1548] shutting down sender
+2023-12-11 11:52:31,517 INFO    SenderThread:1120858 [file_pusher.py:finish():175] shutting down file pusher
+2023-12-11 11:52:31,517 INFO    SenderThread:1120858 [file_pusher.py:join():181] waiting for file pusher
