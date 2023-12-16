@@ -92,40 +92,43 @@ class NeuralNetworkTrainer(LogProbsTrainer):
         step_range = tqdm(step_range, desc="Training") if self.verbose else step_range
 
         best_score = 0 if "acc" in self.early_stopping_metric else math.inf
-        early_stopping_operator = gt if "acc" in self.early_stopping_metric else lt
-
+        #early_stopping_operator = gt if "acc" in self.early_stopping_metric else lt
+        print("No validation here")
         for step in step_range:
             train_acc, train_loss = self.train_step(train_loader)
 
-            if step % self.validation_gap == 0:
-                with torch.inference_mode():
-                    val_acc, val_loss = self.test(val_loader)
+            best_model_state = self.model.state_dict()
 
-                log_update = {
-                    "time": time() - start_time,
-                    "step": step,
-                    "train_acc": train_acc.item(),
-                    "train_loss": train_loss.item(),
-                    "val_acc": val_acc.item(),
-                    "val_loss": val_loss.item(),
-                }
-                log.append(log_update)
+#             if step % self.validation_gap == 0:
+#                 with torch.inference_mode():
+#                     val_acc, val_loss = self.test(val_loader)
 
-                latest_score = log_update[self.early_stopping_metric]
-                score_has_improved = early_stopping_operator(latest_score, best_score)
+#                 log_update = {
+#                     "time": time() - start_time,
+#                     "step": step,
+#                     "train_acc": train_acc.item(),
+#                     "train_loss": train_loss.item(),
+#                     "val_acc": val_acc.item(),
+#                     "val_loss": val_loss.item(),
+#                 }
+#                 log.append(log_update)
 
-                if (step < self.n_optim_steps_min) or score_has_improved:
-                    best_model_state = self.model.state_dict()
-                    best_score = latest_score
-                    patience_left = self.early_stopping_patience
-                else:
-                    patience_left -= self.validation_gap
+#                 latest_score = log_update[self.early_stopping_metric]
+#                 score_has_improved = early_stopping_operator(latest_score, best_score)
 
-                if (self.early_stopping_patience != -1) and (patience_left <= 0):
-                    logging.info(f"Stopping training at step {step}")
-                    break
+#                 if (step < self.n_optim_steps_min) or score_has_improved:
+#                     best_model_state = self.model.state_dict()
+#                     best_score = latest_score
+#                     patience_left = self.early_stopping_patience
+#                 else:
+#                     patience_left -= self.validation_gap
+
+#                 if (self.early_stopping_patience != -1) and (patience_left <= 0):
+#                     logging.info(f"Stopping training at step {step}")
+#                     break
 
         if self.restore_best_model:
+            print("We are in restore_best_model if")
             self.model.load_state_dict(best_model_state)
 
         return log
