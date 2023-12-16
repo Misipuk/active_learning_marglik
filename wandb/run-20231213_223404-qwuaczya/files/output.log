@@ -1,0 +1,244 @@
+
+Pool shape : torch.Size([40000, 1, 28, 28])
+Training started
+[neural_network.py:125]INFO: Stopping training at step 5600
+Test started
+[run_image_classification_epig_40k.py:120]INFO: Initial test loss: 1.5726
+[run_image_classification_epig_40k.py:121]INFO: Initial accuracy: 61.63%
+[neural_network.py:125]INFO: Stopping training at step 5900
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 21: 1.6377
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 62.54%
+[neural_network.py:125]INFO: Stopping training at step 13200
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 22: 1.7135
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 63.34%
+[neural_network.py:125]INFO: Stopping training at step 8500
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 23: 1.8038
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 63.49%
+[neural_network.py:125]INFO: Stopping training at step 6300
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 24: 1.4846
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 65.71%
+[neural_network.py:125]INFO: Stopping training at step 7700
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 25: 1.4809
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 66.74%
+[neural_network.py:125]INFO: Stopping training at step 5500
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 26: 1.5427
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 66.05%
+[neural_network.py:125]INFO: Stopping training at step 8600
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 27: 1.6343
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 65.19%
+[neural_network.py:125]INFO: Stopping training at step 5800
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 28: 1.5197
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 65.91%
+[neural_network.py:125]INFO: Stopping training at step 10000
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 29: 1.6486
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 66.16%
+[neural_network.py:125]INFO: Stopping training at step 6400
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 30: 1.5361
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 66.95%
+[neural_network.py:125]INFO: Stopping training at step 5800
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 31: 1.3926
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 68.14%
+[neural_network.py:125]INFO: Stopping training at step 5300
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 32: 1.4784
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 68.94%
+[neural_network.py:125]INFO: Stopping training at step 11600
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 33: 1.5376
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 68.83%
+[neural_network.py:125]INFO: Stopping training at step 5300
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 34: 1.5750
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 69.74%
+[neural_network.py:125]INFO: Stopping training at step 9700
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 35: 1.4115
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 70.33%
+[neural_network.py:125]INFO: Stopping training at step 5000
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 36: 1.3601
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 71.48%
+[neural_network.py:125]INFO: Stopping training at step 11100
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 37: 1.4066
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 70.23%
+[neural_network.py:125]INFO: Stopping training at step 5600
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 38: 1.3036
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 71.30%
+[neural_network.py:125]INFO: Stopping training at step 6400
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 39: 1.4346
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 70.72%
+[neural_network.py:125]INFO: Stopping training at step 11000
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 40: 1.5151
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 70.64%
+[neural_network.py:125]INFO: Stopping training at step 5300
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 41: 1.4659
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 70.91%
+[neural_network.py:125]INFO: Stopping training at step 5400
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 42: 1.4945
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 70.45%
+[neural_network.py:125]INFO: Stopping training at step 5000
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 43: 1.4602
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 70.76%
+[neural_network.py:125]INFO: Stopping training at step 12500
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 44: 1.5143
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 71.86%
+[neural_network.py:125]INFO: Stopping training at step 7000
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 45: 1.3971
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 71.84%
+[neural_network.py:125]INFO: Stopping training at step 10400
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 46: 1.4756
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 71.99%
+[neural_network.py:125]INFO: Stopping training at step 7100
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 47: 1.6253
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 72.01%
+[neural_network.py:125]INFO: Stopping training at step 7400
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 48: 1.5828
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 71.62%
+[neural_network.py:125]INFO: Stopping training at step 6400
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 49: 1.4309
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 73.16%
+[neural_network.py:125]INFO: Stopping training at step 10800
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 50: 1.3669
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 73.30%
+[neural_network.py:125]INFO: Stopping training at step 7200
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 51: 1.6023
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 73.16%
+[neural_network.py:125]INFO: Stopping training at step 9600
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 52: 1.4121
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 73.19%
+[neural_network.py:125]INFO: Stopping training at step 11500
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 53: 1.4355
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 73.01%
+[neural_network.py:125]INFO: Stopping training at step 6300
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 54: 1.4744
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 72.99%
+[neural_network.py:125]INFO: Stopping training at step 10600
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 55: 1.4682
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 73.18%
+[neural_network.py:125]INFO: Stopping training at step 5600
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 56: 1.1997
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 74.56%
+[neural_network.py:125]INFO: Stopping training at step 7800
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 57: 1.3472
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 74.39%
+[neural_network.py:125]INFO: Stopping training at step 17600
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 58: 1.2602
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 74.68%
+[neural_network.py:125]INFO: Stopping training at step 9500
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 59: 1.2395
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 75.57%
+[neural_network.py:125]INFO: Stopping training at step 6300
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 60: 1.1554
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 75.36%
+[neural_network.py:125]INFO: Stopping training at step 6400
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 61: 1.0596
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 75.99%
+[neural_network.py:125]INFO: Stopping training at step 10200
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 62: 0.9764
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 76.67%
+[neural_network.py:125]INFO: Stopping training at step 8100
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 63: 0.9592
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 77.03%
+[neural_network.py:125]INFO: Stopping training at step 9600
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 64: 0.9530
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 77.32%
+[neural_network.py:125]INFO: Stopping training at step 5000
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 65: 0.9835
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 77.21%
+[neural_network.py:125]INFO: Stopping training at step 10800
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 66: 1.0033
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 77.24%
+[neural_network.py:125]INFO: Stopping training at step 9400
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 67: 1.0179
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 77.23%
+[neural_network.py:125]INFO: Stopping training at step 18000
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 68: 0.9371
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 77.74%
+[neural_network.py:125]INFO: Stopping training at step 7800
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 69: 0.9165
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 78.13%
+[neural_network.py:125]INFO: Stopping training at step 15400
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 70: 0.9227
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 78.38%
+[neural_network.py:125]INFO: Stopping training at step 5500
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 71: 0.9165
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 78.50%
+[neural_network.py:125]INFO: Stopping training at step 9400
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 72: 1.0296
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 78.34%
+[neural_network.py:125]INFO: Stopping training at step 10300
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 73: 0.9716
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 78.43%
+[neural_network.py:125]INFO: Stopping training at step 7100
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 74: 0.9064
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 78.83%
+[neural_network.py:125]INFO: Stopping training at step 5600
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 75: 0.7517
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 80.79%
+[neural_network.py:125]INFO: Stopping training at step 9000
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 76: 0.7957
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 80.59%
+[neural_network.py:125]INFO: Stopping training at step 10800
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 77: 0.7603
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 81.10%
+[neural_network.py:125]INFO: Stopping training at step 7200
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 78: 0.7714
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 80.85%
+[neural_network.py:125]INFO: Stopping training at step 5200
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 79: 0.8144
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 80.99%
+[neural_network.py:125]INFO: Stopping training at step 9600
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 80: 0.7643
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 81.13%
+[neural_network.py:125]INFO: Stopping training at step 8200
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 81: 0.7913
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 80.47%
+[neural_network.py:125]INFO: Stopping training at step 6000
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 82: 0.7860
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 80.84%
+[neural_network.py:125]INFO: Stopping training at step 7400
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 83: 0.8046
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 80.79%
+[neural_network.py:125]INFO: Stopping training at step 11400
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 84: 0.8198
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 80.57%
+[neural_network.py:125]INFO: Stopping training at step 6400
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 85: 0.7880
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 80.60%
+[neural_network.py:125]INFO: Stopping training at step 5400
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 86: 0.7593
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 81.51%
+[neural_network.py:125]INFO: Stopping training at step 10000
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 87: 0.7830
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 81.43%
+[neural_network.py:125]INFO: Stopping training at step 10700
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 88: 0.7048
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 82.15%
+[neural_network.py:125]INFO: Stopping training at step 5100
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 89: 0.7245
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 82.05%
+[neural_network.py:125]INFO: Stopping training at step 8400
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 90: 0.7545
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 82.17%
+[neural_network.py:125]INFO: Stopping training at step 5700
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 91: 0.6963
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 82.72%
+[neural_network.py:125]INFO: Stopping training at step 11200
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 92: 0.6889
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 82.69%
+[neural_network.py:125]INFO: Stopping training at step 6600
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 93: 0.6933
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 83.03%
+[neural_network.py:125]INFO: Stopping training at step 5300
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 94: 0.6747
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 83.09%
+[neural_network.py:125]INFO: Stopping training at step 6600
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 95: 0.6794
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 82.81%
+[neural_network.py:125]INFO: Stopping training at step 7500
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 96: 0.6796
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 83.00%
+[neural_network.py:125]INFO: Stopping training at step 6700
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 97: 0.6615
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 83.59%
+[neural_network.py:125]INFO: Stopping training at step 8500
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 98: 0.6406
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 83.49%
+[neural_network.py:125]INFO: Stopping training at step 9800
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 99: 0.6259
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 83.59%

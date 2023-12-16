@@ -1,0 +1,27 @@
+2023-12-14 03:11:43,121 INFO    MainThread:1323699 [wandb_setup.py:_flush():76] Current SDK version is 0.16.1
+2023-12-14 03:11:43,121 INFO    MainThread:1323699 [wandb_setup.py:_flush():76] Configure stats pid to 1323699
+2023-12-14 03:11:43,121 INFO    MainThread:1323699 [wandb_setup.py:_flush():76] Loading settings from /dss/dsshome1/0D/ge32jaq2/.config/wandb/settings
+2023-12-14 03:11:43,121 INFO    MainThread:1323699 [wandb_setup.py:_flush():76] Loading settings from /dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/wandb/settings
+2023-12-14 03:11:43,121 INFO    MainThread:1323699 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-12-14 03:11:43,121 INFO    MainThread:1323699 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-12-14 03:11:43,121 INFO    MainThread:1323699 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'run_image_classification_epig_40k.py', 'program_abspath': '/dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/run_image_classification_epig_40k.py', 'program': '/dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/run_image_classification_epig_40k.py'}
+2023-12-14 03:11:43,121 INFO    MainThread:1323699 [wandb_init.py:_log_setup():524] Logging user logs to /dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/wandb/run-20231214_031143-y9wfd200/logs/debug.log
+2023-12-14 03:11:43,122 INFO    MainThread:1323699 [wandb_init.py:_log_setup():525] Logging internal logs to /dss/dsshome1/0D/ge32jaq2/marglik_epig_Alex/active_learning_marglik/wandb/run-20231214_031143-y9wfd200/logs/debug-internal.log
+2023-12-14 03:11:43,122 INFO    MainThread:1323699 [wandb_init.py:init():564] calling init triggers
+2023-12-14 03:11:43,122 INFO    MainThread:1323699 [wandb_init.py:init():571] wandb.init called with sweep_config: {}
+config: {'seed': 7, 'dataset': 'mnist', 'n_init': 20, 'n_max': 100, 'optimizer': 'adam', 'lr': 0.001, 'lr_min': 1e-05, 'n_epochs': 2000, 'batch_size': 256, 'method': 'epig_model', 'approx': 'kron', 'lr_hyp': 0.1, 'lr_hyp_min': 0.01, 'n_epochs_burnin': 10, 'marglik_frequency': 10, 'n_hypersteps': 50, 'early_stopping': True, 'last_layer': False, 'n_components': 10, 'device': 'cpu', 'data_root': 'data/', 'download_data': True, 'use_wandb': True, 'random_acquisition': True, 'methodconf': 'mnist_epig'}
+2023-12-14 03:11:43,122 INFO    MainThread:1323699 [wandb_init.py:init():614] starting backend
+2023-12-14 03:11:43,122 INFO    MainThread:1323699 [wandb_init.py:init():618] setting up manager
+2023-12-14 03:11:43,125 INFO    MainThread:1323699 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-12-14 03:11:43,125 INFO    MainThread:1323699 [wandb_init.py:init():624] backend started and connected
+2023-12-14 03:11:43,131 INFO    MainThread:1323699 [wandb_init.py:init():716] updated telemetry
+2023-12-14 03:11:43,136 INFO    MainThread:1323699 [wandb_init.py:init():749] communicating run to backend with 90.0 second timeout
+2023-12-14 03:11:43,749 INFO    MainThread:1323699 [wandb_run.py:_on_init():2254] communicating current version
+2023-12-14 03:11:43,870 INFO    MainThread:1323699 [wandb_run.py:_on_init():2263] got version response 
+2023-12-14 03:11:43,870 INFO    MainThread:1323699 [wandb_init.py:init():800] starting run threads in backend
+2023-12-14 03:11:43,985 INFO    MainThread:1323699 [wandb_run.py:_console_start():2233] atexit reg
+2023-12-14 03:11:43,985 INFO    MainThread:1323699 [wandb_run.py:_redirect():2088] redirect: wrap_raw
+2023-12-14 03:11:43,985 INFO    MainThread:1323699 [wandb_run.py:_redirect():2153] Wrapping output streams.
+2023-12-14 03:11:43,986 INFO    MainThread:1323699 [wandb_run.py:_redirect():2178] Redirects installed.
+2023-12-14 03:11:43,986 INFO    MainThread:1323699 [wandb_init.py:init():841] run started, returning control to user process
+2023-12-14 08:08:17,619 WARNING MsgRouterThr:1323699 [router.py:message_loop():77] message_loop has been closed
