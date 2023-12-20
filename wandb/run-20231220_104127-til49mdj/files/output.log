@@ -1,0 +1,19 @@
+Pool shape : torch.Size([40000, 1, 28, 28])
+Training started
+No validation here
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/epig_no_val_code/active_learning_marglik/run_image_classification_epig_40k.py", line 223, in <module>
+    main(**args)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_no_val_code/active_learning_marglik/run_image_classification_epig_40k.py", line 111, in main
+    train_log = trainer.train(
+  File "/dss/dsshome1/0D/ge32jaq2/epig_no_val_code/active_learning_marglik/src/trainers/neural_network.py", line 98, in train
+    train_acc, train_loss = self.train_step(train_loader)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_no_val_code/active_learning_marglik/src/trainers/neural_network.py", line 144, in train_step
+    self.optimizer.zero_grad()
+  File "/usr/local/lib/python3.10/dist-packages/torch/_compile.py", line 24, in inner
+    return torch._dynamo.disable(fn, recursive)(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/_dynamo/eval_frame.py", line 328, in _fn
+    return fn(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/optim/optimizer.py", line 808, in zero_grad
+    p.grad = None
+KeyboardInterrupt
