@@ -23,7 +23,7 @@ from active_learning.active_dataset import ActiveDataset
 
 def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_size, method, approx, lr_hyp, lr_hyp_min,
          n_epochs_burnin, marglik_frequency, n_hypersteps, device, data_root, use_wandb, random_acquisition,
-         early_stopping, last_layer, n_components, download_data):
+         early_stopping, last_layer, n_components, download_data, validation):
     if dataset == 'mnist':
         transform = transforms.ToTensor()
         ds_cls = MNIST
@@ -191,6 +191,7 @@ if __name__ == '__main__':
     parser.add_argument('--marglik_frequency', default=10, type=int)
     parser.add_argument('--n_hypersteps', default=50, help='Number of steps on every marglik estimate (partial grad accumulation)', type=int)
     parser.add_argument('--early_stopping', default=True, action=argparse.BooleanOptionalAction)
+    parser.add_argument('--validation', default=False, action=argparse.BooleanOptionalAction)
     parser.add_argument('--last_layer', default=False, action=argparse.BooleanOptionalAction)
     # ensemble-specific
     parser.add_argument('--n_components', default=10, type=int)
