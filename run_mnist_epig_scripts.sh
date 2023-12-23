@@ -4,3 +4,4 @@ python3 run_image_classification_epig_40k.py --seed 4 --config configs/mnist_epi
 python3 run_image_classification_epig_40k.py --seed 5 --config configs/mnist_epig.yaml --device 'cpu'
 python3 run_image_classification_epig_40k.py --seed 7 --config configs/mnist_epig.yaml --device 'cpu'
 python3 run_image_classification_epig_40k.py --seed 9 --config configs/mnist_epig.yaml --device 'cpu'
+python3 run_image_classification_epig_40k.py --seed 10 --random_acquisition --config configs/mnist_epig.yaml --device 'cpu'
