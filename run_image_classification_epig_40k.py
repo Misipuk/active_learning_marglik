@@ -100,6 +100,8 @@ def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_si
     data = instantiate(cfg.data, rng=rng)
     data.torch()
     data.to(device)
+    cfg.model["dropout_rate"] = 0.0000000000000001
+    print(cfg.model)
     model = instantiate(cfg.model, input_shape=data.input_shape, output_size=data.n_classes)
     model = model.to(device)
 
