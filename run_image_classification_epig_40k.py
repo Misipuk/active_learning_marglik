@@ -181,6 +181,7 @@ if __name__ == '__main__':
     # optimization (general)
     parser.add_argument('--optimizer', default='adam', choices=['adam', 'sgd'])
     parser.add_argument('--lr', default=1e-3, type=float)
+    parser.add_argument('--dropout_rate', default=1e-15, type=float)
     parser.add_argument('--lr_min', default=1e-6, type=float, help='Cosine decay target')
     parser.add_argument('--n_epochs', default=250, type=int)
     parser.add_argument('--batch_size', default=500, type=int)
