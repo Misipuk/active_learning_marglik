@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/epig_no_val_no_dropout/active_learning_marglik/run_image_classification_epig_40k.py", line 226, in <module>
+    main(**args)
+TypeError: main() got an unexpected keyword argument 'dropout_rate'

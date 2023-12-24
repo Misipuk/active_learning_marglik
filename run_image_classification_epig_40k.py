@@ -23,7 +23,7 @@ from active_learning.active_dataset import ActiveDataset
 
 def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_size, method, approx, lr_hyp, lr_hyp_min,
          n_epochs_burnin, marglik_frequency, n_hypersteps, device, data_root, use_wandb, random_acquisition,
-         early_stopping, last_layer, n_components, download_data, validation):
+         early_stopping, last_layer, n_components, download_data, validation, dropout_rate):
     if dataset == 'mnist':
         transform = transforms.ToTensor()
         ds_cls = MNIST
