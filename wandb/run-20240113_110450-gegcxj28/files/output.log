@@ -41,3 +41,42 @@ Pool shape : torch.Size([40000, 1, 28, 28])
 [run_image_classification_40k.py:104]INFO: Test accuracy: 66.51%
 [run_image_classification_40k.py:102]INFO: Test log-likelihood at 33: -2.3736
 [run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 33: -2.1210
+[run_image_classification_40k.py:104]INFO: Test accuracy: 64.74%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 34: -2.5781
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 34: -2.1149
+[run_image_classification_40k.py:104]INFO: Test accuracy: 64.65%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 35: -2.3914
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 35: -2.1308
+[run_image_classification_40k.py:104]INFO: Test accuracy: 64.97%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 36: -2.4085
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 36: -2.2376
+[run_image_classification_40k.py:104]INFO: Test accuracy: 69.96%
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/epig_orig_short/active_learning_marglik/active_learning/active_learners.py", line 124, in bald
+    p_samples = self.la.predictive_samples(x, n_samples=150)
+  File "/usr/local/lib/python3.10/dist-packages/laplace/baselaplace.py", line 664, in predictive_samples
+    f_samples = normal_samples(f_mu, f_var, n_samples, generator)
+  File "/usr/local/lib/python3.10/dist-packages/laplace/utils/utils.py", line 260, in normal_samples
+    scale = torch.linalg.cholesky(var)
+KeyboardInterrupt
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/epig_orig_short/active_learning_marglik/run_image_classification_40k.py", line 167, in <module>
+    main(**args)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_orig_short/active_learning_marglik/run_image_classification_40k.py", line 91, in main
+    bald_scores = learner.bald(dataset.get_pool_loader(batch_size=batch_size))
+  File "/dss/dsshome1/0D/ge32jaq2/epig_orig_short/active_learning_marglik/active_learning/active_learners.py", line 126, in bald
+    p_samples = self.la.predictive_samples(x, n_samples=150, diagonal_output = True)
+  File "/usr/local/lib/python3.10/dist-packages/laplace/baselaplace.py", line 660, in predictive_samples
+    f_mu, f_var = self._glm_predictive_distribution(x)
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/laplace/baselaplace.py", line 680, in _glm_predictive_distribution
+    f_var = self.functional_variance(Js)
+  File "/usr/local/lib/python3.10/dist-packages/laplace/baselaplace.py", line 944, in functional_variance
+    return self.posterior_precision.inv_square_form(Js)
+  File "/usr/local/lib/python3.10/dist-packages/laplace/utils/matrix.py", line 406, in inv_square_form
+    SW = self._bmm(W, exponent=-1)
+  File "/usr/local/lib/python3.10/dist-packages/laplace/utils/matrix.py", line 397, in _bmm
+    SW.append(W_p.reshape(B * K, p_in * p_out))
+KeyboardInterrupt

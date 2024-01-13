@@ -1,0 +1,242 @@
+
+Pool shape : torch.Size([40000, 1, 28, 28])
+[run_image_classification_40k.py:80]INFO: Initial test log-likelihood: -3.2669
+[run_image_classification_40k.py:81]INFO: Initial test Bayes log-likelihood: -2.2062
+[run_image_classification_40k.py:82]INFO: Initial accuracy: 52.94%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 21: -2.4072
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 21: -2.2038
+[run_image_classification_40k.py:104]INFO: Test accuracy: 56.55%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 22: -2.4027
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 22: -2.1462
+[run_image_classification_40k.py:104]INFO: Test accuracy: 62.45%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 23: -2.8400
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 23: -2.1506
+[run_image_classification_40k.py:104]INFO: Test accuracy: 57.62%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 24: -2.7801
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 24: -2.1710
+[run_image_classification_40k.py:104]INFO: Test accuracy: 61.57%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 25: -3.4040
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 25: -2.1882
+[run_image_classification_40k.py:104]INFO: Test accuracy: 61.01%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 26: -3.5514
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 26: -2.2444
+[run_image_classification_40k.py:104]INFO: Test accuracy: 57.65%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 27: -2.5984
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 27: -2.1368
+[run_image_classification_40k.py:104]INFO: Test accuracy: 61.69%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 28: -3.4544
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 28: -2.2601
+[run_image_classification_40k.py:104]INFO: Test accuracy: 60.35%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 29: -3.8114
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 29: -2.2446
+[run_image_classification_40k.py:104]INFO: Test accuracy: 61.37%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 30: -3.2826
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 30: -2.2620
+[run_image_classification_40k.py:104]INFO: Test accuracy: 58.78%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 31: -2.9303
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 31: -2.1855
+[run_image_classification_40k.py:104]INFO: Test accuracy: 61.48%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 32: -2.6179
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 32: -2.1472
+[run_image_classification_40k.py:104]INFO: Test accuracy: 62.26%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 33: -2.7839
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 33: -2.1525
+[run_image_classification_40k.py:104]INFO: Test accuracy: 60.35%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 34: -3.9226
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 34: -2.2874
+[run_image_classification_40k.py:104]INFO: Test accuracy: 60.78%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 35: -2.5642
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 35: -2.1350
+[run_image_classification_40k.py:104]INFO: Test accuracy: 61.17%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 36: -3.2730
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 36: -2.1731
+[run_image_classification_40k.py:104]INFO: Test accuracy: 60.36%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 37: -2.7560
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 37: -2.1456
+[run_image_classification_40k.py:104]INFO: Test accuracy: 60.75%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 38: -4.4231
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 38: -2.2864
+[run_image_classification_40k.py:104]INFO: Test accuracy: 59.09%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 39: -2.4088
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 39: -2.1086
+[run_image_classification_40k.py:104]INFO: Test accuracy: 64.35%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 40: -3.8798
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 40: -2.1298
+[run_image_classification_40k.py:104]INFO: Test accuracy: 60.14%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 41: -3.2982
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 41: -2.1164
+[run_image_classification_40k.py:104]INFO: Test accuracy: 60.37%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 42: -2.4259
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 42: -2.1559
+[run_image_classification_40k.py:104]INFO: Test accuracy: 66.84%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 43: -3.7619
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 43: -2.2362
+[run_image_classification_40k.py:104]INFO: Test accuracy: 63.15%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 44: -2.4285
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 44: -2.1121
+[run_image_classification_40k.py:104]INFO: Test accuracy: 64.76%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 45: -2.5178
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 45: -2.1107
+[run_image_classification_40k.py:104]INFO: Test accuracy: 63.79%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 46: -2.3567
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 46: -2.0743
+[run_image_classification_40k.py:104]INFO: Test accuracy: 68.12%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 47: -3.5612
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 47: -2.2841
+[run_image_classification_40k.py:104]INFO: Test accuracy: 63.34%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 48: -3.0079
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 48: -2.1156
+[run_image_classification_40k.py:104]INFO: Test accuracy: 62.99%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 49: -2.6334
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 49: -2.0720
+[run_image_classification_40k.py:104]INFO: Test accuracy: 65.33%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 50: -2.8113
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 50: -2.1562
+[run_image_classification_40k.py:104]INFO: Test accuracy: 63.10%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 51: -2.2228
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 51: -2.1380
+[run_image_classification_40k.py:104]INFO: Test accuracy: 65.94%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 52: -2.2435
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 52: -2.1358
+[run_image_classification_40k.py:104]INFO: Test accuracy: 65.05%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 53: -2.7276
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 53: -2.1157
+[run_image_classification_40k.py:104]INFO: Test accuracy: 64.40%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 54: -3.4147
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 54: -2.0776
+[run_image_classification_40k.py:104]INFO: Test accuracy: 61.69%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 55: -2.3139
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 55: -2.0579
+[run_image_classification_40k.py:104]INFO: Test accuracy: 68.52%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 56: -2.4789
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 56: -2.0914
+[run_image_classification_40k.py:104]INFO: Test accuracy: 66.11%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 57: -2.1660
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 57: -2.0554
+[run_image_classification_40k.py:104]INFO: Test accuracy: 69.25%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 58: -2.3396
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 58: -2.0777
+[run_image_classification_40k.py:104]INFO: Test accuracy: 69.01%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 59: -2.2688
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 59: -2.0455
+[run_image_classification_40k.py:104]INFO: Test accuracy: 67.50%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 60: -2.3873
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 60: -2.1337
+[run_image_classification_40k.py:104]INFO: Test accuracy: 65.06%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 61: -1.9739
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 61: -2.0949
+[run_image_classification_40k.py:104]INFO: Test accuracy: 69.24%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 62: -2.7214
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 62: -2.1784
+[run_image_classification_40k.py:104]INFO: Test accuracy: 67.93%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 63: -2.0430
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 63: -2.0909
+[run_image_classification_40k.py:104]INFO: Test accuracy: 68.16%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 64: -1.7969
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 64: -2.0965
+[run_image_classification_40k.py:104]INFO: Test accuracy: 68.48%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 65: -2.2366
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 65: -2.0858
+[run_image_classification_40k.py:104]INFO: Test accuracy: 68.23%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 66: -2.7288
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 66: -2.2784
+[run_image_classification_40k.py:104]INFO: Test accuracy: 68.04%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 67: -2.2382
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 67: -2.1096
+[run_image_classification_40k.py:104]INFO: Test accuracy: 68.68%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 68: -2.3041
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 68: -2.0949
+[run_image_classification_40k.py:104]INFO: Test accuracy: 67.91%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 69: -2.1859
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 69: -2.0901
+[run_image_classification_40k.py:104]INFO: Test accuracy: 69.08%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 70: -2.1456
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 70: -2.0699
+[run_image_classification_40k.py:104]INFO: Test accuracy: 69.94%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 71: -2.2013
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 71: -2.0907
+[run_image_classification_40k.py:104]INFO: Test accuracy: 69.29%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 72: -2.4196
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 72: -2.0830
+[run_image_classification_40k.py:104]INFO: Test accuracy: 67.26%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 73: -2.2638
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 73: -2.1015
+[run_image_classification_40k.py:104]INFO: Test accuracy: 68.94%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 74: -2.2906
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 74: -2.0925
+[run_image_classification_40k.py:104]INFO: Test accuracy: 67.35%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 75: -1.8857
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 75: -2.0944
+[run_image_classification_40k.py:104]INFO: Test accuracy: 72.76%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 76: -2.5139
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 76: -2.1114
+[run_image_classification_40k.py:104]INFO: Test accuracy: 68.53%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 77: -2.1776
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 77: -2.0499
+[run_image_classification_40k.py:104]INFO: Test accuracy: 68.68%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 78: -2.2721
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 78: -2.0893
+[run_image_classification_40k.py:104]INFO: Test accuracy: 68.90%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 79: -2.0925
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 79: -2.1162
+[run_image_classification_40k.py:104]INFO: Test accuracy: 71.01%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 80: -2.2483
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 80: -2.0761
+[run_image_classification_40k.py:104]INFO: Test accuracy: 72.06%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 81: -2.5706
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 81: -2.2499
+[run_image_classification_40k.py:104]INFO: Test accuracy: 71.32%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 82: -2.3751
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 82: -2.0392
+[run_image_classification_40k.py:104]INFO: Test accuracy: 71.12%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 83: -2.5293
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 83: -2.0672
+[run_image_classification_40k.py:104]INFO: Test accuracy: 68.47%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 84: -1.9531
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 84: -2.0163
+[run_image_classification_40k.py:104]INFO: Test accuracy: 73.06%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 85: -2.7044
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 85: -2.1423
+[run_image_classification_40k.py:104]INFO: Test accuracy: 69.73%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 86: -1.6314
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 86: -2.0503
+[run_image_classification_40k.py:104]INFO: Test accuracy: 75.35%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 87: -1.6770
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 87: -2.0287
+[run_image_classification_40k.py:104]INFO: Test accuracy: 74.38%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 88: -2.3138
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 88: -2.0634
+[run_image_classification_40k.py:104]INFO: Test accuracy: 70.44%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 89: -1.5913
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 89: -2.0136
+[run_image_classification_40k.py:104]INFO: Test accuracy: 75.80%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 90: -2.6204
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 90: -2.0689
+[run_image_classification_40k.py:104]INFO: Test accuracy: 69.21%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 91: -1.9379
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 91: -2.0347
+[run_image_classification_40k.py:104]INFO: Test accuracy: 73.26%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 92: -1.5677
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 92: -2.0223
+[run_image_classification_40k.py:104]INFO: Test accuracy: 74.34%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 93: -1.9381
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 93: -2.0448
+[run_image_classification_40k.py:104]INFO: Test accuracy: 73.65%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 94: -1.8930
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 94: -2.0211
+[run_image_classification_40k.py:104]INFO: Test accuracy: 73.62%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 95: -1.7962
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 95: -2.0475
+[run_image_classification_40k.py:104]INFO: Test accuracy: 75.56%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 96: -1.7477
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 96: -2.0581
+[run_image_classification_40k.py:104]INFO: Test accuracy: 74.45%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 97: -2.1145
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 97: -2.0695
+[run_image_classification_40k.py:104]INFO: Test accuracy: 73.59%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 98: -1.2428
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 98: -2.0571
+[run_image_classification_40k.py:104]INFO: Test accuracy: 78.40%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 99: -1.6456
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 99: -1.9959
+[run_image_classification_40k.py:104]INFO: Test accuracy: 76.88%
