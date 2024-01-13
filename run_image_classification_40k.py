@@ -31,7 +31,7 @@ def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_si
 
     train_dataset = ds_cls(data_root, train=True, download=download_data, transform=transform)
     test_dataset = ds_cls(data_root, train=False, download=download_data, transform=transform)
-    x, y = dataset_to_tensors(train_dataset, device=device)
+    x_original, y_original = dataset_to_tensors(train_dataset, device=device)
     x_test, y_test = dataset_to_tensors(test_dataset, device=device)
     test_loader = TensorDataLoader(x_test, y_test, batch_size=batch_size)
 
@@ -46,15 +46,6 @@ def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_si
     y = y_original[ixs_train_np].detach().clone().to(device)
     
     print(f"Pool shape : {x.shape}")
-    
-    
-    ixs_val = list()
-    for c in classes.cpu().numpy():
-        ixs_val.append(np.random.choice(np.where(y.cpu() == c)[0], int(60/len(classes)), replace=False))
-    ixs_val_np = np.array(ixs_val).reshape(1,-1).squeeze()
-    x_val= x[ixs_val_np].detach().clone().to(device)
-    y_val = y[ixs_val_np].detach().clone().to(device)
-    val_loader = TensorDataLoader(x_val, y_val, batch_size=batch_size)
 
     # Set up model and initial training.
     dataset = ActiveDataset(x, y, n_init=n_init, stratified=True)

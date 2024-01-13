@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/epig_orig_short/active_learning_marglik/run_image_classification_40k.py", line 176, in <module>
+    main(**args)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_orig_short/active_learning_marglik/run_image_classification_40k.py", line 40, in main
+    classes = torch.unique(y_original)
+NameError: name 'y_original' is not defined

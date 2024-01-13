@@ -1,0 +1,30 @@
+[run_image_classification.py:70]INFO: Initial test log-likelihood: -2.9525
+[run_image_classification.py:71]INFO: Initial test Bayes log-likelihood: -2.1922
+[run_image_classification.py:72]INFO: Initial accuracy: 55.10%
+[run_image_classification.py:92]INFO: Test log-likelihood at 21: -3.5525
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 21: -2.1943
+[run_image_classification.py:94]INFO: Test accuracy: 51.89%
+[run_image_classification.py:92]INFO: Test log-likelihood at 22: -4.0826
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 22: -2.1574
+[run_image_classification.py:94]INFO: Test accuracy: 53.28%
+[run_image_classification.py:92]INFO: Test log-likelihood at 23: -5.0425
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 23: -2.1779
+[run_image_classification.py:94]INFO: Test accuracy: 47.25%
+[run_image_classification.py:92]INFO: Test log-likelihood at 24: -3.2701
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 24: -2.1652
+[run_image_classification.py:94]INFO: Test accuracy: 57.32%
+[run_image_classification.py:92]INFO: Test log-likelihood at 25: -3.8756
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 25: -2.1756
+[run_image_classification.py:94]INFO: Test accuracy: 60.33%
+[run_image_classification.py:92]INFO: Test log-likelihood at 26: -4.1392
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 26: -2.1532
+[run_image_classification.py:94]INFO: Test accuracy: 55.90%
+[run_image_classification.py:92]INFO: Test log-likelihood at 27: -3.6564
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 27: -2.1552
+[run_image_classification.py:94]INFO: Test accuracy: 55.06%
+[run_image_classification.py:92]INFO: Test log-likelihood at 28: -4.6090
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 28: -2.1722
+[run_image_classification.py:94]INFO: Test accuracy: 52.25%
+[run_image_classification.py:92]INFO: Test log-likelihood at 29: -2.8025
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 29: -2.1487
+[run_image_classification.py:94]INFO: Test accuracy: 61.24%
