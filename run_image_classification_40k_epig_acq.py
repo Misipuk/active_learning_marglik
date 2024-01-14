@@ -165,7 +165,7 @@ def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_si
             #print(f"Target_inputs_batch_size: {len(target_inputs)}")
             target_loader = data.get_loader("target")
             target_inputs, _ = next(iter(target_loader))
-            pool_loader = data.get_loader("pool")
+            #pool_loader = data.get_loader("pool")
             if cfg.acquisition.epig_probs_target != None:
                 print("Estimate epig using pool")
 #                 scores = estimate_epig_using_pool(
@@ -174,7 +174,7 @@ def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_si
                 print("Something went wrong")
             else:
                 print("Using original estimate_epig function")
-                scores = estimate_epig(learner, pool_loader, target_inputs, cfg.acquisition.epig_using_matmul)           
+                scores = estimate_epig(learner, dataset.get_pool_loader(batch_size=batch_size), target_inputs, cfg.acquisition.epig_using_matmul)           
             scores = scores.numpy()
             scores = scores['epig']
             acquired_pool_inds = np.argmax(scores)
