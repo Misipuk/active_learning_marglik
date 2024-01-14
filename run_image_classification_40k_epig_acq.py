@@ -53,51 +53,49 @@ def estimate_epig(
 
     return scores.concatenate()
 
-# def estimate_epig_minibatch(
-#     m_model, inputs: Tensor, target_inputs: Tensor, use_matmul: bool
-# ) -> Tensor:
-#     combined_inputs = torch.cat((inputs, target_inputs))  # [N + N_t, ...]
-# #     logprobs = self.conditional_predict(
-# #         combined_inputs, self.n_samples_test, independent=False
-# #     )  # [N + N_t, K, Cl]
-
-#     #istead of the function from above
-
-#     try:
-#         features = m_model.la.predictive_samples(combined_inputs, n_samples=150)
-#         features_aligned = torch.swapaxes(features, 0, 1)
-#         #logprobs = torch.log(features_aligned, dim=-1)
-#         logprobs = torch.log(features_aligned)
-#     except:
-#         features = m_model.la.predictive_samples(combined_inputs, n_samples=150, diagonal_output = True)
-#         features_aligned = torch.swapaxes(features, 0, 1)
-#         #logprobs = torch.log(features_aligned, dim=-1)
-#         logprobs = torch.log(features_aligned)
-#     #print(f"p_samples shape {p_samples.shape}")
-    
-#     #print(f"p_samples_align shape {p_samples_align.shape}")
-
-#     epig_fn = epig_from_logprobs_using_matmul if use_matmul else epig_from_logprobs
-#     return epig_fn(logprobs[: len(inputs)], logprobs[len(inputs) :])  # [N,]
-
-
-
 def estimate_epig_minibatch(
-        m_model, inputs: Tensor, target_inputs: Tensor, use_matmul: bool
-    ) -> Tensor:
-    print("Simple probs epig method")
-    _inputs = torch.cat((inputs, target_inputs))  # [N + N_t, ...]
-#         probs = self.conditional_predict(
-#             _inputs, self.n_samples_test, independent=False
-#         )  # [N + N_t, K, Cl]
+    m_model, inputs: Tensor, target_inputs: Tensor, use_matmul: bool
+) -> Tensor:
+    combined_inputs = torch.cat((inputs, target_inputs))  # [N + N_t, ...]
+#     logprobs = self.conditional_predict(
+#         combined_inputs, self.n_samples_test, independent=False
+#     )  # [N + N_t, K, Cl]
+
+    #istead of the function from above
+
     try:
-        features = m_model.la.predictive_samples(_inputs, n_samples=150)
-        probs = torch.swapaxes(features, 0, 1)
+        features = m_model.la.predictive_samples(combined_inputs, n_samples=150)
+        features_aligned = torch.swapaxes(features, 0, 1)
+        logprobs = log_softmax(features_aligned, dim=-1)
     except:
-        features = m_model.la.predictive_samples(_inputs, n_samples=150, diagonal_output = True)
-        probs = torch.swapaxes(features, 0, 1)
-        epig_fn = epig_from_probs_using_matmul if use_matmul else epig_from_probs
-        return epig_fn(probs[: len(inputs)], probs[len(inputs) :])  # [N,]
+        features = m_model.la.predictive_samples(combined_inputs, n_samples=150, diagonal_output = True)
+        features_aligned = torch.swapaxes(features, 0, 1)
+        logprobs = log_softmax(features_aligned, dim=-1)
+    #print(f"p_samples shape {p_samples.shape}")
+    
+    #print(f"p_samples_align shape {p_samples_align.shape}")
+
+    epig_fn = epig_from_logprobs_using_matmul if use_matmul else epig_from_logprobs
+    return epig_fn(logprobs[: len(inputs)], logprobs[len(inputs) :])  # [N,]
+
+
+
+# def estimate_epig_minibatch(
+#         m_model, inputs: Tensor, target_inputs: Tensor, use_matmul: bool
+#     ) -> Tensor:
+#     print("Simple probs epig method")
+#     _inputs = torch.cat((inputs, target_inputs))  # [N + N_t, ...]
+# #         probs = self.conditional_predict(
+# #             _inputs, self.n_samples_test, independent=False
+# #         )  # [N + N_t, K, Cl]
+#     try:
+#         features = m_model.la.predictive_samples(_inputs, n_samples=150)
+#         probs = torch.swapaxes(features, 0, 1)
+#     except:
+#         features = m_model.la.predictive_samples(_inputs, n_samples=150, diagonal_output = True)
+#         probs = torch.swapaxes(features, 0, 1)
+#         epig_fn = epig_from_probs_using_matmul if use_matmul else epig_from_probs
+#         return epig_fn(probs[: len(inputs)], probs[len(inputs) :])  # [N,]
 
 
 
