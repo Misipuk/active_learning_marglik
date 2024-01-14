@@ -116,6 +116,20 @@ def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_si
     data = instantiate(cfg.data, rng=rng)
     data.torch()
     data.to(device)
+    
+    classes = torch.unique(y_original)
+    
+    if acquisition_method == 'epig':
+        ixs_targets = list()
+        for c in classes.cpu().numpy():
+            ixs_targets.append(np.random.choice(np.where(y_original.cpu() == c)[0], 
+                                                int(10000/len(classes)), replace=False))
+        ixs_targets_np = np.array(ixs_targets).reshape(1,-1).squeeze()
+        X_targets = x_original[ixs_targets_np].detach().clone().to(device)
+        y_targets = y_original[ixs_targets_np].detach().clone().to(device)
+    else:
+        X_targets = None
+        y_targets = None
 
     # Set up model and initial training.
     dataset = ActiveDataset(x, y, n_init=n_init, stratified=True)
@@ -163,7 +177,7 @@ def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_si
         elif acquisition_method == 'epig':
             print("Starting epig acquisition")
             #print(f"Target_inputs_batch_size: {len(target_inputs)}")
-            target_loader = data.get_loader("target")
+            target_loader = TensorDataLoader(X_targets, y_targets, batch_size = 100, shuffle=True)
             target_inputs, _ = next(iter(target_loader))
             #pool_loader = data.get_loader("pool")
             if cfg.acquisition.epig_probs_target != None:
