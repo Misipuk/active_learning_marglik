@@ -31,20 +31,15 @@ from src.uncertainty import (
     marginal_entropy_from_probs,
 )
 
-import logging
-import torch
-import torch.distributions as dists
-from torch.nn import Module
-from torch.nn.functional import log_softmax, nll_loss
-from torch.optim import Optimizer
-from torch.utils.data import DataLoader
-from torch import Tensor
-
 import hydra
 from hydra import compose, initialize
 from hydra.utils import call, instantiate
 from omegaconf import OmegaConf
 import yaml
+
+from torch.utils.data import DataLoader
+from torch import Tensor
+from torch.nn.functional import log_softmax
 
 def estimate_epig(
     m_model, loader: DataLoader, target_inputs: Tensor, use_matmul: bool
@@ -115,10 +110,8 @@ def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_si
     
     print(f"Pool shape : {x.shape}")
     
-    dataset = ActiveDataset(x, y, n_init=n_init, stratified=True)
     with initialize(version_base=None, config_path="config"):
         cfg = compose(config_name="main", overrides=["data=mnist/curated_pool", "experiment_name=mnist_curated", "acquisition.objective=epig"])
-    device = 'cpu'
     rng = call(cfg.rng)
     data = instantiate(cfg.data, rng=rng)
     data.torch()
@@ -185,7 +178,7 @@ def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_si
             scores = scores.numpy()
             scores = scores['epig']
             acquired_pool_inds = np.argmax(scores)
-            dataset.add_ix(dataset.not_ixs[[acquired_pool_inds]])
+            dataset.add_ix(dataset.not_ixs[acquired_pool_inds])
         
         # retrain model with new data point
         learner.fit(dataset.get_train_loader())
@@ -202,10 +195,12 @@ def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_si
         if use_wandb:
             if random_acquisition:
                 wandb.log({'test/ll': test_ll, 'test/ll_bayes': test_ll_bayes, 'test/acc': acc}, step=i)
-            else:
+            elif acquisition_method == 'bald':
                 hist = wandb.Histogram(bald_scores.detach().cpu().numpy())
                 wandb.log({'test/ll': test_ll, 'test/ll_bayes': test_ll_bayes, 'test/acc': acc, 'bald': hist}, 
                           step=i, commit=False)
+            elif acquisition_method == 'epig':
+                wandb.log({'test/ll': test_ll, 'test/ll_bayes': test_ll_bayes, 'test/acc': acc}, step=i)
 
 
 if __name__ == '__main__':

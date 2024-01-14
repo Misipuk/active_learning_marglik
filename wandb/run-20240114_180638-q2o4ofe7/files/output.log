@@ -1,0 +1,31 @@
+
+Pool shape : torch.Size([40000, 1, 28, 28])
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:150]INFO: Initial test log-likelihood: -2.4580
+[run_image_classification_40k_epig_acq.py:151]INFO: Initial test Bayes log-likelihood: -2.1481
+[run_image_classification_40k_epig_acq.py:152]INFO: Initial accuracy: 61.17%
+We are in concat
+[run_image_classification_40k_epig_acq.py:191]INFO: Test log-likelihood at 21: -2.8156
+[run_image_classification_40k_epig_acq.py:192]INFO: Test Bayes log-likelihood at 21: -2.1700
+[run_image_classification_40k_epig_acq.py:193]INFO: Test accuracy: 60.85%
+Starting epig acquisition
+Using original estimate_epig function
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:191]INFO: Test log-likelihood at 22: -2.3737
+[run_image_classification_40k_epig_acq.py:192]INFO: Test Bayes log-likelihood at 22: -2.1430
+[run_image_classification_40k_epig_acq.py:193]INFO: Test accuracy: 63.75%
+We are in concat
+[run_image_classification_40k_epig_acq.py:191]INFO: Test log-likelihood at 23: -2.1192
+[run_image_classification_40k_epig_acq.py:192]INFO: Test Bayes log-likelihood at 23: -2.1659
+[run_image_classification_40k_epig_acq.py:193]INFO: Test accuracy: 65.26%
+Starting epig acquisition
+Using original estimate_epig function
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:191]INFO: Test log-likelihood at 24: -2.3163
+[run_image_classification_40k_epig_acq.py:192]INFO: Test Bayes log-likelihood at 24: -2.1137
+[run_image_classification_40k_epig_acq.py:193]INFO: Test accuracy: 65.06%

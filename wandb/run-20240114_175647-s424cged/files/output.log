@@ -1,0 +1,26 @@
+
+Pool shape : torch.Size([40000, 1, 28, 28])
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:150]INFO: Initial test log-likelihood: -2.4580
+[run_image_classification_40k_epig_acq.py:151]INFO: Initial test Bayes log-likelihood: -2.1481
+[run_image_classification_40k_epig_acq.py:152]INFO: Initial accuracy: 61.17%
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_image_classification_40k_epig_acq.py", line 257, in <module>
+    main(**args)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_image_classification_40k_epig_acq.py", line 181, in main
+    dataset.add_ix(dataset.not_ixs[[acquired_pool_inds]])
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/active_learning/active_dataset.py", line 43, in add_ix
+    self._ixs = np.concatenate([self._ixs, [ix]])
+  File "<__array_function__ internals>", line 200, in concatenate
+ValueError: all the input arrays must have same number of dimensions, but the array at index 0 has 1 dimension(s) and the array at index 1 has 2 dimension(s)
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_image_classification_40k_epig_acq.py", line 257, in <module>
+    main(**args)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_image_classification_40k_epig_acq.py", line 181, in main
+    dataset.add_ix(dataset.not_ixs[[acquired_pool_inds]])
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/active_learning/active_dataset.py", line 43, in add_ix
+    self._ixs = np.concatenate([self._ixs, [ix]])
+  File "<__array_function__ internals>", line 200, in concatenate
+ValueError: all the input arrays must have same number of dimensions, but the array at index 0 has 1 dimension(s) and the array at index 1 has 2 dimension(s)
+We are in concat
