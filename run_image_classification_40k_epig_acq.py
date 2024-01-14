@@ -193,7 +193,7 @@ def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_si
             scores = scores['epig']
             acquired_pool_inds = np.argmax(scores)
             dataset.add_ix(dataset.not_ixs[acquired_pool_inds])
-        
+        #here comment
         # retrain model with new data point
         learner.fit(dataset.get_train_loader())
 
