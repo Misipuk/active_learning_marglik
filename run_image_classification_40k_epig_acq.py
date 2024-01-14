@@ -115,7 +115,6 @@ def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_si
     
     print(f"Pool shape : {x.shape}")
     
-    
     dataset = ActiveDataset(x, y, n_init=n_init, stratified=True)
     with initialize(version_base=None, config_path="config"):
         cfg = compose(config_name="main", overrides=["data=mnist/curated_pool", "experiment_name=mnist_curated", "acquisition.objective=epig"])
@@ -124,12 +123,6 @@ def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_si
     data = instantiate(cfg.data, rng=rng)
     data.torch()
     data.to(device)
-    #model = instantiate(cfg.model, input_shape=data.input_shape, output_size=data.n_classes)
-    #model = model.to(device)
-
-#     cfg.trainer["n_optim_steps_max"] = 5
-#     print(cfg.trainer["n_optim_steps_max"])
-    #trainer = instantiate(cfg.trainer, model=model)
 
     # Set up model and initial training.
     dataset = ActiveDataset(x, y, n_init=n_init, stratified=True)
