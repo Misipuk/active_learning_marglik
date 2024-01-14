@@ -1,0 +1,37 @@
+
+Pool shape : torch.Size([40000, 1, 28, 28])
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:164]INFO: Initial test log-likelihood: -4.4428
+[run_image_classification_40k_epig_acq.py:165]INFO: Initial test Bayes log-likelihood: -2.1742
+[run_image_classification_40k_epig_acq.py:166]INFO: Initial accuracy: 48.72%
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_image_classification_40k_epig_acq.py", line 69, in estimate_epig_minibatch
+    logprobs = torch.log(features_aligned, dim=-1)
+TypeError: log() got an unexpected keyword argument 'dim'
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_image_classification_40k_epig_acq.py", line 273, in <module>
+    main(**args)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_image_classification_40k_epig_acq.py", line 191, in main
+    scores = estimate_epig(learner, dataset.get_pool_loader(batch_size=batch_size), target_inputs, cfg.acquisition.epig_using_matmul)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_image_classification_40k_epig_acq.py", line 51, in estimate_epig
+    epig_scores = estimate_epig_minibatch(m_model, inputs, target_inputs, use_matmul)  # [B,]
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_image_classification_40k_epig_acq.py", line 73, in estimate_epig_minibatch
+    logprobs = torch.log(features_aligned, dim=-1)
+TypeError: log() got an unexpected keyword argument 'dim'
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_image_classification_40k_epig_acq.py", line 69, in estimate_epig_minibatch
+    logprobs = torch.log(features_aligned, dim=-1)
+TypeError: log() got an unexpected keyword argument 'dim'
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_image_classification_40k_epig_acq.py", line 273, in <module>
+    main(**args)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_image_classification_40k_epig_acq.py", line 191, in main
+    scores = estimate_epig(learner, dataset.get_pool_loader(batch_size=batch_size), target_inputs, cfg.acquisition.epig_using_matmul)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_image_classification_40k_epig_acq.py", line 51, in estimate_epig
+    epig_scores = estimate_epig_minibatch(m_model, inputs, target_inputs, use_matmul)  # [B,]
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_image_classification_40k_epig_acq.py", line 73, in estimate_epig_minibatch
+    logprobs = torch.log(features_aligned, dim=-1)
+TypeError: log() got an unexpected keyword argument 'dim'

@@ -1,0 +1,48 @@
+
+Pool shape : torch.Size([40000, 1, 28, 28])
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_image_classification_40k_epig_acq.py", line 273, in <module>
+    #load_dotenv()
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_image_classification_40k_epig_acq.py", line 116, in main
+    cfg = compose(config_name="main", overrides=["data=mnist/curated_pool", "experiment_name=mnist_curated", "acquisition.objective=epig"])
+  File "/usr/local/lib/python3.10/dist-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+  File "/usr/local/lib/python3.10/dist-packages/hydra/_internal/instantiate/_instantiate2.py", line 347, in instantiate_node
+    return _call_target(_target_, partial, args, kwargs, full_key)
+  File "/usr/local/lib/python3.10/dist-packages/hydra/_internal/instantiate/_instantiate2.py", line 92, in _call_target
+    return _target_(*args, **kwargs)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/src/data.py", line 42, in __init__
+    self.test_dataset = dataset(train=False)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/src/datasets/mnist.py", line 35, in __init__
+    self.normalize(dataset=MNIST(data_dir))
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/src/datasets/mnist.py", line 47, in normalize
+    self.mean = np.mean(data)  # [1,]
+  File "<__array_function__ internals>", line 200, in mean
+  File "/usr/local/lib/python3.10/dist-packages/numpy/core/fromnumeric.py", line 3464, in mean
+    return _methods._mean(a, axis=axis, dtype=dtype,
+  File "/usr/local/lib/python3.10/dist-packages/numpy/core/_methods.py", line 181, in _mean
+    ret = umr_sum(arr, axis, dtype, out, keepdims, where=where)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_image_classification_40k_epig_acq.py", line 273, in <module>
+    #load_dotenv()
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_image_classification_40k_epig_acq.py", line 116, in main
+    cfg = compose(config_name="main", overrides=["data=mnist/curated_pool", "experiment_name=mnist_curated", "acquisition.objective=epig"])
+  File "/usr/local/lib/python3.10/dist-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+  File "/usr/local/lib/python3.10/dist-packages/hydra/_internal/instantiate/_instantiate2.py", line 347, in instantiate_node
+    return _call_target(_target_, partial, args, kwargs, full_key)
+  File "/usr/local/lib/python3.10/dist-packages/hydra/_internal/instantiate/_instantiate2.py", line 92, in _call_target
+    return _target_(*args, **kwargs)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/src/data.py", line 42, in __init__
+    self.test_dataset = dataset(train=False)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/src/datasets/mnist.py", line 35, in __init__
+    self.normalize(dataset=MNIST(data_dir))
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/src/datasets/mnist.py", line 47, in normalize
+    self.mean = np.mean(data)  # [1,]
+  File "<__array_function__ internals>", line 200, in mean
+  File "/usr/local/lib/python3.10/dist-packages/numpy/core/fromnumeric.py", line 3464, in mean
+    return _methods._mean(a, axis=axis, dtype=dtype,
+  File "/usr/local/lib/python3.10/dist-packages/numpy/core/_methods.py", line 181, in _mean
+    ret = umr_sum(arr, axis, dtype, out, keepdims, where=where)
+KeyboardInterrupt
