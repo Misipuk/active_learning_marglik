@@ -1,0 +1,29 @@
+Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz to data/MNIST/raw/train-images-idx3-ubyte.gz
+Extracting data/MNIST/raw/train-images-idx3-ubyte.gz to data/MNIST/raw
+Downloading http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz to data/MNIST/raw/train-labels-idx1-ubyte.gz
+Extracting data/MNIST/raw/train-labels-idx1-ubyte.gz to data/MNIST/raw
+Downloading http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz to data/MNIST/raw/t10k-images-idx3-ubyte.gz
+Extracting data/MNIST/raw/t10k-images-idx3-ubyte.gz to data/MNIST/raw
+Downloading http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz to data/MNIST/raw/t10k-labels-idx1-ubyte.gz
+Extracting data/MNIST/raw/t10k-labels-idx1-ubyte.gz to data/MNIST/raw
+100%|██████████████████████████████████████████████████████████████████████████████████████████████| 9912422/9912422 [00:00<00:00, 123718457.15it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████| 28881/28881 [00:00<00:00, 116813590.96it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████| 1648877/1648877 [00:00<00:00, 11536791.86it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████| 4542/4542 [00:00<00:00, 28139628.90it/s]
+Pool shape : torch.Size([40000, 1, 28, 28])
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_image_classification_40k_epig_acq.py", line 265, in <module>
+    main(**args)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_image_classification_40k_epig_acq.py", line 114, in main
+    with initialize(version_base=None, config_path="config"):
+NameError: name 'initialize' is not defined
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_image_classification_40k_epig_acq.py", line 265, in <module>
+    main(**args)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_image_classification_40k_epig_acq.py", line 114, in main
+    with initialize(version_base=None, config_path="config"):
+NameError: name 'initialize' is not defined

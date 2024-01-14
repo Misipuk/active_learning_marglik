@@ -31,6 +31,21 @@ from src.uncertainty import (
     marginal_entropy_from_probs,
 )
 
+import logging
+import torch
+import torch.distributions as dists
+from torch.nn import Module
+from torch.nn.functional import log_softmax, nll_loss
+from torch.optim import Optimizer
+from torch.utils.data import DataLoader
+from torch import Tensor
+
+import hydra
+from hydra import compose, initialize
+from hydra.utils import call, instantiate
+from omegaconf import OmegaConf
+import yaml
+
 def estimate_epig(
     m_model, loader: DataLoader, target_inputs: Tensor, use_matmul: bool
 ) -> Dictionary:
@@ -109,12 +124,12 @@ def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_si
     data = instantiate(cfg.data, rng=rng)
     data.torch()
     data.to(device)
-    model = instantiate(cfg.model, input_shape=data.input_shape, output_size=data.n_classes)
-    model = model.to(device)
+    #model = instantiate(cfg.model, input_shape=data.input_shape, output_size=data.n_classes)
+    #model = model.to(device)
 
 #     cfg.trainer["n_optim_steps_max"] = 5
 #     print(cfg.trainer["n_optim_steps_max"])
-    trainer = instantiate(cfg.trainer, model=model)
+    #trainer = instantiate(cfg.trainer, model=model)
 
     # Set up model and initial training.
     dataset = ActiveDataset(x, y, n_init=n_init, stratified=True)
