@@ -1,0 +1,479 @@
+
+Pool shape : torch.Size([40000, 1, 28, 28])
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:186]INFO: Initial test log-likelihood: -3.0136
+[run_image_classification_40k_epig_acq.py:187]INFO: Initial test Bayes log-likelihood: -2.1994
+[run_image_classification_40k_epig_acq.py:188]INFO: Initial accuracy: 52.26%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 21: -5.0179
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 21: -2.2423
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 40.72%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 22: -4.3397
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 22: -2.2096
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 48.86%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 23: -4.0111
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 23: -2.2089
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 46.46%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 24: -5.8128
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 24: -2.3012
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 46.73%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 25: -3.9075
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 25: -2.1948
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 48.01%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 26: -4.7628
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 26: -2.2215
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 44.44%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 27: -3.7757
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 27: -2.2483
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 48.76%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 28: -2.4660
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 28: -2.2088
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 55.42%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 29: -3.0137
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 29: -2.1871
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 53.91%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 30: -3.3947
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 30: -2.2325
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 48.41%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 31: -3.7453
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 31: -2.2174
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 49.73%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 32: -4.5882
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 32: -2.2898
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 50.53%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 33: -2.3640
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 33: -2.1766
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 59.90%
+We are in concat
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 34: -3.5710
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 34: -2.2320
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 50.63%
+Starting epig acquisition
+Using original estimate_epig function
+We are in concat
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 35: -3.4373
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 35: -2.1944
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 53.59%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 36: -3.5746
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 36: -2.2206
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 49.25%
+We are in concat
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 37: -3.5638
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 37: -2.2056
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 50.29%
+Starting epig acquisition
+Using original estimate_epig function
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 38: -3.4057
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 38: -2.1450
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 52.43%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 39: -3.7446
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 39: -2.1715
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 51.83%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 40: -4.1576
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 40: -2.1742
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 53.47%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 41: -2.8294
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 41: -2.1521
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 58.06%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 42: -2.6424
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 42: -2.1745
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 56.85%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 43: -3.4109
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 43: -2.1804
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 53.47%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 44: -2.1602
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 44: -2.1291
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 62.62%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 45: -2.7099
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 45: -2.1372
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 56.54%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 46: -2.6772
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 46: -2.1578
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 61.99%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 47: -2.9795
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 47: -2.1794
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 55.51%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 48: -2.8030
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 48: -2.1608
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 57.11%
+We are in concat
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 49: -2.3012
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 49: -2.1090
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 63.22%
+Starting epig acquisition
+Using original estimate_epig function
+We are in concat
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 50: -2.2598
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 50: -2.1389
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 60.76%
+Starting epig acquisition
+Using original estimate_epig function
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 51: -2.0927
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 51: -2.1206
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 63.25%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 52: -2.0530
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 52: -2.1004
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 66.06%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 53: -2.4327
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 53: -2.1283
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 59.72%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 54: -3.0721
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 54: -2.1053
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 60.30%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 55: -2.4492
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 55: -2.1108
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 64.25%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 56: -2.7487
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 56: -2.2868
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 66.57%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 57: -2.8960
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 57: -2.1095
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 63.59%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 58: -2.4449
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 58: -2.1216
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 61.61%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 59: -2.6061
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 59: -2.1515
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 61.80%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 60: -2.7010
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 60: -2.1270
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 62.52%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 61: -3.4159
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 61: -2.1324
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 62.10%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 62: -2.4370
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 62: -2.1137
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 64.47%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 63: -2.2313
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 63: -2.1337
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 68.90%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 64: -2.6402
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 64: -2.0903
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 66.71%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 65: -2.1210
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 65: -2.1010
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 69.11%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 66: -2.2539
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 66: -2.1058
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 67.76%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 67: -2.8076
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 67: -2.0732
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 67.29%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 68: -2.8180
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 68: -2.1125
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 65.66%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 69: -2.4084
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 69: -2.0721
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 68.34%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 70: -2.4899
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 70: -2.0624
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 68.85%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 71: -2.0390
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 71: -2.1050
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 69.97%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 72: -2.2704
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 72: -2.1089
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 67.39%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 73: -2.3464
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 73: -2.1277
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 70.04%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 74: -2.2141
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 74: -2.1006
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 70.58%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 75: -2.0240
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 75: -2.1024
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 68.96%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 76: -1.9081
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 76: -2.0504
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 73.41%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 77: -2.5606
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 77: -2.0460
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 71.12%
+We are in concat
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 78: -2.1225
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 78: -2.0912
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 70.29%
+Starting epig acquisition
+Using original estimate_epig function
+We are in concat
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 79: -2.0040
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 79: -2.1011
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 71.02%
+Starting epig acquisition
+Using original estimate_epig function
+We are in concat
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 80: -1.9550
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 80: -2.0701
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 74.53%
+Starting epig acquisition
+Using original estimate_epig function
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 81: -2.7922
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 81: -2.1230
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 68.47%
+We are in concat
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 82: -1.9043
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 82: -2.0799
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 73.36%
+Starting epig acquisition
+Using original estimate_epig function
+We are in concat
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 83: -2.3136
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 83: -2.1250
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 70.72%
+Starting epig acquisition
+Using original estimate_epig function
+We are in concat
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 84: -2.1889
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 84: -2.0900
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 72.31%
+Starting epig acquisition
+Using original estimate_epig function
+We are in concat
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 85: -2.1274
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 85: -2.0950
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 71.88%
+Starting epig acquisition
+Using original estimate_epig function
+We are in concat
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 86: -2.2973
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 86: -2.0772
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 71.52%
+Starting epig acquisition
+Using original estimate_epig function
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 87: -2.2223
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 87: -2.0852
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 73.65%
+We are in concat
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 88: -1.9863
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 88: -2.0655
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 73.78%
+Starting epig acquisition
+Using original estimate_epig function
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 89: -1.8121
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 89: -2.0645
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 74.84%
+We are in concat
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 90: -1.7935
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 90: -2.0834
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 75.00%
+Starting epig acquisition
+Using original estimate_epig function
+We are in concat
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 91: -1.6316
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 91: -2.0633
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 74.72%
+Starting epig acquisition
+Using original estimate_epig function
+We are in concat
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 92: -1.9599
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 92: -2.0755
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 74.11%
+Starting epig acquisition
+Using original estimate_epig function
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 93: -1.9565
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 93: -2.0967
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 74.12%
+We are in concat
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 94: -1.5127
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 94: -2.1088
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 75.86%
+Starting epig acquisition
+Using original estimate_epig function
+We are in concat
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 95: -1.4951
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 95: -2.0894
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 77.64%
+Starting epig acquisition
+Using original estimate_epig function
+We are in concat
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 96: -1.5068
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 96: -2.0492
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 77.39%
+Starting epig acquisition
+Using original estimate_epig function
+We are in concat
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 97: -1.3794
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 97: -2.0808
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 79.20%
+Starting epig acquisition
+Using original estimate_epig function
+We are in concat
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 98: -1.7949
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 98: -2.1280
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 76.63%
+Starting epig acquisition
+Using original estimate_epig function
+We are in concat
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 99: -1.3909
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 99: -2.0239
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 78.28%

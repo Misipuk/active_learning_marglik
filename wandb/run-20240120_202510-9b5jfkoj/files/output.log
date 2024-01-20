@@ -1,0 +1,39 @@
+
+Pool shape : torch.Size([40000, 1, 28, 28])
+Starting epig acquisition
+Using original estimate_epig function
+[run_logprobs_acq_epig_marglik_40k.py:191]INFO: Initial test log-likelihood: -3.0136
+[run_logprobs_acq_epig_marglik_40k.py:192]INFO: Initial test Bayes log-likelihood: -2.1994
+[run_logprobs_acq_epig_marglik_40k.py:193]INFO: Initial accuracy: 52.26%
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_logprobs_acq_epig_marglik_40k.py", line 302, in <module>
+    main(**args)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_logprobs_acq_epig_marglik_40k.py", line 218, in main
+    scores = estimate_epig(learner, dataset.get_pool_loader(batch_size=batch_size), target_inputs, cfg.acquisition.epig_using_matmul)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_logprobs_acq_epig_marglik_40k.py", line 52, in estimate_epig
+    epig_scores = estimate_epig_minibatch(m_model, inputs, target_inputs, use_matmul)  # [B,]
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_logprobs_acq_epig_marglik_40k.py", line 81, in estimate_epig_minibatch
+    return epig_fn(logprobs[: len(inputs)], logprobs[len(inputs) :])  # [N,]
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/src/uncertainty/epig.py", line 114, in epig_from_logprobs
+    return epig_from_conditional_scores(scores)  # [N_p,]
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/src/uncertainty/epig.py", line 96, in epig_from_conditional_scores
+    scores = check(scores, score_type="EPIG")  # [N_p,]
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/src/uncertainty/utils.py", line 15, in check
+    if not torch.all((scores + epsilon >= 0) & (scores - epsilon <= max_value)):
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_logprobs_acq_epig_marglik_40k.py", line 302, in <module>
+    main(**args)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_logprobs_acq_epig_marglik_40k.py", line 218, in main
+    scores = estimate_epig(learner, dataset.get_pool_loader(batch_size=batch_size), target_inputs, cfg.acquisition.epig_using_matmul)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_logprobs_acq_epig_marglik_40k.py", line 52, in estimate_epig
+    epig_scores = estimate_epig_minibatch(m_model, inputs, target_inputs, use_matmul)  # [B,]
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_logprobs_acq_epig_marglik_40k.py", line 81, in estimate_epig_minibatch
+    return epig_fn(logprobs[: len(inputs)], logprobs[len(inputs) :])  # [N,]
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/src/uncertainty/epig.py", line 114, in epig_from_logprobs
+    return epig_from_conditional_scores(scores)  # [N_p,]
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/src/uncertainty/epig.py", line 96, in epig_from_conditional_scores
+    scores = check(scores, score_type="EPIG")  # [N_p,]
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/src/uncertainty/utils.py", line 15, in check
+    if not torch.all((scores + epsilon >= 0) & (scores - epsilon <= max_value)):
+KeyboardInterrupt
