@@ -82,25 +82,25 @@ def estimate_epig_minibatch(#logprobs_trainer
 
 
 
-def estimate_epig_minibatch(#ProbsTrainer
-        m_model, inputs: Tensor, target_inputs: Tensor, use_matmul: bool
-    ) -> Tensor:
-    _inputs = torch.cat((inputs, target_inputs))  # [N + N_t, ...]
+# def estimate_epig_minibatch(#ProbsTrainer
+#         m_model, inputs: Tensor, target_inputs: Tensor, use_matmul: bool
+#     ) -> Tensor:
+#     _inputs = torch.cat((inputs, target_inputs))  # [N + N_t, ...]
 
-    n_samples = 150
-    generator = None
-    try:
-        f_mu, f_var = m_model._glm_predictive_distribution(combined_inputs)
-        f_samples = normal_samples(f_mu, f_var, n_samples, generator)
-        probs = torch.swapaxes(f_samples, 0, 1)
-    except:
-        f_mu, f_var = m_model._glm_predictive_distribution(combined_inputs)
-        f_var = torch.diagonal(f_var, dim1=1, dim2=2)
-        f_samples = normal_samples(f_mu, f_var, n_samples, generator)
-        probs = torch.swapaxes(f_samples, 0, 1)
+#     n_samples = 150
+#     generator = None
+#     try:
+#         f_mu, f_var = m_model._glm_predictive_distribution(combined_inputs)
+#         f_samples = normal_samples(f_mu, f_var, n_samples, generator)
+#         probs = torch.swapaxes(f_samples, 0, 1)
+#     except:
+#         f_mu, f_var = m_model._glm_predictive_distribution(combined_inputs)
+#         f_var = torch.diagonal(f_var, dim1=1, dim2=2)
+#         f_samples = normal_samples(f_mu, f_var, n_samples, generator)
+#         probs = torch.swapaxes(f_samples, 0, 1)
     
-        epig_fn = epig_from_probs_using_matmul if use_matmul else epig_from_probs
-        return epig_fn(probs[: len(inputs)], probs[len(inputs) :])  # [N,]
+#         epig_fn = epig_from_probs_using_matmul if use_matmul else epig_from_probs
+#         return epig_fn(probs[: len(inputs)], probs[len(inputs) :])  # [N,]
 
 
 
