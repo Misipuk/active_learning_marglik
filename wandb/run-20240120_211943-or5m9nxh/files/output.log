@@ -1,0 +1,24 @@
+
+Pool shape : torch.Size([40000, 1, 28, 28])
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:False
+[run_acq_epig_marglik_40k.py:194]INFO: Initial test log-likelihood: -3.0136
+[run_acq_epig_marglik_40k.py:195]INFO: Initial test Bayes log-likelihood: -2.1994
+[run_acq_epig_marglik_40k.py:196]INFO: Initial accuracy: 52.26%
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_acq_epig_marglik_40k.py", line 306, in <module>
+    main(**args)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_acq_epig_marglik_40k.py", line 221, in main
+    scores = estimate_epig(learner, dataset.get_pool_loader(batch_size=batch_size), target_inputs, cfg.acquisition.epig_using_matmul, epig_use_logprobs)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_acq_epig_marglik_40k.py", line 56, in estimate_epig
+    scores.append({"epig": epig_scores.cpu()})
+AttributeError: 'NoneType' object has no attribute 'cpu'
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_acq_epig_marglik_40k.py", line 306, in <module>
+    main(**args)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_acq_epig_marglik_40k.py", line 221, in main
+    scores = estimate_epig(learner, dataset.get_pool_loader(batch_size=batch_size), target_inputs, cfg.acquisition.epig_using_matmul, epig_use_logprobs)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_acq_epig_marglik_40k.py", line 56, in estimate_epig
+    scores.append({"epig": epig_scores.cpu()})
+AttributeError: 'NoneType' object has no attribute 'cpu'

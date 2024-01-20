@@ -43,18 +43,21 @@ from torch import Tensor
 from torch.nn.functional import log_softmax
 
 def estimate_epig(
-    m_model, loader: DataLoader, target_inputs: Tensor, use_matmul: bool
+    m_model, loader: DataLoader, target_inputs: Tensor, use_matmul: bool, epig_use_logprobs: bool
 ) -> Dictionary:
     #self.eval_mode()
     scores = Dictionary()
-
+    print(f"epig_use_logprobs:{epig_use_logprobs}")
     for inputs, _ in loader:
-        epig_scores = estimate_epig_minibatch(m_model, inputs, target_inputs, use_matmul)  # [B,]
+        if epig_use_logprobs:
+            epig_scores = estimate_epig_minibatch_logprobs(m_model, inputs, target_inputs, use_matmul)  # [B,]
+        else:
+            epig_scores = estimate_epig_minibatch(m_model, inputs, target_inputs, use_matmul)
         scores.append({"epig": epig_scores.cpu()})
 
     return scores.concatenate()
 
-def estimate_epig_minibatch(#logprobs_trainer
+def estimate_epig_minibatch_logprobs(#logprobs_trainer
     m_model, inputs: Tensor, target_inputs: Tensor, use_matmul: bool
 ) -> Tensor:
     combined_inputs = torch.cat((inputs, target_inputs))  # [N + N_t, ...]
@@ -82,32 +85,30 @@ def estimate_epig_minibatch(#logprobs_trainer
 
 
 
-# def estimate_epig_minibatch(#ProbsTrainer
-#         m_model, inputs: Tensor, target_inputs: Tensor, use_matmul: bool
-#     ) -> Tensor:
-#     _inputs = torch.cat((inputs, target_inputs))  # [N + N_t, ...]
+def estimate_epig_minibatch(#ProbsTrainer
+        m_model, inputs: Tensor, target_inputs: Tensor, use_matmul: bool
+    ) -> Tensor:
+    _inputs = torch.cat((inputs, target_inputs))  # [N + N_t, ...]
 
-#     n_samples = 150
-#     generator = None
-#     try:
-#         f_mu, f_var = m_model._glm_predictive_distribution(combined_inputs)
-#         f_samples = normal_samples(f_mu, f_var, n_samples, generator)
-#         probs = torch.swapaxes(f_samples, 0, 1)
-#     except:
-#         f_mu, f_var = m_model._glm_predictive_distribution(combined_inputs)
-#         f_var = torch.diagonal(f_var, dim1=1, dim2=2)
-#         f_samples = normal_samples(f_mu, f_var, n_samples, generator)
-#         probs = torch.swapaxes(f_samples, 0, 1)
+    n_samples = 150
+    generator = None
+    try:
+        f_mu, f_var = m_model.la._glm_predictive_distribution(_inputs)
+        f_samples = normal_samples(f_mu, f_var, n_samples, generator)
+        probs = torch.swapaxes(f_samples, 0, 1)
+    except:
+        f_mu, f_var = m_model.la._glm_predictive_distribution(_inputs)
+        f_var = torch.diagonal(f_var, dim1=1, dim2=2)
+        f_samples = normal_samples(f_mu, f_var, n_samples, generator)
+        probs = torch.swapaxes(f_samples, 0, 1)
     
-#         epig_fn = epig_from_probs_using_matmul if use_matmul else epig_from_probs
-#         return epig_fn(probs[: len(inputs)], probs[len(inputs) :])  # [N,]
-
-
+        epig_fn = epig_from_probs_using_matmul if use_matmul else epig_from_probs
+        return epig_fn(probs[: len(inputs)], probs[len(inputs) :])  # [N,]
 
 
 def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_size, method, approx, lr_hyp, lr_hyp_min,
          n_epochs_burnin, marglik_frequency, n_hypersteps, device, data_root, use_wandb, random_acquisition,
-         early_stopping, last_layer, n_components, download_data, acquisition_method):
+         early_stopping, last_layer, n_components, download_data, acquisition_method, epig_use_logprobs):
     if dataset == 'mnist':
         transform = transforms.ToTensor()
         ds_cls = MNIST
@@ -215,7 +216,7 @@ def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_si
                 print("Something went wrong")
             else:
                 print("Using original estimate_epig function")
-                scores = estimate_epig(learner, dataset.get_pool_loader(batch_size=batch_size), target_inputs, cfg.acquisition.epig_using_matmul)           
+                scores = estimate_epig(learner, dataset.get_pool_loader(batch_size=batch_size), target_inputs, cfg.acquisition.epig_using_matmul, epig_use_logprobs)           
             scores = scores.numpy()
             scores = scores['epig']
             acquired_pool_inds = np.argmax(scores)
@@ -278,6 +279,7 @@ if __name__ == '__main__':
     parser.add_argument('--use_wandb', default=True, action=argparse.BooleanOptionalAction)
     parser.add_argument('--random_acquisition', default=False, action=argparse.BooleanOptionalAction)
     parser.add_argument('--acquisition_method', default='epig', choices=['epig', 'bald'])
+    parser.add_argument('--epig_use_logprobs', default=True, action=argparse.BooleanOptionalAction)
     parser.add_argument('--config', nargs='+')
     set_defaults_with_yaml_config(parser, sys.argv)
     args = vars(parser.parse_args())
