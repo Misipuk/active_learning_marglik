@@ -288,7 +288,7 @@ if __name__ == '__main__':
     if args['use_wandb']:
         import uuid
         import copy
-        tags = [args['dataset'], args['method']] 
+        tags = [args['dataset'], args['method'], ('n_ep_burn_'+str(args['n_epochs_burnin']))] 
         if args['random_acquisition']:
             tags = [args['dataset'], args['method'], "rndm"] 
             ### left random_acquisition to be consistent with prev configs
