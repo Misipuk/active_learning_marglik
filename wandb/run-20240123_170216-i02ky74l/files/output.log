@@ -1,0 +1,72 @@
+
+Pool shape : torch.Size([40000, 1, 28, 28])
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_acq_epig_marglik_40k.py", line 304, in <module>
+    main(**args)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_acq_epig_marglik_40k.py", line 190, in main
+    test_ll_bayes = learner.log_lik_bayes(test_loader)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/active_learning/active_learners.py", line 96, in log_lik_bayes
+    p = self.la(x, link_approx='mc')
+  File "/usr/local/lib/python3.10/dist-packages/laplace/baselaplace.py", line 589, in __call__
+    f_mu, f_var = self._glm_predictive_distribution(
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/laplace/baselaplace.py", line 674, in _glm_predictive_distribution
+    Js, f_mu = self.backend.jacobians(X, enable_backprop=self.enable_backprop)
+  File "/usr/local/lib/python3.10/dist-packages/laplace/curvature/asdl.py", line 44, in jacobians
+    f = batch_gradient(self.model, loss_fn, x, None).detach()
+  File "/usr/local/lib/python3.10/dist-packages/asdfghjkl/gradient.py", line 60, in batch_gradient
+    loss.backward()
+  File "/usr/local/lib/python3.10/dist-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/usr/local/lib/python3.10/dist-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+  File "/usr/local/lib/python3.10/dist-packages/asdfghjkl/core.py", line 27, in backward_hook
+    _call_operations_in_backward(module, in_data, out_grads)
+  File "/usr/local/lib/python3.10/dist-packages/asdfghjkl/core.py", line 113, in _call_operations_in_backward
+    module.operation.backward_pre_process(in_data, out_grads)
+  File "/usr/local/lib/python3.10/dist-packages/asdfghjkl/operations/operation.py", line 135, in backward_pre_process
+    rst = getattr(self,
+  File "/usr/local/lib/python3.10/dist-packages/asdfghjkl/operations/linear.py", line 20, in batch_grads_weight
+    return torch.bmm(
+KeyboardInterrupt
+Error in sys.excepthook:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/lib/exit_hooks.py", line 54, in exc_handler
+    self._orig_excepthook(exc_type, exc, tb)
+  File "/usr/local/lib/python3.10/dist-packages/exceptiongroup/_formatting.py", line 71, in exceptiongroup_excepthook
+    sys.stderr.write("".join(traceback.format_exception(etype, value, tb)))
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/lib/redirect.py", line 640, in write
+    self._old_write(data)
+KeyboardInterrupt
+Original exception was:
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_acq_epig_marglik_40k.py", line 304, in <module>
+    main(**args)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_acq_epig_marglik_40k.py", line 190, in main
+    test_ll_bayes = learner.log_lik_bayes(test_loader)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/active_learning/active_learners.py", line 96, in log_lik_bayes
+    p = self.la(x, link_approx='mc')
+  File "/usr/local/lib/python3.10/dist-packages/laplace/baselaplace.py", line 589, in __call__
+    f_mu, f_var = self._glm_predictive_distribution(
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/laplace/baselaplace.py", line 674, in _glm_predictive_distribution
+    Js, f_mu = self.backend.jacobians(X, enable_backprop=self.enable_backprop)
+  File "/usr/local/lib/python3.10/dist-packages/laplace/curvature/asdl.py", line 44, in jacobians
+    f = batch_gradient(self.model, loss_fn, x, None).detach()
+  File "/usr/local/lib/python3.10/dist-packages/asdfghjkl/gradient.py", line 60, in batch_gradient
+    loss.backward()
+  File "/usr/local/lib/python3.10/dist-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/usr/local/lib/python3.10/dist-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+  File "/usr/local/lib/python3.10/dist-packages/asdfghjkl/core.py", line 27, in backward_hook
+    _call_operations_in_backward(module, in_data, out_grads)
+  File "/usr/local/lib/python3.10/dist-packages/asdfghjkl/core.py", line 113, in _call_operations_in_backward
+    module.operation.backward_pre_process(in_data, out_grads)
+  File "/usr/local/lib/python3.10/dist-packages/asdfghjkl/operations/operation.py", line 135, in backward_pre_process
+    rst = getattr(self,
+  File "/usr/local/lib/python3.10/dist-packages/asdfghjkl/operations/linear.py", line 20, in batch_grads_weight
+    return torch.bmm(
+KeyboardInterrupt

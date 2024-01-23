@@ -72,33 +72,6 @@ class LeNet(nn.Sequential):
         for module in self.modules():
             if isinstance(module, (nn.Conv2d, nn.Linear)):
                 module.reset_parameters()
-
-# class LeNet(nn.Sequential):
-    
-#     def __init__(self, in_channels=1, n_out=10, activation='relu', n_pixels=28):
-#         super().__init__()
-#         mid_kernel_size = 3 if n_pixels == 28 else 5
-#         act = get_activation(activation)
-#         conv = nn.Conv2d
-#         pool = nn.MaxPool2d
-#         flatten = nn.Flatten(start_dim=1)
-#         self.add_module('conv1', conv(in_channels, 6, 5, 1))
-#         self.add_module('act1', act())
-#         self.add_module('pool1', pool(2))
-#         self.add_module('conv2', conv(6, 16, mid_kernel_size, 1))
-#         self.add_module('act2', act())
-#         self.add_module('pool2', pool(2))
-#         self.add_module('conv3', conv(16, 120, 5, 1))
-#         self.add_module('flatten', flatten)
-#         self.add_module('act3', act())
-#         self.add_module('lin1', torch.nn.Linear(120*1*1, 84))
-#         self.add_module('act4', act())
-#         self.add_module('linout', torch.nn.Linear(84, n_out))
-
-#     def reset_parameters(self):
-#         for module in self.modules():
-#             if isinstance(module, (nn.Conv2d, nn.Linear)):
-#                 module.reset_parameters()
     
     
 def conv3x3(in_planes, out_planes, stride=1):

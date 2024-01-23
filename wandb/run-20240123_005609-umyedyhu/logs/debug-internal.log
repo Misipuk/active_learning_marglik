@@ -1,0 +1,249 @@
+2024-01-23 00:56:09,402 INFO    StreamThr :1465193 [internal.py:wandb_internal():86] W&B internal server running at pid: 1465193, started at: 2024-01-23 00:56:09.401768
+2024-01-23 00:56:09,403 DEBUG   HandlerThread:1465193 [handler.py:handle_request():146] handle_request: status
+2024-01-23 00:56:09,408 INFO    WriterThread:1465193 [datastore.py:open_for_write():87] open: /dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/wandb/run-20240123_005609-umyedyhu/run-umyedyhu.wandb
+2024-01-23 00:56:09,408 DEBUG   SenderThread:1465193 [sender.py:send():382] send: header
+2024-01-23 00:56:09,412 DEBUG   SenderThread:1465193 [sender.py:send():382] send: run
+2024-01-23 00:56:09,860 INFO    SenderThread:1465193 [dir_watcher.py:__init__():211] watching files in: /dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/wandb/run-20240123_005609-umyedyhu/files
+2024-01-23 00:56:09,861 INFO    SenderThread:1465193 [sender.py:_start_run_threads():1136] run started: umyedyhu with start time 1705967769.401655
+2024-01-23 00:56:09,868 DEBUG   HandlerThread:1465193 [handler.py:handle_request():146] handle_request: check_version
+2024-01-23 00:56:09,868 DEBUG   SenderThread:1465193 [sender.py:send_request():409] send_request: check_version
+2024-01-23 00:56:09,995 DEBUG   HandlerThread:1465193 [handler.py:handle_request():146] handle_request: run_start
+2024-01-23 00:56:10,105 DEBUG   HandlerThread:1465193 [system_info.py:__init__():27] System info init
+2024-01-23 00:56:10,105 DEBUG   HandlerThread:1465193 [system_info.py:__init__():42] System info init done
+2024-01-23 00:56:10,105 INFO    HandlerThread:1465193 [system_monitor.py:start():194] Starting system monitor
+2024-01-23 00:56:10,105 INFO    SystemMonitor:1465193 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-01-23 00:56:10,106 INFO    HandlerThread:1465193 [system_monitor.py:probe():214] Collecting system info
+2024-01-23 00:56:10,106 INFO    SystemMonitor:1465193 [interfaces.py:start():190] Started cpu monitoring
+2024-01-23 00:56:10,106 INFO    SystemMonitor:1465193 [interfaces.py:start():190] Started disk monitoring
+2024-01-23 00:56:10,107 INFO    SystemMonitor:1465193 [interfaces.py:start():190] Started gpu monitoring
+2024-01-23 00:56:10,107 INFO    SystemMonitor:1465193 [interfaces.py:start():190] Started memory monitoring
+2024-01-23 00:56:10,107 INFO    SystemMonitor:1465193 [interfaces.py:start():190] Started network monitoring
+2024-01-23 00:56:10,114 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-01-23 00:56:10,114 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-01-23 00:56:10,116 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-23 00:56:10,116 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-23 00:56:10,189 DEBUG   HandlerThread:1465193 [system_info.py:probe():151] Probing system
+2024-01-23 00:56:10,191 DEBUG   HandlerThread:1465193 [system_info.py:_probe_git():136] Probing git
+2024-01-23 00:56:10,196 DEBUG   HandlerThread:1465193 [system_info.py:_probe_git():144] Probing git done
+2024-01-23 00:56:10,196 DEBUG   HandlerThread:1465193 [system_info.py:probe():199] Probing system done
+2024-01-23 00:56:10,196 DEBUG   HandlerThread:1465193 [system_monitor.py:probe():223] {'os': 'Linux-5.4.0-167-generic-x86_64-with-glibc2.35', 'python': '3.10.12', 'heartbeatAt': '2024-01-22T23:56:10.189724', 'startedAt': '2024-01-22T23:56:09.349513', 'docker': None, 'cuda': None, 'args': ('--seed', '3', '--random_acquisition', '--config', 'configs/mnist_tuned_burning_epig.yaml'), 'state': 'running', 'program': '/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_acq_epig_marglik_40k.py', 'codePathLocal': 'run_acq_epig_marglik_40k.py', 'codePath': 'run_acq_epig_marglik_40k.py', 'git': {'remote': 'git@github.com:Misipuk/active_learning_marglik.git', 'commit': '0a0847834fb57cba6a1b10032bcfe6c2a2ecc284'}, 'email': None, 'root': '/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik', 'host': 'lrz-dgx-a100-003', 'username': 'ge32jaq2', 'executable': '/usr/bin/python3', 'cpu_count': 128, 'cpu_count_logical': 256, 'cpu_freq': {'current': 2925.75601171875, 'min': 1500.0, 'max': 2250.0}, 'cpu_freq_per_core': [{'current': 3368.407, 'min': 1500.0, 'max': 2250.0}, {'current': 3367.808, 'min': 1500.0, 'max': 2250.0}, {'current': 3368.825, 'min': 1500.0, 'max': 2250.0}, {'current': 3370.936, 'min': 1500.0, 'max': 2250.0}, {'current': 2551.81, 'min': 1500.0, 'max': 2250.0}, {'current': 3304.862, 'min': 1500.0, 'max': 2250.0}, {'current': 3266.592, 'min': 1500.0, 'max': 2250.0}, {'current': 3334.392, 'min': 1500.0, 'max': 2250.0}, {'current': 3342.72, 'min': 1500.0, 'max': 2250.0}, {'current': 2553.299, 'min': 1500.0, 'max': 2250.0}, {'current': 2662.308, 'min': 1500.0, 'max': 2250.0}, {'current': 3367.871, 'min': 1500.0, 'max': 2250.0}, {'current': 3379.461, 'min': 1500.0, 'max': 2250.0}, {'current': 3390.133, 'min': 1500.0, 'max': 2250.0}, {'current': 3387.466, 'min': 1500.0, 'max': 2250.0}, {'current': 3380.277, 'min': 1500.0, 'max': 2250.0}, {'current': 3399.706, 'min': 1500.0, 'max': 2250.0}, {'current': 3383.543, 'min': 1500.0, 'max': 2250.0}, {'current': 3370.609, 'min': 1500.0, 'max': 2250.0}, {'current': 2581.581, 'min': 1500.0, 'max': 2250.0}, {'current': 3342.734, 'min': 1500.0, 'max': 2250.0}, {'current': 2516.273, 'min': 1500.0, 'max': 2250.0}, {'current': 1693.073, 'min': 1500.0, 'max': 2250.0}, {'current': 2559.564, 'min': 1500.0, 'max': 2250.0}, {'current': 3239.226, 'min': 1500.0, 'max': 2250.0}, {'current': 3386.743, 'min': 1500.0, 'max': 2250.0}, {'current': 2580.483, 'min': 1500.0, 'max': 2250.0}, {'current': 3335.383, 'min': 1500.0, 'max': 2250.0}, {'current': 2586.847, 'min': 1500.0, 'max': 2250.0}, {'current': 2637.268, 'min': 1500.0, 'max': 2250.0}, {'current': 2643.352, 'min': 1500.0, 'max': 2250.0}, {'current': 2642.502, 'min': 1500.0, 'max': 2250.0}, {'current': 2585.707, 'min': 1500.0, 'max': 2250.0}, {'current': 2655.938, 'min': 1500.0, 'max': 2250.0}, {'current': 2653.902, 'min': 1500.0, 'max': 2250.0}, {'current': 2613.198, 'min': 1500.0, 'max': 2250.0}, {'current': 2593.845, 'min': 1500.0, 'max': 2250.0}, {'current': 3338.672, 'min': 1500.0, 'max': 2250.0}, {'current': 3320.84, 'min': 1500.0, 'max': 2250.0}, {'current': 3323.016, 'min': 1500.0, 'max': 2250.0}, {'current': 2297.265, 'min': 1500.0, 'max': 2250.0}, {'current': 3396.716, 'min': 1500.0, 'max': 2250.0}, {'current': 2601.738, 'min': 1500.0, 'max': 2250.0}, {'current': 2576.908, 'min': 1500.0, 'max': 2250.0}, {'current': 2575.392, 'min': 1500.0, 'max': 2250.0}, {'current': 2616.461, 'min': 1500.0, 'max': 2250.0}, {'current': 2629.25, 'min': 1500.0, 'max': 2250.0}, {'current': 2623.059, 'min': 1500.0, 'max': 2250.0}, {'current': 3369.069, 'min': 1500.0, 'max': 2250.0}, {'current': 2595.837, 'min': 1500.0, 'max': 2250.0}, {'current': 2581.656, 'min': 1500.0, 'max': 2250.0}, {'current': 2583.33, 'min': 1500.0, 'max': 2250.0}, {'current': 2597.504, 'min': 1500.0, 'max': 2250.0}, {'current': 2599.007, 'min': 1500.0, 'max': 2250.0}, {'current': 2654.057, 'min': 1500.0, 'max': 2250.0}, {'current': 2674.456, 'min': 1500.0, 'max': 2250.0}, {'current': 2650.365, 'min': 1500.0, 'max': 2250.0}, {'current': 2656.278, 'min': 1500.0, 'max': 2250.0}, {'current': 2647.676, 'min': 1500.0, 'max': 2250.0}, {'current': 2637.851, 'min': 1500.0, 'max': 2250.0}, {'current': 2630.549, 'min': 1500.0, 'max': 2250.0}, {'current': 2626.775, 'min': 1500.0, 'max': 2250.0}, {'current': 2630.491, 'min': 1500.0, 'max': 2250.0}, {'current': 2626.244, 'min': 1500.0, 'max': 2250.0}, {'current': 2516.038, 'min': 1500.0, 'max': 2250.0}, {'current': 2594.63, 'min': 1500.0, 'max': 2250.0}, {'current': 2614.929, 'min': 1500.0, 'max': 2250.0}, {'current': 2592.396, 'min': 1500.0, 'max': 2250.0}, {'current': 3395.881, 'min': 1500.0, 'max': 2250.0}, {'current': 1763.749, 'min': 1500.0, 'max': 2250.0}, {'current': 2557.003, 'min': 1500.0, 'max': 2250.0}, {'current': 2553.73, 'min': 1500.0, 'max': 2250.0}, {'current': 3382.727, 'min': 1500.0, 'max': 2250.0}, {'current': 2021.685, 'min': 1500.0, 'max': 2250.0}, {'current': 3382.294, 'min': 1500.0, 'max': 2250.0}, {'current': 2542.03, 'min': 1500.0, 'max': 2250.0}, {'current': 3272.916, 'min': 1500.0, 'max': 2250.0}, {'current': 1735.561, 'min': 1500.0, 'max': 2250.0}, {'current': 1735.23, 'min': 1500.0, 'max': 2250.0}, {'current': 1699.308, 'min': 1500.0, 'max': 2250.0}, {'current': 3162.743, 'min': 1500.0, 'max': 2250.0}, {'current': 3350.023, 'min': 1500.0, 'max': 2250.0}, {'current': 2583.318, 'min': 1500.0, 'max': 2250.0}, {'current': 2602.072, 'min': 1500.0, 'max': 2250.0}, {'current': 2519.028, 'min': 1500.0, 'max': 2250.0}, {'current': 1698.756, 'min': 1500.0, 'max': 2250.0}, {'current': 3379.971, 'min': 1500.0, 'max': 2250.0}, {'current': 2541.517, 'min': 1500.0, 'max': 2250.0}, {'current': 1736.653, 'min': 1500.0, 'max': 2250.0}, {'current': 2598.333, 'min': 1500.0, 'max': 2250.0}, {'current': 2619.582, 'min': 1500.0, 'max': 2250.0}, {'current': 2596.109, 'min': 1500.0, 'max': 2250.0}, {'current': 2573.537, 'min': 1500.0, 'max': 2250.0}, {'current': 2633.548, 'min': 1500.0, 'max': 2250.0}, {'current': 2583.768, 'min': 1500.0, 'max': 2250.0}, {'current': 2607.0, 'min': 1500.0, 'max': 2250.0}, {'current': 3382.714, 'min': 1500.0, 'max': 2250.0}, {'current': 2418.573, 'min': 1500.0, 'max': 2250.0}, {'current': 1698.702, 'min': 1500.0, 'max': 2250.0}, {'current': 3389.705, 'min': 1500.0, 'max': 2250.0}, {'current': 1795.464, 'min': 1500.0, 'max': 2250.0}, {'current': 1796.129, 'min': 1500.0, 'max': 2250.0}, {'current': 1796.132, 'min': 1500.0, 'max': 2250.0}, {'current': 1794.398, 'min': 1500.0, 'max': 2250.0}, {'current': 1743.102, 'min': 1500.0, 'max': 2250.0}, {'current': 2591.771, 'min': 1500.0, 'max': 2250.0}, {'current': 3237.737, 'min': 1500.0, 'max': 2250.0}, {'current': 2564.787, 'min': 1500.0, 'max': 2250.0}, {'current': 2550.596, 'min': 1500.0, 'max': 2250.0}, {'current': 2547.478, 'min': 1500.0, 'max': 2250.0}, {'current': 1737.797, 'min': 1500.0, 'max': 2250.0}, {'current': 2601.772, 'min': 1500.0, 'max': 2250.0}, {'current': 2519.81, 'min': 1500.0, 'max': 2250.0}, {'current': 3388.648, 'min': 1500.0, 'max': 2250.0}, {'current': 2527.102, 'min': 1500.0, 'max': 2250.0}, {'current': 1689.339, 'min': 1500.0, 'max': 2250.0}, {'current': 3383.014, 'min': 1500.0, 'max': 2250.0}, {'current': 2552.894, 'min': 1500.0, 'max': 2250.0}, {'current': 2535.266, 'min': 1500.0, 'max': 2250.0}, {'current': 2497.49, 'min': 1500.0, 'max': 2250.0}, {'current': 1741.935, 'min': 1500.0, 'max': 2250.0}, {'current': 3337.008, 'min': 1500.0, 'max': 2250.0}, {'current': 2560.279, 'min': 1500.0, 'max': 2250.0}, {'current': 2534.271, 'min': 1500.0, 'max': 2250.0}, {'current': 1741.525, 'min': 1500.0, 'max': 2250.0}, {'current': 2582.539, 'min': 1500.0, 'max': 2250.0}, {'current': 2556.109, 'min': 1500.0, 'max': 2250.0}, {'current': 2521.179, 'min': 1500.0, 'max': 2250.0}, {'current': 3369.444, 'min': 1500.0, 'max': 2250.0}, {'current': 3366.272, 'min': 1500.0, 'max': 2250.0}, {'current': 3331.385, 'min': 1500.0, 'max': 2250.0}, {'current': 3332.316, 'min': 1500.0, 'max': 2250.0}, {'current': 3088.959, 'min': 1500.0, 'max': 2250.0}, {'current': 3240.311, 'min': 1500.0, 'max': 2250.0}, {'current': 3294.093, 'min': 1500.0, 'max': 2250.0}, {'current': 3371.206, 'min': 1500.0, 'max': 2250.0}, {'current': 3370.355, 'min': 1500.0, 'max': 2250.0}, {'current': 2572.451, 'min': 1500.0, 'max': 2250.0}, {'current': 1839.736, 'min': 1500.0, 'max': 2250.0}, {'current': 3369.913, 'min': 1500.0, 'max': 2250.0}, {'current': 3393.193, 'min': 1500.0, 'max': 2250.0}, {'current': 2426.693, 'min': 1500.0, 'max': 2250.0}, {'current': 2437.894, 'min': 1500.0, 'max': 2250.0}, {'current': 1858.443, 'min': 1500.0, 'max': 2250.0}, {'current': 2432.665, 'min': 1500.0, 'max': 2250.0}, {'current': 3257.913, 'min': 1500.0, 'max': 2250.0}, {'current': 3395.602, 'min': 1500.0, 'max': 2250.0}, {'current': 3064.998, 'min': 1500.0, 'max': 2250.0}, {'current': 3389.64, 'min': 1500.0, 'max': 2250.0}, {'current': 3070.569, 'min': 1500.0, 'max': 2250.0}, {'current': 3324.613, 'min': 1500.0, 'max': 2250.0}, {'current': 3369.143, 'min': 1500.0, 'max': 2250.0}, {'current': 3379.348, 'min': 1500.0, 'max': 2250.0}, {'current': 3346.88, 'min': 1500.0, 'max': 2250.0}, {'current': 2454.808, 'min': 1500.0, 'max': 2250.0}, {'current': 3369.733, 'min': 1500.0, 'max': 2250.0}, {'current': 3386.002, 'min': 1500.0, 'max': 2250.0}, {'current': 3397.35, 'min': 1500.0, 'max': 2250.0}, {'current': 3386.085, 'min': 1500.0, 'max': 2250.0}, {'current': 3378.709, 'min': 1500.0, 'max': 2250.0}, {'current': 3382.785, 'min': 1500.0, 'max': 2250.0}, {'current': 3394.789, 'min': 1500.0, 'max': 2250.0}, {'current': 3387.189, 'min': 1500.0, 'max': 2250.0}, {'current': 3168.602, 'min': 1500.0, 'max': 2250.0}, {'current': 3397.761, 'min': 1500.0, 'max': 2250.0}, {'current': 3353.988, 'min': 1500.0, 'max': 2250.0}, {'current': 3373.3, 'min': 1500.0, 'max': 2250.0}, {'current': 2596.515, 'min': 1500.0, 'max': 2250.0}, {'current': 2427.286, 'min': 1500.0, 'max': 2250.0}, {'current': 3157.769, 'min': 1500.0, 'max': 2250.0}, {'current': 2371.684, 'min': 1500.0, 'max': 2250.0}, {'current': 2357.073, 'min': 1500.0, 'max': 2250.0}, {'current': 3383.949, 'min': 1500.0, 'max': 2250.0}, {'current': 3386.591, 'min': 1500.0, 'max': 2250.0}, {'current': 3394.138, 'min': 1500.0, 'max': 2250.0}, {'current': 3004.821, 'min': 1500.0, 'max': 2250.0}, {'current': 3338.189, 'min': 1500.0, 'max': 2250.0}, {'current': 3379.458, 'min': 1500.0, 'max': 2250.0}, {'current': 3379.876, 'min': 1500.0, 'max': 2250.0}, {'current': 3374.178, 'min': 1500.0, 'max': 2250.0}, {'current': 3377.584, 'min': 1500.0, 'max': 2250.0}, {'current': 3374.292, 'min': 1500.0, 'max': 2250.0}, {'current': 3378.175, 'min': 1500.0, 'max': 2250.0}, {'current': 3368.011, 'min': 1500.0, 'max': 2250.0}, {'current': 3374.006, 'min': 1500.0, 'max': 2250.0}, {'current': 3365.375, 'min': 1500.0, 'max': 2250.0}, {'current': 3366.341, 'min': 1500.0, 'max': 2250.0}, {'current': 3378.814, 'min': 1500.0, 'max': 2250.0}, {'current': 3212.691, 'min': 1500.0, 'max': 2250.0}, {'current': 3029.921, 'min': 1500.0, 'max': 2250.0}, {'current': 3362.981, 'min': 1500.0, 'max': 2250.0}, {'current': 3368.547, 'min': 1500.0, 'max': 2250.0}, {'current': 3390.723, 'min': 1500.0, 'max': 2250.0}, {'current': 3374.311, 'min': 1500.0, 'max': 2250.0}, {'current': 3402.001, 'min': 1500.0, 'max': 2250.0}, {'current': 3385.421, 'min': 1500.0, 'max': 2250.0}, {'current': 3385.035, 'min': 1500.0, 'max': 2250.0}, {'current': 3407.625, 'min': 1500.0, 'max': 2250.0}, {'current': 3390.744, 'min': 1500.0, 'max': 2250.0}, {'current': 3390.85, 'min': 1500.0, 'max': 2250.0}, {'current': 3383.849, 'min': 1500.0, 'max': 2250.0}, {'current': 3384.222, 'min': 1500.0, 'max': 2250.0}, {'current': 3379.079, 'min': 1500.0, 'max': 2250.0}, {'current': 3388.21, 'min': 1500.0, 'max': 2250.0}, {'current': 1925.817, 'min': 1500.0, 'max': 2250.0}, {'current': 3400.097, 'min': 1500.0, 'max': 2250.0}, {'current': 2369.937, 'min': 1500.0, 'max': 2250.0}, {'current': 3386.7, 'min': 1500.0, 'max': 2250.0}, {'current': 3393.228, 'min': 1500.0, 'max': 2250.0}, {'current': 3388.03, 'min': 1500.0, 'max': 2250.0}, {'current': 3395.865, 'min': 1500.0, 'max': 2250.0}, {'current': 3393.509, 'min': 1500.0, 'max': 2250.0}, {'current': 3382.402, 'min': 1500.0, 'max': 2250.0}, {'current': 3390.678, 'min': 1500.0, 'max': 2250.0}, {'current': 3399.366, 'min': 1500.0, 'max': 2250.0}, {'current': 3389.956, 'min': 1500.0, 'max': 2250.0}, {'current': 3400.72, 'min': 1500.0, 'max': 2250.0}, {'current': 3395.255, 'min': 1500.0, 'max': 2250.0}, {'current': 3392.262, 'min': 1500.0, 'max': 2250.0}, {'current': 3389.673, 'min': 1500.0, 'max': 2250.0}, {'current': 3387.853, 'min': 1500.0, 'max': 2250.0}, {'current': 3392.093, 'min': 1500.0, 'max': 2250.0}, {'current': 3401.998, 'min': 1500.0, 'max': 2250.0}, {'current': 3376.698, 'min': 1500.0, 'max': 2250.0}, {'current': 3379.963, 'min': 1500.0, 'max': 2250.0}, {'current': 3386.796, 'min': 1500.0, 'max': 2250.0}, {'current': 2731.221, 'min': 1500.0, 'max': 2250.0}, {'current': 2307.845, 'min': 1500.0, 'max': 2250.0}, {'current': 2366.26, 'min': 1500.0, 'max': 2250.0}, {'current': 2352.263, 'min': 1500.0, 'max': 2250.0}, {'current': 3385.948, 'min': 1500.0, 'max': 2250.0}, {'current': 2336.645, 'min': 1500.0, 'max': 2250.0}, {'current': 2320.927, 'min': 1500.0, 'max': 2250.0}, {'current': 2349.768, 'min': 1500.0, 'max': 2250.0}, {'current': 3385.362, 'min': 1500.0, 'max': 2250.0}, {'current': 1701.679, 'min': 1500.0, 'max': 2250.0}, {'current': 3392.953, 'min': 1500.0, 'max': 2250.0}, {'current': 3380.324, 'min': 1500.0, 'max': 2250.0}, {'current': 1617.291, 'min': 1500.0, 'max': 2250.0}, {'current': 2317.437, 'min': 1500.0, 'max': 2250.0}, {'current': 1746.46, 'min': 1500.0, 'max': 2250.0}, {'current': 2427.359, 'min': 1500.0, 'max': 2250.0}, {'current': 1746.132, 'min': 1500.0, 'max': 2250.0}, {'current': 1746.97, 'min': 1500.0, 'max': 2250.0}, {'current': 2333.341, 'min': 1500.0, 'max': 2250.0}, {'current': 3379.266, 'min': 1500.0, 'max': 2250.0}, {'current': 2300.057, 'min': 1500.0, 'max': 2250.0}, {'current': 2463.389, 'min': 1500.0, 'max': 2250.0}, {'current': 1689.864, 'min': 1500.0, 'max': 2250.0}, {'current': 3388.531, 'min': 1500.0, 'max': 2250.0}, {'current': 2424.469, 'min': 1500.0, 'max': 2250.0}, {'current': 1695.377, 'min': 1500.0, 'max': 2250.0}, {'current': 1794.589, 'min': 1500.0, 'max': 2250.0}, {'current': 1796.474, 'min': 1500.0, 'max': 2250.0}, {'current': 1789.862, 'min': 1500.0, 'max': 2250.0}, {'current': 1793.089, 'min': 1500.0, 'max': 2250.0}], 'disk': {'/': {'total': 14193.587585449219, 'used': 415.0885467529297}}, 'gpu': 'NVIDIA A100-SXM4-40GB', 'gpu_count': 1, 'memory': {'total': 1007.6862754821777}}
+2024-01-23 00:56:10,197 INFO    HandlerThread:1465193 [system_monitor.py:probe():224] Finished collecting system info
+2024-01-23 00:56:10,197 INFO    HandlerThread:1465193 [system_monitor.py:probe():227] Publishing system info
+2024-01-23 00:56:10,199 INFO    HandlerThread:1465193 [system_monitor.py:probe():229] Finished publishing system info
+2024-01-23 00:56:10,202 DEBUG   SenderThread:1465193 [sender.py:send():382] send: files
+2024-01-23 00:56:10,202 INFO    SenderThread:1465193 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-01-23 00:56:10,207 DEBUG   HandlerThread:1465193 [handler.py:handle_request():146] handle_request: python_packages
+2024-01-23 00:56:10,207 DEBUG   SenderThread:1465193 [sender.py:send_request():409] send_request: python_packages
+2024-01-23 00:56:10,208 DEBUG   HandlerThread:1465193 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-23 00:56:10,209 DEBUG   HandlerThread:1465193 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-23 00:56:10,210 DEBUG   SenderThread:1465193 [sender.py:send():382] send: telemetry
+2024-01-23 00:56:10,210 DEBUG   SenderThread:1465193 [sender.py:send_request():409] send_request: stop_status
+2024-01-23 00:56:10,791 INFO    wandb-upload_0:1465193 [upload_job.py:push():131] Uploaded file /tmp/tmpl4uy0mftwandb/rr4om6k8-wandb-metadata.json
+2024-01-23 00:56:10,862 INFO    Thread-12 :1465193 [dir_watcher.py:_on_file_created():271] file/dir created: /dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/wandb/run-20240123_005609-umyedyhu/files/requirements.txt
+2024-01-23 00:56:10,862 INFO    Thread-12 :1465193 [dir_watcher.py:_on_file_created():271] file/dir created: /dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/wandb/run-20240123_005609-umyedyhu/files/wandb-metadata.json
+2024-01-23 00:56:12,134 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-01-23 00:56:12,135 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-01-23 00:56:12,136 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-23 00:56:12,136 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-23 00:56:14,147 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-01-23 00:56:14,147 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-01-23 00:56:14,148 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-23 00:56:14,148 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-23 00:56:14,492 DEBUG   HandlerThread:1465193 [handler.py:handle_request():146] handle_request: status_report
+2024-01-23 00:56:16,157 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-01-23 00:56:16,157 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-01-23 00:56:16,157 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-23 00:56:16,158 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-23 00:56:16,863 INFO    Thread-12 :1465193 [dir_watcher.py:_on_file_created():271] file/dir created: /dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/wandb/run-20240123_005609-umyedyhu/files/output.log
+2024-01-23 00:56:18,163 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-01-23 00:56:18,163 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-01-23 00:56:18,164 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-23 00:56:18,164 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-23 00:56:18,864 INFO    Thread-12 :1465193 [dir_watcher.py:_on_file_modified():288] file/dir modified: /dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/wandb/run-20240123_005609-umyedyhu/files/output.log
+2024-01-23 00:56:20,170 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-01-23 00:56:20,170 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-01-23 00:56:20,170 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-23 00:56:20,170 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-23 00:56:20,447 DEBUG   HandlerThread:1465193 [handler.py:handle_request():146] handle_request: status_report
+2024-01-23 00:56:22,176 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-01-23 00:56:22,176 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-01-23 00:56:22,176 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-23 00:56:22,176 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-23 00:56:24,184 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-01-23 00:56:24,184 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-01-23 00:56:24,184 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-23 00:56:24,185 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-23 00:56:25,208 DEBUG   HandlerThread:1465193 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-23 00:56:25,209 DEBUG   HandlerThread:1465193 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-23 00:56:25,209 DEBUG   SenderThread:1465193 [sender.py:send_request():409] send_request: stop_status
+2024-01-23 00:56:25,456 DEBUG   HandlerThread:1465193 [handler.py:handle_request():146] handle_request: status_report
+2024-01-23 00:56:26,192 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-01-23 00:56:26,193 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-01-23 00:56:26,193 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-23 00:56:26,194 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-23 00:56:28,204 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-01-23 00:56:28,205 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-01-23 00:56:28,205 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-23 00:56:28,205 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-23 00:56:30,212 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-01-23 00:56:30,212 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-01-23 00:56:30,213 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-23 00:56:30,213 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-23 00:56:30,456 DEBUG   HandlerThread:1465193 [handler.py:handle_request():146] handle_request: status_report
+2024-01-23 00:56:32,219 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-01-23 00:56:32,219 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-01-23 00:56:32,219 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-23 00:56:32,220 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-23 00:56:34,230 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-01-23 00:56:34,230 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-01-23 00:56:34,230 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-23 00:56:34,231 ERROR   gpu       :1465193 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-01-23 00:56:34,975 DEBUG   SenderThread:1465193 [sender.py:send():382] send: exit
+2024-01-23 00:56:34,975 INFO    SenderThread:1465193 [sender.py:send_exit():589] handling exit code: 1
+2024-01-23 00:56:34,975 INFO    SenderThread:1465193 [sender.py:send_exit():591] handling runtime: 24
+2024-01-23 00:56:34,976 INFO    SenderThread:1465193 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-01-23 00:56:34,977 INFO    SenderThread:1465193 [sender.py:send_exit():597] send defer
+2024-01-23 00:56:34,977 DEBUG   HandlerThread:1465193 [handler.py:handle_request():146] handle_request: defer
+2024-01-23 00:56:34,977 INFO    HandlerThread:1465193 [handler.py:handle_request_defer():172] handle defer: 0
+2024-01-23 00:56:34,977 DEBUG   SenderThread:1465193 [sender.py:send_request():409] send_request: defer
+2024-01-23 00:56:34,977 INFO    SenderThread:1465193 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-01-23 00:56:34,977 INFO    SenderThread:1465193 [sender.py:transition_state():617] send defer: 1
+2024-01-23 00:56:34,977 DEBUG   HandlerThread:1465193 [handler.py:handle_request():146] handle_request: defer
+2024-01-23 00:56:34,977 INFO    HandlerThread:1465193 [handler.py:handle_request_defer():172] handle defer: 1
+2024-01-23 00:56:34,978 DEBUG   SenderThread:1465193 [sender.py:send_request():409] send_request: defer
+2024-01-23 00:56:34,978 INFO    SenderThread:1465193 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-01-23 00:56:34,978 INFO    SenderThread:1465193 [sender.py:transition_state():617] send defer: 2
+2024-01-23 00:56:34,978 DEBUG   HandlerThread:1465193 [handler.py:handle_request():146] handle_request: defer
+2024-01-23 00:56:34,978 INFO    HandlerThread:1465193 [handler.py:handle_request_defer():172] handle defer: 2
+2024-01-23 00:56:34,978 INFO    HandlerThread:1465193 [system_monitor.py:finish():203] Stopping system monitor
+2024-01-23 00:56:34,978 DEBUG   SystemMonitor:1465193 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-01-23 00:56:34,979 DEBUG   SystemMonitor:1465193 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-01-23 00:56:34,979 INFO    HandlerThread:1465193 [interfaces.py:finish():202] Joined cpu monitor
+2024-01-23 00:56:34,979 DEBUG   SystemMonitor:1465193 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-01-23 00:56:34,979 INFO    HandlerThread:1465193 [interfaces.py:finish():202] Joined disk monitor
+2024-01-23 00:56:35,026 ERROR   gpu       :1465193 [interfaces.py:aggregate():161] Failed to serialize metric: Insufficient Permissions
+2024-01-23 00:56:35,067 ERROR   gpu       :1465193 [interfaces.py:aggregate():161] Failed to serialize metric: Insufficient Permissions
+2024-01-23 00:56:35,109 ERROR   gpu       :1465193 [interfaces.py:aggregate():161] Failed to serialize metric: Insufficient Permissions
+2024-01-23 00:56:35,109 INFO    HandlerThread:1465193 [interfaces.py:finish():202] Joined gpu monitor
+2024-01-23 00:56:35,109 INFO    HandlerThread:1465193 [interfaces.py:finish():202] Joined memory monitor
+2024-01-23 00:56:35,110 INFO    HandlerThread:1465193 [interfaces.py:finish():202] Joined network monitor
+2024-01-23 00:56:35,110 DEBUG   SenderThread:1465193 [sender.py:send_request():409] send_request: defer
+2024-01-23 00:56:35,110 INFO    SenderThread:1465193 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-01-23 00:56:35,110 INFO    SenderThread:1465193 [sender.py:transition_state():617] send defer: 3
+2024-01-23 00:56:35,110 DEBUG   SenderThread:1465193 [sender.py:send():382] send: stats
+2024-01-23 00:56:35,110 DEBUG   HandlerThread:1465193 [handler.py:handle_request():146] handle_request: defer
+2024-01-23 00:56:35,111 INFO    HandlerThread:1465193 [handler.py:handle_request_defer():172] handle defer: 3
+2024-01-23 00:56:35,111 DEBUG   SenderThread:1465193 [sender.py:send_request():409] send_request: defer
+2024-01-23 00:56:35,111 INFO    SenderThread:1465193 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-01-23 00:56:35,112 INFO    SenderThread:1465193 [sender.py:transition_state():617] send defer: 4
+2024-01-23 00:56:35,112 DEBUG   HandlerThread:1465193 [handler.py:handle_request():146] handle_request: defer
+2024-01-23 00:56:35,112 INFO    HandlerThread:1465193 [handler.py:handle_request_defer():172] handle defer: 4
+2024-01-23 00:56:35,112 DEBUG   SenderThread:1465193 [sender.py:send_request():409] send_request: defer
+2024-01-23 00:56:35,112 INFO    SenderThread:1465193 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-01-23 00:56:35,112 INFO    SenderThread:1465193 [sender.py:transition_state():617] send defer: 5
+2024-01-23 00:56:35,112 DEBUG   HandlerThread:1465193 [handler.py:handle_request():146] handle_request: defer
+2024-01-23 00:56:35,112 INFO    HandlerThread:1465193 [handler.py:handle_request_defer():172] handle defer: 5
+2024-01-23 00:56:35,112 DEBUG   SenderThread:1465193 [sender.py:send():382] send: summary
+2024-01-23 00:56:35,113 INFO    SenderThread:1465193 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-01-23 00:56:35,113 DEBUG   SenderThread:1465193 [sender.py:send_request():409] send_request: defer
+2024-01-23 00:56:35,113 INFO    SenderThread:1465193 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-01-23 00:56:35,113 INFO    SenderThread:1465193 [sender.py:transition_state():617] send defer: 6
+2024-01-23 00:56:35,113 DEBUG   HandlerThread:1465193 [handler.py:handle_request():146] handle_request: defer
+2024-01-23 00:56:35,113 INFO    HandlerThread:1465193 [handler.py:handle_request_defer():172] handle defer: 6
+2024-01-23 00:56:35,114 DEBUG   SenderThread:1465193 [sender.py:send_request():409] send_request: defer
+2024-01-23 00:56:35,114 INFO    SenderThread:1465193 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-01-23 00:56:35,117 DEBUG   HandlerThread:1465193 [handler.py:handle_request():146] handle_request: status_report
+2024-01-23 00:56:35,271 INFO    SenderThread:1465193 [sender.py:transition_state():617] send defer: 7
+2024-01-23 00:56:35,271 DEBUG   HandlerThread:1465193 [handler.py:handle_request():146] handle_request: defer
+2024-01-23 00:56:35,271 INFO    HandlerThread:1465193 [handler.py:handle_request_defer():172] handle defer: 7
+2024-01-23 00:56:35,272 DEBUG   SenderThread:1465193 [sender.py:send_request():409] send_request: defer
+2024-01-23 00:56:35,272 INFO    SenderThread:1465193 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-01-23 00:56:35,870 INFO    Thread-12 :1465193 [dir_watcher.py:_on_file_modified():288] file/dir modified: /dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/wandb/run-20240123_005609-umyedyhu/files/config.yaml
+2024-01-23 00:56:35,870 INFO    Thread-12 :1465193 [dir_watcher.py:_on_file_created():271] file/dir created: /dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/wandb/run-20240123_005609-umyedyhu/files/wandb-summary.json
+2024-01-23 00:56:35,974 DEBUG   HandlerThread:1465193 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-23 00:56:36,981 INFO    SenderThread:1465193 [sender.py:transition_state():617] send defer: 8
+2024-01-23 00:56:36,981 DEBUG   SenderThread:1465193 [sender.py:send_request():409] send_request: poll_exit
+2024-01-23 00:56:36,981 DEBUG   HandlerThread:1465193 [handler.py:handle_request():146] handle_request: defer
+2024-01-23 00:56:36,981 INFO    HandlerThread:1465193 [handler.py:handle_request_defer():172] handle defer: 8
+2024-01-23 00:56:36,981 DEBUG   SenderThread:1465193 [sender.py:send_request():409] send_request: defer
+2024-01-23 00:56:36,981 INFO    SenderThread:1465193 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-01-23 00:56:36,981 INFO    SenderThread:1465193 [job_builder.py:build():296] Attempting to build job artifact
+2024-01-23 00:56:36,982 INFO    SenderThread:1465193 [job_builder.py:_get_source_type():426] is repo sourced job
+2024-01-23 00:56:37,001 INFO    SenderThread:1465193 [job_builder.py:build():402] adding wandb-job metadata file
+2024-01-23 00:56:37,241 INFO    SenderThread:1465193 [sender.py:transition_state():617] send defer: 9
+2024-01-23 00:56:37,241 DEBUG   HandlerThread:1465193 [handler.py:handle_request():146] handle_request: defer
+2024-01-23 00:56:37,242 INFO    HandlerThread:1465193 [handler.py:handle_request_defer():172] handle defer: 9
+2024-01-23 00:56:37,242 DEBUG   SenderThread:1465193 [sender.py:send():382] send: artifact
+2024-01-23 00:56:37,871 INFO    Thread-12 :1465193 [dir_watcher.py:_on_file_modified():288] file/dir modified: /dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/wandb/run-20240123_005609-umyedyhu/files/output.log
+2024-01-23 00:56:37,980 DEBUG   HandlerThread:1465193 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-23 00:56:38,456 INFO    wandb-upload_1:1465193 [upload_job.py:push():86] Skipped uploading /dss/dsshome1/0D/ge32jaq2/.local/share/wandb/artifacts/staging/tmp22x7u47e
+2024-01-23 00:56:39,044 INFO    wandb-upload_0:1465193 [upload_job.py:push():89] Uploaded file /dss/dsshome1/0D/ge32jaq2/.local/share/wandb/artifacts/staging/tmpu6n55c_1
+2024-01-23 00:56:40,089 INFO    SenderThread:1465193 [sender.py:send_artifact():1494] sent artifact job-git_github.com_Misipuk_active_learning_marglik.git_run_acq_epig_marglik_40k.py - {'id': 'QXJ0aWZhY3Q6Njk5ODc1MzY1', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEzMjMxMjgzNg==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6Njk4NDQ3NjYy', 'versionIndex': 1}}}
+2024-01-23 00:56:40,089 DEBUG   SenderThread:1465193 [sender.py:send_request():409] send_request: defer
+2024-01-23 00:56:40,089 INFO    SenderThread:1465193 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-01-23 00:56:40,089 INFO    SenderThread:1465193 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-01-23 00:56:40,871 INFO    SenderThread:1465193 [dir_watcher.py:finish():388] scan: /dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/wandb/run-20240123_005609-umyedyhu/files
+2024-01-23 00:56:40,872 INFO    SenderThread:1465193 [dir_watcher.py:finish():402] scan save: /dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/wandb/run-20240123_005609-umyedyhu/files/wandb-metadata.json wandb-metadata.json
+2024-01-23 00:56:40,872 INFO    SenderThread:1465193 [dir_watcher.py:finish():402] scan save: /dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/wandb/run-20240123_005609-umyedyhu/files/config.yaml config.yaml
+2024-01-23 00:56:40,872 INFO    SenderThread:1465193 [dir_watcher.py:finish():402] scan save: /dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/wandb/run-20240123_005609-umyedyhu/files/requirements.txt requirements.txt
+2024-01-23 00:56:40,874 INFO    SenderThread:1465193 [dir_watcher.py:finish():402] scan save: /dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/wandb/run-20240123_005609-umyedyhu/files/wandb-summary.json wandb-summary.json
+2024-01-23 00:56:40,875 INFO    SenderThread:1465193 [dir_watcher.py:finish():402] scan save: /dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/wandb/run-20240123_005609-umyedyhu/files/output.log output.log
+2024-01-23 00:56:40,876 INFO    SenderThread:1465193 [sender.py:transition_state():617] send defer: 10
+2024-01-23 00:56:40,877 DEBUG   SenderThread:1465193 [sender.py:send_request():409] send_request: poll_exit
+2024-01-23 00:56:40,877 DEBUG   HandlerThread:1465193 [handler.py:handle_request():146] handle_request: defer
+2024-01-23 00:56:40,877 INFO    HandlerThread:1465193 [handler.py:handle_request_defer():172] handle defer: 10
+2024-01-23 00:56:40,878 DEBUG   SenderThread:1465193 [sender.py:send_request():409] send_request: defer
+2024-01-23 00:56:40,878 INFO    SenderThread:1465193 [sender.py:send_request_defer():613] handle sender defer: 10
+2024-01-23 00:56:40,878 INFO    SenderThread:1465193 [file_pusher.py:finish():175] shutting down file pusher
+2024-01-23 00:56:40,981 DEBUG   HandlerThread:1465193 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-23 00:56:40,981 DEBUG   SenderThread:1465193 [sender.py:send_request():409] send_request: poll_exit
+2024-01-23 00:56:41,219 INFO    wandb-upload_1:1465193 [upload_job.py:push():131] Uploaded file /dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/wandb/run-20240123_005609-umyedyhu/files/config.yaml
+2024-01-23 00:56:41,328 INFO    wandb-upload_0:1465193 [upload_job.py:push():131] Uploaded file /dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/wandb/run-20240123_005609-umyedyhu/files/requirements.txt
+2024-01-23 00:56:41,502 INFO    wandb-upload_3:1465193 [upload_job.py:push():131] Uploaded file /dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/wandb/run-20240123_005609-umyedyhu/files/output.log
+2024-01-23 00:56:41,508 INFO    wandb-upload_2:1465193 [upload_job.py:push():131] Uploaded file /dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/wandb/run-20240123_005609-umyedyhu/files/wandb-summary.json
+2024-01-23 00:56:41,708 INFO    Thread-11 (_thread_body):1465193 [sender.py:transition_state():617] send defer: 11
+2024-01-23 00:56:41,708 DEBUG   HandlerThread:1465193 [handler.py:handle_request():146] handle_request: defer
+2024-01-23 00:56:41,708 INFO    HandlerThread:1465193 [handler.py:handle_request_defer():172] handle defer: 11
+2024-01-23 00:56:41,709 DEBUG   SenderThread:1465193 [sender.py:send_request():409] send_request: defer
+2024-01-23 00:56:41,709 INFO    SenderThread:1465193 [sender.py:send_request_defer():613] handle sender defer: 11
+2024-01-23 00:56:41,709 INFO    SenderThread:1465193 [file_pusher.py:join():181] waiting for file pusher
+2024-01-23 00:56:41,709 INFO    SenderThread:1465193 [sender.py:transition_state():617] send defer: 12
+2024-01-23 00:56:41,709 DEBUG   HandlerThread:1465193 [handler.py:handle_request():146] handle_request: defer
+2024-01-23 00:56:41,709 INFO    HandlerThread:1465193 [handler.py:handle_request_defer():172] handle defer: 12
+2024-01-23 00:56:41,709 DEBUG   SenderThread:1465193 [sender.py:send_request():409] send_request: defer
+2024-01-23 00:56:41,709 INFO    SenderThread:1465193 [sender.py:send_request_defer():613] handle sender defer: 12
+2024-01-23 00:56:41,709 INFO    SenderThread:1465193 [file_stream.py:finish():595] file stream finish called
+2024-01-23 00:56:41,932 INFO    SenderThread:1465193 [file_stream.py:finish():599] file stream finish is done
+2024-01-23 00:56:41,932 INFO    SenderThread:1465193 [sender.py:transition_state():617] send defer: 13
+2024-01-23 00:56:41,933 DEBUG   HandlerThread:1465193 [handler.py:handle_request():146] handle_request: defer
+2024-01-23 00:56:41,933 INFO    HandlerThread:1465193 [handler.py:handle_request_defer():172] handle defer: 13
+2024-01-23 00:56:41,933 DEBUG   SenderThread:1465193 [sender.py:send_request():409] send_request: defer
+2024-01-23 00:56:41,933 INFO    SenderThread:1465193 [sender.py:send_request_defer():613] handle sender defer: 13
+2024-01-23 00:56:41,933 INFO    SenderThread:1465193 [sender.py:transition_state():617] send defer: 14
+2024-01-23 00:56:41,934 DEBUG   HandlerThread:1465193 [handler.py:handle_request():146] handle_request: defer
+2024-01-23 00:56:41,934 DEBUG   SenderThread:1465193 [sender.py:send():382] send: final
+2024-01-23 00:56:41,934 INFO    HandlerThread:1465193 [handler.py:handle_request_defer():172] handle defer: 14
+2024-01-23 00:56:41,934 DEBUG   SenderThread:1465193 [sender.py:send():382] send: footer
+2024-01-23 00:56:41,934 DEBUG   SenderThread:1465193 [sender.py:send_request():409] send_request: defer
+2024-01-23 00:56:41,934 INFO    SenderThread:1465193 [sender.py:send_request_defer():613] handle sender defer: 14
+2024-01-23 00:56:41,935 DEBUG   HandlerThread:1465193 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-23 00:56:41,935 DEBUG   SenderThread:1465193 [sender.py:send_request():409] send_request: poll_exit
+2024-01-23 00:56:41,935 DEBUG   HandlerThread:1465193 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-23 00:56:41,936 DEBUG   SenderThread:1465193 [sender.py:send_request():409] send_request: poll_exit
+2024-01-23 00:56:41,936 DEBUG   HandlerThread:1465193 [handler.py:handle_request():146] handle_request: server_info
+2024-01-23 00:56:41,936 DEBUG   HandlerThread:1465193 [handler.py:handle_request():146] handle_request: get_summary
+2024-01-23 00:56:41,936 DEBUG   SenderThread:1465193 [sender.py:send_request():409] send_request: server_info
+2024-01-23 00:56:41,938 DEBUG   HandlerThread:1465193 [handler.py:handle_request():146] handle_request: sampled_history
+2024-01-23 00:56:41,938 DEBUG   HandlerThread:1465193 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-23 00:56:41,938 DEBUG   HandlerThread:1465193 [handler.py:handle_request():146] handle_request: job_info
+2024-01-23 00:56:42,087 DEBUG   SenderThread:1465193 [sender.py:send_request():409] send_request: job_info
+2024-01-23 00:56:42,087 DEBUG   HandlerThread:1465193 [handler.py:handle_request():146] handle_request: status_report
+2024-01-23 00:56:42,087 INFO    MainThread:1465193 [wandb_run.py:_footer_history_summary_info():3857] rendering history
+2024-01-23 00:56:42,087 INFO    MainThread:1465193 [wandb_run.py:_footer_history_summary_info():3889] rendering summary
+2024-01-23 00:56:42,087 INFO    MainThread:1465193 [wandb_run.py:_footer_sync_info():3816] logging synced files
+2024-01-23 00:56:42,087 DEBUG   HandlerThread:1465193 [handler.py:handle_request():146] handle_request: shutdown
+2024-01-23 00:56:42,087 INFO    HandlerThread:1465193 [handler.py:finish():869] shutting down handler
+2024-01-23 00:56:43,087 INFO    SenderThread:1465193 [sender.py:finish():1572] shutting down sender
+2024-01-23 00:56:43,087 INFO    SenderThread:1465193 [file_pusher.py:finish():175] shutting down file pusher
+2024-01-23 00:56:43,087 INFO    SenderThread:1465193 [file_pusher.py:join():181] waiting for file pusher
+2024-01-23 00:56:43,087 INFO    WriterThread:1465193 [datastore.py:close():296] close: /dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/wandb/run-20240123_005609-umyedyhu/run-umyedyhu.wandb
