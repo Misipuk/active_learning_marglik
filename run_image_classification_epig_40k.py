@@ -173,6 +173,7 @@ def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_si
         with torch.inference_mode():
             test_acc, test_loss = trainer.test(test_loader)
 
+        test_loss = -test_loss
         logging.info(f'Test loss at {i}: {test_loss:.4f}')
         logging.info(f'Accuracy: {test_acc*100:.2f}%')
         # optionally save to wandb
