@@ -138,7 +138,8 @@ def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_si
             dataset.add_ix(np.random.choice(dataset.not_ixs, 1)[0])
         elif acquisition_method == "bald":
             print("BALD started")
-            scores = trainer.estimate_bald(dataset.get_pool_loader(batch_size=128))
+            with torch.inference_mode():
+                scores = trainer.estimate_bald(dataset.get_pool_loader(batch_size=128))
             scores = scores.numpy()
             scores = scores['bald']
             acquired_pool_inds = np.argmax(scores)
@@ -147,16 +148,16 @@ def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_si
             print("EPIG started")
             target_loader = data.get_loader("target")
             target_inputs, _ = next(iter(target_loader))
-
-            scores = trainer.estimate_uncertainty(
-                pool_loader = data.get_loader("val"),
-                target_inputs=target_inputs,
-                mode='epig',
-                rng=rng,
-                epig_probs_target=cfg.acquisition.epig_probs_target,
-                epig_probs_adjustment=cfg.acquisition.epig_probs_adjustment,
-                epig_using_matmul=cfg.acquisition.epig_using_matmul,
-            )
+            with torch.inference_mode():
+                scores = trainer.estimate_uncertainty(
+                    pool_loader = data.get_loader("pool"),
+                    target_inputs=target_inputs,
+                    mode='epig',
+                    rng=rng,
+                    epig_probs_target=cfg.acquisition.epig_probs_target,
+                    epig_probs_adjustment=cfg.acquisition.epig_probs_adjustment,
+                    epig_using_matmul=cfg.acquisition.epig_using_matmul,
+                )
             scores = scores.numpy()
             scores = scores['epig']
             acquired_pool_inds = np.argmax(scores)
