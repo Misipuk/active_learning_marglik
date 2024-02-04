@@ -1,0 +1,48 @@
+
+Pool shape : torch.Size([40000, 1, 28, 28])
+{'_target_': 'src.trainers.NeuralNetworkTrainer', 'early_stopping_metric': 'val_loss', 'early_stopping_patience': 5000, 'n_optim_steps_min': 0, 'n_optim_steps_max': 7000, 'n_samples_test': 100, 'n_samples_train': 1, 'n_validations': 500, 'optimizer': {'_target_': 'torch.optim.SGD', '_partial_': True, 'lr': 0.01, 'weight_decay': 0.0001}, 'restore_best_model': True, 'verbose': False}
+Training started
+No validation here
+We are in restore_best_model if
+Test started
+EPIG started
+[run_image_classification_epig_40k.py:120]INFO: Initial test loss: 1.2340
+[run_image_classification_epig_40k.py:121]INFO: Initial accuracy: 64.07%
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/epig_no_val_code/active_learning_marglik/run_image_classification_epig_40k.py", line 245, in <module>
+    wandb.init(project='alla', entity='marglik-is-the-best', config=config, name=run_name, tags=tags)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_no_val_code/active_learning_marglik/run_image_classification_epig_40k.py", line 152, in main
+    with torch.inference_mode():
+  File "/dss/dsshome1/0D/ge32jaq2/epig_no_val_code/active_learning_marglik/src/trainers/base.py", line 88, in estimate_uncertainty
+    scores = self.estimate_epig(pool_loader, target_inputs, epig_using_matmul)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_no_val_code/active_learning_marglik/src/trainers/base.py", line 131, in estimate_epig
+    epig_scores = self.estimate_epig_minibatch(inputs, target_inputs, use_matmul)  # [B,]
+  File "/dss/dsshome1/0D/ge32jaq2/epig_no_val_code/active_learning_marglik/src/trainers/base.py", line 188, in estimate_epig_minibatch
+    logprobs = self.conditional_predict(
+  File "/dss/dsshome1/0D/ge32jaq2/epig_no_val_code/active_learning_marglik/src/trainers/neural_network.py", line 68, in conditional_predict
+    features = self.model(inputs, n_model_samples)  # [N, K, Cl]
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/batchbald_redux/consistent_mc_dropout.py", line 29, in forward
+    mc_output_BK = self.mc_forward_impl(mc_input_BK)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_no_val_code/active_learning_marglik/src/models/convolutional_nn.py", line 90, in mc_forward_impl
+    x = self.block1(x)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_no_val_code/active_learning_marglik/src/models/convolutional_nn.py", line 39, in forward
+    x = self.maxpool(x)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/pooling.py", line 166, in forward
+    return F.max_pool2d(input, self.kernel_size, self.stride,
+  File "/usr/local/lib/python3.10/dist-packages/torch/_jit_internal.py", line 488, in fn
+    return if_false(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/functional.py", line 791, in _max_pool2d
+    return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
+KeyboardInterrupt

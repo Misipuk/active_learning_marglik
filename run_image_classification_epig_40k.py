@@ -116,7 +116,8 @@ def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_si
     print("Test started")
     with torch.inference_mode():
         test_acc, test_loss = trainer.test(test_loader)
-        
+    
+    test_loss = -test_loss
     logging.info(f'Initial test loss: {test_loss:.4f}')
     logging.info(f'Initial accuracy: {test_acc*100:.2f}%')
     if use_wandb:
