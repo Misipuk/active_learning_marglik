@@ -9,4 +9,4 @@ device: cuda
 download_data: True
 data_root: data/
 method: epig_model
-acquisition_method: 'epig'
+acquisition_method: 'bald'
