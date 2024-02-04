@@ -1,0 +1,562 @@
+
+Pool shape : torch.Size([40000, 1, 28, 28])
+{'_target_': 'src.trainers.NeuralNetworkTrainer', 'early_stopping_metric': 'val_loss', 'early_stopping_patience': 5000, 'n_optim_steps_min': 0, 'n_optim_steps_max': 7000, 'n_samples_test': 100, 'n_samples_train': 1, 'n_validations': 500, 'optimizer': {'_target_': 'torch.optim.SGD', '_partial_': True, 'lr': 0.01, 'weight_decay': 0.0001}, 'restore_best_model': True, 'verbose': False}
+Training started
+No validation here
+We are in restore_best_model if
+Test started
+BALD started
+[run_image_classification_epig_40k.py:120]INFO: Initial test loss: 1.6086
+[run_image_classification_epig_40k.py:121]INFO: Initial accuracy: 60.43%
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 21: 1.4902
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 62.99%
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 22: 1.8274
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 63.85%
+BALD started
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 23: 1.8693
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 64.09%
+BALD started
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 24: 1.7897
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 63.99%
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 25: 1.8415
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 61.94%
+BALD started
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 26: 1.9803
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 62.41%
+BALD started
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 27: 2.1295
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 61.53%
+BALD started
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 28: 2.1907
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 63.00%
+BALD started
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 29: 1.8198
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 63.43%
+BALD started
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 30: 2.0211
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 61.97%
+BALD started
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 31: 1.8801
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 61.33%
+BALD started
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 32: 2.0050
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 61.79%
+BALD started
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 33: 1.9409
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 62.85%
+BALD started
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 34: 1.9530
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 63.57%
+BALD started
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 35: 1.6543
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 66.25%
+BALD started
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 36: 1.7448
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 66.09%
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 37: 1.7222
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 66.80%
+BALD started
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 38: 1.7280
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 67.16%
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 39: 1.4269
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 70.68%
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 40: 1.2329
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 72.87%
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 41: 1.1736
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 73.55%
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 42: 1.1411
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 73.24%
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 43: 1.1746
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 73.54%
+BALD started
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 44: 1.0709
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 74.83%
+BALD started
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 45: 1.1567
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 73.32%
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 46: 1.0931
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 73.37%
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 47: 1.0888
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 74.06%
+BALD started
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 48: 1.1329
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 72.85%
+BALD started
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 49: 1.1289
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 74.77%
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 50: 1.1771
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 74.46%
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 51: 1.1208
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 75.14%
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 52: 1.1346
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 74.80%
+BALD started
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 53: 1.0847
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 75.60%
+BALD started
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 54: 1.0585
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 75.61%
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 55: 1.0704
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 76.01%
+BALD started
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 56: 0.9717
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 76.74%
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 57: 0.9759
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 76.16%
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 58: 0.9589
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 76.93%
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 59: 0.8793
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 78.87%
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 60: 0.8414
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 78.61%
+BALD started
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 61: 0.8494
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 78.31%
+BALD started
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 62: 0.8160
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 78.37%
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 63: 0.8052
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 79.74%
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 64: 0.7648
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 80.95%
+BALD started
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 65: 0.8226
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 80.83%
+BALD started
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 66: 0.7912
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 81.08%
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 67: 0.7629
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 81.53%
+BALD started
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 68: 0.7604
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 81.61%
+BALD started
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 69: 0.7726
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 81.41%
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 70: 0.7634
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 81.85%
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 71: 0.7201
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 82.09%
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 72: 0.7571
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 81.95%
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 73: 0.7619
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 82.15%
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 74: 0.7261
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 82.14%
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 75: 0.7024
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 83.01%
+BALD started
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 76: 0.5939
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 84.12%
+BALD started
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 77: 0.5938
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 84.76%
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 78: 0.5708
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 84.66%
+BALD started
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 79: 0.5724
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 84.91%
+BALD started
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 80: 0.5608
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 84.84%
+BALD started
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 81: 0.6134
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 84.14%
+BALD started
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 82: 0.5491
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 85.02%
+BALD started
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 83: 0.5837
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 84.56%
+BALD started
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 84: 0.5713
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 85.27%
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 85: 0.5541
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 85.40%
+BALD started
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 86: 0.5596
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 85.53%
+BALD started
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 87: 0.5474
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 85.68%
+BALD started
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 88: 0.5496
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 85.51%
+BALD started
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 89: 0.5247
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 85.93%
+BALD started
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 90: 0.5092
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 86.05%
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 91: 0.5208
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 86.08%
+BALD started
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 92: 0.4931
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 86.01%
+BALD started
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 93: 0.5223
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 86.04%
+BALD started
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 94: 0.5066
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 86.37%
+BALD started
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 95: 0.4926
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 86.49%
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 96: 0.4586
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 86.81%
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 97: 0.4904
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 86.52%
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+BALD started
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 98: 0.4684
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 86.82%
+Before concat
+We are in concat
+No validation here
+We are in restore_best_model if
+[run_image_classification_epig_40k.py:158]INFO: Test loss at 99: 0.4536
+[run_image_classification_epig_40k.py:159]INFO: Accuracy: 87.37%

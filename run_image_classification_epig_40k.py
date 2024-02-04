@@ -23,7 +23,7 @@ from active_learning.active_dataset import ActiveDataset
 
 def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_size, method, approx, lr_hyp, lr_hyp_min,
          n_epochs_burnin, marglik_frequency, n_hypersteps, device, data_root, use_wandb, random_acquisition,
-         early_stopping, last_layer, n_components, download_data, validation):
+         early_stopping, last_layer, n_components, download_data, validation, acquisition_method):
     if dataset == 'mnist':
         transform = transforms.ToTensor()
         ds_cls = MNIST
@@ -94,7 +94,7 @@ def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_si
 
     dataset = ActiveDataset(x, y, n_init=n_init, stratified=True)
     with initialize(version_base=None, config_path="config"):
-        cfg = compose(config_name="main", overrides=["data=mnist/unbalanced_pool", "experiment_name=mnist_unbalanced", "acquisition.objective=bald"])
+        cfg = compose(config_name="main", overrides=["data=mnist/curated_pool", "experiment_name=mnist_curated", "acquisition.objective=epig"])
     device = 'cpu'
     rng = call(cfg.rng)
     data = instantiate(cfg.data, rng=rng)
@@ -136,14 +136,31 @@ def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_si
         # acquire new data point
         if random_acquisition:
             dataset.add_ix(np.random.choice(dataset.not_ixs, 1)[0])
-        else:
+        elif acquisition_method == "bald":
             print("BALD started")
             scores = trainer.estimate_bald(dataset.get_pool_loader(batch_size=128))
             scores = scores.numpy()
             scores = scores['bald']
             acquired_pool_inds = np.argmax(scores)
             dataset.add_ix(dataset.not_ixs[np.argmax(scores)])
-        
+        elif acquisition_method == 'epig':
+            print("EPIG started")
+            target_loader = data.get_loader("target")
+            target_inputs, _ = next(iter(target_loader))
+
+            scores = trainer.estimate_uncertainty(
+                pool_loader = data.get_loader("val"),
+                target_inputs=target_inputs,
+                mode='epig',
+                rng=rng,
+                epig_probs_target=cfg.acquisition.epig_probs_target,
+                epig_probs_adjustment=cfg.acquisition.epig_probs_adjustment,
+                epig_using_matmul=cfg.acquisition.epig_using_matmul,
+            )
+            scores = scores.numpy()
+            scores = scores['epig']
+            acquired_pool_inds = np.argmax(scores)
+            dataset.add_ix(dataset.not_ixs[np.argmax(scores)])
         val_loader = TensorDataLoader(x_val, y_val, batch_size=batch_size)
         # retrain model with new data point
         train_log = trainer.train(
@@ -201,6 +218,7 @@ if __name__ == '__main__':
     parser.add_argument('--download_data', default=False, action=argparse.BooleanOptionalAction)
     parser.add_argument('--use_wandb', default=True, action=argparse.BooleanOptionalAction)
     parser.add_argument('--random_acquisition', default=False, action=argparse.BooleanOptionalAction)
+    parser.add_argument('--acquisition_method', default='epig', choices=['epig', 'bald'])
     parser.add_argument('--config', nargs='+')
     set_defaults_with_yaml_config(parser, sys.argv)
     args = vars(parser.parse_args())
@@ -209,12 +227,14 @@ if __name__ == '__main__':
     if args['use_wandb']:
         import uuid
         import copy
-        tags = [args['dataset'], args['method']]
-        config = copy.deepcopy(args)
-        if config_files is not None:
-            comps = [c.split('/')[-1].split('.')[0] for c in config_files]
+        tags = [args['dataset'], args['method'], ('n_ep_burn_'+str(args['n_epochs_burnin']))] 
+        if args['random_acquisition']:
+            tags = [args['dataset'], args['method'], "rndm"] 
+            ### left random_acquisition to be consistent with prev configs
         else:
-            comps = tags
+            tags.append(args["acquisition_method"])
+        config = copy.deepcopy(args)
+        comps = tags
         run_name = '-'.join(comps)
         run_name += '-' + str(uuid.uuid5(uuid.NAMESPACE_DNS, str(args)))[:4]
         config['methodconf'] = '-'.join(comps)
