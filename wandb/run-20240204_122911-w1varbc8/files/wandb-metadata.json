@@ -1,0 +1,207 @@
+{
+    "os": "Linux-5.4.0-153-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "heartbeatAt": "2024-02-04T11:29:12.706317",
+    "startedAt": "2024-02-04T11:29:11.669899",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--seed",
+        "3",
+        "--config",
+        "configs/mnist_epig.yaml",
+        "--device",
+        "cpu"
+    ],
+    "state": "running",
+    "program": "/dss/dsshome1/0D/ge32jaq2/epig_no_val_code/active_learning_marglik/run_image_classification_epig_40k.py",
+    "codePathLocal": "run_image_classification_epig_40k.py",
+    "codePath": "run_image_classification_epig_40k.py",
+    "git": {
+        "remote": "git@github.com:Misipuk/active_learning_marglik.git",
+        "commit": "6152d1f1b89874f5f575b06ac9d94364f69f0675"
+    },
+    "email": null,
+    "root": "/dss/dsshome1/0D/ge32jaq2/epig_no_val_code/active_learning_marglik",
+    "host": "cpu-007",
+    "username": "ge32jaq2",
+    "executable": "/usr/bin/python3",
+    "cpu_count": 32,
+    "cpu_count_logical": 32,
+    "cpu_freq": {
+        "current": 2094.9519999999993,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 499.755859375,
+            "used": 163.78068161010742
+        }
+    },
+    "memory": {
+        "total": 1623.732265472412
+    }
+}
