@@ -1,0 +1,46 @@
+
+Pool shape : torch.Size([40000, 1, 28, 28])
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_acq_epig_marglik_40k.py", line 304, in <module>
+    main(**args)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_acq_epig_marglik_40k.py", line 190, in main
+    test_ll_bayes = learner.log_lik_bayes(test_loader)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/active_learning/active_learners.py", line 96, in log_lik_bayes
+    p = self.la(x, link_approx='mc')
+  File "/usr/local/lib/python3.10/dist-packages/laplace/baselaplace.py", line 597, in __call__
+    return self.predictive_samples(x, pred_type='glm', n_samples=n_samples,
+  File "/usr/local/lib/python3.10/dist-packages/laplace/baselaplace.py", line 660, in predictive_samples
+    f_mu, f_var = self._glm_predictive_distribution(x)
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/laplace/baselaplace.py", line 680, in _glm_predictive_distribution
+    f_var = self.functional_variance(Js)
+  File "/usr/local/lib/python3.10/dist-packages/laplace/baselaplace.py", line 944, in functional_variance
+    return self.posterior_precision.inv_square_form(Js)
+  File "/usr/local/lib/python3.10/dist-packages/laplace/utils/matrix.py", line 406, in inv_square_form
+    SW = self._bmm(W, exponent=-1)
+  File "/usr/local/lib/python3.10/dist-packages/laplace/utils/matrix.py", line 396, in _bmm
+    W_p = Q1 @ W_p @ Q2.T
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.44 GiB. GPU 0 has a total capacty of 15.89 GiB of which 665.88 MiB is free. Including non-PyTorch memory, this process has 15.24 GiB memory in use. Of the allocated memory 11.73 GiB is allocated by PyTorch, and 3.16 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_acq_epig_marglik_40k.py", line 304, in <module>
+    main(**args)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_acq_epig_marglik_40k.py", line 190, in main
+    test_ll_bayes = learner.log_lik_bayes(test_loader)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/active_learning/active_learners.py", line 96, in log_lik_bayes
+    p = self.la(x, link_approx='mc')
+  File "/usr/local/lib/python3.10/dist-packages/laplace/baselaplace.py", line 597, in __call__
+    return self.predictive_samples(x, pred_type='glm', n_samples=n_samples,
+  File "/usr/local/lib/python3.10/dist-packages/laplace/baselaplace.py", line 660, in predictive_samples
+    f_mu, f_var = self._glm_predictive_distribution(x)
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/laplace/baselaplace.py", line 680, in _glm_predictive_distribution
+    f_var = self.functional_variance(Js)
+  File "/usr/local/lib/python3.10/dist-packages/laplace/baselaplace.py", line 944, in functional_variance
+    return self.posterior_precision.inv_square_form(Js)
+  File "/usr/local/lib/python3.10/dist-packages/laplace/utils/matrix.py", line 406, in inv_square_form
+    SW = self._bmm(W, exponent=-1)
+  File "/usr/local/lib/python3.10/dist-packages/laplace/utils/matrix.py", line 396, in _bmm
+    W_p = Q1 @ W_p @ Q2.T
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.44 GiB. GPU 0 has a total capacty of 15.89 GiB of which 665.88 MiB is free. Including non-PyTorch memory, this process has 15.24 GiB memory in use. Of the allocated memory 11.73 GiB is allocated by PyTorch, and 3.16 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
