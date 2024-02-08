@@ -61,6 +61,18 @@ def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_si
     x_val= x[ixs_val_np].detach().clone().to(device)
     y_val = y[ixs_val_np].detach().clone().to(device)
     val_loader = TensorDataLoader(x_val, y_val, batch_size=batch_size)
+    
+    if acquisition_method == 'epig':
+        ixs_targets = list()
+        for c in classes.cpu().numpy():
+            ixs_targets.append(np.random.choice(np.where(y_original.cpu() == c)[0], 
+                                                int(10000/len(classes)), replace=False))
+        ixs_targets_np = np.array(ixs_targets).reshape(1,-1).squeeze()
+        X_targets = x_original[ixs_targets_np].detach().clone().to(device)
+        y_targets = y_original[ixs_targets_np].detach().clone().to(device)
+    else:
+        X_targets = None
+        y_targets = None
 
     
 
@@ -117,7 +129,7 @@ def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_si
     with torch.inference_mode():
         test_acc, test_loss = trainer.test(test_loader)
     
-    test_loss = -test_loss
+    #test_loss = -test_loss
     logging.info(f'Initial test loss: {test_loss:.4f}')
     logging.info(f'Initial accuracy: {test_acc*100:.2f}%')
     if use_wandb:
@@ -147,11 +159,11 @@ def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_si
             dataset.add_ix(dataset.not_ixs[np.argmax(scores)])
         elif acquisition_method == 'epig':
             print("EPIG started")
-            target_loader = data.get_loader("target")
+            target_loader = TensorDataLoader(X_targets, y_targets, batch_size = 100, shuffle=True)
             target_inputs, _ = next(iter(target_loader))
             with torch.inference_mode():
                 scores = trainer.estimate_uncertainty(
-                    pool_loader = data.get_loader("pool"),
+                    pool_loader = dataset.get_pool_loader(batch_size=batch_size),
                     target_inputs=target_inputs,
                     mode='epig',
                     rng=rng,
@@ -174,7 +186,7 @@ def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_si
         with torch.inference_mode():
             test_acc, test_loss = trainer.test(test_loader)
 
-        test_loss = -test_loss
+        #test_loss = -test_loss
         logging.info(f'Test loss at {i}: {test_loss:.4f}')
         logging.info(f'Accuracy: {test_acc*100:.2f}%')
         # optionally save to wandb
