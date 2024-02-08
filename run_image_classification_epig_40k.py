@@ -115,7 +115,7 @@ def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_si
     model = instantiate(cfg.model, input_shape=data.input_shape, output_size=data.n_classes)
     model = model.to(device)
 
-    cfg.trainer["n_optim_steps_max"] = 9000
+    cfg.trainer["n_optim_steps_max"] = 7000
     print(cfg.trainer)
     trainer = instantiate(cfg.trainer, model=model)
     
