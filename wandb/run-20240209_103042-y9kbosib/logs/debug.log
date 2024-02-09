@@ -1,0 +1,27 @@
+2024-02-09 10:30:42,089 INFO    MainThread:3907216 [wandb_setup.py:_flush():76] Current SDK version is 0.16.3
+2024-02-09 10:30:42,089 INFO    MainThread:3907216 [wandb_setup.py:_flush():76] Configure stats pid to 3907216
+2024-02-09 10:30:42,090 INFO    MainThread:3907216 [wandb_setup.py:_flush():76] Loading settings from /dss/dsshome1/0D/ge32jaq2/.config/wandb/settings
+2024-02-09 10:30:42,090 INFO    MainThread:3907216 [wandb_setup.py:_flush():76] Loading settings from /dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/wandb/settings
+2024-02-09 10:30:42,090 INFO    MainThread:3907216 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-02-09 10:30:42,090 INFO    MainThread:3907216 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-02-09 10:30:42,090 INFO    MainThread:3907216 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'run_acq_epig_marglik_40k.py', 'program_abspath': '/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_acq_epig_marglik_40k.py', 'program': '/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_acq_epig_marglik_40k.py'}
+2024-02-09 10:30:42,090 INFO    MainThread:3907216 [wandb_init.py:_log_setup():526] Logging user logs to /dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/wandb/run-20240209_103042-y9kbosib/logs/debug.log
+2024-02-09 10:30:42,091 INFO    MainThread:3907216 [wandb_init.py:_log_setup():527] Logging internal logs to /dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/wandb/run-20240209_103042-y9kbosib/logs/debug-internal.log
+2024-02-09 10:30:42,091 INFO    MainThread:3907216 [wandb_init.py:init():566] calling init triggers
+2024-02-09 10:30:42,091 INFO    MainThread:3907216 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {'seed': 5, 'dataset': 'mnist', 'n_init': 20, 'n_max': 100, 'optimizer': 'adam', 'lr': 0.001, 'lr_min': 1e-05, 'n_epochs': 2000, 'batch_size': 256, 'method': 'laplace', 'approx': 'kron', 'lr_hyp': 0.1, 'lr_hyp_min': 0.01, 'n_epochs_burnin': 500, 'marglik_frequency': 50, 'n_hypersteps': 50, 'early_stopping': True, 'last_layer': False, 'n_components': 10, 'device': 'cuda', 'data_root': 'data/', 'download_data': True, 'use_wandb': True, 'random_acquisition': True, 'acquisition_method': 'epig', 'epig_use_logprobs': True, 'methodconf': 'mnist-laplace-rndm'}
+2024-02-09 10:30:42,091 INFO    MainThread:3907216 [wandb_init.py:init():616] starting backend
+2024-02-09 10:30:42,091 INFO    MainThread:3907216 [wandb_init.py:init():620] setting up manager
+2024-02-09 10:30:42,102 INFO    MainThread:3907216 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-02-09 10:30:42,105 INFO    MainThread:3907216 [wandb_init.py:init():628] backend started and connected
+2024-02-09 10:30:42,128 INFO    MainThread:3907216 [wandb_init.py:init():720] updated telemetry
+2024-02-09 10:30:42,149 INFO    MainThread:3907216 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-02-09 10:30:42,775 INFO    MainThread:3907216 [wandb_run.py:_on_init():2262] communicating current version
+2024-02-09 10:30:43,089 INFO    MainThread:3907216 [wandb_run.py:_on_init():2271] got version response 
+2024-02-09 10:30:43,089 INFO    MainThread:3907216 [wandb_init.py:init():804] starting run threads in backend
+2024-02-09 10:30:43,243 INFO    MainThread:3907216 [wandb_run.py:_console_start():2241] atexit reg
+2024-02-09 10:30:43,244 INFO    MainThread:3907216 [wandb_run.py:_redirect():2096] redirect: wrap_raw
+2024-02-09 10:30:43,244 INFO    MainThread:3907216 [wandb_run.py:_redirect():2161] Wrapping output streams.
+2024-02-09 10:30:43,245 INFO    MainThread:3907216 [wandb_run.py:_redirect():2186] Redirects installed.
+2024-02-09 10:30:43,246 INFO    MainThread:3907216 [wandb_init.py:init():847] run started, returning control to user process
+2024-02-09 12:46:16,872 WARNING MsgRouterThr:3907216 [router.py:message_loop():77] message_loop has been closed

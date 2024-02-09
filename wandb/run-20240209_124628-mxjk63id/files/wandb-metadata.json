@@ -1,0 +1,214 @@
+{
+    "os": "Linux-5.4.0-167-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "heartbeatAt": "2024-02-09T11:46:29.663563",
+    "startedAt": "2024-02-09T11:46:28.539601",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--seed",
+        "7",
+        "--random_acquisition",
+        "--config",
+        "configs/mnist_tuned_burning_epig.yaml"
+    ],
+    "state": "running",
+    "program": "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_acq_epig_marglik_40k.py",
+    "codePathLocal": "run_acq_epig_marglik_40k.py",
+    "codePath": "run_acq_epig_marglik_40k.py",
+    "git": {
+        "remote": "git@github.com:Misipuk/active_learning_marglik.git",
+        "commit": "9ddfe8657e6accb423ca3ae3fd59cef2590826c1"
+    },
+    "email": null,
+    "root": "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik",
+    "host": "p100-001",
+    "username": "ge32jaq2",
+    "executable": "/usr/bin/python3",
+    "cpu_count": 32,
+    "cpu_count_logical": 32,
+    "cpu_freq": {
+        "current": 2094.9519999999993,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2094.952,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 499.755859375,
+            "used": 329.63541412353516
+        }
+    },
+    "gpu": "Tesla P100-PCIE-16GB",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "Tesla P100-PCIE-16GB",
+            "memory_total": 17179869184
+        }
+    ],
+    "memory": {
+        "total": 251.70166778564453
+    }
+}
