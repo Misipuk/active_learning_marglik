@@ -1,0 +1,18 @@
+
+Pool shape : torch.Size([40000, 1, 28, 28])
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_image_classification_40k_epig_acq.py", line 271, in <module>
+    main(**args)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_image_classification_40k_epig_acq.py", line 159, in main
+    learner.fit(dataset.get_train_loader(batch_size=batch_size))
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/active_learning/active_learners.py", line 62, in fit
+    self.model.reset_parameters()
+AttributeError: 'LaplaceActiveLearner' object has no attribute 'model'
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_image_classification_40k_epig_acq.py", line 271, in <module>
+    main(**args)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_image_classification_40k_epig_acq.py", line 159, in main
+    learner.fit(dataset.get_train_loader(batch_size=batch_size))
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/active_learning/active_learners.py", line 62, in fit
+    self.model.reset_parameters()
+AttributeError: 'LaplaceActiveLearner' object has no attribute 'model'

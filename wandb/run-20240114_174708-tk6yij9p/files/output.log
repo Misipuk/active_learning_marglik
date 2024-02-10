@@ -1,0 +1,37 @@
+
+Pool shape : torch.Size([40000, 1, 28, 28])
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:149]INFO: Initial test log-likelihood: -2.4580
+[run_image_classification_40k_epig_acq.py:150]INFO: Initial test Bayes log-likelihood: -2.1481
+[run_image_classification_40k_epig_acq.py:151]INFO: Initial accuracy: 61.17%
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_image_classification_40k_epig_acq.py", line 68, in estimate_epig_minibatch
+    logprobs = log_softmax(features_aligned, dim=-1)
+NameError: name 'log_softmax' is not defined
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_image_classification_40k_epig_acq.py", line 256, in <module>
+    main(**args)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_image_classification_40k_epig_acq.py", line 176, in main
+    scores = estimate_epig(learner, pool_loader, target_inputs, cfg.acquisition.epig_using_matmul)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_image_classification_40k_epig_acq.py", line 50, in estimate_epig
+    epig_scores = estimate_epig_minibatch(m_model, inputs, target_inputs, use_matmul)  # [B,]
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_image_classification_40k_epig_acq.py", line 72, in estimate_epig_minibatch
+    logprobs = log_softmax(features_aligned, dim=-1)
+NameError: name 'log_softmax' is not defined
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_image_classification_40k_epig_acq.py", line 68, in estimate_epig_minibatch
+    logprobs = log_softmax(features_aligned, dim=-1)
+NameError: name 'log_softmax' is not defined
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_image_classification_40k_epig_acq.py", line 256, in <module>
+    main(**args)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_image_classification_40k_epig_acq.py", line 176, in main
+    scores = estimate_epig(learner, pool_loader, target_inputs, cfg.acquisition.epig_using_matmul)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_image_classification_40k_epig_acq.py", line 50, in estimate_epig
+    epig_scores = estimate_epig_minibatch(m_model, inputs, target_inputs, use_matmul)  # [B,]
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_image_classification_40k_epig_acq.py", line 72, in estimate_epig_minibatch
+    logprobs = log_softmax(features_aligned, dim=-1)
+NameError: name 'log_softmax' is not defined

@@ -1,0 +1,22 @@
+
+Pool shape : torch.Size([40000, 1, 28, 28])
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_logprobs_acq_epig_marglik_40k.py", line 302, in <module>
+    main(**args)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_logprobs_acq_epig_marglik_40k.py", line 164, in main
+    learner = LaplaceActiveLearner(
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/active_learning/active_learners.py", line 46, in __init__
+    super().__init__(input_size, output_size, likelihood, model, double, device)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/active_learning/active_learners.py", line 22, in __init__
+    self.model = LeNet(in_channels=in_channels, n_pixels=in_pixels, n_out=output_size).to(device)
+TypeError: LeNet.__init__() got an unexpected keyword argument 'n_pixels'
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_logprobs_acq_epig_marglik_40k.py", line 302, in <module>
+    main(**args)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_logprobs_acq_epig_marglik_40k.py", line 164, in main
+    learner = LaplaceActiveLearner(
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/active_learning/active_learners.py", line 46, in __init__
+    super().__init__(input_size, output_size, likelihood, model, double, device)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/active_learning/active_learners.py", line 22, in __init__
+    self.model = LeNet(in_channels=in_channels, n_pixels=in_pixels, n_out=output_size).to(device)
+TypeError: LeNet.__init__() got an unexpected keyword argument 'n_pixels'

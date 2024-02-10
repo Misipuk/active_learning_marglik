@@ -1,0 +1,112 @@
+
+Pool shape : torch.Size([40000, 1, 28, 28])
+[run_image_classification_40k_epig_acq.py:186]INFO: Initial test log-likelihood: -4.4428
+[run_image_classification_40k_epig_acq.py:187]INFO: Initial test Bayes log-likelihood: -2.1742
+[run_image_classification_40k_epig_acq.py:188]INFO: Initial accuracy: 48.72%
+Starting epig acquisition
+Using original estimate_epig function
+We are in concat
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 21: -4.6827
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 21: -2.1917
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 45.23%
+Starting epig acquisition
+Using original estimate_epig function
+We are in concat
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 22: -8.3173
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 22: -2.3353
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 42.15%
+Starting epig acquisition
+Using original estimate_epig function
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 23: -5.5222
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 23: -2.3461
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 50.35%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 24: -4.4749
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 24: -2.1906
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 53.53%
+We are in concat
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 25: -4.9081
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 25: -2.3135
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 51.36%
+Starting epig acquisition
+Using original estimate_epig function
+We are in concat
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 26: -5.0620
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 26: -2.2698
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 56.98%
+Starting epig acquisition
+Using original estimate_epig function
+We are in concat
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 27: -4.4478
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 27: -2.1471
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 55.41%
+Starting epig acquisition
+Using original estimate_epig function
+We are in concat
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 28: -3.7470
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 28: -2.2498
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 62.03%
+Starting epig acquisition
+Using original estimate_epig function
+We are in concat
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 29: -4.2072
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 29: -2.1223
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 58.23%
+Starting epig acquisition
+Using original estimate_epig function
+We are in concat
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 30: -3.8182
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 30: -2.2754
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 61.44%
+Starting epig acquisition
+Using original estimate_epig function
+We are in concat
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 31: -3.3790
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 31: -2.1819
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 59.55%
+Starting epig acquisition
+Using original estimate_epig function
+We are in concat
+[run_image_classification_40k_epig_acq.py:227]INFO: Test log-likelihood at 32: -5.3092
+[run_image_classification_40k_epig_acq.py:228]INFO: Test Bayes log-likelihood at 32: -2.2919
+[run_image_classification_40k_epig_acq.py:229]INFO: Test accuracy: 57.64%
+Starting epig acquisition
+Using original estimate_epig function
+We are in concat
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_image_classification_40k_epig_acq.py", line 295, in <module>
+    main(**args)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_image_classification_40k_epig_acq.py", line 220, in main
+    learner.fit(dataset.get_train_loader())
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/active_learning/active_learners.py", line 64, in fit
+    la, _, margliks = marglik_optimization(
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/active_learning/marglik.py", line 296, in marglik_optimization
+    hyper_optimizer.step()
+  File "/usr/local/lib/python3.10/dist-packages/torch/optim/lr_scheduler.py", line 68, in wrapper
+    return wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/optim/optimizer.py", line 361, in wrapper
+    with torch.autograd.profiler.record_function(profile_name):
+  File "/usr/local/lib/python3.10/dist-packages/torch/autograd/profiler.py", line 637, in __exit__
+    if not self.run_callbacks_on_exit:
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_image_classification_40k_epig_acq.py", line 295, in <module>
+    main(**args)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_image_classification_40k_epig_acq.py", line 220, in main
+    learner.fit(dataset.get_train_loader())
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/active_learning/active_learners.py", line 64, in fit
+    la, _, margliks = marglik_optimization(
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/active_learning/marglik.py", line 296, in marglik_optimization
+    hyper_optimizer.step()
+  File "/usr/local/lib/python3.10/dist-packages/torch/optim/lr_scheduler.py", line 68, in wrapper
+    return wrapped(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/optim/optimizer.py", line 361, in wrapper
+    with torch.autograd.profiler.record_function(profile_name):
+  File "/usr/local/lib/python3.10/dist-packages/torch/autograd/profiler.py", line 637, in __exit__
+    if not self.run_callbacks_on_exit:
+KeyboardInterrupt

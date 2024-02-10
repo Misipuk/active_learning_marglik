@@ -1,0 +1,154 @@
+{
+    "os": "Linux-5.4.0-167-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "heartbeatAt": "2024-01-20T19:42:13.676753",
+    "startedAt": "2024-01-20T19:42:12.861155",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--seed",
+        "3",
+        "--random_acquisition",
+        "--config",
+        "configs/mnist_tuned_burning_epig.yaml"
+    ],
+    "state": "running",
+    "program": "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_logprobs_acq_epig_marglik_40k.py",
+    "codePathLocal": "run_logprobs_acq_epig_marglik_40k.py",
+    "codePath": "run_logprobs_acq_epig_marglik_40k.py",
+    "git": {
+        "remote": "git@github.com:Misipuk/active_learning_marglik.git",
+        "commit": "3d832fd0b73e3a4b1f77c1179330c81f449be179"
+    },
+    "email": null,
+    "root": "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik",
+    "host": "gpu-003",
+    "username": "ge32jaq2",
+    "executable": "/usr/bin/python3",
+    "cpu_count": 20,
+    "cpu_count_logical": 20,
+    "cpu_freq": {
+        "current": 2394.373999999999,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2394.374,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2394.374,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2394.374,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2394.374,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2394.374,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2394.374,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2394.374,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2394.374,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2394.374,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2394.374,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2394.374,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2394.374,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2394.374,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2394.374,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2394.374,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2394.374,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2394.374,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2394.374,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2394.374,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2394.374,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 499.755859375,
+            "used": 342.315242767334
+        }
+    },
+    "gpu": "Tesla V100-PCIE-16GB",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "Tesla V100-PCIE-16GB",
+            "memory_total": 17179869184
+        }
+    ],
+    "memory": {
+        "total": 362.1417922973633
+    }
+}

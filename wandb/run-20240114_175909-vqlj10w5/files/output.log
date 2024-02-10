@@ -1,0 +1,23 @@
+
+Pool shape : torch.Size([40000, 1, 28, 28])
+Starting epig acquisition
+Using original estimate_epig function
+[run_image_classification_40k_epig_acq.py:150]INFO: Initial test log-likelihood: -2.4580
+[run_image_classification_40k_epig_acq.py:151]INFO: Initial test Bayes log-likelihood: -2.1481
+[run_image_classification_40k_epig_acq.py:152]INFO: Initial accuracy: 61.17%
+We are in concat
+[run_image_classification_40k_epig_acq.py:191]INFO: Test log-likelihood at 21: -2.8156
+[run_image_classification_40k_epig_acq.py:192]INFO: Test Bayes log-likelihood at 21: -2.1700
+[run_image_classification_40k_epig_acq.py:193]INFO: Test accuracy: 60.85%
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_image_classification_40k_epig_acq.py", line 257, in <module>
+    main(**args)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_image_classification_40k_epig_acq.py", line 199, in main
+    hist = wandb.Histogram(bald_scores.detach().cpu().numpy())
+UnboundLocalError: local variable 'bald_scores' referenced before assignment
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_image_classification_40k_epig_acq.py", line 257, in <module>
+    main(**args)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_marglik/active_learning_marglik/run_image_classification_40k_epig_acq.py", line 199, in main
+    hist = wandb.Histogram(bald_scores.detach().cpu().numpy())
+UnboundLocalError: local variable 'bald_scores' referenced before assignment

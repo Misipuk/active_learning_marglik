@@ -1,0 +1,46 @@
+Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz to data/MNIST/raw/train-images-idx3-ubyte.gz
+Extracting data/MNIST/raw/train-images-idx3-ubyte.gz to data/MNIST/raw
+Downloading http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz to data/MNIST/raw/train-labels-idx1-ubyte.gz
+Extracting data/MNIST/raw/train-labels-idx1-ubyte.gz to data/MNIST/raw
+Downloading http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz to data/MNIST/raw/t10k-images-idx3-ubyte.gz
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 9912422/9912422 [00:00<00:00, 146723995.07it/s]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 28881/28881 [00:00<00:00, 1266606.31it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1648877/1648877 [00:00<00:00, 10716115.17it/s]
+Extracting data/MNIST/raw/t10k-images-idx3-ubyte.gz to data/MNIST/raw
+Downloading http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz to data/MNIST/raw/t10k-labels-idx1-ubyte.gz
+Extracting data/MNIST/raw/t10k-labels-idx1-ubyte.gz to data/MNIST/raw
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4542/4542 [00:00<00:00, 33777533.28it/s]
+[run_image_classification.py:70]INFO: Initial test log-likelihood: -3.1405
+[run_image_classification.py:71]INFO: Initial test Bayes log-likelihood: -2.2305
+[run_image_classification.py:72]INFO: Initial accuracy: 59.35%
+[run_image_classification.py:92]INFO: Test log-likelihood at 21: -3.5384
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 21: -2.2456
+[run_image_classification.py:94]INFO: Test accuracy: 58.23%
+[run_image_classification.py:92]INFO: Test log-likelihood at 22: -4.1036
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 22: -2.2589
+[run_image_classification.py:94]INFO: Test accuracy: 58.19%
+[run_image_classification.py:92]INFO: Test log-likelihood at 23: -2.8771
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 23: -2.2247
+[run_image_classification.py:94]INFO: Test accuracy: 64.12%
+[run_image_classification.py:92]INFO: Test log-likelihood at 24: -3.3717
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 24: -2.2449
+[run_image_classification.py:94]INFO: Test accuracy: 59.56%
+[run_image_classification.py:92]INFO: Test log-likelihood at 25: -3.2646
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 25: -2.2857
+[run_image_classification.py:94]INFO: Test accuracy: 62.41%
+[run_image_classification.py:92]INFO: Test log-likelihood at 26: -4.1343
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 26: -2.2546
+[run_image_classification.py:94]INFO: Test accuracy: 59.88%
+[run_image_classification.py:92]INFO: Test log-likelihood at 27: -4.1891
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 27: -2.2511
+[run_image_classification.py:94]INFO: Test accuracy: 58.71%
+[run_image_classification.py:92]INFO: Test log-likelihood at 28: -3.9067
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 28: -2.2355
+[run_image_classification.py:94]INFO: Test accuracy: 59.49%
+[run_image_classification.py:92]INFO: Test log-likelihood at 29: -3.9938
+[run_image_classification.py:93]INFO: Test Bayes log-likelihood at 29: -2.2528
+[run_image_classification.py:94]INFO: Test accuracy: 58.75%

@@ -1,0 +1,82 @@
+
+Pool shape : torch.Size([40000, 1, 28, 28])
+[run_image_classification_40k.py:80]INFO: Initial test log-likelihood: -2.2254
+[run_image_classification_40k.py:81]INFO: Initial test Bayes log-likelihood: -2.1388
+[run_image_classification_40k.py:82]INFO: Initial accuracy: 61.87%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 21: -2.0215
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 21: -2.1187
+[run_image_classification_40k.py:104]INFO: Test accuracy: 64.45%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 22: -2.5729
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 22: -2.1377
+[run_image_classification_40k.py:104]INFO: Test accuracy: 60.33%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 23: -2.6359
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 23: -2.1352
+[run_image_classification_40k.py:104]INFO: Test accuracy: 64.23%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 24: -3.2597
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 24: -2.1365
+[run_image_classification_40k.py:104]INFO: Test accuracy: 59.85%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 25: -3.1083
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 25: -2.2228
+[run_image_classification_40k.py:104]INFO: Test accuracy: 64.23%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 26: -2.3492
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 26: -2.1355
+[run_image_classification_40k.py:104]INFO: Test accuracy: 65.43%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 27: -2.7315
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 27: -2.2523
+[run_image_classification_40k.py:104]INFO: Test accuracy: 65.47%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 28: -2.3051
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 28: -2.1493
+[run_image_classification_40k.py:104]INFO: Test accuracy: 63.66%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 29: -2.7537
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 29: -2.1489
+[run_image_classification_40k.py:104]INFO: Test accuracy: 61.22%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 30: -3.5710
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 30: -2.2564
+[run_image_classification_40k.py:104]INFO: Test accuracy: 62.58%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 31: -2.2518
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 31: -2.1277
+[run_image_classification_40k.py:104]INFO: Test accuracy: 65.89%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 32: -2.2199
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 32: -2.1740
+[run_image_classification_40k.py:104]INFO: Test accuracy: 66.51%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 33: -2.3736
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 33: -2.1210
+[run_image_classification_40k.py:104]INFO: Test accuracy: 64.74%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 34: -2.5781
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 34: -2.1149
+[run_image_classification_40k.py:104]INFO: Test accuracy: 64.65%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 35: -2.3914
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 35: -2.1308
+[run_image_classification_40k.py:104]INFO: Test accuracy: 64.97%
+[run_image_classification_40k.py:102]INFO: Test log-likelihood at 36: -2.4085
+[run_image_classification_40k.py:103]INFO: Test Bayes log-likelihood at 36: -2.2376
+[run_image_classification_40k.py:104]INFO: Test accuracy: 69.96%
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/epig_orig_short/active_learning_marglik/active_learning/active_learners.py", line 124, in bald
+    p_samples = self.la.predictive_samples(x, n_samples=150)
+  File "/usr/local/lib/python3.10/dist-packages/laplace/baselaplace.py", line 664, in predictive_samples
+    f_samples = normal_samples(f_mu, f_var, n_samples, generator)
+  File "/usr/local/lib/python3.10/dist-packages/laplace/utils/utils.py", line 260, in normal_samples
+    scale = torch.linalg.cholesky(var)
+KeyboardInterrupt
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/epig_orig_short/active_learning_marglik/run_image_classification_40k.py", line 167, in <module>
+    main(**args)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_orig_short/active_learning_marglik/run_image_classification_40k.py", line 91, in main
+    bald_scores = learner.bald(dataset.get_pool_loader(batch_size=batch_size))
+  File "/dss/dsshome1/0D/ge32jaq2/epig_orig_short/active_learning_marglik/active_learning/active_learners.py", line 126, in bald
+    p_samples = self.la.predictive_samples(x, n_samples=150, diagonal_output = True)
+  File "/usr/local/lib/python3.10/dist-packages/laplace/baselaplace.py", line 660, in predictive_samples
+    f_mu, f_var = self._glm_predictive_distribution(x)
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/laplace/baselaplace.py", line 680, in _glm_predictive_distribution
+    f_var = self.functional_variance(Js)
+  File "/usr/local/lib/python3.10/dist-packages/laplace/baselaplace.py", line 944, in functional_variance
+    return self.posterior_precision.inv_square_form(Js)
+  File "/usr/local/lib/python3.10/dist-packages/laplace/utils/matrix.py", line 406, in inv_square_form
+    SW = self._bmm(W, exponent=-1)
+  File "/usr/local/lib/python3.10/dist-packages/laplace/utils/matrix.py", line 397, in _bmm
+    SW.append(W_p.reshape(B * K, p_in * p_out))
+KeyboardInterrupt
