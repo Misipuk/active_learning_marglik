@@ -184,7 +184,7 @@ def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_si
             n_components=n_components)
     else:
         raise ValueError('Invalid active learner.')
-    learner.fit(dataset.get_train_loader(batch_size=256))#batch_size
+    learner.fit(dataset.get_train_loader(batch_size=batch_size))
     # evaluate model on test set
     test_ll = learner.log_lik(test_loader)
     test_ll_bayes = learner.log_lik_bayes(test_loader)
