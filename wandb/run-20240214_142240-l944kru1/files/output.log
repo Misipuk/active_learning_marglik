@@ -1,0 +1,574 @@
+Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz to data/MNIST/raw/train-images-idx3-ubyte.gz
+Extracting data/MNIST/raw/train-images-idx3-ubyte.gz to data/MNIST/raw
+Downloading http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz to data/MNIST/raw/train-labels-idx1-ubyte.gz
+Extracting data/MNIST/raw/train-labels-idx1-ubyte.gz to data/MNIST/raw
+Downloading http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 9912422/9912422 [00:00<00:00, 140641412.80it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 28881/28881 [00:00<00:00, 286372798.64it/s]
+Downloading http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz to data/MNIST/raw/t10k-images-idx3-ubyte.gz
+Extracting data/MNIST/raw/t10k-images-idx3-ubyte.gz to data/MNIST/raw
+Downloading http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1648877/1648877 [00:00<00:00, 40195116.74it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4542/4542 [00:00<00:00, 48598287.67it/s]
+Downloading http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz to data/MNIST/raw/t10k-labels-idx1-ubyte.gz
+Extracting data/MNIST/raw/t10k-labels-idx1-ubyte.gz to data/MNIST/raw
+Pool shape : torch.Size([40000, 1, 28, 28])
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:192]INFO: Initial test log-likelihood: -3.1351
+[run_acq_epig_marglik_40k.py:193]INFO: Initial test Bayes log-likelihood: -2.2974
+[run_acq_epig_marglik_40k.py:194]INFO: Initial accuracy: 58.36%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 21: -2.7156
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 21: -2.2534
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 60.51%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 22: -2.2336
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 22: -2.2838
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 65.46%
+We are in concat
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 23: -2.2114
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 23: -2.3166
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 67.06%
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 24: -2.1827
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 24: -2.2531
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 66.89%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 25: -2.3664
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 25: -2.2586
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 64.37%
+We are in concat
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 26: -2.3743
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 26: -2.2460
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 66.70%
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 27: -2.0682
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 27: -2.1807
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 68.34%
+We are in concat
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 28: -1.8550
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 28: -2.2168
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 70.19%
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 29: -2.0974
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 29: -2.2263
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 70.86%
+We are in concat
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 30: -2.0269
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 30: -2.2151
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 70.78%
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 31: -2.2241
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 31: -2.1883
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 69.15%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 32: -1.7323
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 32: -2.1890
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 70.23%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 33: -1.9780
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 33: -2.2346
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 69.93%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 34: -1.8626
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 34: -2.1675
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 69.98%
+We are in concat
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 35: -1.8928
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 35: -2.1645
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 70.97%
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 36: -2.2876
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 36: -2.1639
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 69.29%
+We are in concat
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 37: -1.7826
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 37: -2.1720
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 70.83%
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 38: -1.9085
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 38: -2.1542
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 72.02%
+We are in concat
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 39: -1.9845
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 39: -2.1316
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 70.17%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 40: -1.9351
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 40: -2.1436
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 71.24%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 41: -1.8701
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 41: -2.1492
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 72.00%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 42: -1.8656
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 42: -2.1745
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 72.60%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 43: -1.9242
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 43: -2.1528
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 71.88%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 44: -1.3873
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 44: -2.1479
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 76.23%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 45: -1.8840
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 45: -2.1715
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 71.01%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 46: -1.3701
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 46: -2.1227
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 75.67%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 47: -1.5414
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 47: -2.1434
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 74.05%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 48: -1.6335
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 48: -2.1167
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 75.26%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 49: -1.8281
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 49: -2.1200
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 74.57%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 50: -1.4880
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 50: -2.1371
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 76.93%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 51: -1.3579
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 51: -2.1227
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 78.17%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 52: -1.5951
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 52: -2.2267
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 78.19%
+We are in concat
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 53: -1.5830
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 53: -2.1180
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 77.03%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 54: -1.4986
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 54: -2.1169
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 76.53%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 55: -1.3524
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 55: -2.1271
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 78.78%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 56: -1.1739
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 56: -2.1225
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 78.60%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 57: -1.4672
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 57: -2.0960
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 76.06%
+We are in concat
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 58: -1.0400
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 58: -2.0979
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 80.65%
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 59: -1.3346
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 59: -2.1026
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 78.34%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 60: -1.3609
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 60: -2.2146
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 78.92%
+We are in concat
+[utils.py:157]INFO: SYMEIG: adding jitter, did not converge.
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 61: -1.1547
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 61: -2.0849
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 80.86%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 62: -1.5341
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 62: -2.2230
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 79.23%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 63: -1.1651
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 63: -2.0499
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 81.59%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 64: -1.3117
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 64: -2.0759
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 79.91%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 65: -1.3028
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 65: -2.0742
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 80.23%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 66: -1.3211
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 66: -2.0935
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 79.53%
+We are in concat
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 67: -1.4175
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 67: -2.0653
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 79.03%
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 68: -1.3706
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 68: -2.0478
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 79.68%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 69: -1.1404
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 69: -2.0323
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 81.04%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 70: -1.1980
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 70: -2.0641
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 81.14%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 71: -1.1150
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 71: -2.0873
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 82.25%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 72: -1.3006
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 72: -2.0574
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 80.72%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 73: -1.1824
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 73: -2.0430
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 81.77%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 74: -1.1104
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 74: -2.0987
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 82.24%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 75: -0.8468
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 75: -1.8869
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 83.06%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 76: -1.2309
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 76: -2.2144
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 82.99%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 77: -1.0463
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 77: -2.0351
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 82.45%
+We are in concat
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 78: -0.8927
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 78: -2.0987
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 84.30%
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 79: -1.1201
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 79: -2.0889
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 82.15%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 80: -1.0172
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 80: -2.0608
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 83.22%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 81: -1.0757
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 81: -2.0623
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 83.23%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 82: -1.1209
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 82: -2.0333
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 82.19%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 83: -0.9292
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 83: -2.0383
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 83.43%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 84: -0.9971
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 84: -2.0461
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 82.90%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 85: -0.9520
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 85: -2.0665
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 83.55%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 86: -0.8834
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 86: -2.0820
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 85.22%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 87: -0.9810
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 87: -2.2260
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 85.47%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 88: -0.9679
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 88: -2.0328
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 84.50%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 89: -0.9239
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 89: -2.0334
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 84.60%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 90: -0.7745
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 90: -1.7785
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 84.71%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 91: -0.8877
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 91: -2.0378
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 84.72%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 92: -0.9588
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 92: -2.0534
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 84.04%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 93: -1.0473
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 93: -2.0434
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 83.95%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 94: -0.8917
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 94: -2.0617
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 84.73%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 95: -0.8960
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 95: -1.9830
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 84.35%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 96: -0.8651
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 96: -2.0470
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 85.36%
+We are in concat
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 97: -1.0612
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 97: -2.2055
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 84.57%
+We are in concat
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 98: -0.9227
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 98: -2.1215
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 84.91%
+Starting epig acquisition
+Using original estimate_epig function
+epig_use_logprobs:True
+We are in concat
+[run_acq_epig_marglik_40k.py:233]INFO: Test log-likelihood at 99: -0.9988
+[run_acq_epig_marglik_40k.py:234]INFO: Test Bayes log-likelihood at 99: -2.0314
+[run_acq_epig_marglik_40k.py:235]INFO: Test accuracy: 84.04%
