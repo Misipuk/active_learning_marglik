@@ -1,0 +1,38 @@
+Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz to data/MNIST/raw/train-images-idx3-ubyte.gz
+Extracting data/MNIST/raw/train-images-idx3-ubyte.gz to data/MNIST/raw
+Downloading http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz to data/MNIST/raw/train-labels-idx1-ubyte.gz
+Extracting data/MNIST/raw/train-labels-idx1-ubyte.gz to data/MNIST/raw
+Downloading http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz to data/MNIST/raw/t10k-images-idx3-ubyte.gz
+Extracting data/MNIST/raw/t10k-images-idx3-ubyte.gz to data/MNIST/raw
+Downloading http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz to data/MNIST/raw/t10k-labels-idx1-ubyte.gz
+Extracting data/MNIST/raw/t10k-labels-idx1-ubyte.gz to data/MNIST/raw
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 9912422/9912422 [00:00<00:00, 136655221.39it/s]
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 28881/28881 [00:00<00:00, 283690149.47it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1648877/1648877 [00:00<00:00, 38151800.86it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4542/4542 [00:00<00:00, 56030966.96it/s]
+Pool shape : torch.Size([40000, 1, 28, 28])
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_hyperprior/active_learning_marglik/run_acq_epig_marglik_40k.py", line 308, in <module>
+    main(**args)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_hyperprior/active_learning_marglik/run_acq_epig_marglik_40k.py", line 188, in main
+    learner.fit(dataset.get_train_loader(batch_size=batch_size))
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_hyperprior/active_learning_marglik/active_learning/active_learners.py", line 67, in fit
+    la, _, margliks = marglik_optimization(
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_hyperprior/active_learning_marglik/active_learning/marglik.py", line 224, in marglik_optimization
+    alpha_dist = Gamma(gamma_alpha_a, gamma_alpha_b)
+NameError: name 'Gamma' is not defined
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_hyperprior/active_learning_marglik/run_acq_epig_marglik_40k.py", line 308, in <module>
+    main(**args)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_hyperprior/active_learning_marglik/run_acq_epig_marglik_40k.py", line 188, in main
+    learner.fit(dataset.get_train_loader(batch_size=batch_size))
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_hyperprior/active_learning_marglik/active_learning/active_learners.py", line 67, in fit
+    la, _, margliks = marglik_optimization(
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_hyperprior/active_learning_marglik/active_learning/marglik.py", line 224, in marglik_optimization
+    alpha_dist = Gamma(gamma_alpha_a, gamma_alpha_b)
+NameError: name 'Gamma' is not defined
+Prec Gamma (1.0, 1.0)

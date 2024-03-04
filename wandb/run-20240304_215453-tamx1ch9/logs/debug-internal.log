@@ -1,0 +1,406 @@
+2024-03-04 21:54:53,953 INFO    StreamThr :936031 [internal.py:wandb_internal():86] W&B internal server running at pid: 936031, started at: 2024-03-04 21:54:53.951664
+2024-03-04 21:54:53,955 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: status
+2024-03-04 21:54:53,957 INFO    WriterThread:936031 [datastore.py:open_for_write():87] open: /dss/dsshome1/0D/ge32jaq2/epig_plus_orig_hyperprior/active_learning_marglik/wandb/run-20240304_215453-tamx1ch9/run-tamx1ch9.wandb
+2024-03-04 21:54:53,958 DEBUG   SenderThread:936031 [sender.py:send():382] send: header
+2024-03-04 21:54:53,961 DEBUG   SenderThread:936031 [sender.py:send():382] send: run
+2024-03-04 21:54:54,455 INFO    SenderThread:936031 [dir_watcher.py:__init__():211] watching files in: /dss/dsshome1/0D/ge32jaq2/epig_plus_orig_hyperprior/active_learning_marglik/wandb/run-20240304_215453-tamx1ch9/files
+2024-03-04 21:54:54,455 INFO    SenderThread:936031 [sender.py:_start_run_threads():1136] run started: tamx1ch9 with start time 1709585693.951639
+2024-03-04 21:54:54,463 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: check_version
+2024-03-04 21:54:54,463 DEBUG   SenderThread:936031 [sender.py:send_request():409] send_request: check_version
+2024-03-04 21:54:54,610 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: run_start
+2024-03-04 21:54:54,615 DEBUG   HandlerThread:936031 [system_info.py:__init__():27] System info init
+2024-03-04 21:54:54,615 DEBUG   HandlerThread:936031 [system_info.py:__init__():42] System info init done
+2024-03-04 21:54:54,615 INFO    HandlerThread:936031 [system_monitor.py:start():194] Starting system monitor
+2024-03-04 21:54:54,615 INFO    SystemMonitor:936031 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-03-04 21:54:54,615 INFO    HandlerThread:936031 [system_monitor.py:probe():214] Collecting system info
+2024-03-04 21:54:54,616 INFO    SystemMonitor:936031 [interfaces.py:start():190] Started cpu monitoring
+2024-03-04 21:54:54,616 INFO    SystemMonitor:936031 [interfaces.py:start():190] Started disk monitoring
+2024-03-04 21:54:54,616 INFO    SystemMonitor:936031 [interfaces.py:start():190] Started gpu monitoring
+2024-03-04 21:54:54,617 INFO    SystemMonitor:936031 [interfaces.py:start():190] Started memory monitoring
+2024-03-04 21:54:54,617 INFO    SystemMonitor:936031 [interfaces.py:start():190] Started network monitoring
+2024-03-04 21:54:54,623 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:54:54,624 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:54:54,624 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:54:54,625 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:54:54,697 DEBUG   HandlerThread:936031 [system_info.py:probe():151] Probing system
+2024-03-04 21:54:54,698 DEBUG   HandlerThread:936031 [system_info.py:_probe_git():136] Probing git
+2024-03-04 21:54:54,703 DEBUG   HandlerThread:936031 [system_info.py:_probe_git():144] Probing git done
+2024-03-04 21:54:54,703 DEBUG   HandlerThread:936031 [system_info.py:probe():199] Probing system done
+2024-03-04 21:54:54,703 DEBUG   HandlerThread:936031 [system_monitor.py:probe():223] {'os': 'Linux-5.4.0-167-generic-x86_64-with-glibc2.35', 'python': '3.10.12', 'heartbeatAt': '2024-03-04T20:54:54.697353', 'startedAt': '2024-03-04T20:54:53.943976', 'docker': None, 'cuda': None, 'args': ('--seed', '4', '--random_acquisition', '--config', 'configs/mnist_tuned_burning_epig.yaml'), 'state': 'running', 'program': '/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_hyperprior/active_learning_marglik/run_acq_epig_marglik_40k.py', 'codePathLocal': 'run_acq_epig_marglik_40k.py', 'codePath': 'run_acq_epig_marglik_40k.py', 'git': {'remote': 'git@github.com:Misipuk/active_learning_marglik.git', 'commit': '0a4317c3ae11db751872da2a58b2d87cc1a02bca'}, 'email': None, 'root': '/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_hyperprior/active_learning_marglik', 'host': 'lrz-dgx-a100-003', 'username': 'ge32jaq2', 'executable': '/usr/bin/python3', 'cpu_count': 128, 'cpu_count_logical': 256, 'cpu_freq': {'current': 2842.4974062500005, 'min': 1500.0, 'max': 2250.0}, 'cpu_freq_per_core': [{'current': 3361.345, 'min': 1500.0, 'max': 2250.0}, {'current': 3361.536, 'min': 1500.0, 'max': 2250.0}, {'current': 1677.729, 'min': 1500.0, 'max': 2250.0}, {'current': 3355.364, 'min': 1500.0, 'max': 2250.0}, {'current': 3341.817, 'min': 1500.0, 'max': 2250.0}, {'current': 3359.793, 'min': 1500.0, 'max': 2250.0}, {'current': 3350.506, 'min': 1500.0, 'max': 2250.0}, {'current': 3358.666, 'min': 1500.0, 'max': 2250.0}, {'current': 3357.555, 'min': 1500.0, 'max': 2250.0}, {'current': 3357.419, 'min': 1500.0, 'max': 2250.0}, {'current': 3343.867, 'min': 1500.0, 'max': 2250.0}, {'current': 3361.79, 'min': 1500.0, 'max': 2250.0}, {'current': 3366.158, 'min': 1500.0, 'max': 2250.0}, {'current': 3368.924, 'min': 1500.0, 'max': 2250.0}, {'current': 3361.501, 'min': 1500.0, 'max': 2250.0}, {'current': 3364.036, 'min': 1500.0, 'max': 2250.0}, {'current': 3360.201, 'min': 1500.0, 'max': 2250.0}, {'current': 3354.387, 'min': 1500.0, 'max': 2250.0}, {'current': 3349.939, 'min': 1500.0, 'max': 2250.0}, {'current': 3347.964, 'min': 1500.0, 'max': 2250.0}, {'current': 3346.328, 'min': 1500.0, 'max': 2250.0}, {'current': 3360.155, 'min': 1500.0, 'max': 2250.0}, {'current': 3359.274, 'min': 1500.0, 'max': 2250.0}, {'current': 3373.699, 'min': 1500.0, 'max': 2250.0}, {'current': 3354.391, 'min': 1500.0, 'max': 2250.0}, {'current': 3351.898, 'min': 1500.0, 'max': 2250.0}, {'current': 3360.378, 'min': 1500.0, 'max': 2250.0}, {'current': 3351.836, 'min': 1500.0, 'max': 2250.0}, {'current': 3341.313, 'min': 1500.0, 'max': 2250.0}, {'current': 3367.231, 'min': 1500.0, 'max': 2250.0}, {'current': 3347.282, 'min': 1500.0, 'max': 2250.0}, {'current': 3353.417, 'min': 1500.0, 'max': 2250.0}, {'current': 3370.484, 'min': 1500.0, 'max': 2250.0}, {'current': 3348.092, 'min': 1500.0, 'max': 2250.0}, {'current': 3365.35, 'min': 1500.0, 'max': 2250.0}, {'current': 3318.313, 'min': 1500.0, 'max': 2250.0}, {'current': 3300.352, 'min': 1500.0, 'max': 2250.0}, {'current': 3282.567, 'min': 1500.0, 'max': 2250.0}, {'current': 3283.05, 'min': 1500.0, 'max': 2250.0}, {'current': 3287.854, 'min': 1500.0, 'max': 2250.0}, {'current': 3318.942, 'min': 1500.0, 'max': 2250.0}, {'current': 3317.615, 'min': 1500.0, 'max': 2250.0}, {'current': 3353.467, 'min': 1500.0, 'max': 2250.0}, {'current': 3358.101, 'min': 1500.0, 'max': 2250.0}, {'current': 3347.585, 'min': 1500.0, 'max': 2250.0}, {'current': 3365.324, 'min': 1500.0, 'max': 2250.0}, {'current': 3342.261, 'min': 1500.0, 'max': 2250.0}, {'current': 3360.221, 'min': 1500.0, 'max': 2250.0}, {'current': 3343.689, 'min': 1500.0, 'max': 2250.0}, {'current': 3350.378, 'min': 1500.0, 'max': 2250.0}, {'current': 3349.458, 'min': 1500.0, 'max': 2250.0}, {'current': 3363.017, 'min': 1500.0, 'max': 2250.0}, {'current': 3347.447, 'min': 1500.0, 'max': 2250.0}, {'current': 3360.659, 'min': 1500.0, 'max': 2250.0}, {'current': 3334.284, 'min': 1500.0, 'max': 2250.0}, {'current': 3368.539, 'min': 1500.0, 'max': 2250.0}, {'current': 3362.248, 'min': 1500.0, 'max': 2250.0}, {'current': 3352.339, 'min': 1500.0, 'max': 2250.0}, {'current': 3367.428, 'min': 1500.0, 'max': 2250.0}, {'current': 3358.452, 'min': 1500.0, 'max': 2250.0}, {'current': 3355.085, 'min': 1500.0, 'max': 2250.0}, {'current': 3344.507, 'min': 1500.0, 'max': 2250.0}, {'current': 3354.813, 'min': 1500.0, 'max': 2250.0}, {'current': 3363.531, 'min': 1500.0, 'max': 2250.0}, {'current': 3003.886, 'min': 1500.0, 'max': 2250.0}, {'current': 2541.294, 'min': 1500.0, 'max': 2250.0}, {'current': 2547.204, 'min': 1500.0, 'max': 2250.0}, {'current': 3232.576, 'min': 1500.0, 'max': 2250.0}, {'current': 3383.757, 'min': 1500.0, 'max': 2250.0}, {'current': 2251.53, 'min': 1500.0, 'max': 2250.0}, {'current': 2241.004, 'min': 1500.0, 'max': 2250.0}, {'current': 3401.868, 'min': 1500.0, 'max': 2250.0}, {'current': 1731.497, 'min': 1500.0, 'max': 2250.0}, {'current': 2603.706, 'min': 1500.0, 'max': 2250.0}, {'current': 2916.494, 'min': 1500.0, 'max': 2250.0}, {'current': 2625.011, 'min': 1500.0, 'max': 2250.0}, {'current': 2313.428, 'min': 1500.0, 'max': 2250.0}, {'current': 2247.521, 'min': 1500.0, 'max': 2250.0}, {'current': 2243.083, 'min': 1500.0, 'max': 2250.0}, {'current': 2572.819, 'min': 1500.0, 'max': 2250.0}, {'current': 2098.163, 'min': 1500.0, 'max': 2250.0}, {'current': 3118.106, 'min': 1500.0, 'max': 2250.0}, {'current': 3106.459, 'min': 1500.0, 'max': 2250.0}, {'current': 3099.432, 'min': 1500.0, 'max': 2250.0}, {'current': 2525.524, 'min': 1500.0, 'max': 2250.0}, {'current': 3377.108, 'min': 1500.0, 'max': 2250.0}, {'current': 1699.02, 'min': 1500.0, 'max': 2250.0}, {'current': 3397.383, 'min': 1500.0, 'max': 2250.0}, {'current': 3404.512, 'min': 1500.0, 'max': 2250.0}, {'current': 3380.609, 'min': 1500.0, 'max': 2250.0}, {'current': 2248.47, 'min': 1500.0, 'max': 2250.0}, {'current': 2268.651, 'min': 1500.0, 'max': 2250.0}, {'current': 1733.236, 'min': 1500.0, 'max': 2250.0}, {'current': 2616.199, 'min': 1500.0, 'max': 2250.0}, {'current': 2603.538, 'min': 1500.0, 'max': 2250.0}, {'current': 2592.306, 'min': 1500.0, 'max': 2250.0}, {'current': 3381.453, 'min': 1500.0, 'max': 2250.0}, {'current': 3297.144, 'min': 1500.0, 'max': 2250.0}, {'current': 2384.588, 'min': 1500.0, 'max': 2250.0}, {'current': 1693.613, 'min': 1500.0, 'max': 2250.0}, {'current': 3060.59, 'min': 1500.0, 'max': 2250.0}, {'current': 2063.697, 'min': 1500.0, 'max': 2250.0}, {'current': 3171.103, 'min': 1500.0, 'max': 2250.0}, {'current': 3181.218, 'min': 1500.0, 'max': 2250.0}, {'current': 1691.912, 'min': 1500.0, 'max': 2250.0}, {'current': 3382.819, 'min': 1500.0, 'max': 2250.0}, {'current': 2261.174, 'min': 1500.0, 'max': 2250.0}, {'current': 2293.348, 'min': 1500.0, 'max': 2250.0}, {'current': 2322.867, 'min': 1500.0, 'max': 2250.0}, {'current': 2383.505, 'min': 1500.0, 'max': 2250.0}, {'current': 2064.089, 'min': 1500.0, 'max': 2250.0}, {'current': 3082.056, 'min': 1500.0, 'max': 2250.0}, {'current': 2488.425, 'min': 1500.0, 'max': 2250.0}, {'current': 2208.93, 'min': 1500.0, 'max': 2250.0}, {'current': 3330.148, 'min': 1500.0, 'max': 2250.0}, {'current': 1691.764, 'min': 1500.0, 'max': 2250.0}, {'current': 2517.167, 'min': 1500.0, 'max': 2250.0}, {'current': 1761.988, 'min': 1500.0, 'max': 2250.0}, {'current': 3383.595, 'min': 1500.0, 'max': 2250.0}, {'current': 3383.942, 'min': 1500.0, 'max': 2250.0}, {'current': 2537.21, 'min': 1500.0, 'max': 2250.0}, {'current': 2588.751, 'min': 1500.0, 'max': 2250.0}, {'current': 2595.022, 'min': 1500.0, 'max': 2250.0}, {'current': 1734.769, 'min': 1500.0, 'max': 2250.0}, {'current': 2540.716, 'min': 1500.0, 'max': 2250.0}, {'current': 2572.081, 'min': 1500.0, 'max': 2250.0}, {'current': 1736.653, 'min': 1500.0, 'max': 2250.0}, {'current': 1740.807, 'min': 1500.0, 'max': 2250.0}, {'current': 3356.709, 'min': 1500.0, 'max': 2250.0}, {'current': 3348.38, 'min': 1500.0, 'max': 2250.0}, {'current': 1676.145, 'min': 1500.0, 'max': 2250.0}, {'current': 3362.83, 'min': 1500.0, 'max': 2250.0}, {'current': 3366.73, 'min': 1500.0, 'max': 2250.0}, {'current': 3366.387, 'min': 1500.0, 'max': 2250.0}, {'current': 3362.99, 'min': 1500.0, 'max': 2250.0}, {'current': 3355.028, 'min': 1500.0, 'max': 2250.0}, {'current': 3352.823, 'min': 1500.0, 'max': 2250.0}, {'current': 3364.838, 'min': 1500.0, 'max': 2250.0}, {'current': 3355.351, 'min': 1500.0, 'max': 2250.0}, {'current': 3355.08, 'min': 1500.0, 'max': 2250.0}, {'current': 3365.879, 'min': 1500.0, 'max': 2250.0}, {'current': 3359.919, 'min': 1500.0, 'max': 2250.0}, {'current': 3348.873, 'min': 1500.0, 'max': 2250.0}, {'current': 3347.676, 'min': 1500.0, 'max': 2250.0}, {'current': 3347.27, 'min': 1500.0, 'max': 2250.0}, {'current': 3355.475, 'min': 1500.0, 'max': 2250.0}, {'current': 3365.573, 'min': 1500.0, 'max': 2250.0}, {'current': 3017.659, 'min': 1500.0, 'max': 2250.0}, {'current': 3359.378, 'min': 1500.0, 'max': 2250.0}, {'current': 3345.404, 'min': 1500.0, 'max': 2250.0}, {'current': 3349.506, 'min': 1500.0, 'max': 2250.0}, {'current': 3348.102, 'min': 1500.0, 'max': 2250.0}, {'current': 3357.891, 'min': 1500.0, 'max': 2250.0}, {'current': 3341.827, 'min': 1500.0, 'max': 2250.0}, {'current': 3341.842, 'min': 1500.0, 'max': 2250.0}, {'current': 3352.216, 'min': 1500.0, 'max': 2250.0}, {'current': 3350.196, 'min': 1500.0, 'max': 2250.0}, {'current': 3350.187, 'min': 1500.0, 'max': 2250.0}, {'current': 3346.966, 'min': 1500.0, 'max': 2250.0}, {'current': 3357.821, 'min': 1500.0, 'max': 2250.0}, {'current': 2986.299, 'min': 1500.0, 'max': 2250.0}, {'current': 3334.299, 'min': 1500.0, 'max': 2250.0}, {'current': 3348.002, 'min': 1500.0, 'max': 2250.0}, {'current': 3316.315, 'min': 1500.0, 'max': 2250.0}, {'current': 3300.601, 'min': 1500.0, 'max': 2250.0}, {'current': 3283.958, 'min': 1500.0, 'max': 2250.0}, {'current': 3285.168, 'min': 1500.0, 'max': 2250.0}, {'current': 3292.498, 'min': 1500.0, 'max': 2250.0}, {'current': 3318.923, 'min': 1500.0, 'max': 2250.0}, {'current': 3306.29, 'min': 1500.0, 'max': 2250.0}, {'current': 3337.063, 'min': 1500.0, 'max': 2250.0}, {'current': 3349.388, 'min': 1500.0, 'max': 2250.0}, {'current': 2453.136, 'min': 1500.0, 'max': 2250.0}, {'current': 2465.934, 'min': 1500.0, 'max': 2250.0}, {'current': 2439.535, 'min': 1500.0, 'max': 2250.0}, {'current': 2452.005, 'min': 1500.0, 'max': 2250.0}, {'current': 3348.795, 'min': 1500.0, 'max': 2250.0}, {'current': 3355.915, 'min': 1500.0, 'max': 2250.0}, {'current': 3352.037, 'min': 1500.0, 'max': 2250.0}, {'current': 3346.007, 'min': 1500.0, 'max': 2250.0}, {'current': 3350.427, 'min': 1500.0, 'max': 2250.0}, {'current': 3367.194, 'min': 1500.0, 'max': 2250.0}, {'current': 3351.629, 'min': 1500.0, 'max': 2250.0}, {'current': 3355.508, 'min': 1500.0, 'max': 2250.0}, {'current': 3352.731, 'min': 1500.0, 'max': 2250.0}, {'current': 3354.007, 'min': 1500.0, 'max': 2250.0}, {'current': 3349.132, 'min': 1500.0, 'max': 2250.0}, {'current': 3366.73, 'min': 1500.0, 'max': 2250.0}, {'current': 3344.158, 'min': 1500.0, 'max': 2250.0}, {'current': 3341.463, 'min': 1500.0, 'max': 2250.0}, {'current': 3350.748, 'min': 1500.0, 'max': 2250.0}, {'current': 3347.387, 'min': 1500.0, 'max': 2250.0}, {'current': 3387.597, 'min': 1500.0, 'max': 2250.0}, {'current': 3394.156, 'min': 1500.0, 'max': 2250.0}, {'current': 3390.672, 'min': 1500.0, 'max': 2250.0}, {'current': 2475.238, 'min': 1500.0, 'max': 2250.0}, {'current': 3388.885, 'min': 1500.0, 'max': 2250.0}, {'current': 3391.833, 'min': 1500.0, 'max': 2250.0}, {'current': 3392.197, 'min': 1500.0, 'max': 2250.0}, {'current': 3397.762, 'min': 1500.0, 'max': 2250.0}, {'current': 3380.666, 'min': 1500.0, 'max': 2250.0}, {'current': 3389.653, 'min': 1500.0, 'max': 2250.0}, {'current': 3400.143, 'min': 1500.0, 'max': 2250.0}, {'current': 3402.578, 'min': 1500.0, 'max': 2250.0}, {'current': 3386.648, 'min': 1500.0, 'max': 2250.0}, {'current': 3390.993, 'min': 1500.0, 'max': 2250.0}, {'current': 3378.559, 'min': 1500.0, 'max': 2250.0}, {'current': 3388.575, 'min': 1500.0, 'max': 2250.0}, {'current': 3390.963, 'min': 1500.0, 'max': 2250.0}, {'current': 3376.194, 'min': 1500.0, 'max': 2250.0}, {'current': 3401.577, 'min': 1500.0, 'max': 2250.0}, {'current': 3379.938, 'min': 1500.0, 'max': 2250.0}, {'current': 3386.809, 'min': 1500.0, 'max': 2250.0}, {'current': 3393.316, 'min': 1500.0, 'max': 2250.0}, {'current': 3403.151, 'min': 1500.0, 'max': 2250.0}, {'current': 3392.502, 'min': 1500.0, 'max': 2250.0}, {'current': 3391.13, 'min': 1500.0, 'max': 2250.0}, {'current': 3386.35, 'min': 1500.0, 'max': 2250.0}, {'current': 3384.04, 'min': 1500.0, 'max': 2250.0}, {'current': 3396.23, 'min': 1500.0, 'max': 2250.0}, {'current': 3388.759, 'min': 1500.0, 'max': 2250.0}, {'current': 3397.404, 'min': 1500.0, 'max': 2250.0}, {'current': 3375.442, 'min': 1500.0, 'max': 2250.0}, {'current': 3375.805, 'min': 1500.0, 'max': 2250.0}, {'current': 3394.624, 'min': 1500.0, 'max': 2250.0}, {'current': 3393.907, 'min': 1500.0, 'max': 2250.0}, {'current': 3401.555, 'min': 1500.0, 'max': 2250.0}, {'current': 3382.44, 'min': 1500.0, 'max': 2250.0}, {'current': 3389.862, 'min': 1500.0, 'max': 2250.0}, {'current': 2339.86, 'min': 1500.0, 'max': 2250.0}, {'current': 3383.836, 'min': 1500.0, 'max': 2250.0}, {'current': 3395.725, 'min': 1500.0, 'max': 2250.0}, {'current': 3396.124, 'min': 1500.0, 'max': 2250.0}, {'current': 3384.895, 'min': 1500.0, 'max': 2250.0}, {'current': 3389.655, 'min': 1500.0, 'max': 2250.0}, {'current': 3389.334, 'min': 1500.0, 'max': 2250.0}, {'current': 2367.776, 'min': 1500.0, 'max': 2250.0}, {'current': 3399.331, 'min': 1500.0, 'max': 2250.0}, {'current': 1697.139, 'min': 1500.0, 'max': 2250.0}, {'current': 3382.428, 'min': 1500.0, 'max': 2250.0}, {'current': 3387.301, 'min': 1500.0, 'max': 2250.0}, {'current': 3391.804, 'min': 1500.0, 'max': 2250.0}, {'current': 3393.108, 'min': 1500.0, 'max': 2250.0}, {'current': 3392.266, 'min': 1500.0, 'max': 2250.0}, {'current': 3372.346, 'min': 1500.0, 'max': 2250.0}, {'current': 3385.486, 'min': 1500.0, 'max': 2250.0}, {'current': 3373.969, 'min': 1500.0, 'max': 2250.0}, {'current': 2413.506, 'min': 1500.0, 'max': 2250.0}, {'current': 2375.878, 'min': 1500.0, 'max': 2250.0}, {'current': 2347.961, 'min': 1500.0, 'max': 2250.0}, {'current': 2358.437, 'min': 1500.0, 'max': 2250.0}, {'current': 3379.752, 'min': 1500.0, 'max': 2250.0}, {'current': 2376.203, 'min': 1500.0, 'max': 2250.0}, {'current': 2346.296, 'min': 1500.0, 'max': 2250.0}, {'current': 1688.919, 'min': 1500.0, 'max': 2250.0}, {'current': 2469.401, 'min': 1500.0, 'max': 2250.0}], 'disk': {'/': {'total': 14193.587585449219, 'used': 464.1421928405762}}, 'gpu': 'NVIDIA A100-SXM4-40GB', 'gpu_count': 1, 'memory': {'total': 1007.6862754821777}}
+2024-03-04 21:54:54,704 INFO    HandlerThread:936031 [system_monitor.py:probe():224] Finished collecting system info
+2024-03-04 21:54:54,704 INFO    HandlerThread:936031 [system_monitor.py:probe():227] Publishing system info
+2024-03-04 21:54:54,706 INFO    HandlerThread:936031 [system_monitor.py:probe():229] Finished publishing system info
+2024-03-04 21:54:54,709 DEBUG   SenderThread:936031 [sender.py:send():382] send: files
+2024-03-04 21:54:54,709 INFO    SenderThread:936031 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-03-04 21:54:54,714 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: python_packages
+2024-03-04 21:54:54,714 DEBUG   SenderThread:936031 [sender.py:send_request():409] send_request: python_packages
+2024-03-04 21:54:54,715 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-04 21:54:54,715 DEBUG   SenderThread:936031 [sender.py:send_request():409] send_request: stop_status
+2024-03-04 21:54:54,717 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-04 21:54:54,996 DEBUG   SenderThread:936031 [sender.py:send():382] send: telemetry
+2024-03-04 21:54:55,310 INFO    wandb-upload_0:936031 [upload_job.py:push():131] Uploaded file /tmp/tmp34q28ik1wandb/p1jthui2-wandb-metadata.json
+2024-03-04 21:54:55,457 INFO    Thread-12 :936031 [dir_watcher.py:_on_file_created():271] file/dir created: /dss/dsshome1/0D/ge32jaq2/epig_plus_orig_hyperprior/active_learning_marglik/wandb/run-20240304_215453-tamx1ch9/files/requirements.txt
+2024-03-04 21:54:55,457 INFO    Thread-12 :936031 [dir_watcher.py:_on_file_created():271] file/dir created: /dss/dsshome1/0D/ge32jaq2/epig_plus_orig_hyperprior/active_learning_marglik/wandb/run-20240304_215453-tamx1ch9/files/wandb-metadata.json
+2024-03-04 21:54:56,631 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:54:56,631 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:54:56,632 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:54:56,632 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:54:58,638 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:54:58,638 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:54:58,638 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:54:58,639 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:54:58,996 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 21:55:00,645 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:00,645 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:00,645 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:00,645 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:01,458 INFO    Thread-12 :936031 [dir_watcher.py:_on_file_created():271] file/dir created: /dss/dsshome1/0D/ge32jaq2/epig_plus_orig_hyperprior/active_learning_marglik/wandb/run-20240304_215453-tamx1ch9/files/output.log
+2024-03-04 21:55:02,651 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:02,651 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:02,652 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:02,652 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:03,459 INFO    Thread-12 :936031 [dir_watcher.py:_on_file_modified():288] file/dir modified: /dss/dsshome1/0D/ge32jaq2/epig_plus_orig_hyperprior/active_learning_marglik/wandb/run-20240304_215453-tamx1ch9/files/output.log
+2024-03-04 21:55:04,657 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:04,658 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:04,658 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:04,658 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:04,868 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 21:55:06,665 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:06,665 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:06,666 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:06,666 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:08,671 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:08,672 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:08,672 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:08,672 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:09,715 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-04 21:55:09,716 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-04 21:55:09,716 DEBUG   SenderThread:936031 [sender.py:send_request():409] send_request: stop_status
+2024-03-04 21:55:09,963 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 21:55:10,678 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:10,678 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:10,678 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:10,678 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:12,684 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:12,684 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:12,684 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:12,685 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:14,690 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:14,691 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:14,691 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:14,691 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:14,963 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 21:55:16,698 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:16,698 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:16,699 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:16,699 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:18,704 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:18,704 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:18,705 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:18,705 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:19,964 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 21:55:20,711 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:20,711 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:20,712 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:20,712 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:22,718 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:22,718 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:22,718 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:22,718 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:24,715 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-04 21:55:24,716 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-04 21:55:24,716 DEBUG   SenderThread:936031 [sender.py:send_request():409] send_request: stop_status
+2024-03-04 21:55:24,778 ERROR   gpu       :936031 [interfaces.py:aggregate():161] Failed to serialize metric: Insufficient Permissions
+2024-03-04 21:55:24,820 ERROR   gpu       :936031 [interfaces.py:aggregate():161] Failed to serialize metric: Insufficient Permissions
+2024-03-04 21:55:24,862 ERROR   gpu       :936031 [interfaces.py:aggregate():161] Failed to serialize metric: Insufficient Permissions
+2024-03-04 21:55:24,863 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:24,863 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:24,863 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:24,863 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:25,918 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 21:55:26,470 INFO    Thread-12 :936031 [dir_watcher.py:_on_file_modified():288] file/dir modified: /dss/dsshome1/0D/ge32jaq2/epig_plus_orig_hyperprior/active_learning_marglik/wandb/run-20240304_215453-tamx1ch9/files/config.yaml
+2024-03-04 21:55:26,869 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:26,869 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:26,869 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:26,870 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:28,875 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:28,875 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:28,876 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:28,876 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:30,883 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:30,883 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:30,883 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:30,883 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:31,244 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 21:55:32,889 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:32,889 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:32,889 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:32,890 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:34,896 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:34,896 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:34,896 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:34,897 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:36,244 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 21:55:36,902 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:36,902 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:36,903 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:36,903 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:38,910 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:38,910 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:38,911 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:38,911 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:39,716 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-04 21:55:39,716 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-04 21:55:39,716 DEBUG   SenderThread:936031 [sender.py:send_request():409] send_request: stop_status
+2024-03-04 21:55:40,917 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:40,917 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:40,918 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:40,918 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:41,923 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 21:55:42,924 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:42,924 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:42,924 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:42,924 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:44,931 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:44,931 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:44,931 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:44,931 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:46,923 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 21:55:46,939 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:46,939 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:46,939 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:46,939 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:48,945 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:48,945 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:48,945 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:48,946 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:50,951 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:50,951 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:50,952 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:50,952 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:51,924 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 21:55:52,458 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 21:55:52,960 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:52,960 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:52,961 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:52,961 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:53,479 INFO    Thread-12 :936031 [dir_watcher.py:_on_file_modified():288] file/dir modified: /dss/dsshome1/0D/ge32jaq2/epig_plus_orig_hyperprior/active_learning_marglik/wandb/run-20240304_215453-tamx1ch9/files/output.log
+2024-03-04 21:55:54,479 INFO    Thread-12 :936031 [dir_watcher.py:_on_file_modified():288] file/dir modified: /dss/dsshome1/0D/ge32jaq2/epig_plus_orig_hyperprior/active_learning_marglik/wandb/run-20240304_215453-tamx1ch9/files/output.log
+2024-03-04 21:55:54,617 DEBUG   SystemMonitor:936031 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-03-04 21:55:54,620 DEBUG   SenderThread:936031 [sender.py:send():382] send: stats
+2024-03-04 21:55:54,715 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-04 21:55:54,716 DEBUG   SenderThread:936031 [sender.py:send_request():409] send_request: stop_status
+2024-03-04 21:55:54,716 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-04 21:55:55,021 ERROR   gpu       :936031 [interfaces.py:aggregate():161] Failed to serialize metric: Insufficient Permissions
+2024-03-04 21:55:55,076 ERROR   gpu       :936031 [interfaces.py:aggregate():161] Failed to serialize metric: Insufficient Permissions
+2024-03-04 21:55:55,123 ERROR   gpu       :936031 [interfaces.py:aggregate():161] Failed to serialize metric: Insufficient Permissions
+2024-03-04 21:55:55,123 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:55,123 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:55,124 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:55,124 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:57,130 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:57,130 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:57,130 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:57,131 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:57,205 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 21:55:59,139 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:59,139 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:55:59,140 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:55:59,140 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:01,145 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:01,145 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:01,146 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:01,146 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:02,205 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 21:56:03,152 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:03,152 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:03,153 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:03,153 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:05,158 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:05,159 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:05,159 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:05,159 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:07,166 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:07,166 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:07,166 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:07,166 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:07,206 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 21:56:09,174 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:09,174 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:09,174 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:09,174 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:09,716 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-04 21:56:09,716 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-04 21:56:09,716 DEBUG   SenderThread:936031 [sender.py:send_request():409] send_request: stop_status
+2024-03-04 21:56:11,180 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:11,180 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:11,181 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:11,181 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:12,961 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 21:56:13,186 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:13,186 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:13,187 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:13,187 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:15,193 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:15,193 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:15,193 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:15,193 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:17,204 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:17,208 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:17,208 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:17,208 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:17,962 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 21:56:19,216 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:19,216 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:19,216 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:19,216 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:21,224 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:21,224 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:21,224 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:21,224 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:22,962 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 21:56:23,230 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:23,231 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:23,231 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:23,231 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:24,622 DEBUG   SenderThread:936031 [sender.py:send():382] send: stats
+2024-03-04 21:56:24,716 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-04 21:56:24,716 DEBUG   SenderThread:936031 [sender.py:send_request():409] send_request: stop_status
+2024-03-04 21:56:24,716 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-04 21:56:25,283 ERROR   gpu       :936031 [interfaces.py:aggregate():161] Failed to serialize metric: Insufficient Permissions
+2024-03-04 21:56:25,327 ERROR   gpu       :936031 [interfaces.py:aggregate():161] Failed to serialize metric: Insufficient Permissions
+2024-03-04 21:56:25,371 ERROR   gpu       :936031 [interfaces.py:aggregate():161] Failed to serialize metric: Insufficient Permissions
+2024-03-04 21:56:25,372 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:25,372 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:25,372 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:25,372 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:27,378 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:27,378 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:27,378 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:27,379 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:27,972 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 21:56:29,384 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:29,385 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:29,385 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:29,385 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:31,391 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:31,391 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:31,391 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:31,391 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:32,973 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 21:56:33,399 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:33,400 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:33,400 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:33,401 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:35,407 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:35,407 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:35,407 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:35,407 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:37,413 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:37,413 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:37,414 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:37,414 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:37,973 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 21:56:39,420 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:39,420 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:39,420 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:39,420 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:39,716 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-04 21:56:39,716 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-04 21:56:39,717 DEBUG   SenderThread:936031 [sender.py:send_request():409] send_request: stop_status
+2024-03-04 21:56:41,426 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:41,426 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:41,426 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:41,427 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:42,497 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-04 21:56:42,498 DEBUG   SenderThread:936031 [sender.py:send():382] send: history
+2024-03-04 21:56:42,499 DEBUG   SenderThread:936031 [sender.py:send_request():409] send_request: summary_record
+2024-03-04 21:56:42,500 INFO    SenderThread:936031 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-04 21:56:43,432 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:43,433 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:43,433 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:43,433 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:43,497 INFO    Thread-12 :936031 [dir_watcher.py:_on_file_modified():288] file/dir modified: /dss/dsshome1/0D/ge32jaq2/epig_plus_orig_hyperprior/active_learning_marglik/wandb/run-20240304_215453-tamx1ch9/files/output.log
+2024-03-04 21:56:43,498 INFO    Thread-12 :936031 [dir_watcher.py:_on_file_created():271] file/dir created: /dss/dsshome1/0D/ge32jaq2/epig_plus_orig_hyperprior/active_learning_marglik/wandb/run-20240304_215453-tamx1ch9/files/wandb-summary.json
+2024-03-04 21:56:43,501 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 21:56:44,498 INFO    Thread-12 :936031 [dir_watcher.py:_on_file_modified():288] file/dir modified: /dss/dsshome1/0D/ge32jaq2/epig_plus_orig_hyperprior/active_learning_marglik/wandb/run-20240304_215453-tamx1ch9/files/output.log
+2024-03-04 21:56:45,439 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:45,439 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:45,440 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:45,440 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:47,447 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:47,447 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:47,447 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:47,448 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:48,501 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 21:56:49,453 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:49,453 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:49,454 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:49,454 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:51,459 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:51,460 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:51,460 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:51,460 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:53,466 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:53,466 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:53,466 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:53,466 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:53,502 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 21:56:54,624 DEBUG   SenderThread:936031 [sender.py:send():382] send: stats
+2024-03-04 21:56:54,716 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-04 21:56:54,717 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-04 21:56:54,717 DEBUG   SenderThread:936031 [sender.py:send_request():409] send_request: stop_status
+2024-03-04 21:56:55,527 ERROR   gpu       :936031 [interfaces.py:aggregate():161] Failed to serialize metric: Insufficient Permissions
+2024-03-04 21:56:55,575 ERROR   gpu       :936031 [interfaces.py:aggregate():161] Failed to serialize metric: Insufficient Permissions
+2024-03-04 21:56:55,620 ERROR   gpu       :936031 [interfaces.py:aggregate():161] Failed to serialize metric: Insufficient Permissions
+2024-03-04 21:56:55,620 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:55,620 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:55,620 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:55,621 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:57,628 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:57,628 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:57,628 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:57,628 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:58,945 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 21:56:59,636 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:59,636 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:56:59,636 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:56:59,636 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:57:01,642 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:57:01,642 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:57:01,643 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:57:01,643 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:57:03,680 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:57:03,680 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:57:03,681 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:57:03,681 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:57:03,946 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 21:57:05,687 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:57:05,687 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:57:05,687 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:57:05,688 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:57:07,694 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:57:07,694 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:57:07,694 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:57:07,694 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:57:08,947 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 21:57:09,702 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:57:09,702 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:57:09,702 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:57:09,702 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:57:09,716 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-04 21:57:09,717 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-04 21:57:09,717 DEBUG   SenderThread:936031 [sender.py:send_request():409] send_request: stop_status
+2024-03-04 21:57:11,708 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:57:11,708 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:57:11,709 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:57:11,709 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:57:13,714 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:57:13,715 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:57:13,715 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:57:13,715 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:57:13,956 DEBUG   HandlerThread:936031 [handler.py:handle_request():146] handle_request: status_report
+2024-03-04 21:57:15,722 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:57:15,722 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Insufficient Permissions
+2024-03-04 21:57:15,722 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-04 21:57:15,722 ERROR   gpu       :936031 [interfaces.py:monitor():144] Failed to sample metric: Not Supported

@@ -1,0 +1,38 @@
+Pool shape : torch.Size([40000, 1, 28, 28])
+Prec Gamma (1.0, 1.0)
+Prec Gamma (1.0, 1.0)
+[run_acq_epig_marglik_40k.py:193]INFO: Initial test log-likelihood: -2.0070
+[run_acq_epig_marglik_40k.py:194]INFO: Initial test Bayes log-likelihood: -2.2113
+[run_acq_epig_marglik_40k.py:195]INFO: Initial accuracy: 58.44%
+Prec Gamma (1.0, 1.0)
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 21: -2.0588
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 21: -2.2234
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 61.90%
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_hyperprior/active_learning_marglik/run_acq_epig_marglik_40k.py", line 308, in <module>
+    main(**args)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_hyperprior/active_learning_marglik/run_acq_epig_marglik_40k.py", line 227, in main
+    learner.fit(dataset.get_train_loader())
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_hyperprior/active_learning_marglik/active_learning/active_learners.py", line 67, in fit
+    la, _, margliks = marglik_optimization(
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_hyperprior/active_learning_marglik/active_learning/marglik.py", line 254, in marglik_optimization
+    loss.backward()
+  File "/usr/local/lib/python3.10/dist-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/usr/local/lib/python3.10/dist-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_hyperprior/active_learning_marglik/run_acq_epig_marglik_40k.py", line 308, in <module>
+    main(**args)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_hyperprior/active_learning_marglik/run_acq_epig_marglik_40k.py", line 227, in main
+    learner.fit(dataset.get_train_loader())
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_hyperprior/active_learning_marglik/active_learning/active_learners.py", line 67, in fit
+    la, _, margliks = marglik_optimization(
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_hyperprior/active_learning_marglik/active_learning/marglik.py", line 254, in marglik_optimization
+    loss.backward()
+  File "/usr/local/lib/python3.10/dist-packages/torch/_tensor.py", line 492, in backward
+    torch.autograd.backward(
+  File "/usr/local/lib/python3.10/dist-packages/torch/autograd/__init__.py", line 251, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

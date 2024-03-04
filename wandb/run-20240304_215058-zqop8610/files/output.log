@@ -1,0 +1,22 @@
+Pool shape : torch.Size([40000, 1, 28, 28])
+Prec Gamma (1.0, 1.0)
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_hyperprior/active_learning_marglik/run_acq_epig_marglik_40k.py", line 308, in <module>
+    main(**args)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_hyperprior/active_learning_marglik/run_acq_epig_marglik_40k.py", line 188, in main
+    learner.fit(dataset.get_train_loader(batch_size=batch_size))
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_hyperprior/active_learning_marglik/active_learning/active_learners.py", line 67, in fit
+    la, _, margliks = marglik_optimization(
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_hyperprior/active_learning_marglik/active_learning/marglik.py", line 226, in marglik_optimization
+    if std_hyp:
+NameError: name 'std_hyp' is not defined
+Traceback (most recent call last):
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_hyperprior/active_learning_marglik/run_acq_epig_marglik_40k.py", line 308, in <module>
+    main(**args)
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_hyperprior/active_learning_marglik/run_acq_epig_marglik_40k.py", line 188, in main
+    learner.fit(dataset.get_train_loader(batch_size=batch_size))
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_hyperprior/active_learning_marglik/active_learning/active_learners.py", line 67, in fit
+    la, _, margliks = marglik_optimization(
+  File "/dss/dsshome1/0D/ge32jaq2/epig_plus_orig_hyperprior/active_learning_marglik/active_learning/marglik.py", line 226, in marglik_optimization
+    if std_hyp:
+NameError: name 'std_hyp' is not defined

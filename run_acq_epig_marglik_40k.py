@@ -292,9 +292,9 @@ if __name__ == '__main__':
     if args['use_wandb']:
         import uuid
         import copy
-        tags = [args['dataset'], args['method'], ('hyper'+str(args['gamma_hyp'])), ('n_ep_burn_'+str(args['n_epochs_burnin']))] 
+        tags = [args['dataset'], args['method'], ('hyper_'+str(args['gamma_hyp'])), ('n_ep_burn_'+str(args['n_epochs_burnin']))] 
         if args['random_acquisition']:
-            tags = [args['dataset'], args['method'], ('hyper'+str(args['gamma_hyp'])), "rndm"] 
+            tags = [args['dataset'], args['method'], ('hyper_'+str(args['gamma_hyp'])), "rndm"] 
             ### left random_acquisition to be consistent with prev configs
         else:
             tags.append(args["acquisition_method"])

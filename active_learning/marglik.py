@@ -6,7 +6,7 @@ from torch.optim import Adam, SGD
 from torch.optim.lr_scheduler import ExponentialLR, CosineAnnealingLR
 from torch.nn import CrossEntropyLoss, MSELoss
 from torch.nn.utils import parameters_to_vector
-from torch.distributions import Normal
+from torch.distributions import Normal, Gamma
 
 from laplace import KronLaplace
 from laplace.curvature import AsdlGGN
@@ -115,6 +115,7 @@ def marglik_optimization(model,
                          backend=AsdlGGN,
                          early_stopping=False,
                          gamma_hyp = False,
+                         std_hyp = False,
                          gamma_alpha_a = 1,
                          gamma_alpha_b = 1,
                          gamma_beta_a = 0.5,
