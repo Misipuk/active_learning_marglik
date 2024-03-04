@@ -42,7 +42,7 @@ class LaplaceActiveLearner(ActiveLearner):
 
     def __init__(self, input_size, output_size, likelihood, model, double, device, lr=1e-3, lr_min=1e-6,
                  n_epochs=250, n_hypersteps=50, marglik_frequency=10, lr_hyp=1e-1, lr_hyp_min=1e-2, last_layer=False,
-                 n_epochs_burnin=10, optimizer='sgd', laplace='kron', backend=AsdlGGN, early_stopping=False) -> None:
+                 n_epochs_burnin=10, optimizer='sgd', laplace='kron', backend=AsdlGGN, early_stopping=False, gamma_hyp = False, gamma_alpha_a = 0.5, gamma_alpha_b = 0.5) -> None:
         super().__init__(input_size, output_size, likelihood, model, double, device)
         self.lr = lr
         self.lr_min = lr_min
@@ -57,6 +57,9 @@ class LaplaceActiveLearner(ActiveLearner):
         self.backend = backend
         self.es = early_stopping
         self.n_epochs_burnin = n_epochs_burnin
+        self.gamma_hyp = gamma_hyp
+        self.gamma_alpha_a = gamma_alpha_a
+        self.gamma_alpha_b = gamma_alpha_b
 
     def fit(self, loader):
         self.model.reset_parameters()
@@ -66,7 +69,7 @@ class LaplaceActiveLearner(ActiveLearner):
             n_hypersteps=self.n_hypersteps, lr=self.lr, lr_min=self.lr_min, lr_hyp=self.lr_hyp,
             lr_hyp_min=self.lr_hyp_min, marglik_frequency=self.marglik_frequency, optimizer=self.optimizer,
             laplace=laplace_cls, n_epochs_burnin=self.n_epochs_burnin, backend=self.backend, early_stopping=self.es,
-            prior_prec_init=1e-4
+            prior_prec_init=1e-4, gamma_hyp = self.gamma_hyp, gamma_alpha_a = self.gamma_alpha_a, gamma_alpha_b = self.gamma_alpha_b
         )
         if self.last_layer:
             laplace_cls = get_lllaplace_approximation(self.laplace)

@@ -108,7 +108,7 @@ def estimate_epig_minibatch(#ProbsTrainer
 
 def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_size, method, approx, lr_hyp, lr_hyp_min,
          n_epochs_burnin, marglik_frequency, n_hypersteps, device, data_root, use_wandb, random_acquisition,
-         early_stopping, last_layer, n_components, download_data, acquisition_method, epig_use_logprobs):
+         early_stopping, last_layer, n_components, download_data, acquisition_method, epig_use_logprobs, gamma_hyp, gamma_alpha_a, gamma_alpha_b):
     if dataset == 'mnist':
         transform = transforms.ToTensor()
         ds_cls = MNIST
@@ -167,7 +167,8 @@ def main(seed, dataset, n_init, n_max, optimizer, lr, lr_min, n_epochs, batch_si
             device=device, lr=lr, lr_min=lr_min, n_epochs=n_epochs, n_hypersteps=n_hypersteps,
             marglik_frequency=marglik_frequency, lr_hyp=lr_hyp, lr_hyp_min=lr_hyp_min,
             last_layer=last_layer, n_epochs_burnin=n_epochs_burnin, optimizer=optimizer,
-            laplace=approx, backend=AsdlGGN, early_stopping=early_stopping
+            laplace=approx, backend=AsdlGGN, early_stopping=early_stopping, gamma_hyp = gamma_hyp,
+            gamma_alpha_a = gamma_alpha_a, gamma_alpha_b = gamma_alpha_b
         )
     elif method == 'mola':
         learner = MoLaplaceActiveLearner(
@@ -270,6 +271,9 @@ if __name__ == '__main__':
     parser.add_argument('--n_hypersteps', default=50, help='Number of steps on every marglik estimate (partial grad accumulation)', type=int)
     parser.add_argument('--early_stopping', default=True, action=argparse.BooleanOptionalAction)
     parser.add_argument('--last_layer', default=False, action=argparse.BooleanOptionalAction)
+    parser.add_argument('--gamma_hyp', default=False, action=argparse.BooleanOptionalAction)
+    parser.add_argument('--gamma_alpha_a', default=1, type=float)
+    parser.add_argument('--gamma_alpha_b', default=1, type=float)
     # ensemble-specific
     parser.add_argument('--n_components', default=10, type=int)
     # others
@@ -288,9 +292,9 @@ if __name__ == '__main__':
     if args['use_wandb']:
         import uuid
         import copy
-        tags = [args['dataset'], args['method'], ('n_ep_burn_'+str(args['n_epochs_burnin']))] 
+        tags = [args['dataset'], args['method'], ('hyper'+str(args['gamma_hyp'])), ('n_ep_burn_'+str(args['n_epochs_burnin']))] 
         if args['random_acquisition']:
-            tags = [args['dataset'], args['method'], "rndm"] 
+            tags = [args['dataset'], args['method'], ('hyper'+str(args['gamma_hyp'])), "rndm"] 
             ### left random_acquisition to be consistent with prev configs
         else:
             tags.append(args["acquisition_method"])
