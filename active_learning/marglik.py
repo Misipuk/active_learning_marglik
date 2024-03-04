@@ -113,7 +113,12 @@ def marglik_optimization(model,
                          lr_hyp_min=1e-1,
                          laplace=KronLaplace,
                          backend=AsdlGGN,
-                         early_stopping=False):
+                         early_stopping=False,
+                         gamma_hyp = False,
+                         gamma_alpha_a = 1,
+                         gamma_alpha_b = 1,
+                         gamma_beta_a = 0.5,
+                         gamma_beta_b = 0.5):
     """Runs marglik optimization training for a given model and training dataloader.
 
     Parameters
@@ -213,6 +218,13 @@ def marglik_optimization(model,
     valid_nlls = list()
     margliks = list()
     best_marglik = np.inf
+    
+    if gamma_hyp:
+        print(f"Prec Gamma {gamma_alpha_a, gamma_alpha_b}")
+        alpha_dist = Gamma(gamma_alpha_a, gamma_alpha_b)
+        beta_dist = Gamma(gamma_beta_a, gamma_beta_b)
+        if std_hyp:
+            print(f"Sigma noise Gamma {gamma_beta_a, gamma_beta_b}")
 
     for epoch in range(1, n_epochs + 1):
         epoch_loss = 0
@@ -290,7 +302,18 @@ def marglik_optimization(model,
             hyper_optimizer.zero_grad()
             sigma_noise = None if likelihood != 'regression' else torch.exp(log_sigma_noise)
             prior_prec = torch.exp(log_prior_prec)
-            marglik = -lap.log_marginal_likelihood(prior_prec, sigma_noise) / N
+            
+            if gamma_hyp:
+                #prior_prec = torch.nan_to_num(prior_prec, nan=0.00001)
+                if std_hyp:
+                    #print("We are in std_hyp")
+                    marglik = -lap.log_marginal_likelihood(prior_prec, sigma_noise) / N - alpha_dist.log_prob(prior_prec).sum() / N - beta_dist.log_prob(sigma_noise).sum() / N
+                else:
+                    #print("We are not in std_hyp")
+                    marglik = -lap.log_marginal_likelihood(prior_prec, sigma_noise) / N - alpha_dist.log_prob(prior_prec).sum() / N
+            else:
+                marglik = -lap.log_marginal_likelihood(prior_prec, sigma_noise) / N
+            
             marglik.backward()
             margliks_local.append(marglik.item())
             hyper_optimizer.step()
