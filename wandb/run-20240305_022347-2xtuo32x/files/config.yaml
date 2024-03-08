@@ -1,0 +1,126 @@
+wandb_version: 1
+
+seed:
+  desc: null
+  value: 9
+dataset:
+  desc: null
+  value: mnist
+n_init:
+  desc: null
+  value: 20
+n_max:
+  desc: null
+  value: 100
+optimizer:
+  desc: null
+  value: adam
+lr:
+  desc: null
+  value: 0.001
+lr_min:
+  desc: null
+  value: 1.0e-05
+n_epochs:
+  desc: null
+  value: 3000
+batch_size:
+  desc: null
+  value: 256
+method:
+  desc: null
+  value: laplace
+approx:
+  desc: null
+  value: kron
+lr_hyp:
+  desc: null
+  value: 0.01
+lr_hyp_min:
+  desc: null
+  value: 0.001
+n_epochs_burnin:
+  desc: null
+  value: 750
+marglik_frequency:
+  desc: null
+  value: 50
+n_hypersteps:
+  desc: null
+  value: 50
+early_stopping:
+  desc: null
+  value: true
+last_layer:
+  desc: null
+  value: false
+gamma_hyp:
+  desc: null
+  value: true
+gamma_alpha_a:
+  desc: null
+  value: 1.0
+gamma_alpha_b:
+  desc: null
+  value: 1.0
+n_components:
+  desc: null
+  value: 10
+device:
+  desc: null
+  value: cuda
+data_root:
+  desc: null
+  value: data/
+download_data:
+  desc: null
+  value: true
+use_wandb:
+  desc: null
+  value: true
+random_acquisition:
+  desc: null
+  value: true
+acquisition_method:
+  desc: null
+  value: epig
+epig_use_logprobs:
+  desc: null
+  value: true
+methodconf:
+  desc: null
+  value: mnist-laplace-hyper_True-rndm
+_wandb:
+  desc: null
+  value:
+    python_version: 3.10.12
+    cli_version: 0.16.3
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1709601827.903682
+    t:
+      1:
+      - 1
+      - 5
+      - 41
+      - 50
+      - 53
+      - 55
+      2:
+      - 1
+      - 5
+      - 41
+      - 50
+      - 53
+      - 55
+      3:
+      - 13
+      - 15
+      - 16
+      - 23
+      4: 3.10.12
+      5: 0.16.3
+      8:
+      - 5
+      13: linux-x86_64

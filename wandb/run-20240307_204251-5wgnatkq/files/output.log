@@ -1,0 +1,242 @@
+
+Pool shape : torch.Size([40000, 1, 28, 28])
+[run_acq_epig_marglik_40k.py:193]INFO: Initial test log-likelihood: -1.9369
+[run_acq_epig_marglik_40k.py:194]INFO: Initial test Bayes log-likelihood: -2.0605
+[run_acq_epig_marglik_40k.py:195]INFO: Initial accuracy: 61.91%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 21: -1.9023
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 21: -2.0181
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 64.19%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 22: -1.9024
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 22: -1.9654
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 64.06%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 23: -1.3643
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 23: -1.7371
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 66.71%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 24: -1.4809
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 24: -1.7354
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 66.77%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 25: -1.6065
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 25: -1.8295
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 68.08%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 26: -1.6879
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 26: -1.7854
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 66.37%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 27: -1.4453
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 27: -1.7077
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 67.32%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 28: -1.5122
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 28: -1.6493
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 67.07%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 29: -1.3214
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 29: -1.6493
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 68.76%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 30: -1.4850
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 30: -1.6911
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 68.72%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 31: -1.2336
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 31: -1.6318
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 71.65%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 32: -1.5550
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 32: -1.6384
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 69.10%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 33: -1.2111
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 33: -1.6153
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 71.11%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 34: -0.9780
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 34: -1.1802
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 70.59%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 35: -1.0906
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 35: -1.6486
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 74.02%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 36: -1.0214
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 36: -1.3723
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 74.56%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 37: -1.0142
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 37: -1.4315
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 74.64%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 38: -1.0874
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 38: -1.4081
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 72.87%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 39: -1.0441
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 39: -1.4430
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 74.88%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 40: -1.0383
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 40: -1.5331
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 75.68%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 41: -1.0646
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 41: -1.4414
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 74.26%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 42: -1.1945
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 42: -1.5917
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 74.73%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 43: -0.8341
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 43: -1.0569
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 75.14%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 44: -1.1654
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 44: -1.4816
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 74.24%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 45: -1.0450
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 45: -1.3815
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 74.56%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 46: -1.1549
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 46: -1.4813
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 75.46%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 47: -0.9809
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 47: -1.3868
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 76.04%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 48: -0.8927
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 48: -1.2275
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 76.90%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 49: -1.0592
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 49: -1.3389
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 76.26%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 50: -0.8664
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 50: -1.2586
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 77.97%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 51: -0.8887
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 51: -1.2810
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 77.61%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 52: -0.9864
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 52: -1.2927
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 77.31%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 53: -0.8334
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 53: -1.1596
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 77.37%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 54: -0.9316
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 54: -1.2385
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 77.75%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 55: -1.0418
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 55: -1.2304
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 74.87%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 56: -0.9745
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 56: -1.2434
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 76.79%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 57: -1.1114
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 57: -1.3280
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 75.96%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 58: -0.6974
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 58: -1.0973
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 81.39%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 59: -0.8151
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 59: -1.2720
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 80.14%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 60: -0.7609
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 60: -1.0865
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 80.22%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 61: -0.7507
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 61: -1.2136
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 80.58%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 62: -0.9068
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 62: -1.5578
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 80.43%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 63: -0.7849
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 63: -1.0647
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 79.72%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 64: -0.7992
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 64: -1.0946
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 78.91%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 65: -0.7709
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 65: -1.1410
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 80.53%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 66: -0.7877
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 66: -1.0884
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 80.03%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 67: -0.6838
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 67: -0.9420
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 80.90%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 68: -0.7625
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 68: -1.0075
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 79.37%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 69: -0.7245
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 69: -1.0145
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 80.28%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 70: -0.7609
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 70: -1.1270
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 80.74%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 71: -0.8532
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 71: -1.2314
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 80.14%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 72: -0.7130
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 72: -1.0492
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 81.15%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 73: -0.6748
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 73: -1.0472
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 81.59%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 74: -0.7047
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 74: -0.9527
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 81.15%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 75: -0.7294
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 75: -0.9924
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 80.84%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 76: -0.7112
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 76: -1.0237
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 81.42%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 77: -0.6305
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 77: -1.0533
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 82.75%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 78: -0.7275
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 78: -1.0744
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 82.02%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 79: -0.6884
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 79: -1.0216
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 81.70%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 80: -0.6200
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 80: -0.9930
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 82.47%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 81: -0.8024
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 81: -1.5057
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 82.37%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 82: -0.6484
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 82: -1.1196
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 82.69%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 83: -0.6917
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 83: -1.0710
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 82.46%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 84: -0.6845
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 84: -1.0290
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 82.11%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 85: -0.6679
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 85: -0.9958
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 81.93%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 86: -0.6949
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 86: -0.9766
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 81.18%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 87: -0.7008
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 87: -0.9294
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 80.94%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 88: -0.7365
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 88: -1.0629
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 81.35%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 89: -0.5937
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 89: -0.9357
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 82.65%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 90: -0.5437
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 90: -0.9275
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 84.09%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 91: -0.5393
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 91: -0.8956
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 84.19%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 92: -0.6439
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 92: -0.9934
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 83.40%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 93: -0.5650
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 93: -0.9474
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 83.58%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 94: -0.5890
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 94: -1.0438
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 84.08%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 95: -0.5889
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 95: -0.9265
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 83.56%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 96: -0.5611
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 96: -0.7673
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 82.26%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 97: -0.4717
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 97: -0.9245
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 85.98%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 98: -0.5099
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 98: -0.9321
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 85.36%
+[run_acq_epig_marglik_40k.py:234]INFO: Test log-likelihood at 99: -0.5509
+[run_acq_epig_marglik_40k.py:235]INFO: Test Bayes log-likelihood at 99: -0.9214
+[run_acq_epig_marglik_40k.py:236]INFO: Test accuracy: 84.79%
